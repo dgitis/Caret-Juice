@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                window.onbeforeunload = function() { ws = null }
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link');
+                    for (var i = 0; i < links.length;i++) {
+                    var link = links[i];
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+  
+  <link rel='stylesheet' href='css/app.css'>
+  <script src='js/vendor/jquery.js'></script>
+<script src='js/vendor/modernizr.js'></script>
+<script src='js/vendor/fastclick.js'></script>
+<script src='js/foundation.js'></script>
+<script src='js/alt-tab.js'></script>
+  
+  <link href="assets/favicon.ico" rel="shortcut icon">
+  <link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
+  
+  <title>Contact Damon at Caret Juice Marketing</title>
+  
+</head>
+
+<body>
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PRFCGK"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PRFCGK');</script>
+	<!-- End Google Tag Manager -->
+<header>
+  <div class="top-bar-container contain-to-grid">
+    <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area top-bar-mobile_nav_position">
+            <li class="current-parent name">
+                <h1><a class='current-parent' href="index.html">Caret Juice Marketing</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+        </ul>
+        <section class="top-bar-section">
+			<ul id="menu-top-bar-right" class="top-bar-menu right">
+				<li class="divider"></li>
+				<li id="menu-item-116" class="current menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item"><a class='current' href="contact.html">Contact</a></li>
+			</ul>        
+		</section>
+    </nav>
+</div>
+
+</header>
+<section class="container" role="document">
+	<div class="row">
+		<header class="small-12 columns">
+			<h1>Contact Caret Juice</h1>
+		</header>
+	</div>
+	<article class="row">
+		<div class="small-12 medium-4 columns">
+			<h2 class="subheader section">Call</h2>
+			<p><a href="tel:+17788479248">+1 778-846-9248</a></p>
+			<h2 class="subheader section">Address</h2>
+			<ul class="vcard">
+				<li class="fn">Damon Gudaitis</li>
+				<li class="org">Caret Juice Marketing</li>
+				<li class="street-address">225 West 8th, Suite 300</li>
+				<li class="locality">Vancouver</li>
+				<li><span class="state">British Columbia</span>, <span class="postal-code">V5Y 1N3</span></li>
+			</ul>
+		</div>
+		<div class="small-12 medium-4 columns">
+			<h2 class="subheader section">Mail</h2>
+			<form name="insightly_web_to_lead" data-abide action="https://googleapps.insight.ly/WebToLead/Create" method="post" class="contact-form">
+				<fieldset>
+					<input type="hidden" name="formId" value="xb/Lu1FaCLjKEOHM8KAdQA=="/>
+					<label for="insightly_firstName">First Name: </label>
+					<input id="insightly_firstName" placeholder="First Name" name="FirstName" type="text"/>
+					<label for="insightly_lastName">Last Name: </label>
+					<input id="insightly_lastName" placeholder="Last Name" name="LastName" type="text"/>
+					<input type="hidden" name="emails[0].Label" value="Work"/>
+					<label for="email[0]_Value">Email: </label>
+					<input id="emails[0]_Value" name="emails[0].Value" placeholder="So I can get back to you" type="text"/>
+					<label for="Description">Comments: </label>
+					<textarea rows="5" id="insightly_Description" name="Description" placeholder="Say something..." type="text"/></textarea>
+					<div class="text-center">
+					<button type="submit" class="secondary">Send Your Message</button>
+					</div>
+				</fieldset>
+			</form>				
+		</div>
+		<div class="small-12 medium-4 text-center columns">
+			<h2 class="subheader section text-left">Connect</h2>
+			<img src="assets/images/headshot-150x150.jpg" height="150" width="150" alt="Damon Gudaitis" class="round" />
+			<h4 class="subheader">Damon&nbsp;Gudaitis runs Caret&nbsp;Juice Marketing</h4>
+			<ul class="inline-list inline-list-center">
+			<li style="background-color: #0077B5"><a class="icon" href="https://ca.linkedin.com/in/damongudaitis"  target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+			<li style="background-color: #55acee"><a class="icon" href="https://twitter.com/damongudaitis" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+			</ul>
+		</div>
+	</article>
+
+
+		
+</section>
+  
+</body>
+
+</html>

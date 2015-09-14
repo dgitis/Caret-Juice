@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                window.onbeforeunload = function() { ws = null }
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link');
+                    for (var i = 0; i < links.length;i++) {
+                    var link = links[i];
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+  
+  <link rel='stylesheet' href='css/app.css'>
+  <script src='js/vendor/jquery.js'></script>
+<script src='js/vendor/modernizr.js'></script>
+<script src='js/vendor/fastclick.js'></script>
+<script src='js/foundation.js'></script>
+<script src='js/alt-tab.js'></script>
+  
+  <link href="assets/favicon.ico" rel="shortcut icon">
+  <link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
+  
+  <title>Review Automation for Contractors | Caret Juice Marketing</title>
+  
+</head>
+
+<body>
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PRFCGK"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PRFCGK');</script>
+	<!-- End Google Tag Manager -->
+
+
+	<section class="container" role="document">
+		<article>
+			<section class="hero" style="background-image: url(assets/images/framed-residential-interior.jpg );">
+				<div class="row small-collapse">
+					<div class="small-centered medium-uncentered small-12 medium-8 columns hero-text">
+						<header>
+							<h1 class="entry-title">Review Automation for Contractors</h1>
+						</header>
+						<p>88 percent of people read reviews to determine the quality of a local business. <sup>*</sup></p>
+	<p>You need your happy customers to spread the word.</p> 
+	<p><strong>Caret Juice Marketing can help</strong> by automating your post-project feedback.</p> 
+	<p>You get the feedback from happy and unhappy customers.</p>
+	<p>And happy customers get an extra email asking for a review.</p>				</div>
+					<aside id="form" class="small-12 medium-4 columns">
+						<a name="form-jump">&nbsp;</a>
+						<form name="insightly_web_to_lead" data-abide action="https://googleapps.insight.ly/WebToLead/Create" method="post" class="hero-form">
+		<fieldset>
+			<h3>The Next Step</h3>
+			<p>Let's talk about your business.</p>
+			<input type="hidden" name="formId" value="xb/Lu1FaCLjKEOHM8KAdQA=="/>
+			<label for="insightly_firstName">First Name: </label>
+			<input id="insightly_firstName" placeholder="First Name" name="FirstName" type="text"/>
+			<label for="insightly_lastName">Last Name: </label>
+			<input id="insightly_lastName" placeholder="Last Name" name="LastName" type="text"/>
+			<label for="insightly_organization">Organization: </label>
+			<input id="insightly_organization" placeholder="Organization" name="Organization" type="text"/>
+			<input type="hidden" name="emails[0].Label" placeholder="Work Email" value="Work"/>
+			<label for="email[0]_Value">Work Email: </label>
+			<input id="emails[0]_Value" name="emails[0].Value" type="text"/>
+			<input type="hidden" name="phones[0].Label" value="Work"/>
+			<label for="phones[0]_Value">Work Phone: </label>
+			<input id="phones[0]_Value" label="Work Phone" name="phones[0].Value" type="text"/>
+			<div class="text-center">
+			<button type="submit" class="secondary">Schedule a Call</button>
+			</div>
+		</fieldset>
+	</form>				</aside>
+				</div>
+			</section>
+
+											<div class="entry-content">
+							<div class="tabs">
+	<nav role='navigation' class="transformer-tabs full-width full-width-bar">
+	<div class="row">
+	<ul>
+	<li class="text-center"><a href="#tab-1" class="active">Why review automation</a></li>
+	<li class="text-center"><a href="#tab-2">What we do</a></li>
+	<li class="text-center"><a href="#tab-3">Why Caret Juice</a></li>
+	<li class="text-center"><a href="#tab-4">How much does it cost</a></li>
+	</ul>
+	</div>
+	</nav>
+	<div id="tab-1" class="active">
+	<div class="row">
+	<div class="small-12 medium-7 columns">
+	<h2>Reviews are critical to growing your business</h2>
+	<p>88 percent of people read reviews to determine the quality of a local business.</p>
+	<p>Review sites like Yelp, Houzz and Homestars rank very well for searches like “General Contractor San Diego.” Review sites show the top rated and most reviewed businesses first.</p>
+	<p>Increasing the volume of good reviews will result in more customers that will pay for the initial investment many times over.</p>
+	</p></div>
+	<div class="small-12 medium-5 columns">
+	<p>A graphic will go here</p>
+	</p></div>
+	</p></div>
+	<hr>
+	<div class="row">
+	<div class="small-12 medium-5 columns">
+	<p>A graphic will go here</p>
+	</p></div>
+	<div class="small-12 medium-7 columns">
+	<h2>Automation is the answer</h2>
+	<p>By automating feedback and review requests, you give unhappy clients an outlet other than review sites. And you guarantee that happy customers get an important reminder to share their experiences with the world.</p>
+	<p>You could do all of this manually. But reviews are too important to growing your business and too easy to let slip when juggling projects and other priorities.</p>
+	<p><a href="#form-jump">Sign up now</a></p>
+	</p></div>
+	</p></div>
+	</p></div>
+	<div id="tab-2">
+	<div class="row">
+	<div class="small-12 medium-7 columns">
+	<h2>Automate post-project feedback</h2>
+	<p>First, we plug in to your project management software to trigger follow-up when a project is finished. (You can also start it manually if you don&#8217;t use project management software.)</p>
+	<p>That will send off a survey asking for feedback.</p>
+	</p></div>
+	<div class="small-12 medium-5 columns">
+	<p>Graphic</p>
+	</p></div>
+	</p></div>
+	<hr>
+	<div class="row">
+	<div class="small-12 medium-5 columns">
+	<p>Graphic</p>
+	</p></div>
+	<div class="small-12 medium-7 columns">
+	<h2>Ask happy customers for a review</h2>
+	<p>Happy customers will then trigger another follow-up asking them to review you.</p>
+	<p>The result is effortless reviews from your happiest customers.</p>
+	<p><a href="#form-jump">Sign up now</a></p>
+	</p></div>
+	</p></div>
+	</p></div>
+	<div id="tab-3">
+	<div class="row">
+	<div class="small-12 medium-7 columns">
+	<h2>Why Caret Juice</h2>
+	<p>Caret Juice is a marketing technology and operations consultancy for small businesses.</p>
+	<p>Marketing technology is huge right now. There are lots of inexpensive technologies that you could benefit from using, but there’s no way that you can be expected to know about all of the possibilities.</p>
+	<p>We give you the expertise to navigate marketing technologies and configure a variety of inexpensive systems to give you the capabilities of a full-blown marketing automation system at a fraction of the expense.</p>
+	<p>We work with you to understand how comfortable you and your staff are with technology. And then we create and document automated marketing systems that you can run yourself with little or no time required out of your day.</p>
+	<p>Marketing automation systems are expensive and you need to hire someone full time to run them.</p>
+	<p>We do some of the most valuable things you can do with a marketing automation system at a fraction of the cost.</p>
+	<p><a href="#form-jump">Get in touch</a> and we&#8217;ll talk about how you can benefit from these technologies.</p>
+	</p></div>
+	<div class="small-12 medium-5 small-centered columns">
+	<p>Logo will go here</p>
+	</p></div>
+	</p></div>
+	</p></div>
+	<div id="tab-4">
+	<div class="row">
+	<div class="small-12 medium-7 columns">
+	<h2>How much does it cost</h2>
+	<p>$1600 for set-up plus the subscription costs for the tools that we use which should be in the $20 to $40 a month range.</p>
+	<p>For that, we will do the following:</p>
+	<ul>
+	<li>Consult with you to see how to set up the systems so that your people can run them with minimal disruption to their work</li>
+	<li>Set up the integrations between the tools</li>
+	<li>Write any necessary emails</li>
+	<li>Create or update your review site profiles as required</li>
+	<li>Document the integrations and any things you need to do to manage the systems</li>
+	<li>Call whoever will be in charge of the integrations and go over the documentation.</li>
+	</ul>
+	<p>Depending on the system you use for project management, we may not be able to automatically start the workflows or we may need to do a custom integration which would cost more.</p>
+	<p>We will let you know if you’ll need to start the workflows manually or we’ll need to do a custom integration before giving you the final estimate.</p>
+	<p><a href="#form-jump">Fill out the form</a> so we can set up a time to talk about how you run the business, the technology that you use, and the people you have working for you. And then we can figure out what you’ll need and exactly how much it will cost.</p>
+	</p></div>
+	<div class="small-12 medium-5 columns">
+	<p>An image will go here</p>
+	</p></div>
+	</p></div>
+	</p></div>
+	</div>
+	<div class="row">
+	<div class="small-12 columns">
+	<p><small>* BrightLocal Local Consumer Review Survey</small></p>
+	</p></div>
+	</div>
+						</div>
+			<div class="row">
+				<div class="small-12 columns" role="main">
+						<footer>
+													<p></p>
+						</footer>
+				</div>
+			</div>
+		</article>
+
+	</section>
+  
+</body>
+
+</html>
