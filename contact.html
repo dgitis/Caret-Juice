@@ -7,36 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                window.onbeforeunload = function() { ws = null }
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link');
-                    for (var i = 0; i < links.length;i++) {
-                    var link = links[i];
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
   
-  <link rel='stylesheet' href='css/app.css'>
-  <script src='js/vendor/jquery.js'></script>
-<script src='js/vendor/modernizr.js'></script>
-<script src='js/vendor/fastclick.js'></script>
-<script src='js/foundation.js'></script>
-<script src='js/alt-tab.js'></script>
+  <link rel='stylesheet' href='3f2a2aeb7aba5de1acc5796c1fe0cebf.css'>
+  <script src='e53fdfcf8c1a800881abd730c036c49e.js'></script>
   
   <link href="assets/favicon.ico" rel="shortcut icon">
   <link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
@@ -55,23 +28,37 @@
 	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-PRFCGK');</script>
 	<!-- End Google Tag Manager -->
+<div class="off-canvas-wrap" data-offcanvas>
+	<div class="inner-wrap">
 <header>
-  <div class="top-bar-container contain-to-grid">
-    <nav class="top-bar" data-topbar role="navigation">
-        <ul class="title-area top-bar-mobile_nav_position">
-            <li class="current-parent name">
-                <h1><a class='current-parent' href="index.html">Caret Juice Marketing</a></h1>
-            </li>
-            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-        </ul>
-        <section class="top-bar-section">
-			<ul id="menu-top-bar-right" class="top-bar-menu right">
-				<li class="divider"></li>
-				<li id="menu-item-116" class="current menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item"><a class='current' href="contact.html">Contact</a></li>
-			</ul>        
-		</section>
-    </nav>
+	<div class="contain-to-grid section">
+	<nav class="top-bar show-for-large-up" data-topbar role="navigation">
+	  <ul class="title-area">
+	    <li class="current-parent name"><h1><a class='current-parent' href="index.html">Caret Juice Marketing</a></h1>
+	    </li>
+	  </ul>
+	  <section class="top-bar-section">
+	     <ul class="right">
+	      <li class='current'><a class='current' href="contact.html">Contact</a></li>
+	    </ul>
+	  </section>
+	</nav>
 </div>
+	<nav class="tab-bar hide-for-large-up">
+	<section class="tab-bar-section">
+		<h1 class="title"><a class='current-parent' href="index.html">Caret Juice Marketing</a></h1>
+	</section>
+
+      <section class="right-small">
+        <a class="right-off-canvas-toggle menu-icon" href="#mobile-menu"><span></span></a>
+      </section>
+</nav>
+<nav id="mobile-menu" class="right-off-canvas-menu">
+	<ul class="off-canvas-list">
+		<li class='current-parent'><a class='current-parent' href="index.html">Home</a></li>
+		<li class='current'><a class='current' href="contact.html">Contact</a></li>
+	</ul>
+</nav>
 
 </header>
 <section class="container" role="document">
@@ -127,7 +114,13 @@
 
 		
 </section>
-  
+  			<a class="exit-off-canvas"></a>
+	</div><!-- /inner-wrap -->
+</div><!-- /off-canvas-wrap -->
+
+<script>
+  $(document).foundation();
+</script>
 </body>
 
 </html>

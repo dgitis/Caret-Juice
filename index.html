@@ -7,36 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                window.onbeforeunload = function() { ws = null }
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link');
-                    for (var i = 0; i < links.length;i++) {
-                    var link = links[i];
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
   
-  <link rel='stylesheet' href='css/app.css'>
-  <script src='js/vendor/jquery.js'></script>
-<script src='js/vendor/modernizr.js'></script>
-<script src='js/vendor/fastclick.js'></script>
-<script src='js/foundation.js'></script>
-<script src='js/alt-tab.js'></script>
+  <link rel='stylesheet' href='3f2a2aeb7aba5de1acc5796c1fe0cebf.css'>
+  <script src='e53fdfcf8c1a800881abd730c036c49e.js'></script>
   
   <link href="assets/favicon.ico" rel="shortcut icon">
   <link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
@@ -55,67 +28,95 @@
 	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-PRFCGK');</script>
 	<!-- End Google Tag Manager -->
+<div class="off-canvas-wrap" data-offcanvas>
+	<div class="inner-wrap">
 <header>
-  <div class="top-bar-container contain-to-grid">
-    <nav class="top-bar" data-topbar role="navigation">
-        <ul class="title-area top-bar-mobile_nav_position">
-            <li class="current name">
-                <h1><a class='current' href="index.html">Caret Juice Marketing</a></h1>
-            </li>
-            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-        </ul>
-        <section class="top-bar-section">
-			<ul id="menu-top-bar-right" class="top-bar-menu right">
-				<li class="divider"></li>
-				<li id="menu-item-116" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item"><a href="contact.html">Contact</a></li>
-			</ul>        
-		</section>
-    </nav>
+ 	<div class="contain-to-grid section">
+	<nav class="top-bar show-for-large-up" data-topbar role="navigation">
+	  <ul class="title-area">
+	    <li class="current name"><h1><a class='current' href="index.html">Caret Juice Marketing</a></h1>
+	    </li>
+	  </ul>
+	  <section class="top-bar-section">
+	     <ul class="right">
+	      <li><a href="contact.html">Contact</a></li>
+	    </ul>
+	  </section>
+	</nav>
 </div>
+	<nav class="tab-bar hide-for-large-up">
+	<section class="tab-bar-section">
+		<h1 class="title"><a class='current' href="index.html">Caret Juice Marketing</a></h1>
+	</section>
+
+      <section class="right-small">
+        <a class="right-off-canvas-toggle menu-icon" href="#mobile-menu"><span></span></a>
+      </section>
+</nav>
+<nav id="mobile-menu" class="right-off-canvas-menu">
+	<ul class="off-canvas-list">
+		<li class='current'><a class='current' href="index.html">Home</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+</nav>
 
 </header>
 
-<section class="container" role="document">
-		<article>
-			<section class="value-proposition">
-				<div class="row text-center">
-				<h1>Caret Juice Marketing</h1>
-				<h2>Helping small businesses <br/>benefit from marketing technology</h2>
-				</div>
-			</section>
-			<section class="row section text-center">
-				<h2>Some of the things we do</h2>
-				<div class="small-12 medium-4 columns">
-					<h3>Automate Feedback &amp; Reviews</h3>
-					<p>Automatically trigger feedback requests from your CRM or project management software and ask happy customers for a review.</p>
-				</div>
-				<div class="small-12 medium-4 columns">
-					<h3>Design and Set Up Email Nurturing</h3>
-					<p>Send a series of drip emails to prospects based on what they look at on your website.</p>
-				</div>
-				<div class="small-12 medium-4 columns">
-					<h3>Customer Loyalty Campaigns</h3>
-					<p>Sell more to your existing customers. Build a customer referral campaign. Prevent unhappy customers from defecting.</p>
-				</div>
-			</section>
-			<section class="row">
-				<div class="small-12 medium-7 columns">
-				<h2>Who is Caret Juice</h2>
-				<p>Caret Juice is a one person marketing technology and operations consultancy for small businesses run by Damon Gudaitis.</p>
-				<p>Marketing technology is huge right now. There are lots of inexpensive technologies that you can benefit from using, but there’s no way that you can be expected to know about all of the possibilities.</p>
-				<p>I help you navigate marketing technologies and configure a variety of inexpensive systems to give you the capabilities of a full-blown marketing automation system at a fraction of the expense.</p>
-				<p>I work with you to understand how comfortable you and your staff are with technology. And then I create and document automated marketing systems that you can run yourself with little or no time required out of your day.</p>
-				<p>Marketing automation systems are expensive and you need to hire someone full time to run them.</p>
-				<p>I&#8217;ll help you do the most valuable things you can with a marketing automation system at a fraction of the cost.</p>
-				<p>Get in touch and we’ll talk about how you can benefit from these technologies.</p>
-				</div>
-				<div class="small-12 medium-5 columns">
-				<p>Image will go here</p>
-				</div>
-			</section>
-	</article>
+<section class="main-section">
+	<section class="value-proposition">
+		<div class="row text-center">
+		<h1>Caret Juice Marketing</h1>
+		<h2 style="font-weight:normal;">Helping small businesses <br/>benefit from marketing technology</h2>
+		</div>
+	</section>
+	<section class="row section-break text-center">
+		<h2 style="padding-bottom: 2rem">Some of the things we do</h2>
+		<div class="small-12 medium-4 columns">
+			<h3>Automate Feedback &amp; Reviews</h3>
+			<p>Automatically trigger feedback requests from your CRM or project management software and ask happy customers for a review.</p>
+		</div>
+		<div class="small-12 medium-4 columns">
+			<h3>Design and Set Up Email Nurturing</h3>
+			<p>Send a series of drip emails to prospects based on what they look at on your website.</p>
+		</div>
+		<div class="small-12 medium-4 columns">
+			<h3>Customer Loyalty Campaigns</h3>
+			<p>Sell more to your existing customers. Build a customer referral campaign. Prevent unhappy customers from defecting.</p>
+		</div>
+	</section>
+	<div class="call-to-action">
+		<section class="row">
+			<div class="small-12 medium-8 columns">
+				<h2>Learn how your business can benefit</h2>
+				<p>Contact Caret Juice Marketing so we can talk about your business and identify the marketing tasks that we can automate that will have the biggest impact.</p>
+			</div>
+			<div class="small-12 medium-4 columns text-center cta-button">
+				<a href="contact.html" class="button secondary large" style="margin-top:2rem;">Contact Caret Juice</a>
+			</div>
+		</section>
+	</div>
+	<section class="row">
+		<div class="small-12 medium-7 columns">
+		<h2>Who is Caret Juice</h2>
+		<p>Caret Juice is a one person marketing technology and operations consultancy for small businesses run by Damon Gudaitis.</p>
+		<p>Marketing technology is huge right now. There are lots of inexpensive technologies that you can benefit from using, but there’s no way that you can be expected to know about all of the possibilities.</p>
+		<p>I help you navigate marketing technologies and configure a variety of inexpensive systems to give you the capabilities of a full-blown marketing automation system at a fraction of the expense.</p>
+		<p>I work with you to understand how comfortable you and your staff are with technology. And then I create and document automated marketing systems that you can run yourself with little or no time required out of your day.</p>
+		<p>Marketing automation systems are expensive and you need to hire someone full time to run them.</p>
+		<p>I&#8217;ll help you do the most valuable things you can with a marketing automation system at a fraction of the cost.</p>
+		<p><a href="contact.html">Let&#8217;s talk</a> about how you can benefit from these technologies.</p>
+		</div>
+		<div class="small-12 medium-5 columns text-center">
+		<img src="assets/images/headshot-150x150.jpg" height="150" width="150" alt="Damon Gudaitis" class="round" />
+		</div>
+	</section>
 </section>
-  
+			<a class="exit-off-canvas"></a>
+	</div><!-- /inner-wrap -->
+</div><!-- /off-canvas-wrap -->
+<script>
+  $(document).foundation();
+</script>
 </body>
 
 </html>
