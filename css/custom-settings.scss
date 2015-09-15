@@ -60,9 +60,8 @@
     color: #FFFFFF; }
 
 .value-proposition {
-  height: 60vh;
   background: #ff8f4d;
-  padding-top: 3rem; }
+  padding: 4rem 0 4rem 0; }
   .value-proposition h1, .value-proposition h2 {
     color: #FFFFFF; }
 
@@ -141,7 +140,9 @@
   border: none !important; }
 
 .section {
-  border-bottom: 1px solid #B6B6B6; }
+  border-bottom: 1px solid #B6B6B6;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem !important; }
 
 .icon, .icon:hover, .icon:focus {
   padding: rem-calc(4) rem-calc(16);
