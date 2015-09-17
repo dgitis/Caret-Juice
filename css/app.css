@@ -1531,14 +1531,14 @@ select {
     background-color: rgba(0, 0, 0, 0.6);
     background-position: center;
     height: 100vh;
-    height: calc(100vh - 48px); }
+    height: calc(100vh - 100px); }
     @media only screen and (max-width: 40em) {
       .hero:before {
-        height: 200%; } }
+        height: 100vh; } }
   @media only screen and (min-width: 40em) {
     .hero {
       height: 100vh;
-      height: calc(100vh - 48px); } }
+      height: calc(100vh - 100px); } }
 
 .hero-text h1 {
   color: #fff;
@@ -1605,6 +1605,7 @@ select {
     background-color: #ff8f4d; }
     .transformer-tabs ul::after {
       content: "☰";
+      color: #FFFFFF;
       position: absolute;
       top: 8px;
       right: 15px;
