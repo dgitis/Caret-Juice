@@ -5,8 +5,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
-@import url(https://www.google.com/fonts#UsePlace:use/Collection:Titillium+Web:600,400italic,400);
-@import url(https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans:400,400italic,700,700italic);
+@import url(https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans:200,400,400italic,600,700,700italic);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -1528,28 +1527,31 @@ select {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.35);
     background-position: center;
     height: 100vh;
     height: calc(100vh - 100px); }
-    @media only screen and (max-width: 40em) {
+    @media only screen and (max-width: 64em) {
       .hero:before {
-        height: 100vh; } }
-  @media only screen and (min-width: 40em) {
+        height: auto; } }
+  @media only screen and (min-width: 90em) {
     .hero {
       height: 100vh;
       height: calc(100vh - 100px); } }
+  @media only screen and (max-width: 64em) {
+    .hero {
+      height: auto;
+      padding: 1rem; } }
 
-.hero-text h1 {
+.hero-text h1, .hero-text h2 {
   color: #fff;
-  text-align: center;
   line-height: 1.2; }
-.hero-text p {
+.hero-text li {
   color: #fff;
-  font-size: 1.2rem;
   line-height: 1.8rem;
-  text-align: center;
-  margin-bottom: 1.8rem; }
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem; }
 @media only screen and (min-width: 40.063em) {
   .hero-text h1 {
     text-align: left;
@@ -1568,6 +1570,13 @@ select {
   margin-bottom: 2rem; }
   .value-proposition h1, .value-proposition h2 {
     color: #FFFFFF; }
+
+.value-proposition-cta {
+  background: #FFFFFF;
+  padding: 2rem 0 2rem 0;
+  margin-bottom: 0; }
+  .value-proposition-cta h1, .value-proposition-cta h2 {
+    color: #212121; }
 
 .contact-form p, .contact-form h3 {
   color: #212121; }
@@ -1665,6 +1674,22 @@ select {
   margin-bottom: 2rem; }
   .call-to-action h1, .call-to-action h2, .call-to-action h3, .call-to-action p {
     color: #FFFFFF; }
+
+.name img {
+  max-height: 44px;
+  padding-top: 2px; }
+
+h1 {
+  font-weight: 200 !important; }
+
+.fa-chevron-right {
+  padding-left: 1rem; }
+
+.fa-chevron-right:before {
+  margin-left: -1rem; }
+
+.fa-ul {
+  margin-left: -1rem !important; }
 
 meta.foundation-version {
   font-family: "/5.5.2/"; }
@@ -7512,7 +7537,7 @@ p {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   color: #727272;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: 1.4;
@@ -7528,13 +7553,13 @@ h1 {
   font-size: 2.125rem; }
 
 h2 {
-  font-size: 1.6875rem; }
+  font-size: 1.125rem; }
 
 h3 {
-  font-size: 1.375rem; }
+  font-size: 1.1875rem; }
 
 h4 {
-  font-size: 1.125rem; }
+  font-size: 0.9375rem; }
 
 h5 {
   font-size: 1.125rem; }
@@ -7698,13 +7723,13 @@ blockquote p {
     font-size: 2.75rem; }
 
   h2 {
-    font-size: 2.3125rem; }
+    font-size: 1.75rem; }
 
   h3 {
-    font-size: 1.6875rem; }
+    font-size: 1.5rem; }
 
   h4 {
-    font-size: 1.4375rem; }
+    font-size: 1.25rem; }
 
   h5 {
     font-size: 1.125rem; }
@@ -8139,7 +8164,7 @@ p {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   color: #727272;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: 1.4;
@@ -8155,13 +8180,13 @@ h1 {
   font-size: 2.125rem; }
 
 h2 {
-  font-size: 1.6875rem; }
+  font-size: 1.125rem; }
 
 h3 {
-  font-size: 1.375rem; }
+  font-size: 1.1875rem; }
 
 h4 {
-  font-size: 1.125rem; }
+  font-size: 0.9375rem; }
 
 h5 {
   font-size: 1.125rem; }
@@ -8325,13 +8350,13 @@ blockquote p {
     font-size: 2.75rem; }
 
   h2 {
-    font-size: 2.3125rem; }
+    font-size: 1.75rem; }
 
   h3 {
-    font-size: 1.6875rem; }
+    font-size: 1.5rem; }
 
   h4 {
-    font-size: 1.4375rem; }
+    font-size: 1.25rem; }
 
   h5 {
     font-size: 1.125rem; }
