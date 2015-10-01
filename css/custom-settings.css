@@ -147,7 +147,9 @@
 
 .name img {
   max-height: 44px;
-  padding-top: 2px; }
+  padding-top: 2px;
+  width: auto;
+  height: auto; }
 
 h1 {
   font-weight: 200 !important; }
