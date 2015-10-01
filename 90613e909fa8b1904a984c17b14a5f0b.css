@@ -1512,36 +1512,14 @@ select {
   border-bottom: 1px solid #B6B6B6; }
 
 .hero {
-  background: url("http://wallpoper.com/images/00/34/39/15/circuit-pcb_00343915.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("http://wallpoper.com/images/00/34/39/15/circuit-pcb_00343915.jpg") no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  height: 100%;
   width: 100%;
-  position: static; }
-  .hero:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.35);
-    background-position: center;
-    height: 100vh;
-    height: calc(100vh - 100px); }
-    @media only screen and (max-width: 64em) {
-      .hero:before {
-        height: auto; } }
-  @media only screen and (min-width: 90em) {
-    .hero {
-      height: 100vh;
-      height: calc(100vh - 100px); } }
-  @media only screen and (max-width: 64em) {
-    .hero {
-      height: auto;
-      padding: 1rem; } }
+  position: static;
+  padding: 1rem; }
 
 .hero-text h1, .hero-text h2 {
   color: #fff;
@@ -1552,12 +1530,6 @@ select {
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 1.2rem; }
-@media only screen and (min-width: 40.063em) {
-  .hero-text h1 {
-    text-align: left;
-    margin-top: 1rem; }
-  .hero-text p {
-    text-align: left; } }
 
 .hero-form {
   background-color: #ff7321; }
@@ -1690,6 +1662,11 @@ h1 {
 
 .fa-ul {
   margin-left: -1rem !important; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: 100%; }
 
 meta.foundation-version {
   font-family: "/5.5.2/"; }
