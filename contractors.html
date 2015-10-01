@@ -53,18 +53,18 @@
 							<fieldset>
 								<h3>Automate Reviews</h3>
 								<input type="hidden" name="formId" value="xb/Lu1FaCLjKEOHM8KAdQA=="/>
-								<label for="insightly_firstName">First Name: </label>
-								<input id="insightly_firstName" placeholder="First Name" name="FirstName" type="text"/>
-								<label for="insightly_lastName">Last Name: </label>
-								<input id="insightly_lastName" placeholder="Last Name" name="LastName" type="text"/>
-								<label for="insightly_organization">Organization: </label>
-								<input id="insightly_organization" placeholder="Organization" name="Organization" type="text"/>
+								<label for="insightly_firstName">First Name: * </label>
+								<input id="insightly_firstName" placeholder="First Name" name="FirstName" required type="text"/>
+								<label for="insightly_lastName">Last Name: * </label>
+								<input id="insightly_lastName" placeholder="Last Name" name="LastName" required type="text"/>
+								<label for="insightly_organization">Organization: * </label>
+								<input id="insightly_organization" placeholder="Organization" required name="Organization" type="text"/>
 								<input type="hidden" name="emails[0].Label" value="Work"/>
-								<label for="email[0]_Value">Work Email: </label>
-								<input id="emails[0]_Value" name="emails[0].Value" type="text" placeholder="Work Email"/>
+								<label for="email[0]_Value">Work Email: * </label>
+								<input id="emails[0]_Value" name="emails[0].Value" type="email" required placeholder="Work Email"/>
 								<input type="hidden" name="phones[0].Label" value="Work"/>
-								<label for="phones[0]_Value">Work Phone: </label>
-								<input id="phones[0]_Value" label="Work Phone" name="phones[0].Value" type="text" placeholder="Work Phone"/>
+								<label for="phones[0]_Value">Work Phone: *</label>
+								<input id="phones[0]_Value" label="Work Phone" name="phones[0].Value" type="text" required placeholder="Work Phone"/>
 								<div class="text-center">
 								<button type="submit" class="secondary">Start Automating Reviews</button>
 								</div>
