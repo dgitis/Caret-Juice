@@ -1680,6 +1680,24 @@ img {
 .youtube {
   padding-bottom: 49.5% !important; }
 
+.carrot {
+  color: #ff7321; }
+
+.dk-carrot {
+  color: #e65500; }
+
+.lt-carrot {
+  color: #ff8f4d; }
+
+.carrot-green {
+  color: #5D9E00; }
+
+.dk-carrot-green {
+  color: #4a7e00; }
+
+.lt-carrot-green {
+  color: #86e400; }
+
 meta.foundation-version {
   font-family: "/5.5.2/"; }
 
