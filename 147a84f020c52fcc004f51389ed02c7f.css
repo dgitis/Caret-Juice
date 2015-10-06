@@ -1670,6 +1670,16 @@ img {
   height: auto;
   width: 100%; }
 
+.footer {
+  border-top: 1px solid #B6B6B6;
+  padding: 1em 0 1em 0; }
+
+.copyright {
+  color: #727272; }
+
+.youtube {
+  padding-bottom: 49.5% !important; }
+
 meta.foundation-version {
   font-family: "/5.5.2/"; }
 
