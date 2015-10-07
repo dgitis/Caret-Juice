@@ -47,7 +47,5 @@ var Tabs = {
   toggleMobileMenu: function(event, el) {
     $(el).closest("ul").toggleClass("open");
   }
-
 }
-
 Tabs.init();
