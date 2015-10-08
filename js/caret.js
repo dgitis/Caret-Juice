@@ -1,4 +1,3 @@
-// @codekit-prepend "../bower_components/foundation/js/vendor/modernizr.js";
 // @codekit-prepend "../bower_components/foundation/js/vendor/jquery.js";
 // @codekit-prepend "../bower_components/fontfaceobserver/fontfaceobserver.js";
 // @codekit-prepend "../bower_components/foundation/js/vendor/fastclick.js";
