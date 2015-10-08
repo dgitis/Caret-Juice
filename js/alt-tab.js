@@ -43,9 +43,16 @@ var Tabs = {
   pageLoadCorrectTab: function() {
     this.changeTab(document.location.hash);
   },
-
   toggleMobileMenu: function(event, el) {
     $(el).closest("ul").toggleClass("open");
   }
 }
 Tabs.init();
+
+var observer = new FontFaceObserver('Open Sans', {});
+
+observer.check().then(function () {
+  console.log('Font is available');
+}, function () {
+  console.log('Font is not available');
+});
