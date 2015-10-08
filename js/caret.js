@@ -5,5 +5,5 @@
 // @codekit-prepend "../bower_components/foundation/js/foundation/foundation.offcanvas.js";
 // @codekit-prepend "../bower_components/foundation/js/foundation/foundation.topbar.js";
 // @codekit-prepend "app.js";
+// @codekit-prepend "lazyYT.js";
 // @codekit-prepend "alt-tab.js";
-// @codekit-prepend "lite-youtube.js";
