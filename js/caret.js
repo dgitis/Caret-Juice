@@ -1,7 +1,4 @@
-// @codekit-prepend "../bower_components/foundation/js/vendor/jquery.js";
 // @codekit-prepend "../bower_components/fontfaceobserver/fontfaceobserver.js";
-// @codekit-prepend "../bower_components/foundation/js/vendor/fastclick.js";
-// @codekit-prepend "../bower_components/foundation/js/vendor/placeholder.js";
 // @codekit-prepend "../bower_components/foundation/js/foundation.js";
 // @codekit-prepend "../bower_components/foundation/js/foundation/foundation.abide.js";
 // @codekit-prepend "../bower_components/foundation/js/foundation/foundation.clearing.js";
