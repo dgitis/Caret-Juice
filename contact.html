@@ -13,7 +13,6 @@
   <link href="assets/images/favicon-152.png" rel="apple-touch-icon-precomposed">
 <meta name="msapplication-TileColor" content="#FFFFFF">
 <meta name="msapplication-TileImage" content="assets/images/favicon-144.png">
-  
 
 </head>
 
@@ -81,24 +80,40 @@
 		</div>
 		<div class="small-12 medium-4 columns">
 			<h2 class="subheader section">Mail</h2>
-			<form name="insightly_web_to_lead" data-abide action="https://googleapps.insight.ly/WebToLead/Create" method="post" class="contact-form">
-				<fieldset>
-					<input type="hidden" name="formId" value="xb/Lu1FaCLjKEOHM8KAdQA=="/>
-					<label for="insightly_firstName">First Name: </label>
-					<input id="insightly_firstName" placeholder="First Name" name="FirstName" required type="text"/>
-					<label for="insightly_lastName">Last Name: </label>
-					<input id="insightly_lastName" placeholder="Last Name" name="LastName" required type="text"/>
-					<input type="hidden" name="emails[0].Label" value="Work"/>
-					<label for="email[0]_Value">Email: </label>
-					<input id="emails[0]_Value" name="emails[0].Value" placeholder="So I can get back to you" required type="email"/>
-					<label for="Description">Comments: </label>
-					<textarea rows="5" id="insightly_Description" name="Description" placeholder="Say something..." type="text"/></textarea>
-					<div class="text-center">
-					<button type="submit" class="secondary">Send Your Message</button>
-					</div>
-				</fieldset>
-			</form>				
-		</div>
+			<form class="contact-form" data-abide id="agile-form" action="https://caretjuice.agilecrm.com/formsubmit" method="POST">
+			<fieldset>
+
+			<!-- Form Name -->
+			<legend>Mail</legend>
+			<div style="display: none; height: 0px; width: 0px;">
+			<input type="hidden" id="_agile_form_name" name="_agile_form_name" value="Contact">
+			<input type="hidden" id="_agile_domain" name="_agile_domain" value="caretjuice">
+			<input type="hidden" id="_agile_api" name="_agile_api" value="rse99nj84jb6rfjao90368gjlq">
+			<input type="hidden" id="_agile_redirect_url" name="_agile_redirect_url" value="thanks.html">
+			<input type="hidden" id="_agile_form_id_tags" name="tags" value="">
+			</div>
+			<!-- Text input-->
+
+			<label for="first">First Name</label>
+			<input id="first" name="first_name" type="text" placeholder="First Name" class="agile-height-default" required>
+
+			<label for="last">Last Name</label>
+			<input id="last" name="last_name" type="text" placeholder="Last Name" class="agile-height-default" required>
+
+			<label for="email">Email</label>
+			<input id="email" name="email" type="email" placeholder="So I can get back to you" class="agile-height-default" required>
+
+
+			<label for="comments">Comments</label>
+			<textarea id="comments" name="note" rows="5" required class="agile-height-default">Say something...</textarea>
+
+			<button type="submit" class="secondary">Send Your Message</button><span id="agile-error-msg"></span>
+
+			</fieldset>
+			</form>
+			<script type="text/javascript">
+			(function(a){var b=a.onload,p=true;if(p){a.onload="function"!=typeof b?function(){try{_agile_load_form_fields()}catch(a){}}:function(){b();try{_agile_load_form_fields()}catch(a){}}};a.document.forms["agile-form"].onsubmit=function(a){a.preventDefault();try{_agile_synch_form_v3()}catch(b){this.submit()}}})(window);
+			</script>		</div>
 		<div class="small-12 medium-4 text-center columns">
 			<h2 class="subheader section text-left">Connect</h2>
 			<img src="assets/images/headshot-150x150.jpg" height="150" width="150" style="max-height: 150px; max-width: 150px;" alt="Damon Gudaitis" class="round" />
@@ -134,9 +149,46 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-placeholder/2.0.9/jquery.placeholder.min.js"></script>
 <script src="js/min/caret-min.js" ></script>
 <script>
-  $(document).foundation();
-	$('.lazyYT').lazyYT();
+$(document).foundation();
+$('.lazyYT').lazyYT();
+
+  function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regexS = "[\\?&]" + name + "=([^&#]*)";
+    var regex = new RegExp(regexS);
+    var results = regex.exec(window.location.search);
+    if(results == null) {
+      return "";
+    } else {
+      return decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+  }
+
+  $(document).ready(function () {
+    function addFormElem(paramName, fieldName) {
+      var paramValue = getParameterByName(paramName);
+      var $utmEl = $("<input type='hidden' name='" + fieldName + "' value='" + paramValue + "'>");
+      if (paramValue != "") {
+        $("form").first().prepend($utmEl);
+      }
+    }
+
+    // Note: Only change the values after ":" if they are different for you
+    // They are the same one as you added in your email marketing provider
+    var utmParams = {
+      "utm_campaign" : "Campaign",
+      "utm_source"   : "Source",
+      "utm_medium"   : "Medium",
+      "utm_content"  : "Content",
+      "utm_term"     : "Term"
+    };
+
+    for (var param in utmParams) {
+      addFormElem(param, utmParams[param]);
+    }
+  });
 </script>
+<script type="text/javascript" src="https://caretjuice.agilecrm.com/stats/min/agile-min.js"> </script> <script type="text/javascript" > _agile.set_account('dsre5qvjds4rmlt9nh2eteo5be', 'caretjuice'); _agile.track_page_view(); _agile_execute_web_rules(); </script>
 </body>
 
 </html>
