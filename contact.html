@@ -1,51 +1,22 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport"content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Contact Caret Juice Marketing</title>
+	<meta name="description" content="Call, email or connect with Caret Juice Marketing.">
+	<link rel="canonical" href="http://www.caretjuice.com/contact.html" />
+    
+    <link href="/stylesheets/app.css" rel="stylesheet" /><link href="/stylesheets/style.css" rel="stylesheet" />
+    <script src="/javascripts/modernizr.js"></script>
+	<link href="assets/images/favicon.png" rel="shortcut icon" type="image/png">
+	<link href="assets/images/favicon-152.png" rel="apple-touch-icon-precomposed">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="assets/images/favicon-144.png">
+  </head>
   
-  
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                window.onbeforeunload = function() { ws = null }
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link');
-                    for (var i = 0; i < links.length;i++) {
-                    var link = links[i];
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
-  
-  <link rel='stylesheet' href='css/app.css'>
-  <script src='js/vendor/jquery.js'></script>
-<script src='js/vendor/modernizr.js'></script>
-<script src='js/vendor/fastclick.js'></script>
-<script src='js/foundation.js'></script>
-<script src='js/alt-tab.js'></script>
-  
-  <link href="assets/favicon.ico" rel="shortcut icon">
-  <link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
-  
-  <title>Contact Damon at Caret Juice Marketing</title>
-  
-</head>
-
-<body>
+  <body class="contact">
 	<!-- Google Tag Manager -->
 	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PRFCGK"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -55,26 +26,41 @@
 	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-PRFCGK');</script>
 	<!-- End Google Tag Manager -->
-<header>
-  <div class="top-bar-container contain-to-grid">
-    <nav class="top-bar" data-topbar role="navigation">
-        <ul class="title-area top-bar-mobile_nav_position">
-            <li class="current-parent name">
-                <h1><a class='current-parent' href="index.html">Caret Juice Marketing</a></h1>
-            </li>
-            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-        </ul>
-        <section class="top-bar-section">
-			<ul id="menu-top-bar-right" class="top-bar-menu right">
-				<li class="divider"></li>
-				<li id="menu-item-116" class="current menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item"><a class='current' href="contact.html">Contact</a></li>
-			</ul>        
-		</section>
-    </nav>
+	<div class="off-canvas-wrap" data-offcanvas>
+		<div class="inner-wrap">
+    		<div class="contain-to-grid section">
+	<nav class="top-bar show-for-large-up" data-topbar role="navigation">
+		<ul class="title-area">
+	    <li class="name">
+<a href="/">			  <img alt="Caret Juice Marketing Logo" src="/assets/images/caretjuice-logo-2.png" />
+</a>	    </li>
+	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	  </ul>
+	  <section class="top-bar-section">
+	     <ul class="right">
+	      <li><a href="/contact.html">Contact</a></li>
+	    </ul>
+	  </section>
+	</nav>
 </div>
+<nav class="tab-bar hide-for-large-up">
+	<section class="tab-bar-section">
+		<h1 class="title"><a href="/">Caret Juice Marketing</a></h1>
+	</section>
 
-</header>
-<section class="container" role="document">
+      <section class="right-small">
+        <a class="right-off-canvas-toggle menu-icon" href="#mobile-menu"><span></span></a>
+      </section>
+</nav>
+<nav id="mobile-menu" class="right-off-canvas-menu">
+	<ul class="off-canvas-list">
+		<li><a href="/">Home</a></li>
+		<li><a href="/contact.html">Contact</a></li>
+	</ul>
+</nav>
+  <article>
+    <section class="container" role="document">
 	<div class="row">
 		<header class="small-12 columns">
 			<h1>Contact Caret Juice</h1>
@@ -95,27 +81,40 @@
 		</div>
 		<div class="small-12 medium-4 columns">
 			<h2 class="subheader section">Mail</h2>
-			<form name="insightly_web_to_lead" data-abide action="https://googleapps.insight.ly/WebToLead/Create" method="post" class="contact-form">
-				<fieldset>
-					<input type="hidden" name="formId" value="xb/Lu1FaCLjKEOHM8KAdQA=="/>
-					<label for="insightly_firstName">First Name: </label>
-					<input id="insightly_firstName" placeholder="First Name" name="FirstName" type="text"/>
-					<label for="insightly_lastName">Last Name: </label>
-					<input id="insightly_lastName" placeholder="Last Name" name="LastName" type="text"/>
-					<input type="hidden" name="emails[0].Label" value="Work"/>
-					<label for="email[0]_Value">Email: </label>
-					<input id="emails[0]_Value" name="emails[0].Value" placeholder="So I can get back to you" type="text"/>
-					<label for="Description">Comments: </label>
-					<textarea rows="5" id="insightly_Description" name="Description" placeholder="Say something..." type="text"/></textarea>
-					<div class="text-center">
-					<button type="submit" class="secondary">Send Your Message</button>
-					</div>
-				</fieldset>
-			</form>				
-		</div>
+			<form class="contact-form" data-abide id="agile-form" action="https://caretjuice.agilecrm.com/formsubmit" method="GET">
+			<fieldset>
+			<div style="display: none; height: 0px; width: 0px;">
+			<input type="hidden" id="_agile_form_name" name="_agile_form_name" value="Contact">
+			<input type="hidden" id="_agile_domain" name="_agile_domain" value="caretjuice">
+			<input type="hidden" id="_agile_api" name="_agile_api" value="rse99nj84jb6rfjao90368gjlq">
+			<input type="hidden" id="_agile_redirect_url" name="_agile_redirect_url" value="http://www.caretjuice.com/thanks.html">
+			<input type="hidden" id="_agile_form_id_tags" name="tags" value="">
+			</div>
+			<!-- Text input-->
+
+			<label for="first">First Name</label>
+			<input id="first" name="first_name" type="text" placeholder="First Name" class="agile-height-default" required>
+
+			<label for="last">Last Name</label>
+			<input id="last" name="last_name" type="text" placeholder="Last Name" class="agile-height-default" required>
+
+			<label for="email">Email</label>
+			<input id="email" name="email" type="email" placeholder="So I can get back to you" class="agile-height-default" required>
+
+
+			<label for="comments">Comments</label>
+			<textarea id="comments" name="note" rows="5" required placeholder="Say something..."></textarea>
+
+			<button type="submit" class="secondary text-center">Send Your Message</button><span id="agile-error-msg"></span>
+
+			</fieldset>
+			</form>
+			<script type="text/javascript">
+			(function(a){var b=a.onload,p=true;if(p){a.onload="function"!=typeof b?function(){try{_agile_load_form_fields()}catch(a){}}:function(){b();try{_agile_load_form_fields()}catch(a){}}};a.document.forms["agile-form"].onsubmit=function(a){a.preventDefault();try{_agile_synch_form_v3()}catch(b){this.submit()}}})(window);
+			</script>		</div>
 		<div class="small-12 medium-4 text-center columns">
 			<h2 class="subheader section text-left">Connect</h2>
-			<img src="assets/images/headshot-150x150.jpg" height="150" width="150" alt="Damon Gudaitis" class="round" />
+			<img src="assets/images/headshot-150x150.jpg" height="150" width="150" style="max-height: 150px; max-width: 150px;" alt="Damon Gudaitis" class="round" />
 			<h4 class="subheader">Damon&nbsp;Gudaitis runs Caret&nbsp;Juice Marketing</h4>
 			<ul class="inline-list inline-list-center">
 			<li style="background-color: #0077B5"><a class="icon" href="https://ca.linkedin.com/in/damongudaitis"  target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
@@ -127,7 +126,65 @@
 
 		
 </section>
-  
-</body>
+  </article>
 
+			<a class="exit-off-canvas"></a>
+		</div>
+	</div>
+    <footer class="footer">
+		<div class="row">
+			<nav class="small-12 columns">
+				<ul class="left inline-list">
+					<li class="copyright"><small>&copy; Caret Juice Marketing</small></li>
+				</ul>
+				<ul class="right inline-list">
+					<li><a href="/privacy.html">Privacy</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+	<script src="/javascripts/all.js"></script>
+	<script>
+	$(document).foundation();
+	$('.lazyYT').lazyYT();
+
+	  function getParameterByName(name) {
+	    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+	    var regexS = "[\\?&]" + name + "=([^&#]*)";
+	    var regex = new RegExp(regexS);
+	    var results = regex.exec(window.location.search);
+	    if(results == null) {
+	      return "";
+	    } else {
+	      return decodeURIComponent(results[1].replace(/\+/g, " "));
+	    }
+	  }
+
+	  $(document).ready(function () {
+	    function addFormElem(paramName, fieldName) {
+	      var paramValue = getParameterByName(paramName);
+	      var $utmEl = $("<input type='hidden' name='" + fieldName + "' value='" + paramValue + "'>");
+	      if (paramValue != "") {
+	        $("form").first().prepend($utmEl);
+	      }
+	    }
+
+	    // Note: Only change the values after ":" if they are different for you
+	    // They are the same one as you added in your email marketing provider
+	    var utmParams = {
+	      "utm_campaign" : "Campaign",
+	      "utm_source"   : "Source",
+	      "utm_medium"   : "Medium",
+	      "utm_content"  : "Content",
+	      "utm_term"     : "Term"
+	    };
+
+	    for (var param in utmParams) {
+	      addFormElem(param, utmParams[param]);
+	    }
+	  });
+	</script>
+	<script type="text/javascript" src="https://caretjuice.agilecrm.com/stats/min/agile-min.js"> </script> <script type="text/javascript" > _agile.set_account('dsre5qvjds4rmlt9nh2eteo5be', 'caretjuice'); _agile.track_page_view(); _agile_execute_web_rules(); </script>
+  </body>
 </html>

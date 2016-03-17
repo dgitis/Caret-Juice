@@ -1,0 +1,12 @@
+bower_components/
+bower.json
+.bowerrc
+.DS_Store
+includes/
+scss/
+*.kit
+CNAME
+Gemfile
+Gemfile.lock
+config.rb
+config.codekit

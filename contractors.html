@@ -1,51 +1,22 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport"content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Review Automation for Contractors</title>
+	<meta name="description" content="Automate post-project feedback and review requests.">
+	<link rel="canonical" href="http://www.caretjuice.com/contractors.html" />
+    
+    <link href="/stylesheets/app.css" rel="stylesheet" /><link href="/stylesheets/style.css" rel="stylesheet" />
+    <script src="/javascripts/modernizr.js"></script>
+	<link href="assets/images/favicon.png" rel="shortcut icon" type="image/png">
+	<link href="assets/images/favicon-152.png" rel="apple-touch-icon-precomposed">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="assets/images/favicon-144.png">
+  </head>
   
-  
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                window.onbeforeunload = function() { ws = null }
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link');
-                    for (var i = 0; i < links.length;i++) {
-                    var link = links[i];
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
-  
-  <link rel='stylesheet' href='css/app.css'>
-  <script src='js/vendor/jquery.js'></script>
-<script src='js/vendor/modernizr.js'></script>
-<script src='js/vendor/fastclick.js'></script>
-<script src='js/foundation.js'></script>
-<script src='js/alt-tab.js'></script>
-  
-  <link href="assets/favicon.ico" rel="shortcut icon">
-  <link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
-  
-  <title>Review Automation for Contractors | Caret Juice Marketing</title>
-  
-</head>
-
-<body>
+  <body class="contractors">
 	<!-- Google Tag Manager -->
 	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PRFCGK"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -55,47 +26,100 @@
 	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-PRFCGK');</script>
 	<!-- End Google Tag Manager -->
-
-
-<section class="container" role="document">
+	<div class="off-canvas-wrap" data-offcanvas>
+		<div class="inner-wrap">
+    		  <section>
+ 	<section class="container" role="document">
 	<article>
-		<section class="hero" style="background-image: url(assets/images/framed-residential-interior.jpg );">
-			<div class="row small-collapse">
-				<div class="small-centered medium-uncentered small-12 medium-8 columns hero-text">
-					<header>
-						<h1 class="entry-title">Review Automation for Contractors</h1>
-					</header>
-					<p>88 percent of people read reviews to determine the quality of a local business. <sup>*</sup></p>
-					<p>You need your happy customers to spread the word.</p> 
-					<p><strong>Caret Juice Marketing can help</strong> by automating your post-project feedback.</p> 
-					<p>You get the feedback from happy and unhappy customers.</p>
-					<p>And happy customers get an extra email asking for a review.</p>				
-				</div>
-				<aside id="form" class="small-12 medium-4 columns">
-					<a name="form-jump">&nbsp;</a>
-					<form name="insightly_web_to_lead" data-abide action="https://googleapps.insight.ly/WebToLead/Create" method="post" class="hero-form">
+		<section>
+			<div class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url(assets/images/residential-construction.jpg);">
+				<div class="row small-collapse">
+					<div class="small-centered medium-uncentered small-12 medium-8 columns hero-text">
+						<header>
+							<h1 class="entry-title">Turn Happy Customers <br>Into New Business</h1>
+							<h2><em>Review Automation for Contractors</em></h2>
+						</header><br/>
+						<ul class="fa-ul">
+							<li class="fa fa-chevron-right">Automate feedback at the end of every project.</li>
+							<li class="fa fa-chevron-right">Trigger review requests from happy customers.</li>
+							<li class="fa fa-chevron-right">Win a steady stream of reviews on the top ranked review sites in your city.</li>
+							<li class="fa fa-chevron-right">Increase referrals while improving your search visibility.</li>
+						</ul>				
+					</div>
+					<aside id="form" class="small-12 medium-4 columns">
+						<a name="form-jump">&nbsp;</a>
+
+
+
+						<form class="form-view hero-form" data-abide id="agile-form" action="https://caretjuice.agilecrm.com/formsubmit" method="GET">
 						<fieldset>
-							<h3>The Next Step</h3>
-							<p>Let's talk about your business.</p>
-							<input type="hidden" name="formId" value="xb/Lu1FaCLjKEOHM8KAdQA=="/>
-							<label for="insightly_firstName">First Name: </label>
-							<input id="insightly_firstName" placeholder="First Name" name="FirstName" type="text"/>
-							<label for="insightly_lastName">Last Name: </label>
-							<input id="insightly_lastName" placeholder="Last Name" name="LastName" type="text"/>
-							<label for="insightly_organization">Organization: </label>
-							<input id="insightly_organization" placeholder="Organization" name="Organization" type="text"/>
-							<input type="hidden" name="emails[0].Label" placeholder="Work Email" value="Work"/>
-							<label for="email[0]_Value">Work Email: </label>
-							<input id="emails[0]_Value" name="emails[0].Value" type="text"/>
-							<input type="hidden" name="phones[0].Label" value="Work"/>
-							<label for="phones[0]_Value">Work Phone: </label>
-							<input id="phones[0]_Value" label="Work Phone" name="phones[0].Value" type="text"/>
-							<div class="text-center">
-							<button type="submit" class="secondary">Schedule a Call</button>
-							</div>
+
+						<!-- Form Name -->
+						<h3 class="text-center">Automate Reviews</h3>
+						<div style="display: none; height: 0px; width: 0px;">
+						<input type="hidden" id="_agile_form_name" name="_agile_form_name" value="Automate Reviews">
+						<input type="hidden" id="_agile_domain" name="_agile_domain" value="caretjuice">
+						<input type="hidden" id="_agile_api" name="_agile_api" value="rse99nj84jb6rfjao90368gjlq">
+						<input type="hidden" id="_agile_redirect_url" name="_agile_redirect_url" value="http://www.caretjuice.com/thanks.html">
+						<input type="hidden" id="_agile_form_id_tags" name="tags" value="">
+
+						<input type="hidden" id="price" name="Price" type="text" placeholder="Not Set">
+
+						</div>
+						<!-- Text input-->
+						<div class="agile-group required-control">
+						  <label class="agile-label" for="first">First Name</label>
+						  <div class="agile-field-xlarge agile-field">
+							<input id="first" name="first_name" type="text" placeholder="First Name" class="agile-height-default" required="">
+						  </div>
+						  <div class="agile-custom-clear"></div>
+						</div>
+						<!-- Text input-->
+						<div class="agile-group required-control">
+						  <label class="agile-label" for="last">Last Name</label>
+						  <div class="agile-field-xlarge agile-field">
+							<input id="last" name="last_name" type="text" placeholder="Last Name" class="agile-height-default" required="">
+						  </div>
+						  <div class="agile-custom-clear"></div>
+						</div>
+						<!-- Text input-->
+						<div class="agile-group required-control">
+						  <label class="agile-label" for="organization">Organization</label>
+						  <div class="agile-field-xlarge agile-field">
+							<input id="organization" name="company" type="text" placeholder="Organization" class="agile-height-default" required="">
+						  </div>
+						  <div class="agile-custom-clear"></div>
+						</div>
+						<!-- Text input-->
+						<div class="agile-group required-control">
+						  <label class="agile-label" for="email">Email</label>
+						  <div class="agile-field-xlarge agile-field">
+							<input id="email" name="email" type="email" placeholder="Email" class="agile-height-default" required="">
+						  </div>
+						  <div class="agile-custom-clear"></div>
+						</div>
+						<!-- Text input-->
+						<div class="agile-group">
+						  <label class="agile-label" for="phone">Phone</label>
+						  <div class="agile-field-xlarge agile-field">
+							<input id="phone" name="phone" type="text" placeholder="Phone" class="agile-height-default">
+						  </div>
+						  <div class="agile-custom-clear"></div>
+						</div>
+						<!-- Button -->
+						<div class="agile-group">
+						  <label class="agile-label">&nbsp;</label>
+						  <div class="agile-field text-center">
+						    <button type="submit" class="button secondary">Automate Your Reviews</button><span id="agile-error-msg"></span>
+						  </div>
+						</div>
 						</fieldset>
-					</form>				
-				</aside>
+						</form>
+						<script type="text/javascript">
+						(function(a){var b=a.onload,p=false;if(p){a.onload="function"!=typeof b?function(){try{_agile_load_form_fields()}catch(a){}}:function(){b();try{_agile_load_form_fields()}catch(a){}}};a.document.forms["agile-form"].onsubmit=function(a){a.preventDefault();try{_agile_synch_form_v3()}catch(b){this.submit()}}})(window);
+						</script>			
+					</aside>
+				</div>
 			</div>
 		</section>
 
@@ -112,7 +136,7 @@
 					</div>
 				</nav>
 				<div id="tab-1" class="active">
-					<div class="row section">
+					<div class="row section section-break">
 						<div class="small-12 medium-7 columns">
 							<h2>Reviews are critical to growing your business</h2>
 							<p>88 percent of people read reviews to determine the quality of a local business.</p>
@@ -120,12 +144,12 @@
 							<p>Increasing the volume of good reviews will result in more customers that will pay for the initial investment many times over.</p>
 							</div>
 							<div class="small-12 medium-5 columns">
-							<p>A graphic will go here</p>
+								<div class="lazyYT" data-youtube-id="6iyHvY0cI7s" data-ratio="16:9">loading...</div>
 							</div>
 							</div>
 							<div class="row">
 							<div class="small-12 medium-5 columns">
-							<p>A graphic will go here</p>
+								<img src="assets/images/automation.png" alt="automation"/>
 							</div>
 							<div class="small-12 medium-7 columns">
 							<h2>Automation is the answer</h2>
@@ -136,19 +160,19 @@
 					</div>
 				</div>
 				<div id="tab-2">
-					<div class="row section">
+					<div class="row section section-break">
 						<div class="small-12 medium-7 columns">
 							<h2>Automate post-project feedback</h2>
 							<p>First, we plug in to your project management software to trigger follow-up when a project is finished. (You can also start it manually if you don&#8217;t use project management software.)</p>
 							<p>That will send off a survey asking for feedback.</p>
 							</div>
 							<div class="small-12 medium-5 columns">
-							<p>Graphic</p>
+								<img src="assets/images/automation.png" alt="email automation"/>
 							</div>
 							</div>
 							<div class="row">
 							<div class="small-12 medium-5 columns">
-							<p>Graphic</p>
+								<img src="assets/images/reviews.png" alt="user review"/>
 							</div>
 							<div class="small-12 medium-7 columns">
 							<h2>Ask happy customers for a review</h2>
@@ -170,8 +194,9 @@
 							<p>We do some of the most valuable things you can do with a marketing automation system at a fraction of the cost.</p>
 							<p><a href="#form-jump">Get in touch</a> and we&#8217;ll talk about how you can benefit from these technologies.</p>
 							</p></div>
-							<div class="small-12 medium-5 small-centered columns">
-							<p>Logo will go here</p>
+							<div class="small-12 medium-5 columns">
+								<img src="assets/images/caretjuice-logo-2.png" alt="Caret Juice Marketing"/ style="padding-top: 1.6rem;">
+
 						</div>
 					</div>
 				</div>
@@ -194,7 +219,7 @@
 							<p><a href="#form-jump">Fill out the form</a> so we can set up a time to talk about how you run the business, the technology that you use, and the people you have working for you. And then we can figure out what you’ll need and exactly how much it will cost.</p>
 							</div>
 							<div class="small-12 medium-5 columns">
-							<p>An image will go here</p>
+							<p>&nbsp;</p>
 						</div>
 					</div>
 				</div>
@@ -207,7 +232,65 @@
 		</div>
 	</article>
 </section>
-  
-</body>
+  </section>
 
+			<a class="exit-off-canvas"></a>
+		</div>
+	</div>
+    <footer class="footer">
+		<div class="row">
+			<nav class="small-12 columns">
+				<ul class="left inline-list">
+					<li class="copyright"><small>&copy; Caret Juice Marketing</small></li>
+				</ul>
+				<ul class="right inline-list">
+					<li><a href="/privacy.html">Privacy</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+	<script src="/javascripts/all.js"></script>
+	<script>
+	$(document).foundation();
+	$('.lazyYT').lazyYT();
+
+	  function getParameterByName(name) {
+	    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+	    var regexS = "[\\?&]" + name + "=([^&#]*)";
+	    var regex = new RegExp(regexS);
+	    var results = regex.exec(window.location.search);
+	    if(results == null) {
+	      return "";
+	    } else {
+	      return decodeURIComponent(results[1].replace(/\+/g, " "));
+	    }
+	  }
+
+	  $(document).ready(function () {
+	    function addFormElem(paramName, fieldName) {
+	      var paramValue = getParameterByName(paramName);
+	      var $utmEl = $("<input type='hidden' name='" + fieldName + "' value='" + paramValue + "'>");
+	      if (paramValue != "") {
+	        $("form").first().prepend($utmEl);
+	      }
+	    }
+
+	    // Note: Only change the values after ":" if they are different for you
+	    // They are the same one as you added in your email marketing provider
+	    var utmParams = {
+	      "utm_campaign" : "Campaign",
+	      "utm_source"   : "Source",
+	      "utm_medium"   : "Medium",
+	      "utm_content"  : "Content",
+	      "utm_term"     : "Term"
+	    };
+
+	    for (var param in utmParams) {
+	      addFormElem(param, utmParams[param]);
+	    }
+	  });
+	</script>
+	<script type="text/javascript" src="https://caretjuice.agilecrm.com/stats/min/agile-min.js"> </script> <script type="text/javascript" > _agile.set_account('dsre5qvjds4rmlt9nh2eteo5be', 'caretjuice'); _agile.track_page_view(); _agile_execute_web_rules(); </script>
+  </body>
 </html>
