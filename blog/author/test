@@ -14,7 +14,7 @@
 	<link href="/assets/images/favicon-152.png" rel="apple-touch-icon-precomposed">
 	<meta name="msapplication-TileColor" content="#FFFFFF">
 	<meta name="msapplication-TileImage" content="/assets/images/favicon-144.png">
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.caretjuice.com/feed.xml" />
+	<link rel="alternate" type="application/atom+xml" title="Caret Juice Blog Atom feed" href="http://www.caretjuice.com/feed.xml" />
 	
 	<meta property="og:url" content="http://www.caretjuice.com/blog/author/test?utm_source=facebook&utm_medium=social&utm_campaign=open-graph" />
 	<meta property="og:type" content="website" />

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Blog Name</title>
-  <subtitle>Blog subtitle</subtitle>
-  <id>http://blog.url.com/blog</id>
-  <link href="http://blog.url.com/blog"/>
-  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <title>Caret Juice Marketing Blog</title>
+  <subtitle>Marketing technology and automation minus the hype.</subtitle>
+  <id>http://www.caretjuice.com/blog</id>
+  <link href="http://www.caretjuice.com/blog"/>
+  <link href="http://www.caretjuice.com/feed.xml" rel="self"/>
   <updated>2016-03-14T17:00:00-07:00</updated>
   <author>
-    <name>Blog Author</name>
+    <name>Damon Gudaitis</name>
   </author>
   <entry>
     <title>Constellation Approach to Business Technology</title>
-    <link rel="alternate" href="http://blog.url.com/blog/constellation-approach-business-technology.html"/>
-    <id>http://blog.url.com/blog/constellation-approach-business-technology.html</id>
+    <link rel="alternate" href="http://www.caretjuice.com/blog/constellation-approach-business-technology.html"/>
+    <id>http://www.caretjuice.com/blog/constellation-approach-business-technology.html</id>
     <published>2016-03-14T17:00:00-07:00</published>
     <updated>2016-03-16T11:45:13-07:00</updated>
     <author>
@@ -167,8 +167,8 @@ deep integration between a small number of applications&lt;/td&gt;
   </entry>
   <entry>
     <title>Twitter List Automation</title>
-    <link rel="alternate" href="http://blog.url.com/blog/twitter-list-automation.html"/>
-    <id>http://blog.url.com/blog/twitter-list-automation.html</id>
+    <link rel="alternate" href="http://www.caretjuice.com/blog/twitter-list-automation.html"/>
+    <id>http://www.caretjuice.com/blog/twitter-list-automation.html</id>
     <published>2016-02-14T16:00:00-08:00</published>
     <updated>2016-02-29T14:09:38-08:00</updated>
     <author>
@@ -269,8 +269,8 @@ deep integration between a small number of applications&lt;/td&gt;
   </entry>
   <entry>
     <title>Extract Email Domain with Zapier</title>
-    <link rel="alternate" href="http://blog.url.com/blog/extract-email-domain-zapier.html"/>
-    <id>http://blog.url.com/blog/extract-email-domain-zapier.html</id>
+    <link rel="alternate" href="http://www.caretjuice.com/blog/extract-email-domain-zapier.html"/>
+    <id>http://www.caretjuice.com/blog/extract-email-domain-zapier.html</id>
     <published>2016-01-31T16:00:00-08:00</published>
     <updated>2016-02-22T14:04:34-08:00</updated>
     <author>
@@ -428,8 +428,8 @@ deep integration between a small number of applications&lt;/td&gt;
   </entry>
   <entry>
     <title>Automating Feedback and Reviews</title>
-    <link rel="alternate" href="http://blog.url.com/blog/automating-feedback-reviews.html"/>
-    <id>http://blog.url.com/blog/automating-feedback-reviews.html</id>
+    <link rel="alternate" href="http://www.caretjuice.com/blog/automating-feedback-reviews.html"/>
+    <id>http://www.caretjuice.com/blog/automating-feedback-reviews.html</id>
     <published>2016-01-14T16:00:00-08:00</published>
     <updated>2016-02-23T11:21:51-08:00</updated>
     <author>
@@ -788,8 +788,8 @@ deep integration between a small number of applications&lt;/td&gt;
   </entry>
   <entry>
     <title>Asking for Google Reviews</title>
-    <link rel="alternate" href="http://blog.url.com/blog/asking-google-reviews.html"/>
-    <id>http://blog.url.com/blog/asking-google-reviews.html</id>
+    <link rel="alternate" href="http://www.caretjuice.com/blog/asking-google-reviews.html"/>
+    <id>http://www.caretjuice.com/blog/asking-google-reviews.html</id>
     <published>2015-11-30T16:00:00-08:00</published>
     <updated>2016-02-22T14:06:34-08:00</updated>
     <author>
@@ -828,8 +828,8 @@ deep integration between a small number of applications&lt;/td&gt;
   </entry>
   <entry>
     <title>When to Use HTML and Plain Text Emails</title>
-    <link rel="alternate" href="http://blog.url.com/blog/html-plain-text-email.html"/>
-    <id>http://blog.url.com/blog/html-plain-text-email.html</id>
+    <link rel="alternate" href="http://www.caretjuice.com/blog/html-plain-text-email.html"/>
+    <id>http://www.caretjuice.com/blog/html-plain-text-email.html</id>
     <published>2015-11-14T16:00:00-08:00</published>
     <updated>2016-03-01T11:38:26-08:00</updated>
     <author>
