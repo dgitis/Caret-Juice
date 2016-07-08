@@ -6,17 +6,25 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Contact Caret Juice Marketing</title>
 	<meta name="description" content="Call, email or connect with Caret Juice Marketing.">
-	<link rel="canonical" href="http://www.caretjuice.com/contact.html" />
+	<link rel="canonical" href="http://www.caretjuice.com/contact/" />
     
-    <link href="/stylesheets/app.css" rel="stylesheet" /><link href="/stylesheets/style.css" rel="stylesheet" />
-    <script src="/javascripts/modernizr.js"></script>
-	<link href="assets/images/favicon.png" rel="shortcut icon" type="image/png">
-	<link href="assets/images/favicon-152.png" rel="apple-touch-icon-precomposed">
+    <link href="../stylesheets/app-7ded4253.css" rel="stylesheet" />
+    <script src="../javascripts/modernizr-0145479a.js"></script>
+	<link href="/assets/images/favicon-d706ba9e.png" rel="shortcut icon" type="image/png">
+	<link href="/assets/images/favicon-152-da840e5c.png" rel="apple-touch-icon-precomposed">
 	<meta name="msapplication-TileColor" content="#FFFFFF">
-	<meta name="msapplication-TileImage" content="assets/images/favicon-144.png">
+	<meta name="msapplication-TileImage" content="/assets/images/favicon-144-ac9bfb6e.png">
+	<link rel="alternate" type="application/atom+xml" title="Caret Juice Blog Atom feed" href="http://www.caretjuice.com/feed.xml" />
+	
+	<meta property="og:url" content="http://www.caretjuice.com/contact/?utm_source=facebook&utm_medium=social&utm_campaign=open-graph" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Contact Caret Juice Marketing" />
+	<meta property="og:description" content="Call, email or connect with Caret Juice Marketing." />
+	<meta property="og:image" content="http://www.caretjuice.com/assets/images/caretjuice-logo-2.png" />
+	<meta property="og:site_name" content="Caret Juice Marketing" />
   </head>
   
-  <body class="contact">
+  <body class="contact contact_index">
 	<!-- Google Tag Manager -->
 	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PRFCGK"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -32,14 +40,16 @@
 	<nav class="top-bar show-for-large-up" data-topbar role="navigation">
 		<ul class="title-area">
 	    <li class="name">
-<a href="/">			  <img alt="Caret Juice Marketing Logo" src="/assets/images/caretjuice-logo-2.png" />
+<a href="/">			  <img alt="Caret Juice Marketing Logo" src="../assets/images/caretjuice-logo-2-b7bf8654.png" />
 </a>	    </li>
 	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	    
 	  </ul>
 	  <section class="top-bar-section">
 	     <ul class="right">
-	      <li><a href="/contact.html">Contact</a></li>
+			<li><a href="/">Home</a></li>
+			<li><a href="/blog/">Blog</a></li>
+	      	<li><a href="/contact/">Contact</a></li>
 	    </ul>
 	  </section>
 	</nav>
@@ -49,34 +59,36 @@
 		<h1 class="title"><a href="/">Caret Juice Marketing</a></h1>
 	</section>
 
-      <section class="right-small">
-        <a class="right-off-canvas-toggle menu-icon" href="#mobile-menu"><span></span></a>
+      <section class="right tab-bar-section">
+        <a class="right-off-canvas-toggle" href="#mobile-menu">MENU</a>
       </section>
 </nav>
 <nav id="mobile-menu" class="right-off-canvas-menu">
 	<ul class="off-canvas-list">
 		<li><a href="/">Home</a></li>
-		<li><a href="/contact.html">Contact</a></li>
+		<li><a href="/blog/">Blog</a></li>
+		<li><a href="/contact/">Contact</a></li>
 	</ul>
 </nav>
-  <article>
-    <section class="container" role="document">
+    <section class="container" role="document" itemscope itemtype="http://schema.org/Organization">
+	<section class="value-proposition">
+		<div class="row text-center">
+			<header class="small-12 columns">
+				<h1>Contact <span itemprop="name">Caret Juice Marketing</span></h1>
+			</header>
+		</div>
+	</section>
 	<div class="row">
-		<header class="small-12 columns">
-			<h1>Contact Caret Juice</h1>
-		</header>
-	</div>
-	<article class="row">
 		<div class="small-12 medium-4 columns">
 			<h2 class="subheader section">Call</h2>
-			<p><a href="tel:+17788479248">+1 778-846-9248</a></p>
+			<p><a href="tel:+17788479248" itemprop="telephone">+1 778-846-9248</a></p>
 			<h2 class="subheader section">Address</h2>
-			<ul class="vcard">
-				<li class="fn">Damon Gudaitis</li>
-				<li class="org">Caret Juice Marketing</li>
-				<li class="street-address">225 West 8th, Suite 300</li>
-				<li class="locality">Vancouver</li>
-				<li><span class="state">British Columbia</span>, <span class="postal-code">V5Y 1N3</span></li>
+			<ul class="vcard" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+				<li class="fn" itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">Damon Gudaitis</li>
+				<li class="org" itemprop="name">Caret Juice Marketing</li>
+				<li class="street-address" itemprop="streetAddress">225 West 8th, Suite 300</li>
+				<li class="locality" temprop="addressLocality">Vancouver</li>
+				<li><span class="state" itemprop="addressRegion">British Columbia</span>, <span class="postal-code" itemprop="postalCode">V5Y 1N3</span></li>
 			</ul>
 		</div>
 		<div class="small-12 medium-4 columns">
@@ -114,19 +126,18 @@
 			</script>		</div>
 		<div class="small-12 medium-4 text-center columns">
 			<h2 class="subheader section text-left">Connect</h2>
-			<img src="assets/images/headshot-150x150.jpg" height="150" width="150" style="max-height: 150px; max-width: 150px;" alt="Damon Gudaitis" class="round" />
+			<img src="/assets/images/headshot-150x150-a976211c.jpg" height="150" width="150" style="max-height: 150px; max-width: 150px;" alt="Damon Gudaitis" class="round" />
 			<h4 class="subheader">Damon&nbsp;Gudaitis runs Caret&nbsp;Juice Marketing</h4>
 			<ul class="inline-list inline-list-center">
 			<li style="background-color: #0077B5"><a class="icon" href="https://ca.linkedin.com/in/damongudaitis"  target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
 			<li style="background-color: #55acee"><a class="icon" href="https://twitter.com/damongudaitis" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
 			</ul>
 		</div>
-	</article>
+	</div>
 
 
 		
 </section>
-  </article>
 
 			<a class="exit-off-canvas"></a>
 		</div>
@@ -138,13 +149,14 @@
 					<li class="copyright"><small>&copy; Caret Juice Marketing</small></li>
 				</ul>
 				<ul class="right inline-list">
-					<li><a href="/privacy.html">Privacy</a></li>
-					<li><a href="/contact.html">Contact</a></li>
+					<li><a href="/privacy/">Privacy</a></li>
+					<li><a href="/contact/">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
 	</footer>
-	<script src="/javascripts/all.js"></script>
+	<script src="../javascripts/all-87c2808a.js"></script>
+	<script src="/javascripts/equalizer-161a78ef.js"></script>
 	<script>
 	$(document).foundation();
 	$('.lazyYT').lazyYT();

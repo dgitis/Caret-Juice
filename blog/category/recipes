@@ -4,27 +4,27 @@
     <meta charset="utf-8" />
     <meta name="viewport"content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Caret Juice Marketing ^ Technology &amp; Automation</title>
-	<meta name="description" content="We use inexpensive marketing technologies to automate repeated tasks.">
-	<link rel="canonical" href="http://www.caretjuice.com/" />
+    <title>Practical Marketing Technology Advice ^ Caret Juice Blog</title>
+	<meta name="description" content="Tips and tricks that you can use focused on marketing technology for small marketing teams and businesses.">
+	<link rel="canonical" href="http://www.caretjuice.com/blog/category/recipes" />
     
-    <link href="stylesheets/app-7ded4253.css" rel="stylesheet" />
-    <script src="javascripts/modernizr-0145479a.js"></script>
-	<link href="/assets/images/favicon-d706ba9e.png" rel="shortcut icon" type="image/png">
-	<link href="/assets/images/favicon-152-da840e5c.png" rel="apple-touch-icon-precomposed">
+    <link href="../../stylesheets/app-7ded4253.css" rel="stylesheet" />
+    <script src="../../javascripts/modernizr-0145479a.js"></script>
+	<link href="/assets/images/favicon.png" rel="shortcut icon" type="image/png">
+	<link href="/assets/images/favicon-152.png" rel="apple-touch-icon-precomposed">
 	<meta name="msapplication-TileColor" content="#FFFFFF">
-	<meta name="msapplication-TileImage" content="/assets/images/favicon-144-ac9bfb6e.png">
+	<meta name="msapplication-TileImage" content="/assets/images/favicon-144.png">
 	<link rel="alternate" type="application/atom+xml" title="Caret Juice Blog Atom feed" href="http://www.caretjuice.com/feed.xml" />
 	
-	<meta property="og:url" content="http://www.caretjuice.com/?utm_source=facebook&utm_medium=social&utm_campaign=open-graph" />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content="Caret Juice Marketing ^ Technology &amp; Automation" />
-	<meta property="og:description" content="We use inexpensive marketing technologies to automate repeated tasks." />
+	<meta property="og:url" content="http://www.caretjuice.com/blog/category/recipes?utm_source=facebook&utm_medium=social&utm_campaign=open-graph" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Practical Marketing Technology Advice ^ Caret Juice Blog" />
+	<meta property="og:description" content="Tips and tricks that you can use focused on marketing technology for small marketing teams and businesses." />
 	<meta property="og:image" content="http://www.caretjuice.com/assets/images/caretjuice-logo-2.png" />
 	<meta property="og:site_name" content="Caret Juice Marketing" />
   </head>
   
-  <body class="index">
+  <body class="blog blog_category blog_category_recipes">
 	<!-- Google Tag Manager -->
 	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PRFCGK"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -40,7 +40,7 @@
 	<nav class="top-bar show-for-large-up" data-topbar role="navigation">
 		<ul class="title-area">
 	    <li class="name">
-<a href="/">			  <img alt="Caret Juice Marketing Logo" src="assets/images/caretjuice-logo-2-b7bf8654.png" />
+<a href="/">			  <img alt="Caret Juice Marketing Logo" src="../../assets/images/caretjuice-logo-2-b7bf8654.png" />
 </a>	    </li>
 	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 	    
@@ -70,61 +70,58 @@
 		<li><a href="/contact/">Contact</a></li>
 	</ul>
 </nav>
-    <section class="main-section">
-	<section class="value-proposition">
-		<div class="row text-center">
-			<div class="small-12 columns">
-				<img src="assets/images/caretjuice-white-c31eae2e.png" alt="Caret Juice Marketing" style="width:250px;height:auto; max-width:100%;" />
-				<h1>Marketing Technology &amp; Automation</h1>
-				<h2 class="subheader" style="font-weight:normal;"><em>You’ve got enough details to look after. <br/>Let Caret Juice handle the technical ones.</em></h2>
-			</div>
+    <div class="article-info">
+	<div class="row text-center">
+		<div class="small-12 large-8 large-offset-2 columns">
+			<h1>Articles in the Recipes Category</h1>
+			<h2 class="subheader"><em>Practical Marketing Technology Advice ^ Caret Juice Blog</em></h2>
 		</div>
-	</section>
-	<section class="row section-break text-center">
-		<h2 style="padding-bottom: 2rem" class="subheader">We work with</h2>
-<a href="/marketing-teams">			<div class="small-12 medium-4 columns panel">
-				<h3>B2B Marketing <br/>Teams</h3>
-				<p>Marketing operations and automation skills to supplement your team or mentor junior team members.</p>
-				<p><a href="/marketing-teams">Caret Juice Services for B2B&nbsp;Marketing&nbsp;Teams</a></p>
-			</div>
-</a><a href="/new-business-owners">			<div class="small-12 medium-4 columns">
-				<h3 class="primary-text">New Business <br/>Owners</h3>
-				<p class="primary-text">Remake your marketing and automate background tasks while building credibility with your new employees.</p>
-				<p><a href="/new-business-owners">Caret Juice Services for New&nbsp;Business&nbsp;Owners</a></p>
-			</div>
-</a><a href="/content-marketing-agencies">			<div class="small-12 medium-4 columns panel">
-				<h3>Content Marketing Agencies</h3>
-				<p>Technical skills to measure and connect the content you produce with your clients' goals.</p>
-				<p><a href="/content-marketing-agencies">Caret Juice Services for Content&nbsp;Marketing&nbsp;agencies</a></p>
-			</div>
-</a>	</section>
-	<div class="call-to-action">
-		<section class="row">
-			<div class="small-12 medium-8 columns">
-				<h2>Learn how your business can benefit</h2>
-				<p>Contact Caret Juice Marketing so we can talk about the challenges you are facing and how we can help.</p>
-			</div>
-			<div class="small-12 medium-4 columns text-center cta-button">
-				<a href="contact.html" class="button secondary large" style="margin-top:2rem;">Contact Caret Juice</a>
-			</div>
-		</section>
-	</div>
-	<section class="row">
-		<div class="small-12 medium-8 medium-offset-2 columns">
-			<div class="row panel secondary-cta">
-	<div class="text-center">
-		<h3>Practical Business Automation</h3>
-		<h4><em>Guide to business&nbsp;automation in the golden age of software&nbsp;as&nbsp;a&nbsp;service.</em></h4>
-	</div>
-	<div class="small-12 medium-7 columns">
-		<p>Learn about the Constellation Approach to Business Technology&mdash;the conceptual framework that underpins Caret Juice services. Follow our recipes and set up your own automation.</p>
-	</div>
-	<div class="text-center small-12 medium-5 columns">
-		<a class="button secondary" href="/practical-automation">Read the Guide<br/><small>FREE - NO EMAIL REQUIRED</small></a>
 	</div>
 </div>
+<div class="row">
+	<div class="small-12 large-8 large-offset-2">
+			<article class="article-listing">
+	<h2 class="subheader"><a href="/blog/twitter-list-automation">Twitter List Automation</a> </h2>
+	<p class="published">Feb 15 2016</p>
+	<p>Twitter lists are a feature that nearly every digital marketer has experimented with but few use for anything other than keeping track of a select group of influencers.</p>
+
+<p>Lists seem like they would be quite useful to sales reps and account managers...</p>
+  	<p class="text-right">Keep Reading <a href="/blog/twitter-list-automation">Twitter List Automation</a> </p>
+</article>
+			<article class="article-listing">
+	<h2 class="subheader"><a href="/blog/extract-email-domain-zapier">Extract Email Domain with Zapier</a> </h2>
+	<p class="published">Feb  1 2016</p>
+	<p>When you capture information online there is always a balance between asking for more information and making it as easy as possible for your visitors to complete their task.</p>
+
+<p>You want more information to help you decide what to do with the person but...</p>
+  	<p class="text-right">Keep Reading <a href="/blog/extract-email-domain-zapier">Extract Email Domain with Zapier</a> </p>
+</article>
+			<article class="article-listing">
+	<h2 class="subheader"><a href="/blog/automating-feedback-reviews">Automating Feedback and Reviews</a> </h2>
+	<p class="published">Jan 15 2016</p>
+	<p>Any business that develops a long relationship with their customers can and should automate feedback and review requests.</p>
+
+<p>Good candidates include virtually any service business:</p>
+
+<ul>
+<li>IT outsourcing</li>
+<li>marketing agencies :)</li>
+<li>construction contractors</li>
+<li>hotels</li>
+</ul>
+  	<p class="text-right">Keep Reading <a href="/blog/automating-feedback-reviews">Automating Feedback and Reviews</a> </p>
+</article>
+			<article class="article-listing">
+	<h2 class="subheader"><a href="/blog/creative-update-triggers-zapier">Creative On Update Zapier Triggers</a> </h2>
+	<p class="published">Oct 15 2015</p>
+	<p>Zapier is limited by how the different CRM systems make your data available to other application. Zapier can only react to changes that are broadcast by the CRM (and then only after you give it permission).</p>
+
+<p>Hubspot CRM’s integration with Zapier, for...</p>
+  	<p class="text-right">Keep Reading <a href="/blog/creative-update-triggers-zapier">Creative On Update Zapier Triggers</a> </p>
+</article>
 		</div>
-	</section>
+	</div>
+</div>
 
 			<a class="exit-off-canvas"></a>
 		</div>
@@ -142,8 +139,8 @@
 			</nav>
 		</div>
 	</footer>
-	<script src="javascripts/all-87c2808a.js"></script>
-	<script src="/javascripts/equalizer-161a78ef.js"></script>
+	<script src="../../javascripts/all-87c2808a.js"></script>
+	<script src="/javascripts/equalizer.js"></script>
 	<script>
 	$(document).foundation();
 	$('.lazyYT').lazyYT();
