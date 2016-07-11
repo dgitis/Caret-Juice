@@ -8,7 +8,11 @@
 	<meta name="description" content="Sometimes controversial and always thought-provoking articles about marketing and technology.">
 	<link rel="canonical" href="http://www.caretjuice.com/blog/category/reasons" />
     
+<<<<<<< HEAD
     <link href="../../stylesheets/app-7ded4253.css" rel="stylesheet" />
+=======
+    <link href="../../stylesheets/app-8c91da35.css" rel="stylesheet" />
+>>>>>>> origin/master
     <script src="../../javascripts/modernizr-0145479a.js"></script>
 	<link href="/assets/images/favicon.png" rel="shortcut icon" type="image/png">
 	<link href="/assets/images/favicon-152.png" rel="apple-touch-icon-precomposed">
@@ -81,36 +85,65 @@
 <div class="row">
 	<div class="small-12 large-8 large-offset-2">
 			<article class="article-listing">
+<<<<<<< HEAD
 	<h2 class="subheader"><a href="/blog/constellation-approach-business-technology">Constellation Approach to Business Technology</a> </h2>
+=======
+	<h2 class="subheader"><a href="/blog/constellation-approach-business-technology.html">Constellation Approach to Business Technology</a> </h2>
+>>>>>>> origin/master
 	<p class="published">Mar 15 2016</p>
 	<p>Self-driving cars promise to re-imagine the relationship between cities, people and transportation while Uber takes fat chunks out of the taxi industry. </p>
 
 <p>Newspapers struggle with relevance—the value of ad space having plummeted as the expense of publishing...</p>
+<<<<<<< HEAD
   	<p class="text-right">Keep Reading <a href="/blog/constellation-approach-business-technology">Constellation Approach to Business Technology</a> </p>
 </article>
 			<article class="article-listing">
 	<h2 class="subheader"><a href="/blog/asking-google-reviews">Asking for Google Reviews</a> </h2>
+=======
+  	<p class="text-right">Keep Reading <a href="/blog/constellation-approach-business-technology.html">Constellation Approach to Business Technology</a> </p>
+</article>
+			<article class="article-listing">
+	<h2 class="subheader"><a href="/blog/asking-google-reviews.html">Asking for Google Reviews</a> </h2>
+>>>>>>> origin/master
 	<p class="published">Dec  1 2015</p>
 	<p>Getting reviews in Google helps improve your footprint in Google search results with review content and helps you get shown on Google Maps results. Reviews may even help improve your ranking.</p>
 
 <p>There are a lot of good reasons to get reviews on Google...</p>
+<<<<<<< HEAD
   	<p class="text-right">Keep Reading <a href="/blog/asking-google-reviews">Asking for Google Reviews</a> </p>
 </article>
 			<article class="article-listing">
 	<h2 class="subheader"><a href="/blog/html-plain-text-email">When to Use HTML and Plain Text Emails</a> </h2>
+=======
+  	<p class="text-right">Keep Reading <a href="/blog/asking-google-reviews.html">Asking for Google Reviews</a> </p>
+</article>
+			<article class="article-listing">
+	<h2 class="subheader"><a href="/blog/html-plain-text-email.html">When to Use HTML and Plain Text Emails</a> </h2>
+>>>>>>> origin/master
 	<p class="published">Nov 15 2015</p>
 	<p>HTML emails are prettier than plain text. They require more expertise to produce than is seen in the average email user. As a result, business owners and managers are attracted to highly-designed HTML emails.</p>
 
 <p>But this barrier to entry often means...</p>
+<<<<<<< HEAD
   	<p class="text-right">Keep Reading <a href="/blog/html-plain-text-email">When to Use HTML and Plain Text Emails</a> </p>
 </article>
 			<article class="article-listing">
 	<h2 class="subheader"><a href="/blog/asking-reviews-tos">Asking for Reviews&#58; Is it Against the TOS</a> </h2>
+=======
+  	<p class="text-right">Keep Reading <a href="/blog/html-plain-text-email.html">When to Use HTML and Plain Text Emails</a> </p>
+</article>
+			<article class="article-listing">
+	<h2 class="subheader"><a href="/blog/asking-reviews-tos.html">Asking for Reviews&#58; Is it Against the TOS</a> </h2>
+>>>>>>> origin/master
 	<p class="published">Nov  1 2015</p>
 	<p>Offering an incentive for reviews puts you under truth in advertising laws in most countries but asking for reviews without any incentive is usually safe. If you are unsure about your country, it is best to consult a lawyer.</p>
 
 <p>But there’s another layer...</p>
+<<<<<<< HEAD
   	<p class="text-right">Keep Reading <a href="/blog/asking-reviews-tos">Asking for Reviews&#58; Is it Against the TOS</a> </p>
+=======
+  	<p class="text-right">Keep Reading <a href="/blog/asking-reviews-tos.html">Asking for Reviews&#58; Is it Against the TOS</a> </p>
+>>>>>>> origin/master
 </article>
 		</div>
 	</div>
@@ -132,7 +165,11 @@
 			</nav>
 		</div>
 	</footer>
+<<<<<<< HEAD
 	<script src="../../javascripts/all-87c2808a.js"></script>
+=======
+	<script src="../../javascripts/all-ae6b5d2e.js"></script>
+>>>>>>> origin/master
 	<script src="/javascripts/equalizer.js"></script>
 	<script>
 	$(document).foundation();

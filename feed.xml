@@ -5,11 +5,16 @@
   <id>http://www.caretjuice.com/blog</id>
   <link href="http://www.caretjuice.com/blog"/>
   <link href="http://www.caretjuice.com/feed.xml" rel="self"/>
+<<<<<<< HEAD
   <updated>2016-07-10T17:00:00-07:00</updated>
+=======
+  <updated>2016-03-14T17:00:00-07:00</updated>
+>>>>>>> origin/master
   <author>
     <name>Damon Gudaitis</name>
   </author>
   <entry>
+<<<<<<< HEAD
     <title>Customer-Centric Data Collection Plan</title>
     <link rel="alternate" href="http://www.caretjuice.com/blog/form-field-tactics-data-strategy"/>
     <id>http://www.caretjuice.com/blog/form-field-tactics-data-strategy</id>
@@ -217,6 +222,11 @@
     <title>Constellation Approach to Business Technology</title>
     <link rel="alternate" href="http://www.caretjuice.com/blog/constellation-approach-business-technology"/>
     <id>http://www.caretjuice.com/blog/constellation-approach-business-technology</id>
+=======
+    <title>Constellation Approach to Business Technology</title>
+    <link rel="alternate" href="http://www.caretjuice.com/blog/constellation-approach-business-technology.html"/>
+    <id>http://www.caretjuice.com/blog/constellation-approach-business-technology.html</id>
+>>>>>>> origin/master
     <published>2016-03-14T17:00:00-07:00</published>
     <updated>2016-04-05T11:40:28-07:00</updated>
     <author>
@@ -371,8 +381,13 @@ deep integration between a small number of applications&lt;/td&gt;
   </entry>
   <entry>
     <title>Twitter List Automation</title>
+<<<<<<< HEAD
     <link rel="alternate" href="http://www.caretjuice.com/blog/twitter-list-automation"/>
     <id>http://www.caretjuice.com/blog/twitter-list-automation</id>
+=======
+    <link rel="alternate" href="http://www.caretjuice.com/blog/twitter-list-automation.html"/>
+    <id>http://www.caretjuice.com/blog/twitter-list-automation.html</id>
+>>>>>>> origin/master
     <published>2016-02-14T16:00:00-08:00</published>
     <updated>2016-02-29T14:09:38-08:00</updated>
     <author>
@@ -473,8 +488,13 @@ deep integration between a small number of applications&lt;/td&gt;
   </entry>
   <entry>
     <title>Extract Email Domain with Zapier</title>
+<<<<<<< HEAD
     <link rel="alternate" href="http://www.caretjuice.com/blog/extract-email-domain-zapier"/>
     <id>http://www.caretjuice.com/blog/extract-email-domain-zapier</id>
+=======
+    <link rel="alternate" href="http://www.caretjuice.com/blog/extract-email-domain-zapier.html"/>
+    <id>http://www.caretjuice.com/blog/extract-email-domain-zapier.html</id>
+>>>>>>> origin/master
     <published>2016-01-31T16:00:00-08:00</published>
     <updated>2016-02-22T14:04:34-08:00</updated>
     <author>
@@ -632,8 +652,13 @@ deep integration between a small number of applications&lt;/td&gt;
   </entry>
   <entry>
     <title>Automating Feedback and Reviews</title>
+<<<<<<< HEAD
     <link rel="alternate" href="http://www.caretjuice.com/blog/automating-feedback-reviews"/>
     <id>http://www.caretjuice.com/blog/automating-feedback-reviews</id>
+=======
+    <link rel="alternate" href="http://www.caretjuice.com/blog/automating-feedback-reviews.html"/>
+    <id>http://www.caretjuice.com/blog/automating-feedback-reviews.html</id>
+>>>>>>> origin/master
     <published>2016-01-14T16:00:00-08:00</published>
     <updated>2016-02-23T11:21:51-08:00</updated>
     <author>
@@ -992,8 +1017,13 @@ deep integration between a small number of applications&lt;/td&gt;
   </entry>
   <entry>
     <title>Asking for Google Reviews</title>
+<<<<<<< HEAD
     <link rel="alternate" href="http://www.caretjuice.com/blog/asking-google-reviews"/>
     <id>http://www.caretjuice.com/blog/asking-google-reviews</id>
+=======
+    <link rel="alternate" href="http://www.caretjuice.com/blog/asking-google-reviews.html"/>
+    <id>http://www.caretjuice.com/blog/asking-google-reviews.html</id>
+>>>>>>> origin/master
     <published>2015-11-30T16:00:00-08:00</published>
     <updated>2016-02-22T14:06:34-08:00</updated>
     <author>
@@ -1030,4 +1060,51 @@ deep integration between a small number of applications&lt;/td&gt;
 &lt;p&gt;Unfortunately, that’s about the best that we can do for reviews right now. There are other solutions, but they break if you’re not signed in and Google’s been very flaky about supporting review URLs.&lt;/p&gt;
 </content>
   </entry>
+<<<<<<< HEAD
+=======
+  <entry>
+    <title>When to Use HTML and Plain Text Emails</title>
+    <link rel="alternate" href="http://www.caretjuice.com/blog/html-plain-text-email.html"/>
+    <id>http://www.caretjuice.com/blog/html-plain-text-email.html</id>
+    <published>2015-11-14T16:00:00-08:00</published>
+    <updated>2016-03-01T11:38:26-08:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;HTML emails are prettier than plain text. They require more expertise to produce than is seen in the average email user. As a result, business owners and managers are attracted to highly-designed HTML emails.&lt;/p&gt;
+
+&lt;p&gt;But this barrier to entry often means that HTML emails are the wrong choice for communicating with customers and leads.&lt;/p&gt;
+
+&lt;h2&gt;When HTML is the Wrong Answer&lt;/h2&gt;
+
+&lt;p&gt;The main problem with highly-designed emails is that they don’t look like the kind of email you get from friends and colleagues. They immediately put their recipients on guard for marketing messages and the quality of design and messaging needs to overcome this disadvantage.&lt;/p&gt;
+
+&lt;p&gt;This makes HTML a bad choice for drip emails. Typically drip emails are automated emails chains that take on the tone of a conversation between the prospect and someone at the company.&lt;/p&gt;
+
+&lt;p&gt;The email then needs to seem like it is coming from the company representative and any design beyond proper punctuation is going to undermine the purpose of the email.&lt;/p&gt;
+
+&lt;h2&gt;When HTML is the Right Answer&lt;/h2&gt;
+
+&lt;p&gt;A highly-designed HTML newsletter is a different situation. Even if your language is friendly and personal, the recipients expect that they are receiving a message from a company.&lt;/p&gt;
+
+&lt;p&gt;There’s another important consideration with respect to design and branding when planning an HTML email—and that’s content. In particular, how the content of the email reflects on the brand.&lt;/p&gt;
+
+&lt;p&gt;A strong and consistent visual brand brand combined with excellent content trains recipients to respond favorably to the brand.&lt;/p&gt;
+
+&lt;p&gt;Remember that people receiving your emails are going to be most strongly imprinted with your brand as they are exposed to it repeatedly.&lt;/p&gt;
+
+&lt;p&gt;Conversely, if you send emails with strongly branded visuals but poor content then you are going to train these same people to react unfavorably. Until they unsubscribe, but people stay subscribed to emails they don’t care for much too long.&lt;/p&gt;
+
+&lt;p&gt;Designing emails is a lot of work. Trust me, if you don’t know how much work they are, then you don’t want to find out. HTML emails are a nightmare.&lt;/p&gt;
+
+&lt;p&gt;But it is still relatively inexpensive for a manager or owner to spend on some nice email templates compared with the consistent on-going effort required to produce excellent content for those emails.&lt;/p&gt;
+
+&lt;p&gt;Until you’re in a position where you can consistently produce excellent content, spending on emails with a strong brand design is going to hurt your brand more than it will help.&lt;/p&gt;
+
+&lt;p&gt;Your brand is more than just design and logos. The content plays a part too.&lt;/p&gt;
+
+&lt;p&gt;I’ve seen too many strong brands send bad emails to stay silent on the subject.&lt;/p&gt;
+</content>
+  </entry>
+>>>>>>> origin/master
 </feed>
