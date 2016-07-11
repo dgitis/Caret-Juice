@@ -1,0 +1,43 @@
+---
+pageable: true
+per_page: 12
+type: website
+---
+<% require 'uri' %>
+<% uri = "http://www.caretjuice.com" + current_page.url %>
+<% category_slug = URI(uri).path.split('/').last %>
+<% category = find_category(category_slug) %>
+<% content_for(:title, category.title) %>
+<% content_for(:description, category.description ) %>
+<div class="article-info">
+	<div class="row text-center">
+		<div class="small-12 large-8 large-offset-2 columns">
+			<h1>Articles in the <%= category_slug.capitalize %> Category</h1>
+			<h2 class="subheader"><em><%= category.title %></em></h2>
+		<% if paginate && num_pages > 1 %>
+		  <p>Page <%= page_number %> of <%= num_pages %></p>
+		<% end %>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="small-12 large-8 large-offset-2">
+		<% page_articles.each_with_index do |article, i| %>
+			<%= partial(:article_listing, :locals => {:article => article}) %>
+		<% end %>
+		</div>
+		<% if paginate %>
+		<div class="row">
+			<div class="small-6 columns">
+			  <% if prev_page %>
+			    <p><%= link_to 'Previous page', prev_page %></p>
+			  <% end %>
+			</div>
+			<div class="small-6 columns">
+			  <% if next_page %>
+			    <p><%= link_to 'Next page', next_page %></p>
+			  <% end %>
+			</div>
+		<% end %>
+	</div>
+</div>

@@ -1,0 +1,997 @@
+/* 
+	My custom settings. These variables are copied from _settings.css
+	This file will only contain uncommented settings that are actually used in the theme.
+*/
+
+
+// Media Query Ranges
+$small-range: (0em, 40em);
+$medium-range: (40.063em, 64em);
+$large-range: (64.063em, 90em);
+$xlarge-range: (90.063em, 120em);
+$xxlarge-range: (120.063em);
+
+$screen: "only screen";
+
+$landscape: "#{$screen} and (orientation: landscape)";
+$portrait: "#{$screen} and (orientation: portrait)";
+
+$small-up: $screen;
+$small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})";
+
+$medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})";
+$medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})";
+
+ $large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})";
+$large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})";
+
+$xlarge-up: "#{$screen} and (min-width:#{lower-bound($xlarge-range)})";
+$xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max-width:#{upper-bound($xlarge-range)})";
+
+$xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})";
+$xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})";
+
+// Legacy
+// $small: $medium-up;
+// $medium: $medium-up;
+// $large: $large-up;
+
+
+// Foundation color naming conventions
+$white       : #FFFFFF;
+$ghost       : #FAFAFA;
+$snow        : #F9F9F9;
+$vapor       : #F6F6F6;
+$white-smoke : #F5F5F5;
+$silver      : #EFEFEF;
+$smoke       : #EEEEEE;
+$gainsboro   : #DDDDDD;
+$iron        : #CCCCCC;
+$base        : #AAAAAA;
+$aluminum    : #999999;
+$jumbo       : #888888;
+$monsoon     : #777777;
+$steel       : #666666;
+$charcoal    : #555555;
+$tuatara     : #444444;
+$oil         : #333333;
+$jet         : #222222;
+$black       : #000000;
+
+$carrot      : #ff7321;
+$dk-carrot   : scale-color($carrot, $lightness: -20%);
+$lt-carrot   : scale-color($carrot, $lightness: +20%);
+
+$carrot-green: #5D9E00;
+$lt-carrot-green: scale-color($carrot-green, $lightness: +20%);
+$dk-carrot-green: scale-color($carrot-green, $lightness: -20%);
+
+$primary-text: #212121;
+$secondary-text: #727272;
+$divider     : #B6B6B6;
+$icon-text   : $white;
+
+// We use these as default colors throughout
+$primary-color: $carrot;
+$secondary-color: $carrot-green;
+$alert-color: #f04124;
+$success-color: #43AC6A;
+$warning-color: #f08a24;
+$info-color: #a0d3e8;
+
+
+// We use these to define default font stacks
+$font-family-sans-serif: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
+$font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+$font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
+$font-family-header: $font-family-sans-serif;
+
+//$font-family-header: "Titillium Web", sans-serif;
+
+// We use these to define default font weights
+$font-weight-normal: normal !default;
+$font-weight-bold: bold !default;
+
+
+
+
+// We use these to control various global styles
+$body-bg: $white;
+$body-font-color: $primary-text;
+$body-font-family: $font-family-sans-serif;
+$body-font-weight: $font-weight-normal;
+$body-font-style: normal;
+$header-font-weight: 600;
+$header-text-rendering: optimizeLegibility;
+$topbar-link-weight: bold;
+$header-font-family: $font-family-header;
+$header-font-color: $secondary-text;
+$anchor-font-color: $lt-carrot;
+$anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -14%);
+
+
+// We use these to control header font sizes
+$h1-font-size: rem-calc(44);
+$h2-font-size: rem-calc(28);
+$h3-font-size: rem-calc(24);
+$h4-font-size: rem-calc(20);
+$h5-font-size: rem-calc(18);
+$h6-font-size: 1rem;
+
+.full-width-bar {
+  background: $lt-carrot;
+}
+
+
+// 34. Top Bar
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// $include-html-top-bar-classes: $include-html-classes;
+
+//Background color for the top bar
+$topbar-bg-color: $white;
+$topbar-bg: $topbar-bg-color;
+
+// Height and margin
+$topbar-height: 3rem;
+// $topbar-margin-bottom: 0;
+
+// Controlling the styles for the title in the top bar
+// $topbar-title-weight: $font-weight-normal;
+// $topbar-title-font-size: rem-calc(17);
+
+// Set the link colors and styles for top-level nav
+$topbar-link-color: $lt-carrot;
+$topbar-link-color-hover: $carrot;
+$topbar-link-color-active: $dk-carrot;
+$topbar-link-color-active-hover: $dk-carrot;
+// $topbar-link-weight: $font-weight-normal;
+// $topbar-link-font-size: rem-calc(13);
+// $topbar-link-hover-lightness: -10%; // Darken by 10%
+$topbar-link-bg: $topbar-bg;
+$topbar-link-bg-hover: $topbar-bg;
+$topbar-link-bg-color-hover: $topbar-bg;
+$topbar-link-bg-active: $topbar-bg;
+$topbar-link-bg-active-hover: $topbar-bg;
+// $topbar-link-font-family: $body-font-family;
+// $topbar-link-text-transform: none;
+// $topbar-link-padding: ($topbar-height / 3);
+// $topbar-back-link-size: rem-calc(18);
+// $topbar-link-dropdown-padding: rem-calc(20);
+// $topbar-button-font-size: .75rem;
+// $topbar-button-top: 7px;
+
+// Style the top bar dropdown elements
+$topbar-dropdown-bg: $white;
+// $topbar-dropdown-link-color: $white;
+// $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
+$topbar-dropdown-link-bg: $white;
+$topbar-dropdown-link-bg-hover: $white;
+// $topbar-dropdown-link-weight: $font-weight-normal;
+// $topbar-dropdown-toggle-size: 5px;
+// $topbar-dropdown-toggle-color: $white;
+// $topbar-dropdown-toggle-alpha: .4;
+
+// $topbar-dropdown-label-color: $monsoon;
+// $topbar-dropdown-label-text-transform: uppercase;
+// $topbar-dropdown-label-font-weight: $font-weight-bold;
+// $topbar-dropdown-label-font-size: rem-calc(10);
+$topbar-dropdown-label-bg: $white;
+
+// Top menu icon styles
+// $topbar-menu-link-transform: uppercase;
+// $topbar-menu-link-font-size: rem-calc(13);
+// $topbar-menu-link-weight: $font-weight-bold;
+$topbar-menu-link-color: $lt-carrot;
+$topbar-menu-icon-color: $lt-carrot;
+// $topbar-menu-link-color-toggled: $jumbo;
+// $topbar-menu-icon-color-toggled: $jumbo;
+// $topbar-menu-icon-position: $opposite-direction; // Change to $default-float for a left menu icon
+
+// Transitions and breakpoint styles
+// $topbar-transition-speed: 300ms;
+// Using rem-calc for the below breakpoint causes issues with top bar
+// $topbar-breakpoint: #{lower-bound($medium-range)}; // Change to 9999px for always mobile layout
+// $topbar-media-query: "#{$screen} and (min-width:#{lower-bound($topbar-breakpoint)})";
+
+// Top-bar input styles
+// $topbar-input-height: rem-calc(28);
+
+// Divider Styles
+$topbar-divider-border-bottom: $dk-carrot;
+// $topbar-divider-border-top: solid 1px scale-color($topbar-bg-color, $lightness: -50%);
+
+// Sticky Class
+$topbar-sticky-class: ".sticky";
+// $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
+// $topbar-dropdown-arrows: true; //Set false to remove the \00bb >> text from dropdown subnavigation li//
+.top-bar-container{border-bottom: 1px solid $divider;}
+
+// Media query breakpoints
+$small-breakpoint:  em-calc(640);
+$medium-breakpoint: em-calc(1024);
+$topbar-breakpoint: em-calc(820);
+$large-breakpoint:  em-calc(1440);
+$xlarge-breakpoint: em-calc(1920);
+
+// 11. Forms
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// $include-html-form-classes: $include-html-classes;
+
+// We use this to set the base for lots of form spacing and positioning styles
+// $form-spacing: rem-calc(16);
+
+// We use these to style the labels in different ways
+// $form-label-pointer: pointer;
+$form-label-font-size: rem-calc(10);
+// $form-label-font-weight: $font-weight-normal;
+$form-label-line-height: 1;
+$form-label-font-color: $white;
+// $form-label-small-transform: capitalize;
+// $form-label-bottom-margin: 0;
+// $input-font-family: inherit;
+$input-font-color: $secondary-text;
+// $input-font-size: rem-calc(14);
+// $input-bg-color: $white;
+// $input-focus-bg-color: scale-color($white, $lightness: -2%);
+// $input-border-color: scale-color($white, $lightness: -20%);
+// $input-focus-border-color: scale-color($white, $lightness: -40%);
+// $input-border-style: solid;
+// $input-border-width: 1px;
+// $input-border-radius: $global-radius;
+// $input-disabled-bg: $gainsboro;
+// $input-disabled-cursor: $cursor-default-value;
+// $input-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+// $input-include-glowing-effect: false;
+
+// We use these to style the fieldset border and spacing.
+$fieldset-border-style: none;
+// $fieldset-border-width: 1px;
+// $fieldset-border-color: $gainsboro;
+// $fieldset-padding: rem-calc(20);
+// $fieldset-margin: rem-calc(18 0);
+
+// We use these to style the legends when you use them
+// $legend-bg: $white;
+// $legend-font-weight: $font-weight-bold;
+// $legend-padding: rem-calc(0 3);
+
+// We use these to style the prefix and postfix input elements
+// $input-prefix-bg: scale-color($white, $lightness: -5%);
+// $input-prefix-border-color: scale-color($white, $lightness: -20%);
+// $input-prefix-border-size: 1px;
+// $input-prefix-border-type: solid;
+// $input-prefix-overflow: hidden;
+// $input-prefix-font-color: $oil;
+// $input-prefix-font-color-alt: $white;
+
+// We use this setting to turn on/off HTML5 number spinners (the up/down arrows)
+// $input-number-spinners: true;
+
+// We use these to style the error states for inputs and labels
+// $input-error-message-padding: rem-calc(6 9 9);
+// $input-error-message-top: -1px;
+// $input-error-message-font-size: rem-calc(12);
+// $input-error-message-font-weight: $font-weight-normal;
+// $input-error-message-font-style: italic;
+// $input-error-message-font-color: $white;
+// $input-error-message-bg-color: $alert-color;
+// $input-error-message-font-color-alt: $oil;
+
+// We use this to style the glowing effect of inputs when focused
+// $glowing-effect-fade-time: .45s;
+// $glowing-effect-color: $input-focus-border-color;
+
+// We use this to style the transition when inputs are focused and when the glowing effect is disabled.
+// $input-transition-fade-time: 0.15s;
+// $input-transition-fade-timing-function: linear;
+
+// Select variables
+// $select-bg-color: $ghost;
+// $select-hover-bg-color: scale-color($select-bg-color, $lightness: -3%);
+
+// 18. Off-canvas
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// Off Canvas Tab Bar Variables
+// $include-html-off-canvas-classes: $include-html-classes;
+
+$tabbar-bg: $white;
+// $tabbar-height: rem-calc(45);
+// $tabbar-icon-width: $tabbar-height;
+// $tabbar-line-height: $tabbar-height;
+$tabbar-color: $carrot-green;
+// $tabbar-middle-padding: 0 rem-calc(10);
+
+// Off Canvas Divider Styles
+$tabbar-left-section-border: solid 1px $lt-carrot;
+// $tabbar-right-section-border: $tabbar-left-section-border;
+
+
+// Off Canvas Tab Bar Headers
+$tabbar-header-color: $lt-carrot;
+// $tabbar-header-weight: $font-weight-bold;
+// $tabbar-header-line-height: $tabbar-height;
+// $tabbar-header-margin: 0;
+
+// Off Canvas Menu Variables
+// $off-canvas-width: rem-calc(250);
+$off-canvas-bg: $white;
+// $off-canvas-bg-hover: scale-color($tabbar-bg, $lightness: -30%);
+// $off-canvas-bg-active: scale-color($tabbar-bg, $lightness: -30%);
+
+// Off Canvas Menu List Variables
+// $off-canvas-label-padding: .3rem rem-calc(15);
+$off-canvas-label-color: $lt-carrot;
+// $off-canvas-label-text-transform: uppercase;
+// $off-canvas-label-font-size: rem-calc(12);
+// $off-canvas-label-font-weight: $font-weight-bold;
+$off-canvas-label-bg: $white;
+$off-canvas-label-border-top: $divider;
+// $off-canvas-label-border-bottom: none;
+// $off-canvas-label-margin:0;
+// $off-canvas-link-padding: rem-calc(10, 15);
+$off-canvas-link-color: $lt-carrot;
+ $off-canvas-link-border-bottom: 1px solid $divider;
+// $off-canvas-back-bg: #444;
+// $off-canvas-back-border-top: $off-canvas-label-border-top;
+// $off-canvas-back-border-bottom: $off-canvas-label-border-bottom;
+// $off-canvas-back-hover-bg: scale-color($off-canvas-back-bg, $lightness: -30%);
+// $off-canvas-back-hover-border-top: 1px solid scale-color($off-canvas-label-bg, $lightness: 14%);
+// $off-canvas-back-hover-border-bottom: none;
+
+// Off Canvas Menu Icon Variables
+$tabbar-menu-icon-color: $lt-carrot;
+// $tabbar-menu-icon-hover: scale-color($tabbar-menu-icon-color, $lightness: -30%);
+
+// $tabbar-menu-icon-text-indent: rem-calc(35);
+// $tabbar-menu-icon-width: $tabbar-icon-width;
+// $tabbar-menu-icon-height: $tabbar-height;
+// $tabbar-menu-icon-padding: 0;
+
+// $tabbar-hamburger-icon-width: rem-calc(16);
+// $tabbar-hamburger-icon-left: false;
+// $tabbar-hamburger-icon-top: false;
+// $tabbar-hamburger-icon-thickness: 1px;
+// $tabbar-hamburger-icon-gap: 6px;
+
+// Off Canvas Back-Link Overlay
+$off-canvas-overlay-transition: background 300ms ease;
+$off-canvas-overlay-cursor: pointer;
+$off-canvas-overlay-box-shadow: -4px 0 4px rgba($black, .5), 4px 0 4px rgba($black, .5);
+$off-canvas-overlay-background: rgba($white, .2);
+$off-canvas-overlay-background-hover: rgba($white, .05);
+
+// Transition Variables
+$menu-slide: "transform 500ms ease";
+
+// Dropdown
+
+// $include-html-dropdown-classes: $include-html-classes;
+
+// We use these to controls height and width styles.
+$f-dropdown-max-width: 500px;
+// $f-dropdown-height: auto;
+// $f-dropdown-max-height: none;
+// $f-dropdown-margin-top: 2px;
+
+// We use this to control the background color
+ $f-dropdown-bg: $lt-carrot;
+
+// We use this to set the border styles for dropdowns.
+ $f-dropdown-border-style: solid;
+ $f-dropdown-border-width: 0px;
+// $f-dropdown-border-color: scale-color(#fff, $lightness: -20%);
+
+// We use these to style the triangle pip.
+// $f-dropdown-triangle-size: 6px;
+// $f-dropdown-triangle-color: #fff;
+// $f-dropdown-triangle-side-offset: 10px;
+
+// We use these to control styles for the list elements.
+// $f-dropdown-list-style: none;
+// $f-dropdown-font-color: #555;
+// $f-dropdown-font-size: rem-calc(14);
+// $f-dropdown-list-padding: rem-calc(5, 10);
+// $f-dropdown-line-height: rem-calc(18);
+// $f-dropdown-list-hover-bg: #eeeeee  ;
+// $dropdown-mobile-default-float: 0;
+
+// We use this to control the styles for when the dropdown has custom content.
+// $f-dropdown-content-padding: rem-calc(20);
+
+// Dropdown Buttons
+
+// $include-html-button-classes: $include-html-classes;
+
+// We use these to set the color of the pip in dropdown buttons
+// $dropdown-button-pip-color: #fff;
+// $dropdown-button-pip-color-alt: #333;
+
+// $button-pip-tny: rem-calc(6);
+// $button-pip-sml: rem-calc(7);
+// $button-pip-med: rem-calc(9);
+// $button-pip-lrg: rem-calc(11);
+
+// We use these to style tiny dropdown buttons
+// $dropdown-button-padding-tny: $button-pip-tny * 7;
+// $dropdown-button-pip-size-tny: $button-pip-tny;
+// $dropdown-button-pip-opposite-tny: $button-pip-tny * 3;
+// $dropdown-button-pip-top-tny: -$button-pip-tny / 2 + rem-calc(1);
+
+// We use these to style small dropdown buttons
+// $dropdown-button-padding-sml: $button-pip-sml * 7;
+// $dropdown-button-pip-size-sml: $button-pip-sml;
+// $dropdown-button-pip-opposite-sml: $button-pip-sml * 3;
+// $dropdown-button-pip-top-sml: -$button-pip-sml / 2 + rem-calc(1);
+
+// We use these to style medium dropdown buttons
+// $dropdown-button-padding-med: $button-pip-med * 6 + rem-calc(3);
+// $dropdown-button-pip-size-med: $button-pip-med - rem-calc(3);
+// $dropdown-button-pip-opposite-med: $button-pip-med * 2.5;
+// $dropdown-button-pip-top-med: -$button-pip-med / 2 + rem-calc(2);
+
+// We use these to style large dropdown buttons
+// $dropdown-button-padding-lrg: $button-pip-lrg * 5 + rem-calc(3);
+// $dropdown-button-pip-size-lrg: $button-pip-lrg - rem-calc(6);
+// $dropdown-button-pip-opposite-lrg: $button-pip-lrg * 2.5;
+// $dropdown-button-pip-top-lrg: -$button-pip-lrg / 2 + rem-calc(3);
+
+
+.hero {
+	background:linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+	 url('http://wallpoper.com/images/00/34/39/15/circuit-pcb_00343915.jpg') no-repeat center center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	width:100%;
+	position:static;
+	padding:1rem;
+	
+}
+
+
+.hero-text {
+	h1, h2 {
+		color: #fff;		
+		line-height: 1.2;
+	}
+	li {	
+		color: #fff;
+		line-height: 1.8rem;
+		font-size: 1.3rem;
+		font-weight:600;
+		margin-bottom: 1.2rem;
+		
+	}
+
+}
+
+.hero-form{
+	background-color: $carrot;
+	p, h3{
+		color: $white;
+	}
+}
+
+.value-proposition{
+	background: $lt-carrot;
+	padding: 4rem 0 4rem 0;
+	margin-bottom: 2rem;
+	h1, h2, p, a{
+		color: $white;
+	}
+	a:hover{
+		text-decoration: underline;
+		color: $white;
+	};
+	
+}
+
+.value-proposition-cta{
+	background: $white;
+	padding: 2rem 0 2rem 0;
+	margin-bottom: 0;
+	h1, h2{
+		color:$primary-text;
+	}
+}
+
+.secondary-cta{
+	margin-top: 2rem !important;
+	margin-bottom: 2rem !important;
+}
+
+.article-info{
+	background: $lt-carrot;
+	padding: 2.5rem 0 2.5rem 0;
+	margin-bottom: 2rem;
+	h1, h2, p, a{
+		color: $white;
+	}
+	a:hover{
+		text-decoration: underline;
+		color: $white;
+	};	
+}
+
+.contact-form{
+	p, h3{
+		color: $primary-text;
+	}
+	label{color: $secondary-text;}
+}
+
+
+
+//replacement tabs
+.transformer-tabs {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+	background-color: $lt-carrot;
+  }
+  li {
+    display: inline-block;
+    vertical-align: bottom;
+	width:24%;
+    .active {
+      background-color: $carrot;
+    }
+  }
+  a {
+    display: inline-block;
+    color: $white;
+    text-decoration: none;
+	padding: 0.5rem 0px 0.5rem 0px;
+	width:100%;
+    &.active {
+      position: relative;
+      background-color: $carrot;
+    }
+  }
+	a:hover, a:focus{
+		color: $white;
+		background-color: $carrot;
+	}
+  @media (max-width: $small-breakpoint) {
+    ul {
+      border-bottom: 0;
+      overflow: hidden;
+      position: relative;
+      background-color: $lt-carrot;
+      &::after {
+		content: "MENU";
+		color: $white;
+        position: absolute;
+        top: 8px;
+        right: 15px;
+        z-index: 2;
+        pointer-events: none;
+      }
+      &.open {
+        a {
+          position: relative;
+          display: block;
+        }
+      }
+    }
+    li {
+      display: block;
+	  width:100%;
+    }
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      &.active {
+        border: 0;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+.tabs {
+  > div {
+    display: none;
+    padding: 1rem;
+  }
+  > .active {
+    display: block;
+  }
+}
+
+.round{
+  /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+  -webkit-border-radius: 50%; 
+
+  /* Firefox 1-3.6 */
+  -moz-border-radius: 50%; 
+
+  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  border-radius: 50%;
+}
+
+.vcard{border:none !important;}
+.section{
+	border-bottom: 1px solid $divider;
+	}
+.section-break{
+	padding-bottom: 1rem;
+	margin-bottom: 2rem !important;
+}
+
+.icon, .icon:hover, .icon:focus{
+	padding:rem-calc(4) rem-calc(16);
+	color:$white;
+	}
+.inline-list-center{margin-left: auto !important; margin-right:auto !important;}
+
+.call-to-action{
+	background-color: $lt-carrot;
+	padding: 2rem 0 2rem 0;
+	margin-bottom: 2rem;
+	h1, h2, h3, p{
+		color: $white;
+	}
+}
+.name img{
+	max-height:44px;
+	padding-top:2px;
+	width:auto;
+	height:auto;
+}
+h1{font-weight: 200 !important;}
+
+.fa-chevron-right {
+    padding-left: 1rem;
+}
+.fa-chevron-right:before {
+    margin-left: -1rem;
+}
+.fa-ul{margin-left: -1rem !important;}
+img {max-width:100%; height:auto; width:100%;}
+
+.footer{border-top: 1px solid $divider; padding: 1em 0 1em 0;}
+.copyright{color: $secondary-text;}
+.youtube{padding-bottom:49.5% !important;}
+
+
+.carrot{color: $carrot;}
+.dk-carrot{color: $dk-carrot;}
+.lt-carrot{color: $lt-carrot;}
+.carrot-green{color: $carrot-green;}
+.dk-carrot-green{color: $dk-carrot-green;}
+.lt-carrot-green{color: $lt-carrot-green;}
+
+div.lite {
+    position: relative; left: 0; top: 0
+}
+img.lite:hover {
+    background:url(http://lh5.googleusercontent.com/-oBFjswrosz4/TuHqainRc3I/AAAAAAAAAbE/t3rMQuSJdLA/s800/youtube-play-button-hover.png)
+}
+
+/*!
+* lazyYT (lazy load YouTube videos)
+* v1.0.1 - 2014-12-30
+* (CC) This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+* http://creativecommons.org/licenses/by-sa/4.0/
+* Contributors: https://github.com/tylerpearson/lazyYT/graphs/contributors || https://github.com/daugilas/lazyYT/graphs/contributors
+*/
+
+.lazyYT-container {
+  direction:ltr;
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0 0 56.25% 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.lazyYT-container iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/*
+ * Video Title (YouTube style)
+ */
+
+.lazyYT-container .html5-info-bar {
+  position: absolute;
+  top: 0;
+  z-index: 935;
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+     -moz-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+          transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.lazyYT-container .html5-title {
+  padding-right: 6px;
+  padding-left: 12px;
+}
+
+.lazyYT-container .html5-title-text-wrapper {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  word-wrap: normal;
+  white-space: nowrap;
+}
+
+.lazyYT-container .html5-title-text {
+  width: 100%;
+  font-size: 13px;
+  line-height: 30px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.lazyYT-container .html5-title-text:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/*
+ * Thumbnail
+ */
+
+.ytp-thumbnail {
+  padding-bottom: inherit;
+  cursor: pointer;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+/*
+ * Play button (YouTube style)
+ */
+
+.ytp-large-play-button {
+  position: absolute;
+  top: 50% !important;
+  left: 50% !important;
+  width: 86px !important;
+  height: 60px !important;
+  padding: 0 !important;
+  margin: -29px 0 0 -42px !important;
+  font-size: normal !important;
+  font-weight: normal !important;
+  line-height: 1 !important;
+  opacity: .9;
+}
+
+.ytp-large-play-button-svg {
+  opacity: .9;
+  fill: #1f1f1f;
+}
+
+.lazyYT-image-loaded:hover .ytp-large-play-button-svg,
+.ytp-large-play-button:focus .ytp-large-play-button-svg {
+  opacity: 1;
+  fill: #cc181e;
+}
+
+.social-share .inline-list li:first-child{
+	margin-left:0px;
+}
+
+@media #{$small-only} { 
+	.social-share .inline-list li{
+		width:100%;
+		margin-bottom:1rem;
+		text-align:center;
+		margin-left:0px;
+		padding-top:.5rem;
+		padding-bottom: .5rem;
+	}
+}
+
+.article-listing{
+	margin-top: 1.5rem !important;
+	margin-bottom: 1.5rem !important;
+}
+
+.article-listing:not(:last-child){
+	border-bottom: 1px solid $divider;
+}
+
+.published{
+	font-size:.8rem;
+	color: $secondary-text;
+	text-transform: uppercase;
+}
+
+/* * Signup Subscribe Bar */ 
+.signup-bar { 
+	background-color: $lt-carrot; 
+	position: fixed; 
+	z-index: 2; 
+	width: 100%; 
+	box-shadow: 0 0 10px rgba(0,0,0, 0.35); 
+	height: 60px; 
+	bottom: -60px; 
+	-webkit-animation: signup 2s ease forwards; 
+	-moz-animation: signup 2s ease forwards; 
+	animation: signup 2s ease forwards; 
+	-webkit-animation-delay: 3s; 
+	-moz-animation-delay: 3s; 
+	animation-delay: 3s; 
+	padding: .8rem 0px 0px 0px; 
+	color: $white;
+} 
+
+@-webkit-keyframes signup { 
+	100% { 
+		-webkit-transform: translate(0, -100%); 
+		transform: translate(0, -100%);
+	} 
+} 
+@-moz-keyframes signup { 
+	100% { 
+		transform: translate(0, -100%); 
+	} 
+} 
+@keyframes signup { 
+	100% { 
+		transform: translate(0, -100%); 
+	}
+} 
+
+.signup-bar .mc4wp-success { 
+	color: #white; 
+	font-weight: bold; 
+} 
+
+.signup-bar input[type=submit] { 
+	background-color: $carrot-green; 
+	border:none;
+	color: $white;
+	width: 100%;
+	padding: 0.4rem 0px 0px 0px;
+	height:34px;
+	font-size:.8rem;
+	margin-bottom: 0px;
+	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+	transition: background-color 0.3s ease;
+} 
+.signup-bar input[type=email]{
+	border:none;
+	height:34px;
+	font-size:.8rem;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	vertical-align:middle;
+}
+.signup-bar label{
+	font-size:.8rem;
+	padding-top:.5rem;
+}
+
+.collapse{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.rss-sub{
+	font-size:.75rem;
+	line-height: .75rem;
+	text-align:center;
+	border-right: 1px solid $white;
+	padding-right: 1.87rem;
+	padding-top: 0.5rem;
+}
+
+.rss-sub i{
+	font-size:1.75rem !important;
+	line-height:1.75rem;
+}
+.rss-sub a, .rss-sub a:hover{
+	color: $white;
+}
+.close i{
+	font-size:26px !important;
+    text-align: center;
+//	width:28px;
+//	height:28px;
+	display: table-cell;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+
+.signup-bar .close { 
+	color: $lt-carrot;
+	float:right;
+	background-color: $secondary-text;
+	border-radius:50%;
+	cursor: pointer;
+	border: 3px solid $lt-carrot;
+	width:100%;
+	max-width:2rem;
+	position:relative;
+}
+.signup-bar .close:after{
+  content: "";
+  display: block;
+  padding-bottom: 100%;	
+}
+.sub-text{
+	padding-top:0.5rem;
+}
+
+.primary-text{
+	color: $primary-text;
+}
+
+.table-text-top th, .table-text-top td{
+	vertical-align:top;
+	padding:.4rem .4rem;
+}
+
+th{
+	border-bottom: solid 1px $dk-carrot;
+	background-color: $lt-carrot; 
+	color: $white;	
+}
+
+.bg-subtle{background-color:$ghost;}
+
+
+div.quadrant {
+float: left;
+width: 50%;
+height: 50%;
+margin: 0;
+padding: .5em;
+border-style: solid;
+border-color: black;
+}
+div#onepoint2 {
+border-width: 0 0 1px 1px;
+margin: 0 0 -1px -1px;
+}
+div#twopoint1 {
+border-width: 1px 1px 0 0;
+margin: -1px -1px 0 0;
+clear: left;
+}
+
+
+.vertical-text{
+	white-space: nowrap;
+	border-right:1px solid $divider;
+}
+
+.vertical-text div{
+	transform: rotate(90deg);
+	transform-origin: left top 0;
+	float:right;
+}

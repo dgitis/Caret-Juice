@@ -1,0 +1,39 @@
+<% author = find_author(current_article.data.author)
+ require 'htmlentities'
+ coder = HTMLEntities.new
+ wrap_layout :layout do 
+ tweet = data.page.excerpt %>
+<article itemid="<%= current_page.data.canonical || "http://www.caretjuice.com" + current_page.url %>" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="article-info">
+		<div class="text-center row">
+			<div class=" small-12 columns">
+				<h1 style="margin-bottom:5px; line-height:3.0rem;" itemprop="headline"><%= current_article.title %></h1>
+				<p>by <%= link_to author.name , '/blog/author/' + author.keys.first, :rel => 'author' %> | under <%= link_to  data.page.category , category_path(data.page.category) %></p>
+				<h2 class="subheader" style="font-weight:normal; margin-bottom:5px; line-height:1.6rem; font-size:1.4rem; font-style:italic;" itemprop="description"><%= data.page.excerpt %></h2>
+		
+				<a href="http://twitter.com/intent/tweet?text=<%= h(tweet) %>&url=<%= 'http://www.caretjuice.com' + current_article.url%>&via=<%= author.twitter || caretjuice %>" target="blank">Tweet This</a>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-12 large-8 large-offset-2 columns" itemprop="articleBody">
+		    <%= yield %>	
+		</div>
+	</div>	
+</article>
+<%= partial "signup-bar" %>
+<div class="row">
+	<div class="small-12 large-8 large-offset-2 columns">
+		<div class="social-share ">
+			<ul class="inline-list inline-list-center">
+			<li><h4>Share:</h4></li>
+			<li style="background-color: #0077B5"><a class="icon" href="https://ca.linkedin.com/in/damongudaitis" rel="nofollow" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+			<li style="background-color: #55acee"><a class="icon" href="https://twitter.com/intent/tweet?text=<%= current_article.title %>&url=<%= 'http://www.caretjuice.com' + current_article.url %>&via=<%= author.twitter || caretjuice %>" rel="nofollow" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+			<li style="background-color: #3b5998"><a class="icon" href="http://www.facebook.com/sharer/sharer.php?u=<%= js_escape_html("http://www.caretjuice.com" + current_article.url ) %>" rel="nofollow" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>			
+			</ul>
+		</div>
+		<%= partial "practical-automation-cta" %>
+		<%= disqus %>
+	</div>
+</div>
+<% end %>

@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+@import "normalize";
+@import "../bower_components/foundation/scss/foundation/_functions";
+//@import "foundation/settings";
+@import '../bower_components/foundation/scss/foundation/components/grid';
+@import "custom-settings";
+
+// Behold, here are all the Foundation components.
+
+//@import 'foundation/components/accordion';
+//@import 'foundation/components/alert-boxes';
+//@import 'foundation/components/block-grid';
+//@import 'foundation/components/breadcrumbs';
+//@import 'foundation/components/button-groups';
+@import '../bower_components/foundation/scss/foundation/components/buttons';
+//@import 'foundation/components/clearing';
+@import '../bower_components/foundation/scss/foundation/components/dropdown';
+//@import 'foundation/components/dropdown-buttons';
+//@import 'foundation/components/flex-video';
+@import '../bower_components/foundation/scss/foundation/components/forms';
+//@import 'foundation/components/icon-bar';
+@import '../bower_components/foundation/scss/foundation/components/inline-lists';
+//@import 'foundation/components/joyride';
+//@import 'foundation/components/keystrokes';
+@import '../bower_components/foundation/scss/foundation/components/labels';
+//@import 'foundation/components/magellan';
+//@import 'foundation/components/orbit';
+//@import 'foundation/components/pagination';
+@import '../bower_components/foundation/scss/foundation/components/panels';
+//@import 'foundation/components/pricing-tables';
+//@import 'foundation/components/progress-bars';
+//@import 'foundation/components/range-slider';
+//@import 'foundation/components/reveal';
+//@import 'foundation/components/side-nav';
+//@import 'foundation/components/split-buttons';
+//@import 'foundation/components/sub-nav';
+//@import 'foundation/components/switches';
+//@import 'foundation/components/tables';
+//@import 'foundation/components/tabs';
+//@import 'foundation/components/thumbs';
+//@import 'foundation/components/tooltips';
+@import '../bower_components/foundation/scss/foundation/components/top-bar';
+@import '../bower_components/foundation/scss/foundation/components/type';
+@import '../bower_components/foundation/scss/foundation/components/offcanvas';
+@import '../bower_components/foundation/scss/foundation/components/visibility';
+
+
+// Google Fonts
+@import url(https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans:200,400,400italic,600,700,700italic);
+
+/*
+  Font Awesome - (http://fontawesome.io/) :
+  Feel free to remove the import statement below if you don't plan to use icon-fonts in your project
+*/
+
+@import "../assets/fontawesome/scss/font-awesome.scss";
+
+/*# sourceMappingURL=app.css.map */
