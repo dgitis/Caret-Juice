@@ -5,10 +5,214 @@
   <id>http://www.caretjuice.com/blog</id>
   <link href="http://www.caretjuice.com/blog"/>
   <link href="http://www.caretjuice.com/feed.xml" rel="self"/>
-  <updated>2016-03-14T17:00:00-07:00</updated>
+  <updated>2016-07-10T17:00:00-07:00</updated>
   <author>
     <name>Damon Gudaitis</name>
   </author>
+  <entry>
+    <title>Customer-Centric Data Collection Plan</title>
+    <link rel="alternate" href="http://www.caretjuice.com/blog/form-field-tactics-data-strategy"/>
+    <id>http://www.caretjuice.com/blog/form-field-tactics-data-strategy</id>
+    <published>2016-07-10T17:00:00-07:00</published>
+    <updated>2016-07-11T12:02:00-07:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Clearly something is not quite right with me because, unlike the vast, normal majority of the world, I get excited un-sexy details like form fields. Over the years, I’ve developed a preferred data collection plan that balances the data requirements of sales and marketing, optimizing conversion rates, and the communication preferences of visitors.&lt;/p&gt;
+
+&lt;p&gt;This plan is the result of working with a number of companies that started out by collecting the information that the sales team wanted through marketing automation. It has evolved through a mix of testing and learning from colleagues over the years.&lt;/p&gt;
+
+&lt;h2&gt;Evolving The &amp;ldquo;Sales Needs this Information&amp;rdquo; Approach&lt;/h2&gt;
+
+&lt;p&gt;The sales-needs-this approach is how you end up with 16 different fields to fill out asking for information like revenue and number of employees.&lt;/p&gt;
+
+&lt;p&gt;I get that lead generation needs to support sales, but this approach looks backwards and dated from a contact&amp;rsquo;s perspective.&lt;/p&gt;
+
+&lt;p&gt;While marketing moves towards focusing on the users needs,the focus of the sales-needs-this approach is entirely on the needs of the company.&lt;/p&gt;
+
+&lt;h3&gt;The Problems With This Approach&lt;/h3&gt;
+
+&lt;p&gt;Here’s a dirty secret for you.&lt;/p&gt;
+
+&lt;p&gt;People don’t like filling out forms.&lt;/p&gt;
+
+&lt;p&gt;There are approximately 6 billion conversion rate optimization articles on the web and they all tell you to reduce the number of fields to improve conversion rate. &lt;/p&gt;
+
+&lt;p&gt;Many visitors hate forms so much that they will leave before they give you information.&lt;/p&gt;
+
+&lt;p&gt;Some people will be conflicted. They hate giving away information, but they really want what you have behind the form.&lt;/p&gt;
+
+&lt;p&gt;These people will give you bad information.&lt;/p&gt;
+
+&lt;p&gt;Some people just make mistakes.&lt;/p&gt;
+
+&lt;p&gt;And some people don’t know the annual revenue of their company.&lt;/p&gt;
+
+&lt;p&gt;User-sourced information is bad. And the sales-needs-this approach to data collection relies on user-sourced information.&lt;/p&gt;
+
+&lt;p&gt;Using user-sourced information to trigger and personalize marketing or sales automation is going to waste your users’ time and your sales reps’ time, as they make calls based on inaccurate information, and lower your conversion rates.&lt;/p&gt;
+
+&lt;p&gt;It can also lead you to think a chain of nurturing emails is performing poorly, when in fact it was a default selection on a form that visitors can’t be bothered to change is sending people into an inappropriate nurturing chain.&lt;/p&gt;
+
+&lt;p&gt;You also run into data consistency problems. People spell their companies differently. Some add a period to the end of &amp;ldquo;inc.&amp;rdquo; Some don’t. And some leave “inc” off entirely.&lt;/p&gt;
+
+&lt;p&gt;Data consistency is a huge obstacle to benefiting from automation. Little differences in user-sourced information have a big impact.&lt;/p&gt;
+
+&lt;h3&gt;In Defense of This Approach&lt;/h3&gt;
+
+&lt;p&gt;If sales won’t talk to a lead then it’s not really a conversion that matters to the business.&lt;/p&gt;
+
+&lt;p&gt;An offer with a 12 percent &lt;strong&gt;lead&lt;/strong&gt; conversion rate (lead being someone in your marketing database but not passed sales) isn’t necessarily better than an 8 percent &lt;strong&gt;marketing qualified lead&lt;/strong&gt; (MQL) conversion rate (MQL being someone who gets passed to sales).&lt;/p&gt;
+
+&lt;p&gt;Any decent CRO professional understands this, but usually they write about ecommerce which is much less messy than B2B lead gen.&lt;/p&gt;
+
+&lt;p&gt;That’s also not to say that the 8 percent MQL is definitely better. Maybe asking for too much, too soon qualifies leads before they are ready and wastes sales’ time.&lt;/p&gt;
+
+&lt;p&gt;Or maybe you’ve got a great funnel set up that converts really well and speeds up sales cycles.&lt;/p&gt;
+
+&lt;p&gt;But without all of this messy context, I’ll take a lower lead conversion rate if it increases MQLs any day.&lt;/p&gt;
+
+&lt;h3&gt;The Better Way&lt;/h3&gt;
+
+&lt;p&gt;You can get the data that your sales team wants without making them do their own research or asking twenty questions before letting people read your white paper.&lt;/p&gt;
+
+&lt;p&gt;There are dozens of data services that will get you company information with only an email address.&lt;/p&gt;
+
+&lt;p&gt;Salesforce has &lt;a href="https://www.data.com/"&gt;Data.com&lt;/a&gt;. I currently use &lt;a href="https://www.fullcontact.com/"&gt;FullContact in Gmail&lt;/a&gt;. &lt;a href="http://www.hubspot.com/products/crm"&gt;HubSpot CRM&lt;/a&gt; enriches contacts automatically for their users. There are a bunch more and they are quite reasonably priced when you weigh the advantages you’ll get from reduced data entry, improved conversion rates,  and better data consistency and accuracy.&lt;/p&gt;
+
+&lt;p&gt;Data from these services isn’t perfect. You should definitely experiment to see which one best serves your market.&lt;/p&gt;
+
+&lt;p&gt;But we’ve already established that asking users for information also results in data that is wrong.&lt;/p&gt;
+
+&lt;p&gt;The degree to which of user-sourced or service-sourced data is better is something that you will have to decide for yourself.&lt;/p&gt;
+
+&lt;p&gt;With service-sourced data you can drop all of the form fields except email and get names and company info from the service, or from email signatures.&lt;/p&gt;
+
+&lt;p&gt;If contacts with no data is a big enough problem, you can use progressive profiling to capture that information from contacts later on while limiting the number of fields required by contacts that do match. &lt;/p&gt;
+
+&lt;p&gt;User-sourced data only wins in data coverage. You will get everything that you want by making every piece of data that you want mandatory.&lt;/p&gt;
+
+&lt;p&gt;Everything else is either a toss-up (accuracy) or a clear advantage for service-sourced data (effect on conversion rate and consistency).&lt;/p&gt;
+
+&lt;table class="table-text-top" style="width:100%;"&gt;
+  &lt;tr style="background-color: #ff8f4d; color: #ffffff;"&gt;
+    &lt;th style="width: 40%;"&gt;&lt;/th&gt;
+    &lt;th style="width: 30%;"&gt;User-Sourced&lt;/th&gt;
+    &lt;th style="width: 30%;"&gt;Service-Sourced&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td  style="width:40%"&gt;&lt;strong&gt;Accuracy&lt;/strong&gt;&lt;/td&gt;
+    &lt;td style="width: 30%;"&gt;Poor-Decent&lt;/td&gt;
+    &lt;td style="width: 30%;"&gt;Poor-Decent&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="bg-subtle"&gt;
+    &lt;td style="width:40%"&gt;&lt;strong&gt;Coverage&lt;/strong&gt;&lt;/td&gt;
+    &lt;td style="width: 30%;"&gt;Complete&lt;/td&gt;
+    &lt;td style="width: 30%;"&gt;Decent-Good&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="width:40%"&gt;&lt;strong&gt;Effect on Conversions&lt;/strong&gt;&lt;/td&gt;
+    &lt;td style="width: 30%;"&gt;Bad-Very Bad&lt;/td&gt;
+    &lt;td style="width: 30%;"&gt;Good-Excellent&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="bg-subtle"&gt;
+    &lt;td style="width:40%"&gt;&lt;strong&gt;Consistency&lt;/strong&gt;&lt;/td&gt;
+    &lt;td style="width: 30%;"&gt;Very Bad&lt;/td&gt;
+    &lt;td style="width: 30%;"&gt;Excellent&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;h3&gt;The Webmail Conundrum&lt;/h3&gt;
+
+&lt;p&gt;But wait, Damon, what about Yahoo! and Gmail addresses?&lt;/p&gt;
+
+&lt;p&gt;There are plenty of multi-million dollar businesses out there running through Gmail addresses. Unless you only sell to Fortune 500, you will miss out on good business if you don’t do anything about them.&lt;/p&gt;
+
+&lt;p&gt;This, however, is a problem that can be solved using automation.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;You can swap out forms for webmail contacts and profile them as you would have if you weren’t using a data service. &lt;/li&gt;
+&lt;li&gt;Or you can send an automated email inviting them to schedule a demo with sales. They may not qualify by your standard metrics, but you’re giving them an extra chance to identify themselves.&lt;/li&gt;
+&lt;li&gt;Or you can modify your lead scoring to ensure that these people don’t slip through.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are lots of ways to solve this problem while still getting the benefits of asking for less information from the majority of your contacts.&lt;/p&gt;
+
+&lt;h2&gt;Quick Hit Tactics&lt;/h2&gt;
+
+&lt;p&gt;We’ve walked through a big picture look at balancing the needs of sales with the wishes of prospects and come with a technological solution. But there are still some important tactical details left to consider before the complete data plan comes together.&lt;/p&gt;
+
+&lt;h3&gt;Don’t Be Afraid to Ask Directly&lt;/h3&gt;
+
+&lt;p&gt;I’ve just got through a whole long section telling you not to ask for the information that you want and now I’m telling you to do the opposite.&lt;/p&gt;
+
+&lt;p&gt;However, we’re not concerned here with information about the company that can be easily found elsewhere, but rather information about how the contact’s needs intersect with the company. We want to know if they are ready to buy and we want to be direct about it.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Are you buying?&lt;/li&gt;
+&lt;li&gt;How long before you buy?&lt;/li&gt;
+&lt;li&gt;Do you want to talk to sales?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I suspect that having complicated lead scoring available biases people towards complicated solutions while over-looking the obvious.&lt;/p&gt;
+
+&lt;p&gt;Most people have seen enough lead forms that they know what’s going on when you start asking for all sorts of company information so don’t make it seem like they are being tricked.&lt;/p&gt;
+
+&lt;p&gt;Asking direct questions like these helps keep everyone’s motivations in the open and paves the way for a long partnership.&lt;/p&gt;
+
+&lt;p&gt;Also, people who aren’t interested in talking to sales will be more likely to convert when they have a clear way of signalling that they don’t want a conversation. It’s not an immediate win. But it could be the start of a long-term relationship that may result in business.&lt;/p&gt;
+
+&lt;h3&gt;Ask Questions Focused on Helping the Contact&lt;/h3&gt;
+
+&lt;p&gt;Imagine these two questions are paired with identical select boxes asking contacts to choose from a list of roles.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What is your role in the company?&lt;/li&gt;
+&lt;li&gt;Would you like product information tailored to your role?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Which question would you prefer answering?&lt;/p&gt;
+
+&lt;p&gt;The first question is clearly focused on the company’s needs.&lt;/p&gt;
+
+&lt;p&gt;The second is more focused on the contact’s needs. Both sides get something out of this interaction. Transaction—tailored product information is an admittedly self-serving way of giving, but it’s still way ahead of the first question.&lt;/p&gt;
+
+&lt;p&gt;The second question might not be as good for segmenting contacts precisely how your sales and marketing team would like because &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;some people will not ask for extra information and &lt;/li&gt;
+&lt;li&gt;others will want to select several roles.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;However, the difference between these two questions is the difference between saying you are customer focused and actually being customer focused.&lt;/p&gt;
+
+&lt;p&gt;Not wanting extra information about your product or service is a useful signal.&lt;/p&gt;
+
+&lt;p&gt;Wanting information for several roles is a signal that you could have a champion at the company. Again, very worthwhile.&lt;/p&gt;
+
+&lt;p&gt;Asking questions that focus on the contact’s needs is simply about aligning the offer with the information that you require to access it.&lt;/p&gt;
+
+&lt;p&gt;Another common example worth copying is &lt;em&gt;what is your biggest challenge related to x&lt;/em&gt;-style questions. The x here is the topic of your downloadable resource or closely related to the topic. This style of question will help the sales person focus on the needs of the contact and reassure the contact that you are focused on their needs.&lt;/p&gt;
+
+&lt;p&gt;Everybody wins.&lt;/p&gt;
+
+&lt;h2&gt;Assembling these Tactics into a Plan&lt;/h2&gt;
+
+&lt;p&gt;And now we’re ready to assemble all of these pieces into a coherent plan for collecting and using contact data that we can use to guide our sales and marketing automation efforts and inform our technology needs.&lt;/p&gt;
+
+&lt;p&gt;Each business has their own particular needs that will require some adjustment and tool restrictions sometimes require additional allowances. Caret Juice customers should expect to recognize the following plan as the starting point for our marketing automation work.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Company information will be filled in through third party tools.&lt;/li&gt;
+&lt;li&gt;Except for email addresses, we will only ask for information that is focused on helping us understand and address a contact’s challenges thereby aligning our needs with theirs. This includes giving contacts a way to signal that they need help buying. &lt;/li&gt;
+&lt;li&gt;We will only break the second rule if we can’t get the information we need following the first rule.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;All of our form field, progressive profiling, data tool and integration requirements follow from these three rules.&lt;/p&gt;
+
+&lt;p&gt;Be sure to sign up for updates from Caret Juice to catch the next post on how to use lists to structure enterprise HubSpot installations where you will learn how HubSpot lists and forms fit together to support the execution of this data strategy (and make managing a complex HubSpot installation easy).&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Constellation Approach to Business Technology</title>
     <link rel="alternate" href="http://www.caretjuice.com/blog/constellation-approach-business-technology"/>
@@ -824,50 +1028,6 @@ deep integration between a small number of applications&lt;/td&gt;
 &lt;p&gt;&lt;img alt="Branded Google Search on Mobile Review Section" src="../assets/images/2015/insul-twin-mobile-2-28e7b5a8.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Unfortunately, that’s about the best that we can do for reviews right now. There are other solutions, but they break if you’re not signed in and Google’s been very flaky about supporting review URLs.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>When to Use HTML and Plain Text Emails</title>
-    <link rel="alternate" href="http://www.caretjuice.com/blog/html-plain-text-email"/>
-    <id>http://www.caretjuice.com/blog/html-plain-text-email</id>
-    <published>2015-11-14T16:00:00-08:00</published>
-    <updated>2016-03-01T11:38:26-08:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;HTML emails are prettier than plain text. They require more expertise to produce than is seen in the average email user. As a result, business owners and managers are attracted to highly-designed HTML emails.&lt;/p&gt;
-
-&lt;p&gt;But this barrier to entry often means that HTML emails are the wrong choice for communicating with customers and leads.&lt;/p&gt;
-
-&lt;h2&gt;When HTML is the Wrong Answer&lt;/h2&gt;
-
-&lt;p&gt;The main problem with highly-designed emails is that they don’t look like the kind of email you get from friends and colleagues. They immediately put their recipients on guard for marketing messages and the quality of design and messaging needs to overcome this disadvantage.&lt;/p&gt;
-
-&lt;p&gt;This makes HTML a bad choice for drip emails. Typically drip emails are automated emails chains that take on the tone of a conversation between the prospect and someone at the company.&lt;/p&gt;
-
-&lt;p&gt;The email then needs to seem like it is coming from the company representative and any design beyond proper punctuation is going to undermine the purpose of the email.&lt;/p&gt;
-
-&lt;h2&gt;When HTML is the Right Answer&lt;/h2&gt;
-
-&lt;p&gt;A highly-designed HTML newsletter is a different situation. Even if your language is friendly and personal, the recipients expect that they are receiving a message from a company.&lt;/p&gt;
-
-&lt;p&gt;There’s another important consideration with respect to design and branding when planning an HTML email—and that’s content. In particular, how the content of the email reflects on the brand.&lt;/p&gt;
-
-&lt;p&gt;A strong and consistent visual brand brand combined with excellent content trains recipients to respond favorably to the brand.&lt;/p&gt;
-
-&lt;p&gt;Remember that people receiving your emails are going to be most strongly imprinted with your brand as they are exposed to it repeatedly.&lt;/p&gt;
-
-&lt;p&gt;Conversely, if you send emails with strongly branded visuals but poor content then you are going to train these same people to react unfavorably. Until they unsubscribe, but people stay subscribed to emails they don’t care for much too long.&lt;/p&gt;
-
-&lt;p&gt;Designing emails is a lot of work. Trust me, if you don’t know how much work they are, then you don’t want to find out. HTML emails are a nightmare.&lt;/p&gt;
-
-&lt;p&gt;But it is still relatively inexpensive for a manager or owner to spend on some nice email templates compared with the consistent on-going effort required to produce excellent content for those emails.&lt;/p&gt;
-
-&lt;p&gt;Until you’re in a position where you can consistently produce excellent content, spending on emails with a strong brand design is going to hurt your brand more than it will help.&lt;/p&gt;
-
-&lt;p&gt;Your brand is more than just design and logos. The content plays a part too.&lt;/p&gt;
-
-&lt;p&gt;I’ve seen too many strong brands send bad emails to stay silent on the subject.&lt;/p&gt;
 </content>
   </entry>
 </feed>
