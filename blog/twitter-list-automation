@@ -48,8 +48,13 @@
 	  <section class="top-bar-section">
 	     <ul class="right">
 			<li><a href="/">Home</a></li>
+<<<<<<< HEAD
 			<li><a href="/blog/">Blog</a></li>
 	      	<li><a href="/contact/">Contact</a></li>
+=======
+			<li><a href="/blog.html">Blog</a></li>
+	      	<li><a href="/contact.html">Contact</a></li>
+>>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 	    </ul>
 	  </section>
 	</nav>
@@ -66,8 +71,13 @@
 <nav id="mobile-menu" class="right-off-canvas-menu">
 	<ul class="off-canvas-list">
 		<li><a href="/">Home</a></li>
+<<<<<<< HEAD
 		<li><a href="/blog/">Blog</a></li>
 		<li><a href="/contact/">Contact</a></li>
+=======
+		<li><a href="/blog.html">Blog</a></li>
+		<li><a href="/contact.html">Contact</a></li>
+>>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 	</ul>
 </nav>
     <article itemid="http://www.caretjuice.com/blog/twitter-list-automation" itemscope itemtype="http://schema.org/BlogPosting">
@@ -114,6 +124,7 @@
 
 <p>Create a new Zap that triggers whenever you add a <strong>New Contact</strong> to your CRM.</p>
 
+<<<<<<< HEAD
 <p><img alt="New Contact CRM Trigger in Zapier" src="../assets/images/2016/crm-new-contact-trigger-4817f933.png" /></p>
 
 <p>Next, create a Filter that checks that the CRM email field exists.</p>
@@ -127,6 +138,21 @@
 <p>Click <strong>Save + Continue</strong>, test the step and then connect your CRM email and phone number, if you like, to FullContact.</p>
 
 <p><img alt="FullContact Find a Person Zapier Search Settings" src="../assets/images/2016/fullcontact-find-person-settings-c3fa07c7.png" /></p>
+=======
+<p><img alt="New Contact CRM Trigger in Zapier" src="assets/images/2016/crm-new-contact-trigger-4817f933.png" /></p>
+
+<p>Next, create a Filter that checks that the CRM email field exists.</p>
+
+<p><img alt="Email Exists Filter in Zapier" src="assets/images/2016/email-exists-filter-f5a7df50.png" /></p>
+
+<p>Select FullContact for your action, connecting your FullContact account to Zapier if necessary, and choose <strong>Find a Person</strong>.</p>
+
+<p><img alt="FullContact Find a Person Zapier Search" src="assets/images/2016/fullcontact-find-person-9c62a76a.png" /></p>
+
+<p>Click <strong>Save + Continue</strong>, test the step and then connect your CRM email and phone number, if you like, to FullContact.</p>
+
+<p><img alt="FullContact Find a Person Zapier Search Settings" src="assets/images/2016/fullcontact-find-person-settings-c3fa07c7.png" /></p>
+>>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 <p>Test the step again.</p>
 
@@ -144,7 +170,11 @@
 
 <p>The specifics vary by CRM. This is what I did for Agile CRM and then set up a trigger to run this daily since I don’t have an update trigger in CRM.</p>
 
+<<<<<<< HEAD
 <p><img alt="Add Tag Automation in Agile CRM" src="../assets/images/2016/crm-add-tag-automation-bc35d018.png" /></p>
+=======
+<p><img alt="Add Tag Automation in Agile CRM" src="assets/images/2016/crm-add-tag-automation-bc35d018.png" /></p>
+>>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 <p>Moving back to Zapier, we’re going to watch for this tag, or note or whatever you needed to create to trigger the Zap, and then filter contacts by Owner to get prospects in the right list.</p>
 
@@ -158,13 +188,21 @@
 
 <p>Finally, create a Twitter <em>Add User to List</em> action.</p>
 
+<<<<<<< HEAD
 <p><img alt="Add User to Twitter List in Zapier" src="../assets/images/2016/add-user-twitter-list-f0f91431.png" /></p>
+=======
+<p><img alt="Add User to Twitter List in Zapier" src="assets/images/2016/add-user-twitter-list-f0f91431.png" /></p>
+>>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 <p>Save and connect your Twitter account.</p>
 
 <p>Select the Twitter list that you created and map the Twitter handle from your CRM to Zapier.</p>
 
+<<<<<<< HEAD
 <p><img alt="Add User to Twitter List in Zapier Settings" src="../assets/images/2016/add-user-twitter-list-settings-9c2187ee.png" /></p>
+=======
+<p><img alt="Add User to Twitter List in Zapier Settings" src="assets/images/2016/add-user-twitter-list-settings-9c2187ee.png" /></p>
+>>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 <p>Now you need to repeat this last series of steps for each sales or account rep for whom you’re creating Twitter lists.</p>
 
@@ -266,8 +304,13 @@
 					<li class="copyright"><small>&copy; Caret Juice Marketing</small></li>
 				</ul>
 				<ul class="right inline-list">
+<<<<<<< HEAD
 					<li><a href="/privacy/">Privacy</a></li>
 					<li><a href="/contact/">Contact</a></li>
+=======
+					<li><a href="/privacy.html">Privacy</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+>>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 				</ul>
 			</nav>
 		</div>

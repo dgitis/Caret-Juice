@@ -48,8 +48,13 @@
 	  <section class="top-bar-section">
 	     <ul class="right">
 			<li><a href="/">Home</a></li>
+<<<<<<< HEAD
 			<li><a href="/blog/">Blog</a></li>
 	      	<li><a href="/contact/">Contact</a></li>
+=======
+			<li><a href="/blog.html">Blog</a></li>
+	      	<li><a href="/contact.html">Contact</a></li>
+>>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 	    </ul>
 	  </section>
 	</nav>
@@ -66,8 +71,13 @@
 <nav id="mobile-menu" class="right-off-canvas-menu">
 	<ul class="off-canvas-list">
 		<li><a href="/">Home</a></li>
+<<<<<<< HEAD
 		<li><a href="/blog/">Blog</a></li>
 		<li><a href="/contact/">Contact</a></li>
+=======
+		<li><a href="/blog.html">Blog</a></li>
+		<li><a href="/contact.html">Contact</a></li>
+>>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 	</ul>
 </nav>
     <article itemid="http://www.caretjuice.com/blog/asking-google-reviews" itemscope itemtype="http://schema.org/BlogPosting">
@@ -100,17 +110,29 @@
 
 <p>Then, you’ll need to instruct the customer to click on the Write a Review link in the business information box (also known as the Knowledge Panel results) on the right side of the search results.</p>
 
+<<<<<<< HEAD
 <p><img alt="Branded Google Search on Desktop" src="../assets/images/2015/insul-twin-desktop-67e6f6ec.png" /></p>
+=======
+<p><img alt="Branded Google Search on Desktop" src="assets/images/2015/insul-twin-desktop-67e6f6ec.png" /></p>
+>>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 <p>That’s a couple of extra steps, but it is fairly straightforward.</p>
 
 <p>On mobile, it is a little more complicated with the review system hidden behind a white on blue disclosure caret signalling that more information is available.</p>
 
+<<<<<<< HEAD
 <p><img alt="Branded Google Search on Mobile" src="../assets/images/2015/insul-twin-mobile-1-18637125.png" /></p>
 
 <p>And then they’ll need to scroll down until they start seeing stars. No, really, check the screenshot below.</p>
 
 <p><img alt="Branded Google Search on Mobile Review Section" src="../assets/images/2015/insul-twin-mobile-2-28e7b5a8.png" /></p>
+=======
+<p><img alt="Branded Google Search on Mobile" src="assets/images/2015/insul-twin-mobile-1-18637125.png" /></p>
+
+<p>And then they’ll need to scroll down until they start seeing stars. No, really, check the screenshot below.</p>
+
+<p><img alt="Branded Google Search on Mobile Review Section" src="assets/images/2015/insul-twin-mobile-2-28e7b5a8.png" /></p>
+>>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 <p>Unfortunately, that’s about the best that we can do for reviews right now. There are other solutions, but they break if you’re not signed in and Google’s been very flaky about supporting review URLs.</p>
 	
@@ -204,8 +226,13 @@
 					<li class="copyright"><small>&copy; Caret Juice Marketing</small></li>
 				</ul>
 				<ul class="right inline-list">
+<<<<<<< HEAD
 					<li><a href="/privacy/">Privacy</a></li>
 					<li><a href="/contact/">Contact</a></li>
+=======
+					<li><a href="/privacy.html">Privacy</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+>>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 				</ul>
 			</nav>
 		</div>

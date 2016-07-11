@@ -48,8 +48,13 @@
 	  <section class="top-bar-section">
 	     <ul class="right">
 			<li><a href="/">Home</a></li>
+<<<<<<< HEAD
 			<li><a href="/blog/">Blog</a></li>
 	      	<li><a href="/contact/">Contact</a></li>
+=======
+			<li><a href="/blog.html">Blog</a></li>
+	      	<li><a href="/contact.html">Contact</a></li>
+>>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 	    </ul>
 	  </section>
 	</nav>
@@ -66,8 +71,13 @@
 <nav id="mobile-menu" class="right-off-canvas-menu">
 	<ul class="off-canvas-list">
 		<li><a href="/">Home</a></li>
+<<<<<<< HEAD
 		<li><a href="/blog/">Blog</a></li>
 		<li><a href="/contact/">Contact</a></li>
+=======
+		<li><a href="/blog.html">Blog</a></li>
+		<li><a href="/contact.html">Contact</a></li>
+>>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 	</ul>
 </nav>
     <article itemid="http://www.caretjuice.com/blog/constellation-approach-business-technology" itemscope itemtype="http://schema.org/BlogPosting">
@@ -320,8 +330,13 @@ deep integration between a small number of applications</td>
 					<li class="copyright"><small>&copy; Caret Juice Marketing</small></li>
 				</ul>
 				<ul class="right inline-list">
+<<<<<<< HEAD
 					<li><a href="/privacy/">Privacy</a></li>
 					<li><a href="/contact/">Contact</a></li>
+=======
+					<li><a href="/privacy.html">Privacy</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+>>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 				</ul>
 			</nav>
 		</div>

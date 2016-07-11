@@ -48,8 +48,13 @@
 	  <section class="top-bar-section">
 	     <ul class="right">
 			<li><a href="/">Home</a></li>
+<<<<<<< HEAD
 			<li><a href="/blog/">Blog</a></li>
 	      	<li><a href="/contact/">Contact</a></li>
+=======
+			<li><a href="/blog.html">Blog</a></li>
+	      	<li><a href="/contact.html">Contact</a></li>
+>>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 	    </ul>
 	  </section>
 	</nav>
@@ -66,8 +71,13 @@
 <nav id="mobile-menu" class="right-off-canvas-menu">
 	<ul class="off-canvas-list">
 		<li><a href="/">Home</a></li>
+<<<<<<< HEAD
 		<li><a href="/blog/">Blog</a></li>
 		<li><a href="/contact/">Contact</a></li>
+=======
+		<li><a href="/blog.html">Blog</a></li>
+		<li><a href="/contact.html">Contact</a></li>
+>>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 	</ul>
 </nav>
     <article itemid="http://www.caretjuice.com/blog/extract-email-domain-zapier" itemscope itemtype="http://schema.org/BlogPosting">
@@ -174,13 +184,21 @@
 
 <p>In Zapier, create a new Zap and select <strong>New Contact</strong> as the trigger from your marketing automation/CRM system.</p>
 
+<<<<<<< HEAD
 <p><img alt="New Contact Zapier Trigger" src="../assets/images/new-contact-trigger-7d0fb622.png" /></p>
+=======
+<p><img alt="New Contact Zapier Trigger" src="assets/images/new-contact-trigger-7d0fb622.png" /></p>
+>>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 <p>Test the step and check the contact information.</p>
 
 <p>Next add a <strong>Filter</strong> that checks whether the new contact has an email address.</p>
 
+<<<<<<< HEAD
 <p><img alt="Contact Exists Zapier Filter" src="../assets/images/contact-exists-filter-08bfffb0.png" /></p>
+=======
+<p><img alt="Contact Exists Zapier Filter" src="assets/images/contact-exists-filter-08bfffb0.png" /></p>
+>>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 <p>Now comes a little bit of code, but I promise that it will be quite painless.</p>
 
@@ -190,7 +208,11 @@
 
 <p>Be sure to keep the name lower case or else it will break the code in the next step.</p>
 
+<<<<<<< HEAD
 <p><img alt="Extract Email Domain Settings and Code" src="../assets/images/extract-email-domain-fa997eb4.png" /></p>
+=======
+<p><img alt="Extract Email Domain Settings and Code" src="assets/images/extract-email-domain-fa997eb4.png" /></p>
+>>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 <p>Enter the following code into the <strong>Code</strong> section.</p>
 <pre class="highlight python"><code><span class="kn">import</span> <span class="nn">re</span>
@@ -219,6 +241,7 @@
 
 <p>Create a new Update Contact type of Action for your marketing automation or CRM system.</p>
 
+<<<<<<< HEAD
 <p><img alt="Update Contact Zapier Action" src="../assets/images/update-contact-490f7d3a.png" /></p>
 
 <p>Match the email address of the contact against the email field from your system.</p>
@@ -228,6 +251,17 @@
 <p>And then finally, scroll down to the <strong>Email Domain</strong> field that you created in your system and match the <strong>EmailDomain</strong> variable that you returned in your <strong>Code by Zapier</strong> script.</p>
 
 <p><img alt="Send Zapier Code to System" src="../assets/images/send-zapier-code-to-system-09fe5c56.png" /></p>
+=======
+<p><img alt="Update Contact Zapier Action" src="assets/images/update-contact-490f7d3a.png" /></p>
+
+<p>Match the email address of the contact against the email field from your system.</p>
+
+<p><img alt="Match Contact Email" src="assets/images/match-contact-email-113dece6.png" /></p>
+
+<p>And then finally, scroll down to the <strong>Email Domain</strong> field that you created in your system and match the <strong>EmailDomain</strong> variable that you returned in your <strong>Code by Zapier</strong> script.</p>
+
+<p><img alt="Send Zapier Code to System" src="assets/images/send-zapier-code-to-system-09fe5c56.png" /></p>
+>>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 <p>Now you should start getting email domains separated out from the email addresses for any new contacts that enter the system from now on.</p>
 
@@ -323,8 +357,13 @@
 					<li class="copyright"><small>&copy; Caret Juice Marketing</small></li>
 				</ul>
 				<ul class="right inline-list">
+<<<<<<< HEAD
 					<li><a href="/privacy/">Privacy</a></li>
 					<li><a href="/contact/">Contact</a></li>
+=======
+					<li><a href="/privacy.html">Privacy</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+>>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 				</ul>
 			</nav>
 		</div>
