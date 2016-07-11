@@ -11,8 +11,8 @@
   </author>
   <entry>
     <title>Customer-Centric Data Collection Plan</title>
-    <link rel="alternate" href="http://www.caretjuice.com/blog/form-field-tactics-data-strategy"/>
-    <id>http://www.caretjuice.com/blog/form-field-tactics-data-strategy</id>
+    <link rel="alternate" href="http://www.caretjuice.com/blog/form-field-tactics-data-strategy.html"/>
+    <id>http://www.caretjuice.com/blog/form-field-tactics-data-strategy.html</id>
     <published>2016-07-10T17:00:00-07:00</published>
     <updated>2016-07-11T12:02:00-07:00</updated>
     <author>
@@ -215,8 +215,8 @@
   </entry>
   <entry>
     <title>Constellation Approach to Business Technology</title>
-    <link rel="alternate" href="http://www.caretjuice.com/blog/constellation-approach-business-technology"/>
-    <id>http://www.caretjuice.com/blog/constellation-approach-business-technology</id>
+    <link rel="alternate" href="http://www.caretjuice.com/blog/constellation-approach-business-technology.html"/>
+    <id>http://www.caretjuice.com/blog/constellation-approach-business-technology.html</id>
     <published>2016-03-14T17:00:00-07:00</published>
     <updated>2016-04-05T11:40:28-07:00</updated>
     <author>
@@ -371,8 +371,8 @@ deep integration between a small number of applications&lt;/td&gt;
   </entry>
   <entry>
     <title>Twitter List Automation</title>
-    <link rel="alternate" href="http://www.caretjuice.com/blog/twitter-list-automation"/>
-    <id>http://www.caretjuice.com/blog/twitter-list-automation</id>
+    <link rel="alternate" href="http://www.caretjuice.com/blog/twitter-list-automation.html"/>
+    <id>http://www.caretjuice.com/blog/twitter-list-automation.html</id>
     <published>2016-02-14T16:00:00-08:00</published>
     <updated>2016-02-29T14:09:38-08:00</updated>
     <author>
@@ -408,21 +408,6 @@ deep integration between a small number of applications&lt;/td&gt;
 
 &lt;p&gt;Create a new Zap that triggers whenever you add a &lt;strong&gt;New Contact&lt;/strong&gt; to your CRM.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="New Contact CRM Trigger in Zapier" src="../assets/images/2016/crm-new-contact-trigger-4817f933.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Next, create a Filter that checks that the CRM email field exists.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Email Exists Filter in Zapier" src="../assets/images/2016/email-exists-filter-f5a7df50.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Select FullContact for your action, connecting your FullContact account to Zapier if necessary, and choose &lt;strong&gt;Find a Person&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="FullContact Find a Person Zapier Search" src="../assets/images/2016/fullcontact-find-person-9c62a76a.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Click &lt;strong&gt;Save + Continue&lt;/strong&gt;, test the step and then connect your CRM email and phone number, if you like, to FullContact.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="FullContact Find a Person Zapier Search Settings" src="../assets/images/2016/fullcontact-find-person-settings-c3fa07c7.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="New Contact CRM Trigger in Zapier" src="assets/images/2016/crm-new-contact-trigger-4817f933.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Next, create a Filter that checks that the CRM email field exists.&lt;/p&gt;
@@ -436,7 +421,6 @@ deep integration between a small number of applications&lt;/td&gt;
 &lt;p&gt;Click &lt;strong&gt;Save + Continue&lt;/strong&gt;, test the step and then connect your CRM email and phone number, if you like, to FullContact.&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt="FullContact Find a Person Zapier Search Settings" src="assets/images/2016/fullcontact-find-person-settings-c3fa07c7.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;Test the step again.&lt;/p&gt;
 
@@ -454,11 +438,7 @@ deep integration between a small number of applications&lt;/td&gt;
 
 &lt;p&gt;The specifics vary by CRM. This is what I did for Agile CRM and then set up a trigger to run this daily since I don’t have an update trigger in CRM.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="Add Tag Automation in Agile CRM" src="../assets/images/2016/crm-add-tag-automation-bc35d018.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="Add Tag Automation in Agile CRM" src="assets/images/2016/crm-add-tag-automation-bc35d018.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;Moving back to Zapier, we’re going to watch for this tag, or note or whatever you needed to create to trigger the Zap, and then filter contacts by Owner to get prospects in the right list.&lt;/p&gt;
 
@@ -472,21 +452,13 @@ deep integration between a small number of applications&lt;/td&gt;
 
 &lt;p&gt;Finally, create a Twitter &lt;em&gt;Add User to List&lt;/em&gt; action.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="Add User to Twitter List in Zapier" src="../assets/images/2016/add-user-twitter-list-f0f91431.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="Add User to Twitter List in Zapier" src="assets/images/2016/add-user-twitter-list-f0f91431.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;Save and connect your Twitter account.&lt;/p&gt;
 
 &lt;p&gt;Select the Twitter list that you created and map the Twitter handle from your CRM to Zapier.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="Add User to Twitter List in Zapier Settings" src="../assets/images/2016/add-user-twitter-list-settings-9c2187ee.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="Add User to Twitter List in Zapier Settings" src="assets/images/2016/add-user-twitter-list-settings-9c2187ee.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;Now you need to repeat this last series of steps for each sales or account rep for whom you’re creating Twitter lists.&lt;/p&gt;
 
@@ -501,8 +473,8 @@ deep integration between a small number of applications&lt;/td&gt;
   </entry>
   <entry>
     <title>Extract Email Domain with Zapier</title>
-    <link rel="alternate" href="http://www.caretjuice.com/blog/extract-email-domain-zapier"/>
-    <id>http://www.caretjuice.com/blog/extract-email-domain-zapier</id>
+    <link rel="alternate" href="http://www.caretjuice.com/blog/extract-email-domain-zapier.html"/>
+    <id>http://www.caretjuice.com/blog/extract-email-domain-zapier.html</id>
     <published>2016-01-31T16:00:00-08:00</published>
     <updated>2016-02-22T14:04:34-08:00</updated>
     <author>
@@ -598,21 +570,13 @@ deep integration between a small number of applications&lt;/td&gt;
 
 &lt;p&gt;In Zapier, create a new Zap and select &lt;strong&gt;New Contact&lt;/strong&gt; as the trigger from your marketing automation/CRM system.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="New Contact Zapier Trigger" src="../assets/images/new-contact-trigger-7d0fb622.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="New Contact Zapier Trigger" src="assets/images/new-contact-trigger-7d0fb622.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;Test the step and check the contact information.&lt;/p&gt;
 
 &lt;p&gt;Next add a &lt;strong&gt;Filter&lt;/strong&gt; that checks whether the new contact has an email address.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="Contact Exists Zapier Filter" src="../assets/images/contact-exists-filter-08bfffb0.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="Contact Exists Zapier Filter" src="assets/images/contact-exists-filter-08bfffb0.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;Now comes a little bit of code, but I promise that it will be quite painless.&lt;/p&gt;
 
@@ -622,11 +586,7 @@ deep integration between a small number of applications&lt;/td&gt;
 
 &lt;p&gt;Be sure to keep the name lower case or else it will break the code in the next step.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="Extract Email Domain Settings and Code" src="../assets/images/extract-email-domain-fa997eb4.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="Extract Email Domain Settings and Code" src="assets/images/extract-email-domain-fa997eb4.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;Enter the following code into the &lt;strong&gt;Code&lt;/strong&gt; section.&lt;/p&gt;
 &lt;pre class="highlight python"&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;re&lt;/span&gt;
@@ -655,17 +615,6 @@ deep integration between a small number of applications&lt;/td&gt;
 
 &lt;p&gt;Create a new Update Contact type of Action for your marketing automation or CRM system.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="Update Contact Zapier Action" src="../assets/images/update-contact-490f7d3a.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Match the email address of the contact against the email field from your system.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Match Contact Email" src="../assets/images/match-contact-email-113dece6.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;And then finally, scroll down to the &lt;strong&gt;Email Domain&lt;/strong&gt; field that you created in your system and match the &lt;strong&gt;EmailDomain&lt;/strong&gt; variable that you returned in your &lt;strong&gt;Code by Zapier&lt;/strong&gt; script.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Send Zapier Code to System" src="../assets/images/send-zapier-code-to-system-09fe5c56.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="Update Contact Zapier Action" src="assets/images/update-contact-490f7d3a.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Match the email address of the contact against the email field from your system.&lt;/p&gt;
@@ -675,7 +624,6 @@ deep integration between a small number of applications&lt;/td&gt;
 &lt;p&gt;And then finally, scroll down to the &lt;strong&gt;Email Domain&lt;/strong&gt; field that you created in your system and match the &lt;strong&gt;EmailDomain&lt;/strong&gt; variable that you returned in your &lt;strong&gt;Code by Zapier&lt;/strong&gt; script.&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt="Send Zapier Code to System" src="assets/images/send-zapier-code-to-system-09fe5c56.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;Now you should start getting email domains separated out from the email addresses for any new contacts that enter the system from now on.&lt;/p&gt;
 
@@ -684,8 +632,8 @@ deep integration between a small number of applications&lt;/td&gt;
   </entry>
   <entry>
     <title>Automating Feedback and Reviews</title>
-    <link rel="alternate" href="http://www.caretjuice.com/blog/automating-feedback-reviews"/>
-    <id>http://www.caretjuice.com/blog/automating-feedback-reviews</id>
+    <link rel="alternate" href="http://www.caretjuice.com/blog/automating-feedback-reviews.html"/>
+    <id>http://www.caretjuice.com/blog/automating-feedback-reviews.html</id>
     <published>2016-01-14T16:00:00-08:00</published>
     <updated>2016-02-23T11:21:51-08:00</updated>
     <author>
@@ -747,17 +695,6 @@ deep integration between a small number of applications&lt;/td&gt;
 
 &lt;p&gt;Hit the &lt;strong&gt;Create a Typeform&lt;/strong&gt; and be sure to &lt;strong&gt;Save Your Account&lt;/strong&gt;.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="New Typeform" src="../assets/images/2016/new-typeform-506c991d.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Then, with your account saved, select the &lt;strong&gt;Use a template option&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Getting Started with Typeform" src="../assets/images/2016/typeform-getting-started-bee6548c.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Scroll down the templates gallery and select &lt;strong&gt;Net Promoter Score&lt;/strong&gt; and then &lt;strong&gt;Use this template&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Typeform Templates" src="../assets/images/2016/typeform-templates-90787831.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="New Typeform" src="assets/images/2016/new-typeform-506c991d.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Then, with your account saved, select the &lt;strong&gt;Use a template option&lt;/strong&gt;.&lt;/p&gt;
@@ -767,7 +704,6 @@ deep integration between a small number of applications&lt;/td&gt;
 &lt;p&gt;Scroll down the templates gallery and select &lt;strong&gt;Net Promoter Score&lt;/strong&gt; and then &lt;strong&gt;Use this template&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt="Typeform Templates" src="assets/images/2016/typeform-templates-90787831.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;Typeform’s default net promoter score survey adds a bunch of demographic questions to the standard NPS survey.&lt;/p&gt;
 
@@ -781,19 +717,11 @@ deep integration between a small number of applications&lt;/td&gt;
 
 &lt;p&gt;Select &lt;strong&gt;Hidden fields on&lt;/strong&gt;, this will require an upgrade to Pro but you can start a free trial and follow along if you prefer.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="Typeform NPS Questions" src="../assets/images/2016/typeform-nps-questions-72742d2b.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;In the &lt;strong&gt;Hidden fields&lt;/strong&gt; dialog, type &lt;em&gt;email&lt;/em&gt; and hit &lt;strong&gt;save&lt;/strong&gt;. This will let us pass the email address from your CRM/project management system/booking management system to Typeform and tie responses back to the individual who filled out the survey.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Typeform Hidden Fields Dialog" src="../assets/images/2016/typeform-hidden-fields-d9d47ff0.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="Typeform NPS Questions" src="assets/images/2016/typeform-nps-questions-72742d2b.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;In the &lt;strong&gt;Hidden fields&lt;/strong&gt; dialog, type &lt;em&gt;email&lt;/em&gt; and hit &lt;strong&gt;save&lt;/strong&gt;. This will let us pass the email address from your CRM/project management system/booking management system to Typeform and tie responses back to the individual who filled out the survey.&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt="Typeform Hidden Fields Dialog" src="assets/images/2016/typeform-hidden-fields-d9d47ff0.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;Make whichever design changes you like.&lt;/p&gt;
 
@@ -803,11 +731,7 @@ deep integration between a small number of applications&lt;/td&gt;
 
 &lt;p&gt;Under &lt;strong&gt;Typeform&lt;/strong&gt; -&amp;gt; &lt;strong&gt;Configure&lt;/strong&gt;, select &lt;strong&gt;Self notifications&lt;/strong&gt;.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;h3&gt;&lt;img alt="Typeform Notifications" src="../assets/images/2016/typeform-notifications-4066b67b.png" /&gt;&lt;/h3&gt;
-=======
 &lt;h3&gt;&lt;img alt="Typeform Notifications" src="assets/images/2016/typeform-notifications-4066b67b.png" /&gt;&lt;/h3&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;Under &lt;strong&gt;Send a notification to:&lt;/strong&gt; enter the recipient(s) for the notifications. The email that you used to sign up will be there by default.&lt;/p&gt;
 
@@ -823,11 +747,7 @@ deep integration between a small number of applications&lt;/td&gt;
 
 &lt;p&gt;Go to the &lt;strong&gt;Distribute&lt;/strong&gt; section of your new form and copy the URL for your form.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="New Typeform URL" src="../assets/images/2016/typeform-url-0d156bb6.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="New Typeform URL" src="assets/images/2016/typeform-url-0d156bb6.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;Paste the URL in your browser and add your email address in place of the &lt;em&gt;xxxx&lt;/em&gt;.&lt;/p&gt;
 
@@ -859,11 +779,7 @@ deep integration between a small number of applications&lt;/td&gt;
 
 &lt;p&gt;To find your Typeform API key, select &lt;strong&gt;My Account&lt;/strong&gt; from the drop down and scroll down to the &lt;strong&gt;Your API Key&lt;/strong&gt; section. Copy and paste that long string of nonsense in to Zapier and hit &lt;strong&gt;Continue&lt;/strong&gt;.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="Typeform API Key" src="../assets/images/2016/typeform-api-key-d1628602.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="Typeform API Key" src="assets/images/2016/typeform-api-key-d1628602.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;Now log in to MailChimp, or whatever email program that you use, select &lt;strong&gt;Lists&lt;/strong&gt; and &lt;strong&gt;Create List&lt;/strong&gt;.&lt;/p&gt;
 
@@ -871,21 +787,13 @@ deep integration between a small number of applications&lt;/td&gt;
 
 &lt;p&gt;Here’s what I entered so you can get an idea of what to write.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="MailChimp Promoters List" src="../assets/images/2016/mailchimp-promoters-list-4e86b098.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="MailChimp Promoters List" src="assets/images/2016/mailchimp-promoters-list-4e86b098.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;Now, go back to Zapier and connect your Zapier account to MailChimp.&lt;/p&gt;
 
 &lt;p&gt;You will get a popup asking you to sign in to your MailChimp account.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="Connect MailChimp with Zapier" src="../assets/images/2016/connect-mailchimp-zapier-d3d33b62.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="Connect MailChimp with Zapier" src="assets/images/2016/connect-mailchimp-zapier-d3d33b62.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;&lt;strong&gt;Log in&lt;/strong&gt; and then select &lt;strong&gt;Continue&lt;/strong&gt;.&lt;/p&gt;
 
@@ -893,11 +801,7 @@ deep integration between a small number of applications&lt;/td&gt;
 
 &lt;p&gt;Your results should look something like this.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="Zapier NPS Promoters Filter" src="../assets/images/2016/zapier-nps-promoters-filter-65b02144.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="Zapier NPS Promoters Filter" src="assets/images/2016/zapier-nps-promoters-filter-65b02144.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;When you are comfortable with this, click &lt;strong&gt;Continue&lt;/strong&gt; to set up the MailChimp end of the integration.&lt;/p&gt;
 
@@ -907,11 +811,7 @@ deep integration between a small number of applications&lt;/td&gt;
 
 &lt;p&gt;And everything else can be left as is.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="Match MailChimp Email with Typeform Email" src="../assets/images/2016/match-mailchimp-typeform-email-41ac3b05.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="Match MailChimp Email with Typeform Email" src="assets/images/2016/match-mailchimp-typeform-email-41ac3b05.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;Scroll down and hit &lt;strong&gt;Continue&lt;/strong&gt; and then proceed to Test the Zap.&lt;/p&gt;
 
@@ -929,11 +829,7 @@ deep integration between a small number of applications&lt;/td&gt;
 
 &lt;p&gt;While logged in to MailChimp, select &lt;strong&gt;Automation&lt;/strong&gt; and &lt;strong&gt;Create Automation Workflow&lt;/strong&gt;.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="Create Automation Workflow in MailChimp" src="../assets/images/2016/mailchimp-create-automation-workflow-fafbe257.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="Create Automation Workflow in MailChimp" src="assets/images/2016/mailchimp-create-automation-workflow-fafbe257.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;In the &lt;strong&gt;Choose a list to get started&lt;/strong&gt; dropdown, select &lt;em&gt;Promoters&lt;/em&gt;.&lt;/p&gt;
 
@@ -941,21 +837,13 @@ deep integration between a small number of applications&lt;/td&gt;
 
 &lt;p&gt;Welcome Message is for just a single email which is all you need if you’re just asking for a review. If you want to follow up with another message asking them to sign up for your newsletter or follow you on social media, then choose Welcome Series.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="Select Workflow for MailChimp Automation" src="../assets/images/2016/mailchimp-select-workflow-90006382.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="Select Workflow for MailChimp Automation" src="assets/images/2016/mailchimp-select-workflow-90006382.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;In the next screen, give your workflow a name and set up the sender.&lt;/p&gt;
 
 &lt;p&gt;You can see what I used in the screenshot. &lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="MailChimp Workflow Configuration" src="../assets/images/2016/mailchimp-workflow-configuration-c4fadbe8.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="MailChimp Workflow Configuration" src="assets/images/2016/mailchimp-workflow-configuration-c4fadbe8.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;Otherwise, all of the default settings are fine. I added Google Analytics link tracking, but it’s not really needed since we are sending the visitors to other sites to review us. However, if you are doing a Welcome Series and will link back to your site, then you probably want to enable this.&lt;/p&gt;
 
@@ -965,11 +853,7 @@ deep integration between a small number of applications&lt;/td&gt;
 
 &lt;p&gt;In the MailChimp Automation list under NPS Promoters click on the &lt;strong&gt;0 emails&lt;/strong&gt; link and select &lt;strong&gt;Add Email&lt;/strong&gt;.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="MailChimp Automation Add Email" src="../assets/images/2016/mailchimp-automation-email-781de9f9.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="MailChimp Automation Add Email" src="assets/images/2016/mailchimp-automation-email-781de9f9.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;h2&gt;Email Contents&lt;/h2&gt;
 
@@ -991,11 +875,7 @@ deep integration between a small number of applications&lt;/td&gt;
 
 &lt;p&gt;At the time of writing, Google is showing sites with Google Maps reviews, Trip Advisor and Expedia so those are probably good candidates.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="Google Search Results for Hotel in Halifax" src="../assets/images/2016/hotel-search-results-337f5fd3.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="Google Search Results for Hotel in Halifax" src="assets/images/2016/hotel-search-results-337f5fd3.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;The other thing to consider is whether asking for reviews is against each sites terms of service.&lt;/p&gt;
 
@@ -1091,29 +971,17 @@ deep integration between a small number of applications&lt;/td&gt;
 
 &lt;p&gt;Link &lt;strong&gt;Typeform&lt;/strong&gt; with a &lt;strong&gt;New Entry&lt;/strong&gt; trigger to your CRM with an &lt;strong&gt;Update Contact&lt;/strong&gt; action.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="Typeform Trigger with CRM Action in Zapier" src="../assets/images/2016/typeform-trigger-crm-action-1e349ebf.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Go through the various connection steps (which will depend partly on your CRM) and then match the email from Typeform to your CRM email field to match your data to the right record.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Match Typeform and CRM Email Fields" src="../assets/images/2016/match-typeform-crm-email-e1fa5a6e.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="Typeform Trigger with CRM Action in Zapier" src="assets/images/2016/typeform-trigger-crm-action-1e349ebf.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Go through the various connection steps (which will depend partly on your CRM) and then match the email from Typeform to your CRM email field to match your data to the right record.&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt="Match Typeform and CRM Email Fields" src="assets/images/2016/match-typeform-crm-email-e1fa5a6e.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;And then connect your NPS data to the new fields in CRM.&lt;/p&gt;
 
 &lt;p&gt;(I ran in to a bug at this step where Zapier couldn’t detect the NPS fields that we’d created and initialized with the first test submission. I fixed the problem by submitting my Typeform a second time and redoing this integration.)&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="Connect Typeform and CRM Fields" src="../assets/images/2016/connect-typeform-crm-b07a528a.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="Connect Typeform and CRM Fields" src="assets/images/2016/connect-typeform-crm-b07a528a.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;Test your integration, name it and you are done.&lt;/p&gt;
 
@@ -1124,8 +992,8 @@ deep integration between a small number of applications&lt;/td&gt;
   </entry>
   <entry>
     <title>Asking for Google Reviews</title>
-    <link rel="alternate" href="http://www.caretjuice.com/blog/asking-google-reviews"/>
-    <id>http://www.caretjuice.com/blog/asking-google-reviews</id>
+    <link rel="alternate" href="http://www.caretjuice.com/blog/asking-google-reviews.html"/>
+    <id>http://www.caretjuice.com/blog/asking-google-reviews.html</id>
     <published>2015-11-30T16:00:00-08:00</published>
     <updated>2016-02-22T14:06:34-08:00</updated>
     <author>
@@ -1147,29 +1015,17 @@ deep integration between a small number of applications&lt;/td&gt;
 
 &lt;p&gt;Then, you’ll need to instruct the customer to click on the Write a Review link in the business information box (also known as the Knowledge Panel results) on the right side of the search results.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="Branded Google Search on Desktop" src="../assets/images/2015/insul-twin-desktop-67e6f6ec.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="Branded Google Search on Desktop" src="assets/images/2015/insul-twin-desktop-67e6f6ec.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;That’s a couple of extra steps, but it is fairly straightforward.&lt;/p&gt;
 
 &lt;p&gt;On mobile, it is a little more complicated with the review system hidden behind a white on blue disclosure caret signalling that more information is available.&lt;/p&gt;
 
-<<<<<<< HEAD
-&lt;p&gt;&lt;img alt="Branded Google Search on Mobile" src="../assets/images/2015/insul-twin-mobile-1-18637125.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;And then they’ll need to scroll down until they start seeing stars. No, really, check the screenshot below.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Branded Google Search on Mobile Review Section" src="../assets/images/2015/insul-twin-mobile-2-28e7b5a8.png" /&gt;&lt;/p&gt;
-=======
 &lt;p&gt;&lt;img alt="Branded Google Search on Mobile" src="assets/images/2015/insul-twin-mobile-1-18637125.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;And then they’ll need to scroll down until they start seeing stars. No, really, check the screenshot below.&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt="Branded Google Search on Mobile Review Section" src="assets/images/2015/insul-twin-mobile-2-28e7b5a8.png" /&gt;&lt;/p&gt;
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 
 &lt;p&gt;Unfortunately, that’s about the best that we can do for reviews right now. There are other solutions, but they break if you’re not signed in and Google’s been very flaky about supporting review URLs.&lt;/p&gt;
 </content>

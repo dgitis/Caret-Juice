@@ -48,13 +48,8 @@
 	  <section class="top-bar-section">
 	     <ul class="right">
 			<li><a href="/">Home</a></li>
-<<<<<<< HEAD
-			<li><a href="/blog/">Blog</a></li>
-	      	<li><a href="/contact/">Contact</a></li>
-=======
 			<li><a href="/blog.html">Blog</a></li>
 	      	<li><a href="/contact.html">Contact</a></li>
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 	    </ul>
 	  </section>
 	</nav>
@@ -71,13 +66,8 @@
 <nav id="mobile-menu" class="right-off-canvas-menu">
 	<ul class="off-canvas-list">
 		<li><a href="/">Home</a></li>
-<<<<<<< HEAD
-		<li><a href="/blog/">Blog</a></li>
-		<li><a href="/contact/">Contact</a></li>
-=======
 		<li><a href="/blog.html">Blog</a></li>
 		<li><a href="/contact.html">Contact</a></li>
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 	</ul>
 </nav>
     <div class="article-info">
@@ -91,29 +81,29 @@
 <div class="row">
 	<div class="small-12 large-8 large-offset-2">
 			<article class="article-listing">
-	<h2 class="subheader"><a href="/blog/form-field-tactics-data-strategy">Customer-Centric Data Collection Plan</a> </h2>
+	<h2 class="subheader"><a href="/blog/form-field-tactics-data-strategy.html">Customer-Centric Data Collection Plan</a> </h2>
 	<p class="published">Jul 11 2016</p>
 	<p>Clearly something is not quite right with me because, unlike the vast, normal majority of the world, I get excited un-sexy details like form fields. Over the years, I’ve developed a preferred data collection plan that balances the data requirements...</p>
-  	<p class="text-right">Keep Reading <a href="/blog/form-field-tactics-data-strategy">Customer-Centric Data Collection Plan</a> </p>
+  	<p class="text-right">Keep Reading <a href="/blog/form-field-tactics-data-strategy.html">Customer-Centric Data Collection Plan</a> </p>
 </article>
 			<article class="article-listing">
-	<h2 class="subheader"><a href="/blog/twitter-list-automation">Twitter List Automation</a> </h2>
+	<h2 class="subheader"><a href="/blog/twitter-list-automation.html">Twitter List Automation</a> </h2>
 	<p class="published">Feb 15 2016</p>
 	<p>Twitter lists are a feature that nearly every digital marketer has experimented with but few use for anything other than keeping track of a select group of influencers.</p>
 
 <p>Lists seem like they would be quite useful to sales reps and account managers...</p>
-  	<p class="text-right">Keep Reading <a href="/blog/twitter-list-automation">Twitter List Automation</a> </p>
+  	<p class="text-right">Keep Reading <a href="/blog/twitter-list-automation.html">Twitter List Automation</a> </p>
 </article>
 			<article class="article-listing">
-	<h2 class="subheader"><a href="/blog/extract-email-domain-zapier">Extract Email Domain with Zapier</a> </h2>
+	<h2 class="subheader"><a href="/blog/extract-email-domain-zapier.html">Extract Email Domain with Zapier</a> </h2>
 	<p class="published">Feb  1 2016</p>
 	<p>When you capture information online there is always a balance between asking for more information and making it as easy as possible for your visitors to complete their task.</p>
 
 <p>You want more information to help you decide what to do with the person but...</p>
-  	<p class="text-right">Keep Reading <a href="/blog/extract-email-domain-zapier">Extract Email Domain with Zapier</a> </p>
+  	<p class="text-right">Keep Reading <a href="/blog/extract-email-domain-zapier.html">Extract Email Domain with Zapier</a> </p>
 </article>
 			<article class="article-listing">
-	<h2 class="subheader"><a href="/blog/automating-feedback-reviews">Automating Feedback and Reviews</a> </h2>
+	<h2 class="subheader"><a href="/blog/automating-feedback-reviews.html">Automating Feedback and Reviews</a> </h2>
 	<p class="published">Jan 15 2016</p>
 	<p>Any business that develops a long relationship with their customers can and should automate feedback and review requests.</p>
 
@@ -125,15 +115,15 @@
 <li>construction contractors</li>
 <li>hotels</li>
 </ul>
-  	<p class="text-right">Keep Reading <a href="/blog/automating-feedback-reviews">Automating Feedback and Reviews</a> </p>
+  	<p class="text-right">Keep Reading <a href="/blog/automating-feedback-reviews.html">Automating Feedback and Reviews</a> </p>
 </article>
 			<article class="article-listing">
-	<h2 class="subheader"><a href="/blog/creative-update-triggers-zapier">Creative On Update Zapier Triggers</a> </h2>
+	<h2 class="subheader"><a href="/blog/creative-update-triggers-zapier.html">Creative On Update Zapier Triggers</a> </h2>
 	<p class="published">Oct 15 2015</p>
 	<p>Zapier is limited by how the different CRM systems make your data available to other application. Zapier can only react to changes that are broadcast by the CRM (and then only after you give it permission).</p>
 
 <p>Hubspot CRM’s integration with Zapier, for...</p>
-  	<p class="text-right">Keep Reading <a href="/blog/creative-update-triggers-zapier">Creative On Update Zapier Triggers</a> </p>
+  	<p class="text-right">Keep Reading <a href="/blog/creative-update-triggers-zapier.html">Creative On Update Zapier Triggers</a> </p>
 </article>
 		</div>
 	</div>
@@ -149,13 +139,8 @@
 					<li class="copyright"><small>&copy; Caret Juice Marketing</small></li>
 				</ul>
 				<ul class="right inline-list">
-<<<<<<< HEAD
-					<li><a href="/privacy/">Privacy</a></li>
-					<li><a href="/contact/">Contact</a></li>
-=======
 					<li><a href="/privacy.html">Privacy</a></li>
 					<li><a href="/contact.html">Contact</a></li>
->>>>>>> parent of 438eb43... Add .HTML Extension to Blog
 				</ul>
 			</nav>
 		</div>
