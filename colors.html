@@ -8,7 +8,7 @@
 	<meta name="description" content="Hex values for the colors used on the Caret Juice Marketing site.">
 	<link rel="canonical" href="http://www.caretjuice.com/colors.html" />
     
-    <link href="stylesheets/app-7ded4253.css" rel="stylesheet" />
+    <link href="stylesheets/app-a9b31547.css" rel="stylesheet" />
     <script src="javascripts/modernizr-0145479a.js"></script>
 	<link href="/assets/images/favicon-d706ba9e.png" rel="shortcut icon" type="image/png">
 	<link href="/assets/images/favicon-152-da840e5c.png" rel="apple-touch-icon-precomposed">
@@ -38,12 +38,12 @@
 		<div class="inner-wrap">
     		<div class="contain-to-grid section">
 	<nav class="top-bar show-for-large-up" data-topbar role="navigation">
-		<ul class="title-area">
+		<ul class="title-area inline-list">
 	    <li class="name">
-<a href="/">			  <img alt="Caret Juice Marketing Logo" src="assets/images/caretjuice-logo-2-b7bf8654.png" />
-</a>	    </li>
-	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-	    
+<a href="/">				  <img alt="Caret Juice Marketing Logo" src="assets/images/caretjuice-logo-2-b7bf8654.png" />
+</a>		    </li>
+			<li id="tag-line">Listen <span class="carrot">^</span> Learn <span class="carrot">^</span> Act</li>
+	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->	    
 	  </ul>
 	  <section class="top-bar-section">
 	     <ul class="right">
@@ -102,47 +102,14 @@
 			</nav>
 		</div>
 	</footer>
-	<script src="javascripts/all-87c2808a.js"></script>
-	<script src="/javascripts/equalizer-161a78ef.js"></script>
+	<script src="javascripts/all-6ca1cce1.js"></script>
 	<script>
-	$(document).foundation();
-	$('.lazyYT').lazyYT();
-
-	  function getParameterByName(name) {
-	    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-	    var regexS = "[\\?&]" + name + "=([^&#]*)";
-	    var regex = new RegExp(regexS);
-	    var results = regex.exec(window.location.search);
-	    if(results == null) {
-	      return "";
-	    } else {
-	      return decodeURIComponent(results[1].replace(/\+/g, " "));
-	    }
+	$(document).foundation({
+	  equalizer : {
+	    // Specify if Equalizer should make elements equal height once they become stacked.
+	    equalize_on_stack: true
 	  }
-
-	  $(document).ready(function () {
-	    function addFormElem(paramName, fieldName) {
-	      var paramValue = getParameterByName(paramName);
-	      var $utmEl = $("<input type='hidden' name='" + fieldName + "' value='" + paramValue + "'>");
-	      if (paramValue != "") {
-	        $("form").first().prepend($utmEl);
-	      }
-	    }
-
-	    // Note: Only change the values after ":" if they are different for you
-	    // They are the same one as you added in your email marketing provider
-	    var utmParams = {
-	      "utm_campaign" : "Campaign",
-	      "utm_source"   : "Source",
-	      "utm_medium"   : "Medium",
-	      "utm_content"  : "Content",
-	      "utm_term"     : "Term"
-	    };
-
-	    for (var param in utmParams) {
-	      addFormElem(param, utmParams[param]);
-	    }
-	  });
+	});
 	</script>
 	<script type="text/javascript" src="https://caretjuice.agilecrm.com/stats/min/agile-min.js"> </script> <script type="text/javascript" > _agile.set_account('dsre5qvjds4rmlt9nh2eteo5be', 'caretjuice'); _agile.track_page_view(); _agile_execute_web_rules(); </script>
   </body>
