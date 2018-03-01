@@ -5,10 +5,194 @@
   <id>http://www.caretjuice.com/blog</id>
   <link href="http://www.caretjuice.com/blog"/>
   <link href="http://www.caretjuice.com/feed.xml" rel="self"/>
-  <updated>2017-09-22T17:00:00-07:00</updated>
+  <updated>2018-02-28T16:00:00-08:00</updated>
   <author>
     <name>Damon Gudaitis</name>
   </author>
+  <entry>
+    <title>Are you data driven? Or just numbers driven?</title>
+    <link rel="alternate" href="http://www.caretjuice.com/blog/data-driven.html"/>
+    <id>http://www.caretjuice.com/blog/data-driven.html</id>
+    <published>2018-02-28T16:00:00-08:00</published>
+    <updated>2018-03-01T13:43:27-08:00</updated>
+    <author>
+      <name>Damon Gudaitis</name>
+    </author>
+    <summary type="html">&lt;p&gt;Data is important to modern marketing.&lt;/p&gt;
+
+&lt;p&gt;When young marketing professionals ask what they should learn to get ahead, you are almost certain to hear data literacy as core skill for advancement.&lt;/p&gt;
+
+&lt;p&gt;The Chief Martech &lt;a href="http://chiefmartec.com/2017/05/marketing-techniology-landscape-supergraphic-2017/"&gt;2017 Marketing Technology Landscape&lt;/a&gt; has...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Data is important to modern marketing.&lt;/p&gt;
+
+&lt;p&gt;When young marketing professionals ask what they should learn to get ahead, you are almost certain to hear data literacy as core skill for advancement.&lt;/p&gt;
+
+&lt;p&gt;The Chief Martech &lt;a href="http://chiefmartec.com/2017/05/marketing-techniology-landscape-supergraphic-2017/"&gt;2017 Marketing Technology Landscape&lt;/a&gt; has over 5000 companies listed—up from 150 in just 2011. All of those add or use data in some way.&lt;/p&gt;
+
+&lt;p&gt;Google Trends shows a steady increase in interest in &amp;ldquo;data-driven marketing&amp;rdquo; over the past decade. The spikes in interest just before the decade look like special cause problems in the data collection—the alternating months of zero interest with interest almost on par with today is what makes those numbers suspect.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="2018-03-01-data-driven/data-driven-marketing-trends.jpg"&gt;google trends for data driven marketing&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;All of this is to say that data is important to marketing today.&lt;/p&gt;
+
+&lt;h2&gt;What if we&amp;rsquo;re not data driven, but numbers driven?&lt;/h2&gt;
+
+&lt;p&gt;When we talk about data, we usually talk about numbers, but it&amp;rsquo;s important to remember that data does not equal numbers.&lt;/p&gt;
+
+&lt;p&gt;We have quantitative and qualitative data: numbers and text (or audio, or qualitative numbers).&lt;/p&gt;
+
+&lt;p&gt;Qualitative data, when applied to marketing, includes things like open-ended surveys and all sorts of text and audio data generated during phone calls.&lt;/p&gt;
+
+&lt;p&gt;When a marketing leader boasts about being data driven, are they including interviews and open-ended surveys? Usually, the answer is no.&lt;/p&gt;
+
+&lt;p&gt;They are numbers driven. They want to maximize revenue and minimize expenses and use a lot of intermediary marketing metrics to get there on the way.&lt;/p&gt;
+
+&lt;p&gt;This might be a safe way to manage marketing, but it&amp;rsquo;s not the best.&lt;/p&gt;
+
+&lt;h2&gt;What if being numbers driven is bad?&lt;/h2&gt;
+
+&lt;p&gt;The most important equation to any business is this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Profit = Revenue - Expenses&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You don&amp;rsquo;t need to make a profit every quarter, or even every decade (just ask Amazon). But you need to understand this equation to plan for future success.&lt;/p&gt;
+
+&lt;p&gt;Optimizing for the numbers isn&amp;rsquo;t likely result in a healthy business whether you are optimizing for P = R - E or for leads, marketing qualified leads, or opportunities.&lt;/p&gt;
+
+&lt;p&gt;Controversial?&lt;/p&gt;
+
+&lt;p&gt;Superficially, yes. But it&amp;rsquo;s the logical conclusion of lessons most marketers have already internalized.&lt;/p&gt;
+
+&lt;p&gt;Say, for example, a SaaS company wants to minimize expenses. They can halve the headcount of the support department and instantly reduce expenses and increase profit. The executives can pay themselves bonuses and happily move on to their next brilliant plan.&lt;/p&gt;
+
+&lt;p&gt;However, the newly downsized support department can&amp;rsquo;t keep up with demand for support.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;  Tickets now take longer to be resolved. &lt;/li&gt;
+&lt;li&gt;  Some of your customers grow unhappy. &lt;/li&gt;
+&lt;li&gt;  Some costly problems fester unsolved. &lt;/li&gt;
+&lt;li&gt;  Morale in the support department crashes which further undermines service.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The end result is that customers start to churn (or they share their experiences with their peers and you lose out on deals without measuring or knowing it).&lt;/p&gt;
+
+&lt;p&gt;By optimizing for numbers you&amp;rsquo;ve undercut the business. And you&amp;rsquo;ve done so in a way that results in short-term executive rewards. But the end result is lower revenue and profit.&lt;/p&gt;
+
+&lt;p&gt;The point of this example isn&amp;rsquo;t to say that numbers are bad or that you can&amp;rsquo;t use numbers.&lt;/p&gt;
+
+&lt;p&gt;It is to remind you that numbers are abstractions of reality.&lt;/p&gt;
+
+&lt;p&gt;You could very easily look at the P = R - C equation and decide to analyze support requests and change your product or site to reduce the number of support calls that are made and achieve cost savings the same way.&lt;/p&gt;
+
+&lt;p&gt;Conversely, you can come up with much less obviously bad examples where, for example, you increase short-term sales in a way that causes support to suffer, craters your reputation and reduces long-term revenue.&lt;/p&gt;
+
+&lt;p&gt;P = R - C correlates perfectly with profit. But it does not cause profit.&lt;/p&gt;
+
+&lt;p&gt;Your leads, marketing qualified leads, and opportunities are even more poorly correlated with profit. Making numbers-driven decisions to optimize for any of these things is even more dangerous.&lt;/p&gt;
+
+&lt;p&gt;KPIs are abstractions. They are correlated with business success. But they don&amp;rsquo;t cause that success.&lt;/p&gt;
+
+&lt;h2&gt;The Repeated, Colossal Failure of Marketing Data&lt;/h2&gt;
+
+&lt;p&gt;Numbers-driven marketing is responsible for ruining marketing. And we do it over and over again without learning.&lt;/p&gt;
+
+&lt;p&gt;Banner ads used to actually work. What made them drop to a 0.03 percent average click-thru rate (most of which are bots or accidental clicks because how often do you actually click on ads)?&lt;/p&gt;
+
+&lt;p&gt;We optimized for numbers rather than for the experience. Instead of trying to create ads that drew the right people in, we made ads flashier and more garish relevance-be-damned.&lt;/p&gt;
+
+&lt;p&gt;People learned and stopped paying attention. We kept optimizing our conversion rates down hundredths of a percent.&lt;/p&gt;
+
+&lt;p&gt;New, personalized video tactics being used in ABM will no doubt go the same way. Writing someone&amp;rsquo;s name on a handheld whiteboard is going to get attention and get your pitch heard.&lt;/p&gt;
+
+&lt;p&gt;Personalized video vendors will start sharing how following these personalized video best-practices improve metrics. Everyone will jump in with canned pitches that don&amp;rsquo;t reflect the extra level of care that these tactics originally embodied and we&amp;rsquo;ll optimize those videos out of relevance.&lt;/p&gt;
+
+&lt;h2&gt;Plato, the Allegory of the Cave, and Data-Driven Marketing&lt;/h2&gt;
+
+&lt;p&gt;Plato&amp;rsquo;s Allegory of the Cave is the classical illustration of the problem with treating abstractions of reality as if they are real. (I&amp;rsquo;ll admit that Plato&amp;rsquo;s idea of forms is different, but that doesn&amp;rsquo;t make the allegory any less poignant.)&lt;/p&gt;
+
+&lt;p&gt;In The Allegory of the Cave, in case you need a refresher, there are a row of people staring at the wall of a cave. Behind them is a fire and some puppets projecting shadows on the wall.&lt;/p&gt;
+
+&lt;p&gt;The people staring at the wall see the shadows and believe that to be reality. They even talk amongst themselves and reinforce their belief that the shadow is reality.&lt;/p&gt;
+
+&lt;p&gt;The shadows are the numbers used in numbers-driven marketing absent any context from qualitative data. They are representations of reality.&lt;/p&gt;
+
+&lt;p&gt;The people interacting with your marketing are the reality that produce those numbers.&lt;/p&gt;
+
+&lt;p&gt;Why would you base decisions strictly off of representations when it is easy to give those numbers meaning by turning away from that wall and looking at what causes shadows?&lt;/p&gt;
+
+&lt;p&gt;Talking to your sales and customer service reps isn&amp;rsquo;t enough. They are dealing with a different set of people.&lt;/p&gt;
+
+&lt;p&gt;Early- and mid-career professionals frequently ignite sales cycles internally without ever appearing on the buying committee that speaks with sales.&lt;/p&gt;
+
+&lt;p&gt;The main technology users that customer service reps meet are rarely more than a fraction of the buying committee.&lt;/p&gt;
+
+&lt;p&gt;Data from sales and customer service reps is better than nothing, but it doesn&amp;rsquo;t compare with qualitative data gained through direct contact with the people in your funnels.&lt;/p&gt;
+
+&lt;h2&gt;Qualitative Context Gives Number Meaning&lt;/h2&gt;
+
+&lt;p&gt;Interviewing leads at various stages of your funnel provides the context that gives all of your numbers meaning.&lt;/p&gt;
+
+&lt;p&gt;Increasing your lead to marketing qualified lead conversion rate won&amp;rsquo;t necessarily increase revenue. You might just end up sending more bad leads to sales and waste more time.&lt;/p&gt;
+
+&lt;p&gt;Pairing qualitative data on what motivates your leads and what needs or doubts that they have gives you the context to create better experiences and know that your improved metrics represent real improvements to the experience of becoming a customer and not just shadows without concrete meaning.&lt;/p&gt;
+
+&lt;p&gt;The best thing about qualitative data is that you don&amp;rsquo;t need a lot of it for it to be useful. Each interview will return many insights which you can then use to run A/B tests and quantify the improvement all while knowing that the lift in conversion rate is actually related to causing downstream revenue improvements.&lt;/p&gt;
+
+&lt;p&gt;Without qualitative context, quantitative data has no value.&lt;/p&gt;
+
+&lt;h2&gt;Going from Numbers Driven to Data Driven&lt;/h2&gt;
+
+&lt;p&gt;There is a lot of value in the numbers that marketing generates, but to fully take advantage of that value you need to understand the context in which numbers occur.&lt;/p&gt;
+
+&lt;p&gt;The good news is that these ideas I&amp;rsquo;ve presented here aren&amp;rsquo;t in any way new and they certainly aren&amp;rsquo;t mine. They are built on product management practices tested by companies like Intercom and Basecamp which are in turn built on manufacturing practices that have been around since the end of the Second World War.&lt;/p&gt;
+
+&lt;p&gt;And because others have blazed the trail, we can learn and build from their experiences.&lt;/p&gt;
+
+&lt;p&gt;Jobs-to-be-Done thinking provides some ideas for getting past the superficial needs to understand the motivations. What job is are people hiring my product for? JTBD theory was conceived to engineer and market innovative products and services that people want without falling into the trap of delivering what they think they want.&lt;/p&gt;
+
+&lt;p&gt;Why can&amp;rsquo;t we apply it to our marketing funnels? What jobs do people hire your webinars to do? Your demos? Your free trials?&lt;/p&gt;
+
+&lt;p&gt;An important part of JTBD theory is figuring out what causes people to fire their current solution. &lt;/p&gt;
+
+&lt;p&gt;Another one is figuring out what job comes next after they&amp;rsquo;ve hired a solution.&lt;/p&gt;
+
+&lt;p&gt;These are fundamental problems facing enterprise marketers and JTBD theory provides ideas for using qualitative data to understand and overcome them.&lt;/p&gt;
+
+&lt;p&gt;JTBD theory is based on Systems Thinking.&lt;/p&gt;
+
+&lt;p&gt;Systems Thinking is credited for the post WWII renaissance of Japanese manufacturing (and its originator, W. Edwards Deming, predicted its downfall when the Japanese started sending their brightest to get MBAs in the West).&lt;/p&gt;
+
+&lt;p&gt;Lean manufacturing, Kanban, Six Sigma are some of its direct offspring which means that it can also share a claim of ancestry for agile software development.&lt;/p&gt;
+
+&lt;p&gt;How might enterprise marketers, who have to sell to multiple buyers with multiple influencers going through long, drawn out buying processes apply a way of looking at management (and the world) that embraces the interdependencies within systems?&lt;/p&gt;
+
+&lt;p&gt;We have buyer personas and funnels. But how well do we understand the relationships between personas and business processes? How well do we understand how change affects those relationships? And how well do your funnels represent reality?&lt;/p&gt;
+
+&lt;p&gt;Systems Thinking provides ideas for understanding interdependencies so that we can better structure our own marketing systems and understand how to influence the corporate social ecosystem.&lt;/p&gt;
+
+&lt;h2&gt;Atomic or Ecological&lt;/h2&gt;
+
+&lt;p&gt;Business thought is divided between the atomic view, where every division is a cog in the machine and every person in the division is another cog within that greater part, and the ecological view, where affecting one part of the system can have many, unpredictable effects on other parts.&lt;/p&gt;
+
+&lt;p&gt;A numbers-driven approach to marketing is within the atomic view. A whole data approach that includes qualitative context is within the ecological view.&lt;/p&gt;
+
+&lt;p&gt;Systems Thinking is the most influential ecological view of business management and Jobs-to-be-Done thinking is an application of Systems Thinking to product management and product marketing.&lt;/p&gt;
+
+&lt;p&gt;Design Thinking is a recent ecological response to the problems of atomized design that also provides plenty more ideas that we could use to design enterprise marketing experiences.&lt;/p&gt;
+
+&lt;p&gt;The Internet has primed buyers to expect ecological experiences when they buy but enterprise marketers are still struggling to adapt relying on models adapted from consumer marketing.&lt;/p&gt;
+
+&lt;p&gt;All of these disciplines are great sources of ideas for making your marketing more data driven and less numbers driven.&lt;/p&gt;
+
+&lt;p&gt;If you need some help getting started or you&amp;rsquo;re overwhelmed, Caret Juice Marketing offers a guaranteed interview and insights package to help you get started with data-driven marketing in a way that limits risk and commitment. We narrowly apply these ideas by interviewing 10 people who completed a recent conversion event and then report on the insights from those interviews.&lt;/p&gt;
+
+&lt;p&gt;You can then decide whether the insights are worth it and decide whether to pay and continue working with Caret Juice.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="/contact.html"&gt;Contact us to get started&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>The Numbers Lie</title>
     <link rel="alternate" href="http://www.caretjuice.com/blog/the-numbers-lie-how-quantitative-data-fails-b-to-b-marketers.html"/>
@@ -862,168 +1046,6 @@ deep integration between a small number of applications&lt;/td&gt;
 &lt;p&gt;Some salespeople are happy to maintain a relationship after the sale and are fine with their list of prospects including former prospects that they’ve already either won or lost. But others would like that sort of thing cleaned up.&lt;/p&gt;
 
 &lt;p&gt;This is less of an issue for account managers because accounts don’t normally churn as fast as sales prospects qualify or disqualify, but it is still a problem with no easy automated solution.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Extract Email Domain with Zapier</title>
-    <link rel="alternate" href="http://www.caretjuice.com/blog/extract-email-domain-zapier.html"/>
-    <id>http://www.caretjuice.com/blog/extract-email-domain-zapier.html</id>
-    <published>2016-01-31T16:00:00-08:00</published>
-    <updated>2017-10-30T14:54:04-07:00</updated>
-    <author>
-      <name>Damon Gudaitis</name>
-    </author>
-    <summary type="html">&lt;p&gt;When you capture information online there is always a balance between asking for more information and making it as easy as possible for your visitors to complete their task.&lt;/p&gt;
-
-&lt;p&gt;You want more information to help you decide what to do with the person but...&lt;/p&gt;</summary>
-    <content type="html">&lt;p&gt;When you capture information online there is always a balance between asking for more information and making it as easy as possible for your visitors to complete their task.&lt;/p&gt;
-
-&lt;p&gt;You want more information to help you decide what to do with the person but you also want to maximize the number of people who give you their contact information.&lt;/p&gt;
-
-&lt;p&gt;In a B2B context, email addresses are king. Every form has an email field. But everything else is up for debate particularly when you need more information to qualify whether it is worth having a sales rep contact the lead.&lt;/p&gt;
-
-&lt;p&gt;There is a lot that you can do with just the email address particularly if you get the email domain from the address.&lt;/p&gt;
-
-&lt;h2&gt;Internal Notifications&lt;/h2&gt;
-
-&lt;p&gt;Extracting the email domain from your contacts lets you trigger a number of useful internal notifications when working complex sales with long sales cycles.&lt;/p&gt;
-
-&lt;p&gt;If you’re selling high-priced (and hopefully high-value) items to other businesses, then often there will be several people included in the decision to buy. These sales usually take a long time. I’ve seen sales reps working an account for years before finally closing a sale.&lt;/p&gt;
-
-&lt;p&gt;Notifying sales reps when a new contact from one of their accounts starts interacting with your marketing materials can be of great value. &lt;/p&gt;
-
-&lt;p&gt;It can mean that a good prospect that wasn’t ready several years ago is now in the market.&lt;/p&gt;
-
-&lt;p&gt;Or, if they are already in a sales cycle, it can tell the sales rep who are some of the other decision makers who will be involved in the purchase. They can then do more research seeing what sorts of content they read on the site and learn more about the individual online.&lt;/p&gt;
-
-&lt;p&gt;We can trigger these notifications by matching email domains.&lt;/p&gt;
-
-&lt;h2&gt;Lead Scoring&lt;/h2&gt;
-
-&lt;p&gt;Another way that you can use email domain is in scoring leads that your sales team hasn’t spoken to before.&lt;/p&gt;
-
-&lt;p&gt;Again, presuming you’re working a complex sale with long sales cycles, seeing multiple contacts from the same email domain is a good signal that the company associated with that domain is in the market.&lt;/p&gt;
-
-&lt;p&gt;Matching multiple email domains over the space of a few months should give leads a big boost to their lead score and trigger a follow up from the sales team.&lt;/p&gt;
-
-&lt;h2&gt;Collecting Pre-Sales Data&lt;/h2&gt;
-
-&lt;p&gt;The email domain is also useful for collecting pre-sales data from other databases like Salesforce’s data.com, Dun and Bradstreet or LinkedIn.&lt;/p&gt;
-
-&lt;p&gt;Using the company name is unreliable when you’re tying to match different data sources.&lt;/p&gt;
-
-&lt;p&gt;You can have separate legal names, trade names and DBAs (doing business as).&lt;/p&gt;
-
-&lt;p&gt;Sometimes people include the designations like Ltd. and  LLC at the end of the name, but other people often leave them out.&lt;/p&gt;
-
-&lt;p&gt;You even have problems with adding or leaving off the period in Ltd. or using abbreviations versus spelling out &lt;em&gt;Limited&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;You can have the same company name used by different companies in different parts of the world.&lt;/p&gt;
-
-&lt;p&gt;Sometimes people even make typos.&lt;/p&gt;
-
-&lt;p&gt;And finally, you can have conglomerates of multiple companies each with their own name.&lt;/p&gt;
-
-&lt;p&gt;If you’ve got a verified email address, then you have a unique identifier for the individual and for the company that owns that domain.&lt;/p&gt;
-
-&lt;p&gt;You can use the domain to more reliably get data about the company than you can a company name typed in to an online form.&lt;/p&gt;
-
-&lt;p&gt;One problem with using the domain is that you can have multiple domains for a company. Or different domains for different departments or regions.&lt;/p&gt;
-
-&lt;p&gt;The LinkedIn API helps with this challenge. It associates multiple domains with each company. You can use the API to look up company data by domain and find other domains associated with the company and then match against all of the domains.&lt;/p&gt;
-
-&lt;p&gt;Salesforce only lets you look up by website and email domains are often different from website domains and you won’t capture the full range of email domains associated with a particular company.&lt;/p&gt;
-
-&lt;p&gt;Once you connect with a data source, you can pull all sorts of information like the name, number of employees, revenue (if they are public) and all sorts of location data.&lt;/p&gt;
-
-&lt;p&gt;Regardless of data source, using the email domain to look up additional information from third party databases is an advanced use and should only be done by an experienced developer.&lt;/p&gt;
-
-&lt;h2&gt;Marketing Automation&lt;/h2&gt;
-
-&lt;p&gt;All of these uses for email domain assume that you have a complex sale and that you are using marketing automation and CRM. Some of the set up is best done in your marketing automation system.&lt;/p&gt;
-
-&lt;p&gt;Filtering out Gmail, Yahoo and Live/Hotmail addresses is best done in your marketing automation system. Keeping a running list of email domains that you want to filter in the marketing automation system is easier than modifying the custom script that we’re going to use.&lt;/p&gt;
-
-&lt;p&gt;Similarly, triggering notifications and lead scoring is best done in the marketing automation system.&lt;/p&gt;
-
-&lt;p&gt;Because the specifics of each system vary a great deal, we won’t cover how exactly to set up the filtering, notifying, matching and scoring. These are the types of things that marketing automation systems do well so they shouldn’t be too difficult to set up.&lt;/p&gt;
-
-&lt;h2&gt;Zapier&lt;/h2&gt;
-
-&lt;p&gt;Extracting the email domain from an email address is usually a customization in marketing automation systems that is not so easy to set up.&lt;/p&gt;
-
-&lt;p&gt;Microsoft Dynamics CRM would require some scripting in Visual Basic that would only be useful for Dynamics users. Hubspot would require that you do an API integration and host your own code.&lt;/p&gt;
-
-&lt;p&gt;We’re going cover how to use Zapier to extract the email domain. This way, Zapier hosts your code and you can use these instructions with any Zapier-compatible system.&lt;/p&gt;
-
-&lt;p&gt;Zapier recently launched multi-step Zaps that make this workflow possible.&lt;/p&gt;
-
-&lt;p&gt;Create a new multi-step Zap that triggers when a New Contact is added to your marketing automation system (or CRM).&lt;/p&gt;
-
-&lt;p&gt;The first thing you need to do is create a field to keep the email domain in your system.&lt;/p&gt;
-
-&lt;p&gt;Specifics of how to do this depend on your system, but it shouldn’t be difficult. Name the field &lt;em&gt;Email Domain&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;In Zapier, create a new Zap and select &lt;strong&gt;New Contact&lt;/strong&gt; as the trigger from your marketing automation/CRM system.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="New Contact Zapier Trigger" src="assets/images/new-contact-trigger-7d0fb622.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Test the step and check the contact information.&lt;/p&gt;
-
-&lt;p&gt;Next add a &lt;strong&gt;Filter&lt;/strong&gt; that checks whether the new contact has an email address.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Contact Exists Zapier Filter" src="assets/images/contact-exists-filter-08bfffb0.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Now comes a little bit of code, but I promise that it will be quite painless.&lt;/p&gt;
-
-&lt;p&gt;Add a &lt;strong&gt;Code by Zapier&lt;/strong&gt; action and select &lt;strong&gt;Run Python&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;In the &lt;strong&gt;Input&lt;/strong&gt; section of the &lt;strong&gt;Edit Template&lt;/strong&gt; step, select the marketing automaion/CRM email field and name it &lt;em&gt;email&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Be sure to keep the name lower case or else it will break the code in the next step.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Extract Email Domain Settings and Code" src="assets/images/extract-email-domain-fa997eb4.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Enter the following code into the &lt;strong&gt;Code&lt;/strong&gt; section.&lt;/p&gt;
-&lt;pre class="highlight python"&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;re&lt;/span&gt;
-&lt;span class="n"&gt;email&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;input&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'email'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="n"&gt;emailatDomain&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;re&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;search&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;".+@([&lt;/span&gt;&lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="s"&gt;w.]+)"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;email&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="s"&gt;'emailDomain'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;emailatDomain&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;group&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;emailatDomain&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="s"&gt;'Error'&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;For those of you with little knowledge of Python, here’s what’s going on.&lt;/p&gt;
-
-&lt;p&gt;Line 1: Import the regular expression module that will let us match patterns.&lt;/p&gt;
-
-&lt;p&gt;Line 2: Grab the input that we named email (and assigned to the email field from the marketing automation system) and make it a variable called &lt;em&gt;email&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Line 3: Search for any combination of characters or symbols until you find an @ sign, then look for one or more upper or lower case letters, numbers and periods and create a group from whatever matches this last part of the pattern. Call the whole collection emailatDomain.&lt;/p&gt;
-
-&lt;p&gt;Line 4: Return the following for Zapier to use.&lt;/p&gt;
-
-&lt;p&gt;Line 5: Create emailDomain from the group of letters, numbers and periods after the @ sign if emailatDomain is set. Otherwise return the word &lt;em&gt;Error&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Test the code against a recent contact.&lt;/p&gt;
-
-&lt;p&gt;Finally, we need to send the email domain back to your marketing automation or CRM system.&lt;/p&gt;
-
-&lt;p&gt;Create a new Update Contact type of Action for your marketing automation or CRM system.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Update Contact Zapier Action" src="assets/images/update-contact-490f7d3a.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Match the email address of the contact against the email field from your system.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Match Contact Email" src="assets/images/match-contact-email-113dece6.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;And then finally, scroll down to the &lt;strong&gt;Email Domain&lt;/strong&gt; field that you created in your system and match the &lt;strong&gt;EmailDomain&lt;/strong&gt; variable that you returned in your &lt;strong&gt;Code by Zapier&lt;/strong&gt; script.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Send Zapier Code to System" src="assets/images/send-zapier-code-to-system-09fe5c56.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Now you should start getting email domains separated out from the email addresses for any new contacts that enter the system from now on.&lt;/p&gt;
-
-&lt;p&gt;You can start using the field in your chosen system to trigger notifications, score leads, or fetch additional information about the company.&lt;/p&gt;
 </content>
   </entry>
 </feed>
