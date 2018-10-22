@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Caret Juice Marketing Blog</title>
+  <subtitle>Marketing technology and automation minus the hype.</subtitle>
+  <id>http://www.caretjuice.com/blog</id>
+  <link href="http://www.caretjuice.com/blog"/>
+  <link href="http://www.caretjuice.com/feed.xml" rel="self"/>
+  <updated>2018-02-28T16:00:00-08:00</updated>
+  <author>
+    <name>Damon Gudaitis</name>
+  </author>
+  <entry>
+    <title>Are you data driven? Or just numbers driven?</title>
+    <link rel="alternate" href="http://www.caretjuice.com/blog/data-driven.html"/>
+    <id>http://www.caretjuice.com/blog/data-driven.html</id>
+    <published>2018-02-28T16:00:00-08:00</published>
+    <updated>2018-03-01T13:53:50-08:00</updated>
+    <author>
+      <name>Damon Gudaitis</name>
+    </author>
+    <summary type="html">&lt;p&gt;Data is important to modern marketing.&lt;/p&gt;
+
+&lt;p&gt;When young marketing professionals ask what they should learn to get ahead, you are almost certain to hear data literacy as core skill for advancement.&lt;/p&gt;
+
+&lt;p&gt;The Chief Martech &lt;a href="http://chiefmartec.com/2017/05/marketing-techniology-landscape-supergraphic-2017/"&gt;2017 Marketing Technology Landscape&lt;/a&gt; has...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Data is important to modern marketing.&lt;/p&gt;
+
+&lt;p&gt;When young marketing professionals ask what they should learn to get ahead, you are almost certain to hear data literacy as core skill for advancement.&lt;/p&gt;
+
+&lt;p&gt;The Chief Martech &lt;a href="http://chiefmartec.com/2017/05/marketing-techniology-landscape-supergraphic-2017/"&gt;2017 Marketing Technology Landscape&lt;/a&gt; has over 5000 companies listed—up from 150 in just 2011. All of those add or use data in some way.&lt;/p&gt;
+
+&lt;p&gt;Google Trends shows a steady increase in interest in &amp;ldquo;data-driven marketing&amp;rdquo; over the past decade. The spikes in interest just before the decade look like special cause problems in the data collection—the alternating months of zero interest with interest almost on par with today is what makes those numbers suspect.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/blog/2018-03-01-data-driven/data-driven-marketing-trends.png" alt="google trends for data driven marketing"&gt;&lt;/p&gt;
+
+&lt;p&gt;All of this is to say that data is important to marketing today.&lt;/p&gt;
+
+&lt;h2&gt;What if we&amp;rsquo;re not data driven, but numbers driven?&lt;/h2&gt;
+
+&lt;p&gt;When we talk about data, we usually talk about numbers, but it&amp;rsquo;s important to remember that data does not equal numbers.&lt;/p&gt;
+
+&lt;p&gt;We have quantitative and qualitative data: numbers and text (or audio, or qualitative numbers).&lt;/p&gt;
+
+&lt;p&gt;Qualitative data, when applied to marketing, includes things like open-ended surveys and all sorts of text and audio data generated during phone calls.&lt;/p&gt;
+
+&lt;p&gt;When a marketing leader boasts about being data driven, are they including interviews and open-ended surveys? Usually, the answer is no.&lt;/p&gt;
+
+&lt;p&gt;They are numbers driven. They want to maximize revenue and minimize expenses and use a lot of intermediary marketing metrics to get there on the way.&lt;/p&gt;
+
+&lt;p&gt;This might be a safe way to manage marketing, but it&amp;rsquo;s not the best.&lt;/p&gt;
+
+&lt;h2&gt;What if being numbers driven is bad?&lt;/h2&gt;
+
+&lt;p&gt;The most important equation to any business is this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Profit = Revenue - Expenses&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You don&amp;rsquo;t need to make a profit every quarter, or even every decade (just ask Amazon). But you need to understand this equation to plan for future success.&lt;/p&gt;
+
+&lt;p&gt;Optimizing for the numbers isn&amp;rsquo;t likely result in a healthy business whether you are optimizing for P = R - E or for leads, marketing qualified leads, or opportunities.&lt;/p&gt;
+
+&lt;p&gt;Controversial?&lt;/p&gt;
+
+&lt;p&gt;Superficially, yes. But it&amp;rsquo;s the logical conclusion of lessons most marketers have already internalized.&lt;/p&gt;
+
+&lt;p&gt;Say, for example, a SaaS company wants to minimize expenses. They can halve the headcount of the support department and instantly reduce expenses and increase profit. The executives can pay themselves bonuses and happily move on to their next brilliant plan.&lt;/p&gt;
+
+&lt;p&gt;However, the newly downsized support department can&amp;rsquo;t keep up with demand for support.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;  Tickets now take longer to be resolved. &lt;/li&gt;
+&lt;li&gt;  Some of your customers grow unhappy. &lt;/li&gt;
+&lt;li&gt;  Some costly problems fester unsolved. &lt;/li&gt;
+&lt;li&gt;  Morale in the support department crashes which further undermines service.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The end result is that customers start to churn (or they share their experiences with their peers and you lose out on deals without measuring or knowing it).&lt;/p&gt;
+
+&lt;p&gt;By optimizing for numbers you&amp;rsquo;ve undercut the business. And you&amp;rsquo;ve done so in a way that results in short-term executive rewards. But the end result is lower revenue and profit.&lt;/p&gt;
+
+&lt;p&gt;The point of this example isn&amp;rsquo;t to say that numbers are bad or that you can&amp;rsquo;t use numbers.&lt;/p&gt;
+
+&lt;p&gt;It is to remind you that numbers are abstractions of reality.&lt;/p&gt;
+
+&lt;p&gt;You could very easily look at the P = R - C equation and decide to analyze support requests and change your product or site to reduce the number of support calls that are made and achieve cost savings the same way.&lt;/p&gt;
+
+&lt;p&gt;Conversely, you can come up with much less obviously bad examples where, for example, you increase short-term sales in a way that causes support to suffer, craters your reputation and reduces long-term revenue.&lt;/p&gt;
+
+&lt;p&gt;P = R - C correlates perfectly with profit. But it does not cause profit.&lt;/p&gt;
+
+&lt;p&gt;Your leads, marketing qualified leads, and opportunities are even more poorly correlated with profit. Making numbers-driven decisions to optimize for any of these things is even more dangerous.&lt;/p&gt;
+
+&lt;p&gt;KPIs are abstractions. They are correlated with business success. But they don&amp;rsquo;t cause that success.&lt;/p&gt;
+
+&lt;h2&gt;The Repeated, Colossal Failure of Marketing Data&lt;/h2&gt;
+
+&lt;p&gt;Numbers-driven marketing is responsible for ruining marketing. And we do it over and over again without learning.&lt;/p&gt;
+
+&lt;p&gt;Banner ads used to actually work. What made them drop to a 0.03 percent average click-thru rate (most of which are bots or accidental clicks because how often do you actually click on ads)?&lt;/p&gt;
+
+&lt;p&gt;We optimized for numbers rather than for the experience. Instead of trying to create ads that drew the right people in, we made ads flashier and more garish relevance-be-damned.&lt;/p&gt;
+
+&lt;p&gt;People learned and stopped paying attention. We kept optimizing our conversion rates down hundredths of a percent.&lt;/p&gt;
+
+&lt;p&gt;New, personalized video tactics being used in ABM will no doubt go the same way. Writing someone&amp;rsquo;s name on a handheld whiteboard is going to get attention and get your pitch heard.&lt;/p&gt;
+
+&lt;p&gt;Personalized video vendors will start sharing how following these personalized video best-practices improve metrics. Everyone will jump in with canned pitches that don&amp;rsquo;t reflect the extra level of care that these tactics originally embodied and we&amp;rsquo;ll optimize those videos out of relevance.&lt;/p&gt;
+
+&lt;h2&gt;Plato, the Allegory of the Cave, and Data-Driven Marketing&lt;/h2&gt;
+
+&lt;p&gt;Plato&amp;rsquo;s Allegory of the Cave is the classical illustration of the problem with treating abstractions of reality as if they are real. (I&amp;rsquo;ll admit that Plato&amp;rsquo;s idea of forms is different, but that doesn&amp;rsquo;t make the allegory any less poignant.)&lt;/p&gt;
+
+&lt;p&gt;In The Allegory of the Cave, in case you need a refresher, there are a row of people staring at the wall of a cave. Behind them is a fire and some puppets projecting shadows on the wall.&lt;/p&gt;
+
+&lt;p&gt;The people staring at the wall see the shadows and believe that to be reality. They even talk amongst themselves and reinforce their belief that the shadow is reality.&lt;/p&gt;
+
+&lt;p&gt;The shadows are the numbers used in numbers-driven marketing absent any context from qualitative data. They are representations of reality.&lt;/p&gt;
+
+&lt;p&gt;The people interacting with your marketing are the reality that produce those numbers.&lt;/p&gt;
+
+&lt;p&gt;Why would you base decisions strictly off of representations when it is easy to give those numbers meaning by turning away from that wall and looking at what causes shadows?&lt;/p&gt;
+
+&lt;p&gt;Talking to your sales and customer service reps isn&amp;rsquo;t enough. They are dealing with a different set of people.&lt;/p&gt;
+
+&lt;p&gt;Early- and mid-career professionals frequently ignite sales cycles internally without ever appearing on the buying committee that speaks with sales.&lt;/p&gt;
+
+&lt;p&gt;The main technology users that customer service reps meet are rarely more than a fraction of the buying committee.&lt;/p&gt;
+
+&lt;p&gt;Data from sales and customer service reps is better than nothing, but it doesn&amp;rsquo;t compare with qualitative data gained through direct contact with the people in your funnels.&lt;/p&gt;
+
+&lt;h2&gt;Qualitative Context Gives Number Meaning&lt;/h2&gt;
+
+&lt;p&gt;Interviewing leads at various stages of your funnel provides the context that gives all of your numbers meaning.&lt;/p&gt;
+
+&lt;p&gt;Increasing your lead to marketing qualified lead conversion rate won&amp;rsquo;t necessarily increase revenue. You might just end up sending more bad leads to sales and waste more time.&lt;/p&gt;
+
+&lt;p&gt;Pairing qualitative data on what motivates your leads and what needs or doubts that they have gives you the context to create better experiences and know that your improved metrics represent real improvements to the experience of becoming a customer and not just shadows without concrete meaning.&lt;/p&gt;
+
+&lt;p&gt;The best thing about qualitative data is that you don&amp;rsquo;t need a lot of it for it to be useful. Each interview will return many insights which you can then use to run A/B tests and quantify the improvement all while knowing that the lift in conversion rate is actually related to causing downstream revenue improvements.&lt;/p&gt;
+
+&lt;p&gt;Without qualitative context, quantitative data has no value.&lt;/p&gt;
+
+&lt;h2&gt;Going from Numbers Driven to Data Driven&lt;/h2&gt;
+
+&lt;p&gt;There is a lot of value in the numbers that marketing generates, but to fully take advantage of that value you need to understand the context in which numbers occur.&lt;/p&gt;
+
+&lt;p&gt;The good news is that these ideas I&amp;rsquo;ve presented here aren&amp;rsquo;t in any way new and they certainly aren&amp;rsquo;t mine. They are built on product management practices tested by companies like Intercom and Basecamp which are in turn built on manufacturing practices that have been around since the end of the Second World War.&lt;/p&gt;
+
+&lt;p&gt;And because others have blazed the trail, we can learn and build from their experiences.&lt;/p&gt;
+
+&lt;p&gt;Jobs-to-be-Done thinking provides some ideas for getting past the superficial needs to understand the motivations. What job is are people hiring my product for? JTBD theory was conceived to engineer and market innovative products and services that people want without falling into the trap of delivering what they think they want.&lt;/p&gt;
+
+&lt;p&gt;Why can&amp;rsquo;t we apply it to our marketing funnels? What jobs do people hire your webinars to do? Your demos? Your free trials?&lt;/p&gt;
+
+&lt;p&gt;An important part of JTBD theory is figuring out what causes people to fire their current solution. &lt;/p&gt;
+
+&lt;p&gt;Another one is figuring out what job comes next after they&amp;rsquo;ve hired a solution.&lt;/p&gt;
+
+&lt;p&gt;These are fundamental problems facing enterprise marketers and JTBD theory provides ideas for using qualitative data to understand and overcome them.&lt;/p&gt;
+
+&lt;p&gt;JTBD theory is based on Systems Thinking.&lt;/p&gt;
+
+&lt;p&gt;Systems Thinking is credited for the post WWII renaissance of Japanese manufacturing (and its originator, W. Edwards Deming, predicted its downfall when the Japanese started sending their brightest to get MBAs in the West).&lt;/p&gt;
+
+&lt;p&gt;Lean manufacturing, Kanban, Six Sigma are some of its direct offspring which means that it can also share a claim of ancestry for agile software development.&lt;/p&gt;
+
+&lt;p&gt;How might enterprise marketers, who have to sell to multiple buyers with multiple influencers going through long, drawn out buying processes apply a way of looking at management (and the world) that embraces the interdependencies within systems?&lt;/p&gt;
+
+&lt;p&gt;We have buyer personas and funnels. But how well do we understand the relationships between personas and business processes? How well do we understand how change affects those relationships? And how well do your funnels represent reality?&lt;/p&gt;
+
+&lt;p&gt;Systems Thinking provides ideas for understanding interdependencies so that we can better structure our own marketing systems and understand how to influence the corporate social ecosystem.&lt;/p&gt;
+
+&lt;h2&gt;Atomic or Ecological&lt;/h2&gt;
+
+&lt;p&gt;Business thought is divided between the atomic view, where every division is a cog in the machine and every person in the division is another cog within that greater part, and the ecological view, where affecting one part of the system can have many, unpredictable effects on other parts.&lt;/p&gt;
+
+&lt;p&gt;A numbers-driven approach to marketing is within the atomic view. A whole data approach that includes qualitative context is within the ecological view.&lt;/p&gt;
+
+&lt;p&gt;Systems Thinking is the most influential ecological view of business management and Jobs-to-be-Done thinking is an application of Systems Thinking to product management and product marketing.&lt;/p&gt;
+
+&lt;p&gt;Design Thinking is a recent ecological response to the problems of atomized design that also provides plenty more ideas that we could use to design enterprise marketing experiences.&lt;/p&gt;
+
+&lt;p&gt;The Internet has primed buyers to expect ecological experiences when they buy but enterprise marketers are still struggling to adapt relying on models adapted from consumer marketing.&lt;/p&gt;
+
+&lt;p&gt;All of these disciplines are great sources of ideas for making your marketing more data driven and less numbers driven.&lt;/p&gt;
+
+&lt;p&gt;If you need some help getting started or you&amp;rsquo;re overwhelmed, Caret Juice Marketing offers a guaranteed interview and insights package to help you get started with data-driven marketing in a way that limits risk and commitment. We narrowly apply these ideas by interviewing 10 people who completed a recent conversion event and then report on the insights from those interviews.&lt;/p&gt;
+
+&lt;p&gt;You can then decide whether the insights are worth it and decide whether to pay and continue working with Caret Juice.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="/contact.html"&gt;Contact us to get started&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>The Numbers Lie</title>
+    <link rel="alternate" href="http://www.caretjuice.com/blog/the-numbers-lie-how-quantitative-data-fails-b-to-b-marketers.html"/>
+    <id>http://www.caretjuice.com/blog/the-numbers-lie-how-quantitative-data-fails-b-to-b-marketers.html</id>
+    <published>2017-09-22T17:00:00-07:00</published>
+    <updated>2017-10-25T13:20:07-07:00</updated>
+    <author>
+      <name>Damon Gudaitis</name>
+    </author>
+    <summary type="html">&lt;p&gt;Business to business marketers have adopted consumer marketing practices like data-driven decision making and funnel-based conversion rate optimization. However, we haven’t properly taken into account fundamental differences between business and consumer...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Business to business marketers have adopted consumer marketing practices like data-driven decision making and funnel-based conversion rate optimization. However, we haven’t properly taken into account fundamental differences between business and consumer marketing in adapting these practices.&lt;/p&gt;
+
+&lt;p&gt;Misunderstanding the systems that generate business data, and how the systems that generates consumer data differ undermines the usefulness of our data. Making data-driven decisions and doing conversion rate optimization in these circumstances is dangerous.&lt;/p&gt;
+
+&lt;h2&gt;The Consumer Funnel and CRO Problem&lt;/h2&gt;
+
+&lt;p&gt;The data that we get in B-to-B marketing is divorced from important metrics like sales and revenue. When you are dealing with a nine-month sales cycle, increasing the number of leads or marketing qualified leads doesn’t result in a proportionate number of sales.&lt;/p&gt;
+
+&lt;p&gt;The AIDA (attention, interest, desire, action) model is the prototype funnel that has been built on and adapted to all sorts of marketing including the various flavours of B-to-B funnels.&lt;/p&gt;
+
+&lt;p&gt;The AIDA model works great when the action you want is a sale. The lag between the action and the sale is zero.&lt;/p&gt;
+
+&lt;p&gt;It also works well when used at the individual level on micro conversions. Helping new subscribers to your blog understand that they have a work challenge that can be fixed and that your product can fix their challenge is a useful abstraction when designing your blog and planning what content to send to subscribers.&lt;/p&gt;
+
+&lt;p&gt;If you are reaching 20 percent of the addressable market and you double that to 40 percent, then you have a reasonable expectation to double your sales.&lt;/p&gt;
+
+&lt;p&gt;If you improve a landing page that serves as a cog in your nurturing from a 20 percent to a 40 percent conversion rate, you are not going to double the number of sales that pass through that page.&lt;/p&gt;
+
+&lt;p&gt;When applied to conversion rate optimization for micro-conversions (one of many interactions on the path to a business sale) in a complex sale across an account, the funnel model falls apart. &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The lag between action and sale is usually measured in months forcing us to test against leading indicators that aren’t well correlated with sales.&lt;/li&gt;
+&lt;li&gt;The relation between one person at a company understanding your solution (and most any other micro-conversion) and a sale is not measurable.&lt;/li&gt;
+&lt;li&gt;An account can still find a path to a sale even when an individual is blocked by a failed interaction (live chat, asking questions at a demo, having concerns over-ruled by a superior).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The most motivated prospects are more likely to overcome obstacles to consider your product. &lt;/p&gt;
+
+&lt;p&gt;I’m not saying that you should be proud of unnecessary obstacles and leave them in place, just that using conversion rate optimization to double the number of people who request a demo won’t double the number of sales because you’ve already captured the most motivated buyers.&lt;/p&gt;
+
+&lt;h3&gt;Aside&lt;/h3&gt;
+
+&lt;p&gt;Now it’s possible that you could measure your conversion rate over time and your sales (with a time lag to account for the length of the sales cycle) and model the effects of conversion rate changes to individual interactions on the path to a sale to predict how an improvement will impact revenue.&lt;/p&gt;
+
+&lt;p&gt;The minor problem is that the creative you use for each change could be more or less appealing to different demographics which would complicate predictions. But, I don’t see this to invalidate this approach.&lt;/p&gt;
+
+&lt;p&gt;The major problem is that with a long sales cycle, the time between interaction and sale is such that you’ll probably need to wait somewhere in the 6-12 months range to account for lag and then collect data while changing just that one landing page for at least 6 months to get the results you need.&lt;/p&gt;
+
+&lt;p&gt;In order for the test to be valid, you would need to hold your other variables stable over that time. That means no changes to your sales or marketing processes for at least a year.&lt;/p&gt;
+
+&lt;p&gt;The cost of not improving your sales and marketing for a year is not worth the tradeoff of knowing how improving one interaction affects your bottom line.&lt;/p&gt;
+
+&lt;h2&gt;The Consumer Data Problem&lt;/h2&gt;
+
+&lt;p&gt;Just like our funnels are derived from consumer models for how sales happen, our data practices are derived from consumer data practices.&lt;/p&gt;
+
+&lt;p&gt;Data-driven marketing shouldn’t mean the same thing when talking about B-to-B compared with B-to-C.&lt;/p&gt;
+
+&lt;p&gt;Data on a consumer funnel is close to the actual sale event. Data on a business funnel is quite removed from the sale event.&lt;/p&gt;
+
+&lt;p&gt;As a result, consumer marketing data often has a causal relationship with the sale and is closely correlated where it is not.&lt;/p&gt;
+
+&lt;p&gt;Business marketing data relies on leading indicators which don’t have a causal relation to sales.&lt;/p&gt;
+
+&lt;p&gt;You can use correlation data to understand where people are struggling with your marketing system, but trying to effect changes to revenue by optimizing leading indicators isn’t going to give the results that you want.&lt;/p&gt;
+
+&lt;p&gt;There are other approaches to measuring the interactions on the buying path, like multi-touch attribution, but none of them separate interactions that legitimately influence people and interactions that are speedbumps on the way to a sale. The &amp;ldquo;marketing influence&amp;rdquo; metric is measuring touches rather than influence.&lt;/p&gt;
+
+&lt;p&gt;Even if you understand influence, it doesn’t help with optimization since you still run into the problem that you can’t predict which improvements in micro-conversions will result in material downstream improvements in revenue.&lt;/p&gt;
+
+&lt;h2&gt;The Role of Qualitative Data&lt;/h2&gt;
+
+&lt;p&gt;Data in B-to-B marketing is a huge challenge but it’s a worthwhile challenge.&lt;/p&gt;
+
+&lt;p&gt;Having said that it’s time to rethink data where optimization is concerned.&lt;/p&gt;
+
+&lt;p&gt;Leading indicators and poorly correlated quantitative data is a poor substitute for the hard work of really understanding the needs of the people interacting with our marketing and how those needs intersect with their buying processes.&lt;/p&gt;
+
+&lt;p&gt;Quantitative data gives you information. You need good information to make good decisions.&lt;/p&gt;
+
+&lt;p&gt;Qualitative data gives you knowledge. Information without the context of knowledge is dangerous.&lt;/p&gt;
+
+&lt;p&gt;Combining qualitative data with quantitative gives us the context we need to give meaning to an improved conversion rate in the middle of your funnel.&lt;/p&gt;
+
+&lt;p&gt;Say, for example, that you’ve done qualitative research and know that the people who download your A/B Testing Best Practices Guide fall into the following categories:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;People who need guidance on what to start testing so they can feel better about their contribution to the company.&lt;/li&gt;
+&lt;li&gt;Copywriters who are looking for different formulas to add to their repetoire.&lt;/li&gt;
+&lt;li&gt;Veteran testers who need some ideas to keep their programs fresh.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Now you can optimize for each of these scenarios and see which one resonates the most with the audience. The qualitative data gives you the context to know that doubling the conversion rate on the page also represents twice as many people completing a satisfying interaction with your marketing.&lt;/p&gt;
+
+&lt;p&gt;And it also gives you ideas for new resources based on the actual challenges.&lt;/p&gt;
+
+&lt;h2&gt;Our Solution&lt;/h2&gt;
+
+&lt;p&gt;Qualitative data doesn’t just magically get you the information you need to make better decisions. You need to ask the right questions of the right people.&lt;/p&gt;
+
+&lt;p&gt;Caret Juice uses Jobs-to-be-Done (JTBD) interviews to understand the needs and motivations of the people interacting with your marketing and then understand the context in which those needs and motivations arise.&lt;/p&gt;
+
+&lt;p&gt;JTBD thinking is popular in product development circles because it forces interviewers to go beyond the superficial what-people think-they-want and understand why so that product owners can come up with novel solutions.&lt;/p&gt;
+
+&lt;p&gt;Understanding the needs and motivations points to avenues for optimizing the copy of landing pages, ads, and calls to action as well as changes to make to existing marketing assets in order to better meet those needs.&lt;/p&gt;
+
+&lt;p&gt;Using interviews to power your optimizations means that any increase in conversion rate represents a genuine improvement on the experience of interacting with your marketing rather than the phantom improvements of micro-conversions in complex sales that have little relation to revenue.&lt;/p&gt;
+
+&lt;p&gt;You will also discover unmet needs in your marketing helping you create valuable new assets.&lt;/p&gt;
+
+&lt;p&gt;Context helps you assemble assets into a persuasive system by understanding what typically comes before and typically what comes after an interaction. It also helps understand the relationships between the individuals interacting with your marketing and their coworkers and business processes that precipitate the interaction.&lt;/p&gt;
+
+&lt;p&gt;Surfacing the right next steps is a major challenge in a complex sale. By understanding the context of interactions your marketing does a better job of meeting the needs of people before the company is looking to buy and of monopolizing the research time of individuals actively involved in a buying process.&lt;/p&gt;
+
+&lt;p&gt;In practice, this will mean that you do a better job of adding next steps in thank you pages, at the end of whitepapers and other assets, and in automated emails. The result will be increased funnel velocity and happier leads.&lt;/p&gt;
+
+&lt;p&gt;The B-to-B marketing funnel is a useful abstraction when taking a strategic view of marketing. But it loses its usefulness when turning that strategic vision into action. Funnel metrics are great for understanding what is going on, but you can&amp;rsquo;t effectively optimize for them.&lt;/p&gt;
+
+&lt;p&gt;Looking at each interaction as a job to be done and trying to optimize for the success of the most important jobs on the path to a sale helps the people tasked with executing the strategy focus on genuine improvements to the buyer’s experience rather than important sounding metrics that get in the way of the hard job of understanding buyers’ needs and motivations and satisfying them.&lt;/p&gt;
+
+&lt;p&gt;Curious about how looking at interactions this way can help produce better interactions? Try our &lt;a href="/conversion-insights.html"&gt;trial insights package&lt;/a&gt; and pay only if you think it worth it.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>The Role of Testing in B-to-B Marketing</title>
+    <link rel="alternate" href="http://www.caretjuice.com/blog/testing-role-b-to-b.html"/>
+    <id>http://www.caretjuice.com/blog/testing-role-b-to-b.html</id>
+    <published>2017-04-05T17:00:00-07:00</published>
+    <updated>2017-10-30T14:16:56-07:00</updated>
+    <author>
+      <name>Damon Gudaitis</name>
+    </author>
+    <summary type="html">&lt;p&gt;Each little interaction in B-to-B marketing is a promise that the company makes to the prospective buyer. Every promise that is fulfilled builds trust with an individual and across an organization.&lt;/p&gt;
+
+&lt;p&gt;The role of marketing in B-to-B is to build incremental...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Each little interaction in B-to-B marketing is a promise that the company makes to the prospective buyer. Every promise that is fulfilled builds trust with an individual and across an organization.&lt;/p&gt;
+
+&lt;p&gt;The role of marketing in B-to-B is to build incremental trust ahead of and during a sales cycle by keeping promises:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;The snippet in the search results is a promise that your product (or podcast, or blog post) will help the buyer answer the problem that initiated the search.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The email notification that you published a new blog post is a promise that reading will be worth the buyer’s time.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The copy on a webinar landing page is a promise that the buyer will learn something worth sacrificing an hour of their time.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The individual fields in your request a demo form are promises that you will use that information to give the buyer a better demo.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The role of testing is to make sure that you are making the right promises. Testing anything less ambitious is setting your B-to-B program up for failure. Failure is a big danger since all you need to do is follow the best-practice advice of ecommerce conversion rate optimization.&lt;/p&gt;
+
+&lt;p&gt;The design of your test program will make the difference between success and failure with A/B testing. But the testing role in B-to-B shouldn’t be limited to A/B testing in the browser. Qualitative feedback and strategic A/B testing are tactics that can multiply the impact of your B-to-B testing program.&lt;/p&gt;
+
+&lt;h2&gt;A/B Testing&lt;/h2&gt;
+
+&lt;p&gt;A/B testing in B-to-B environments is a challenge:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;You have lower traffic so it takes longer to get a significant result.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The final conversion doesn’t happen on your website.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The final conversion occurs several months after the first interaction with your website so it is hard to tell whether a conversion early in the buyer’s journey has an effect on later sales.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You can have several people involved in the final conversion who interact with online and offline sales and marketing in a variety of ways.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Despite these many challenges you can build a testing program that uses A/B testing to powerful effect through good program design.&lt;/p&gt;
+
+&lt;h3&gt;Simplicity&lt;/h3&gt;
+
+&lt;p&gt;You will have to compensate for the complexity of your conversion with simplicity in your testing program.&lt;/p&gt;
+
+&lt;p&gt;The first rule for B-to-B testing is to stick to A/B testing. Multivariate testing looks awesome in theory, but it will take 20 years to get a significant result at B-to-B traffic level. &lt;/p&gt;
+
+&lt;p&gt;Even when you get a significant result, you are still just testing for the conversion that you can see rather than the actual revenue conversion.&lt;/p&gt;
+
+&lt;p&gt;Keep it simple and get quick results so you can book improvements and launch new tests soon after.&lt;/p&gt;
+
+&lt;h3&gt;Test Your Fundamental Assumptions About the Customer&lt;/h3&gt;
+
+&lt;p&gt;Testing the fundamentals is an important corollary to keeping your testing program simple.&lt;/p&gt;
+
+&lt;p&gt;The button-color warriors of ecommerce testing can get away with testing every minute detail because tiny lifts in conversion can result in immediate lifts in revenue that have a material impact.&lt;/p&gt;
+
+&lt;p&gt;In B-to-B testing, it will take 10 years to get a significant result if you’re going after 0.2 percent lift. The obvious solution to this problem is to test the big stuff.&lt;/p&gt;
+
+&lt;p&gt;Are your prospects better motivated by avoiding pain? Or by the recognition they’ll get if your solution makes them a success?&lt;/p&gt;
+
+&lt;p&gt;Are your prospects better motivated by the contents of the webinar? Or the outcomes of the webinar?&lt;/p&gt;
+
+&lt;p&gt;Test your underlying assumptions and target gains of 20 percent, 50 percent, or more. And, in doing so, you should expect significant results in about a month.&lt;/p&gt;
+
+&lt;p&gt;You will know that you are doing this right if you are learning lessons about your customers that don’t just help you convert them at each micro-conversion of the buying journey, but also help you better communicate with the buyer throughout the journey.&lt;/p&gt;
+
+&lt;h3&gt;Collect Assumptions&lt;/h3&gt;
+
+&lt;p&gt;In order to challenge your assumptions, you’re going to need to know what those assumptions were.&lt;/p&gt;
+
+&lt;p&gt;An outsider’s perspective is valuable because the outsider can challenge assumptions that the people involved in producing an individual piece of marketing collateral may have missed.&lt;/p&gt;
+
+&lt;p&gt;However, as an outsider you’ll very quickly find the patterns that give big gains when you test. By all means keep testing these patterns, but your testing program will stagnate if you rely on just the patterns that you know work well.&lt;/p&gt;
+
+&lt;p&gt;The individuals involved in the original production should also have a deep understanding of what thoughts, disagreements, and compromises went in to the content. These people too are a valuable source of assumptions that you can test.&lt;/p&gt;
+
+&lt;p&gt;If you are the outsider running tests, then you want the whole sales and marketing team to know that you want to test assumptions and you should make it easy for them to communicate what assumptions and compromises that they made to complete the content.&lt;/p&gt;
+
+&lt;h3&gt;Choosing What Assumptions to Test First&lt;/h3&gt;
+
+&lt;p&gt;With feedback coming from throughout the marketing department, you’ll want a fair and transparent way to set priorities. Anything less and you run the risk of turning others off of your testing program and losing their contributions.&lt;/p&gt;
+
+&lt;p&gt;While you can’t A/B test easily against sales, you can test against each promise—each micro-conversion. And with clear funnel definitions, you can use historical data to calculate the value of each micro-conversion.&lt;/p&gt;
+
+&lt;p&gt;With the value of a micro-conversion, a testable hypothesis, a little bit of analytics data, and an estimate for the lift you expect from the test, you can do a quick &lt;em&gt;pro-forma&lt;/em&gt; analysis to calculate the expected revenue impact of each test.&lt;/p&gt;
+
+&lt;p&gt;While this can be manipulated by biasing your estimates, even a flawed, good-faith estimating process can help you pick the best tests first while giving others transparency into the testing process.&lt;/p&gt;
+
+&lt;h3&gt;Share Your Lessons&lt;/h3&gt;
+
+&lt;p&gt;The goal of a B-to-B testing program should be to better understand your buyers rather than just improving conversion rates.&lt;/p&gt;
+
+&lt;p&gt;You need to test assumptions in order to get results that are big enough that your tests achieve an acceptable sample size in a reasonable amount of time. But you should also be making valuable discoveries about your buyers.&lt;/p&gt;
+
+&lt;p&gt;A B-level testing program helps the testers better understand your buyers. An A-level testing program helps the entire team better understand your buyers.&lt;/p&gt;
+
+&lt;p&gt;Using the whole team to source test ideas can help get the team invested in your testing program. Sharing the lessons learned from your best tests both serves to show the value of their feedback, but also helps deepen the team’s understanding of your buyers.&lt;/p&gt;
+
+&lt;h3&gt;Micro-Conversions&lt;/h3&gt;
+
+&lt;p&gt;Each promise in the buyer’s journey is a micro-conversion and each micro-conversion can be tested.&lt;/p&gt;
+
+&lt;p&gt;Any decently valuable solution that you sell is going to be costly and the buying decision is going to be complex. You don’t want to wait for a nine-month buying cycle to come to the end before evaluating your first tests.&lt;/p&gt;
+
+&lt;p&gt;That’s why you need to test against micro-conversions and optimize against each step in the path.&lt;/p&gt;
+
+&lt;p&gt;You can’t take the results of these tests to your CFO, say &amp;ldquo;webinar sign-ups are up by 30 percent,&amp;rdquo; and expect to get a big bump in the marketing budget. But you can turn around tests a lot more quickly. &lt;/p&gt;
+
+&lt;p&gt;The results of these tests may be a little dubious since they aren’t tested against revenue, but they will let you complete more tests and make more micro-improvements up the funnel that will cumulatively be better than waiting for the bottom-line results.&lt;/p&gt;
+
+&lt;p&gt;You won’t know whether each test increases sales when you get your initial results, but you can run a retrospective analysis after a couple of sales cycles to check whether micro-conversions are having the expected impact.&lt;/p&gt;
+
+&lt;h3&gt;The Funnel&lt;/h3&gt;
+
+&lt;p&gt;One key to a strengthening your testing program is to have a well-defined funnel that reflects how buyers develop into customers. The funnel will help you estimate and measure the impact of each test.&lt;/p&gt;
+
+&lt;p&gt;Estimating the value of a conversion is a challenge when each conversion lives in isolation. In reality, they are part of a system for building trust, educating the buyer, and making a sale.&lt;/p&gt;
+
+&lt;p&gt;By categorizing each conversion by funnel stage, you can more finely tune the values without expensive multi-touch conversion modelling.&lt;/p&gt;
+
+&lt;p&gt;Someone following you on Twitter or LinkedIn, or signing up for blog updates doesn’t have the same value as someone who has done all of those things and has started to learn about your product. And they have even less value than someone who is calculating the ROI of your solution.&lt;/p&gt;
+
+&lt;p&gt;By having a clear funnel, you can assign values to each stage in the funnel rather than each conversion. Assigning value to stages better reflects the actual value of a conversion compared with weighting all conversions equally and it takes alot less effort and expense than multi-touch.&lt;/p&gt;
+
+&lt;p&gt;With a strong funnel definition in place and a strong understanding of the value at each stage, you can better estimate the value of a test without much change to your marketing stack. Testing this way can also help you better understand and refine your funnel.&lt;/p&gt;
+
+&lt;h3&gt;Retrospective Analysis&lt;/h3&gt;
+
+&lt;p&gt;Running one test against bottom-line revenue takes too long to be worthwhile when compared against running lots of tests against micro-conversions. But that doesn’t mean that you can’t try to catch results that produce positive micro-conversions but negative revenue.&lt;/p&gt;
+
+&lt;p&gt;Once you’ve been running tests long enough to have prospects who’ve been through tested assets and turned into customers, you should look at your conversion data, calculate the expected revenue lift for the improved conversion rate, and compare that with the actual lift.&lt;/p&gt;
+
+&lt;p&gt;The data will be messy and you won’t catch every bad result.&lt;/p&gt;
+
+&lt;p&gt;But if you’re testing important assumptions, periodically looking at data will let you catch tests that badly underperform in terms of revenue. This in turn should give you ideas for what assumptions that need to be challenged.&lt;/p&gt;
+
+&lt;h3&gt;Isolating Tests in B-to-B Testing Programs&lt;/h3&gt;
+
+&lt;p&gt;If you’re testing assumptions, as I recommend, then you’re going to run into challenges isolating your test.&lt;/p&gt;
+
+&lt;p&gt;If you want to test, for example, different assumptions about why buyers sign up for webinars and all of your assets (ads, social media posts, calls to action, and landing page) support the initial assumption, then you can’t just run a test swapping out copy on the landing page.&lt;/p&gt;
+
+&lt;p&gt;Your challenge may be correct, but the promises you made to get the click to the landing page won’t align with the challenger version on the landing page. You’ll need to watch for this sort of co-dependency and then create alternate ads, social media posts, and CTAs that align with the message you are testing and send these alternates to the challenger landing page.&lt;/p&gt;
+
+&lt;p&gt;Not every test will suffer from this form of co-dependency, but you will need to watch for it.&lt;/p&gt;
+
+&lt;p&gt;Isolating tests is also important when dealing with tests on pages or resources that occur close together on the conversion path.&lt;/p&gt;
+
+&lt;p&gt;For example, you can’t test your home page messaging and your product page messaging at the same time since a significant proportion of your product page visits will pass through the home page. The results are co-dependant and running co-dependant tests together will mess up your sampling and results.&lt;/p&gt;
+
+&lt;h3&gt;The A/B Testing Wall&lt;/h3&gt;
+
+&lt;p&gt;If you follow the above outline for a testing program, you should have a steady source of good testing ideas but nothing is going to stop you from hitting a wall in your A/B testing program where results start coming slower and you find yourself with too much time between tests.&lt;/p&gt;
+
+&lt;p&gt;This is because early on in your testing program the opportunity is great. Increasing your conversion rate from three percent to six percent is much easier than six to 12.&lt;/p&gt;
+
+&lt;p&gt;At some point you will run close to the limits of optimization where the only way you can get big lifts in conversion rate is to confuse people who have no business converting. This is deadly where your conversions don’t result in immediate revenue and short-sighted under any circumstances.&lt;/p&gt;
+
+&lt;p&gt;Meanwhile, your best tests, in terms of quality, will still only give a lift of a few tenths of a percent and you’ll be back to six months plus to get a significant result.&lt;/p&gt;
+
+&lt;p&gt;If the team is learning about your buyers from your tests, then you can expect that new marketing assets will already start at a higher level than when you started the testing program so your new testing opportunities shouldn’t be as good as your original ones.&lt;/p&gt;
+
+&lt;p&gt;Additionally, each test can affect the results of another so you need to be careful about running too many tests at once.&lt;/p&gt;
+
+&lt;p&gt;If you want to test your home page’s ability to identify new opportunities, you can’t also test your product pages’ ability to convert those opportunities. The tests are co-dependant and should not be run in parallel.&lt;/p&gt;
+
+&lt;p&gt;As a result, you will find rapidly diminishing returns and a whole lot of free time as your A/B testing program matures. And, while you shouldn’t abandon A/B testing, you will make yourself dead weight on the team if you limit yourself to A/B testing in the browser.&lt;/p&gt;
+
+&lt;h2&gt;Beyond A/B Testing&lt;/h2&gt;
+
+&lt;p&gt;While A/B testing in a B-to-B setting can be valuable if done right, you will limit your results if you stick to the popular testing tools and built-in testing functions of your ad and marketing automation platforms.&lt;/p&gt;
+
+&lt;p&gt;Qualitative feedback and strategic A/B testing are two techniques that go beyond your standard testing tools. They can be the source of valuable lessons and results while extending the influence of testing beyond the browser.&lt;/p&gt;
+
+&lt;h3&gt;Qualitative Feedback&lt;/h3&gt;
+
+&lt;p&gt;B-to-B marketers are forced to make a lot of assumptions about their buyers.&lt;/p&gt;
+
+&lt;p&gt;We have tools like personas, case studies, and marketing funnels to help standardize lessons across the marketing team. We can use A/B testing or sit in on sales calls to challenge our assumptions, but there’s still a lot of guess work involved.&lt;/p&gt;
+
+&lt;p&gt;Qualitative feedback, a fancy term for listening, helps challenge those assumptions and get results faster than a stand-alone A/B test.&lt;/p&gt;
+
+&lt;p&gt;If you want to get a better understanding of what your buyers are thinking at various points in their journey, then you should contact them during their journey and listen.&lt;/p&gt;
+
+&lt;p&gt;The goals for qualitative feedback can vary from broad understanding, like what the buyer is thinking at different stages of the funnel, to narrow understanding, like what did they want from a specific webinar.&lt;/p&gt;
+
+&lt;p&gt;While the questions you ask will depend on your goals, the following survey questions are a good start for capturing what’s important to the buyer without taking too much time.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;What were you trying to accomplish?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Did you accomplish it?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;How can we do better?&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In addition, there’s a fourth question that you should be able to infer from these answers that you can use to evaluate your lead scoring.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Are you in a buying cycle?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;By recording the answer to this fourth question, you can evaluate whether your lead scoring is letting leads who should go to sales slip by and calculate the missed opportunity.&lt;/p&gt;
+
+&lt;p&gt;While there are tools that automate feedback, I think picking up the phone and calling leads who are in the midst of their buyer&amp;rsquo;s journey, asking the questions, and listening is worth the effort.&lt;/p&gt;
+
+&lt;p&gt;By using automated tools, like feedback popups embedded on your site, you are limiting the effectiveness of your survey.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;You are biasing your responses to only those who are willing to fill out the form which will skew your data and hurt your analysis.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You are annoying your visitors.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Your responses will be more filtered as people edit their writing better than their speech.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You miss a chance to show that your company actually listens to buyers.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;By calling and transcribing your calls, you can learn all sorts of important lessons and get feedback from a larger segment of buyers:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;What kinds of language your buyers use to describe their problems. &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Who else is involved in the buying decision. &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What the buyer’s journey actually looks like rather than the idealized version of your marketing funnels.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Where your marketing falls short of meeting expectation.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Just doing two calls a day will give you 40 calls worth of information by the end of the month. With just 40 calls, you can start making better decisions about what goes on the homepage and product pages and what sorts of pages you should add to the site.&lt;/p&gt;
+
+&lt;p&gt;As your volume of calls grows, you can segment this information by industry, persona, and funnel stage to get an even more granular understanding of your buyers. Eventually you can use the feedback to feed natural language processing libraries to further deepen your understanding and turn qualitative insight into quantitative insight.&lt;/p&gt;
+
+&lt;p&gt;Qualitative feedback should be used to for test ideas, but don’t limit yourself to just informing your testing program. It should also help you better understand your buyers and make better decisions.&lt;/p&gt;
+
+&lt;p&gt;Finally, it should be used in place of testing where a testing is difficult and takes too long.&lt;/p&gt;
+
+&lt;p&gt;Testing the homepage against many competing internal and external priorities is a huge challenge.&lt;/p&gt;
+
+&lt;p&gt;You could, for example, create a homepage that greatly increases the number of blog subscribers. You could even calculate that this improvement will have a greater impact on revenue than a smaller improvement that increases the number of opportunities. But, in making the pure numbers-based decision you could very easily choke off opportunities and waste those subscriber gains.&lt;/p&gt;
+
+&lt;p&gt;Listening to feedback can help you make stronger decisions and can be a better alternative where A/B testing struggles.&lt;/p&gt;
+
+&lt;h3&gt;A/B Testing Beyond the Browser&lt;/h3&gt;
+
+&lt;p&gt;There’s one last form of testing that unequivocally belongs in a B-to-B testing program even if in a limited way.&lt;/p&gt;
+
+&lt;p&gt;You can test your strategic marketing mix by removing different tactics from in different regions and measuring the results after a couple of sales cycles.&lt;/p&gt;
+
+&lt;p&gt;Retargeting ads, for example, may look great because they touch every visitor before they become a customer. But do they have an impact? By definition they are shown to everyone who visits your site, or at least a specific page.&lt;/p&gt;
+
+&lt;p&gt;If you want to know whether you are just sinking your money into retargeting, you’ll have to pull retargeting from a test region and measure the results after a couple of sales cycles.&lt;/p&gt;
+
+&lt;p&gt;Field marketing, too, is another good candidate for this form of testing.&lt;/p&gt;
+
+&lt;p&gt;What you do is pick a region and cut a tactic off from that region for a few sales cycles and then analyze the effect of the tactic on number of deals, average deal value, and total number of deals compared with other regions that didn’t cut that tactic off as well as historical data from within that region.&lt;/p&gt;
+
+&lt;p&gt;This form of testing isn’t very challenging to implement and you will be testing things that help the CMO allocate budget and the CFO give more budget. You are somewhat limited in what you can test to marketing tactics that are wholly initiated by sales and marketing. A blog, for example, requires content that is initiated by marketing but also visitors who will find your blog independent of the region (and your control).&lt;/p&gt;
+
+&lt;p&gt;Testing at the strategic level will make your testing program more valuable to the organization in a way that executives can better appreciate.&lt;/p&gt;
+
+&lt;h2&gt;The Testing Role in B-to-B Marketing&lt;/h2&gt;
+
+&lt;p&gt;There’s still plenty that you can learn from the commonly-shared ecommerce testing best practices but testing in a B-to-B setting presents a host of different challenges and you need to understand these challenges in order to have a successful testing program.&lt;/p&gt;
+
+&lt;p&gt;Low traffic levels and long sales cycles limit the power of testing but that doesn’t mean it can’t be a powerful tool.&lt;/p&gt;
+
+&lt;p&gt;Structuring your test program around understanding your buyers will not only help you overcome those limits but also improve the overall effectiveness of marketing beyond just the testing role.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Customer-Centric Data Collection Plan</title>
+    <link rel="alternate" href="http://www.caretjuice.com/blog/form-field-tactics-data-strategy.html"/>
+    <id>http://www.caretjuice.com/blog/form-field-tactics-data-strategy.html</id>
+    <published>2016-07-10T17:00:00-07:00</published>
+    <updated>2017-10-30T14:57:31-07:00</updated>
+    <author>
+      <name>Damon Gudaitis</name>
+    </author>
+    <summary type="html">&lt;p&gt;Clearly something is not quite right with me because, unlike the vast, normal majority of the world, I get excited un-sexy details like form fields. Over the years, I’ve developed a preferred data collection plan that balances the data requirements...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Clearly something is not quite right with me because, unlike the vast, normal majority of the world, I get excited un-sexy details like form fields. Over the years, I’ve developed a preferred data collection plan that balances the data requirements of sales and marketing, optimizing conversion rates, and the communication preferences of visitors.&lt;/p&gt;
+
+&lt;p&gt;This plan is the result of working with a number of companies that started out by collecting the information that the sales team wanted through marketing automation. It has evolved through a mix of testing and learning from colleagues over the years.&lt;/p&gt;
+
+&lt;h2&gt;Evolving The &amp;ldquo;Sales Needs this Information&amp;rdquo; Approach&lt;/h2&gt;
+
+&lt;p&gt;The sales-needs-this approach is how you end up with 16 different fields to fill out asking for information like revenue and number of employees.&lt;/p&gt;
+
+&lt;p&gt;I get that lead generation needs to support sales, but this approach looks backwards and dated from a contact&amp;rsquo;s perspective.&lt;/p&gt;
+
+&lt;p&gt;While marketing moves towards focusing on the users needs,the focus of the sales-needs-this approach is entirely on the needs of the company.&lt;/p&gt;
+
+&lt;h3&gt;The Problems With This Approach&lt;/h3&gt;
+
+&lt;p&gt;Here’s a dirty secret for you.&lt;/p&gt;
+
+&lt;p&gt;People don’t like filling out forms.&lt;/p&gt;
+
+&lt;p&gt;There are approximately 6 billion conversion rate optimization articles on the web and they all tell you to reduce the number of fields to improve conversion rate. &lt;/p&gt;
+
+&lt;p&gt;Many visitors hate forms so much that they will leave before they give you information.&lt;/p&gt;
+
+&lt;p&gt;Some people will be conflicted. They hate giving away information, but they really want what you have behind the form.&lt;/p&gt;
+
+&lt;p&gt;These people will give you bad information.&lt;/p&gt;
+
+&lt;p&gt;Some people just make mistakes.&lt;/p&gt;
+
+&lt;p&gt;And some people don’t know the annual revenue of their company.&lt;/p&gt;
+
+&lt;p&gt;User-sourced information is bad. And the sales-needs-this approach to data collection relies on user-sourced information.&lt;/p&gt;
+
+&lt;p&gt;Using user-sourced information to trigger and personalize marketing or sales automation is going to waste your users’ time and your sales reps’ time, as they make calls based on inaccurate information, and lower your conversion rates.&lt;/p&gt;
+
+&lt;p&gt;It can also lead you to think a chain of nurturing emails is performing poorly, when in fact it was a default selection on a form that visitors can’t be bothered to change is sending people into an inappropriate nurturing chain.&lt;/p&gt;
+
+&lt;p&gt;You also run into data consistency problems. People spell their companies differently. Some add a period to the end of &amp;ldquo;inc.&amp;rdquo; Some don’t. And some leave “inc” off entirely.&lt;/p&gt;
+
+&lt;p&gt;Data consistency is a huge obstacle to benefiting from automation. Little differences in user-sourced information have a big impact.&lt;/p&gt;
+
+&lt;h3&gt;In Defense of This Approach&lt;/h3&gt;
+
+&lt;p&gt;If sales won’t talk to a lead then it’s not really a conversion that matters to the business.&lt;/p&gt;
+
+&lt;p&gt;An offer with a 12 percent &lt;strong&gt;lead&lt;/strong&gt; conversion rate (lead being someone in your marketing database but not passed sales) isn’t necessarily better than an 8 percent &lt;strong&gt;marketing qualified lead&lt;/strong&gt; (MQL) conversion rate (MQL being someone who gets passed to sales).&lt;/p&gt;
+
+&lt;p&gt;Any decent CRO professional understands this, but usually they write about ecommerce which is much less messy than B2B lead gen.&lt;/p&gt;
+
+&lt;p&gt;That’s also not to say that the 8 percent MQL is definitely better. Maybe asking for too much, too soon qualifies leads before they are ready and wastes sales’ time.&lt;/p&gt;
+
+&lt;p&gt;Or maybe you’ve got a great funnel set up that converts really well and speeds up sales cycles.&lt;/p&gt;
+
+&lt;p&gt;But without all of this messy context, I’ll take a lower lead conversion rate if it increases MQLs any day.&lt;/p&gt;
+
+&lt;h3&gt;The Better Way&lt;/h3&gt;
+
+&lt;p&gt;You can get the data that your sales team wants without making them do their own research or asking twenty questions before letting people read your white paper.&lt;/p&gt;
+
+&lt;p&gt;There are dozens of data services that will get you company information with only an email address.&lt;/p&gt;
+
+&lt;p&gt;Salesforce has &lt;a href="https://www.data.com/"&gt;Data.com&lt;/a&gt;. I currently use &lt;a href="https://www.fullcontact.com/"&gt;FullContact in Gmail&lt;/a&gt;. &lt;a href="http://www.hubspot.com/products/crm"&gt;HubSpot CRM&lt;/a&gt; enriches contacts automatically for their users. There are a bunch more and they are quite reasonably priced when you weigh the advantages you’ll get from reduced data entry, improved conversion rates,  and better data consistency and accuracy.&lt;/p&gt;
+
+&lt;p&gt;Data from these services isn’t perfect. You should definitely experiment to see which one best serves your market.&lt;/p&gt;
+
+&lt;p&gt;But we’ve already established that asking users for information also results in data that is wrong.&lt;/p&gt;
+
+&lt;p&gt;The degree to which of user-sourced or service-sourced data is better is something that you will have to decide for yourself.&lt;/p&gt;
+
+&lt;p&gt;With service-sourced data you can drop all of the form fields except email and get names and company info from the service, or from email signatures.&lt;/p&gt;
+
+&lt;p&gt;If contacts with no data is a big enough problem, you can use progressive profiling to capture that information from contacts later on while limiting the number of fields required by contacts that do match. &lt;/p&gt;
+
+&lt;p&gt;User-sourced data only wins in data coverage. You will get everything that you want by making every piece of data that you want mandatory.&lt;/p&gt;
+
+&lt;p&gt;Everything else is either a toss-up (accuracy) or a clear advantage for service-sourced data (effect on conversion rate and consistency).&lt;/p&gt;
+
+&lt;table class="table-text-top" style="width:100%;"&gt;
+  &lt;tr style="background-color: #ff8f4d; color: #ffffff;"&gt;
+    &lt;th style="width: 40%;"&gt;&lt;/th&gt;
+    &lt;th style="width: 30%;"&gt;User-Sourced&lt;/th&gt;
+    &lt;th style="width: 30%;"&gt;Service-Sourced&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td  style="width:40%"&gt;&lt;strong&gt;Accuracy&lt;/strong&gt;&lt;/td&gt;
+    &lt;td style="width: 30%;"&gt;Poor-Decent&lt;/td&gt;
+    &lt;td style="width: 30%;"&gt;Poor-Decent&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="bg-subtle"&gt;
+    &lt;td style="width:40%"&gt;&lt;strong&gt;Coverage&lt;/strong&gt;&lt;/td&gt;
+    &lt;td style="width: 30%;"&gt;Complete&lt;/td&gt;
+    &lt;td style="width: 30%;"&gt;Decent-Good&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="width:40%"&gt;&lt;strong&gt;Effect on Conversions&lt;/strong&gt;&lt;/td&gt;
+    &lt;td style="width: 30%;"&gt;Bad-Very Bad&lt;/td&gt;
+    &lt;td style="width: 30%;"&gt;Good-Excellent&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="bg-subtle"&gt;
+    &lt;td style="width:40%"&gt;&lt;strong&gt;Consistency&lt;/strong&gt;&lt;/td&gt;
+    &lt;td style="width: 30%;"&gt;Very Bad&lt;/td&gt;
+    &lt;td style="width: 30%;"&gt;Excellent&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;h3&gt;The Webmail Conundrum&lt;/h3&gt;
+
+&lt;p&gt;But wait, Damon, what about Yahoo! and Gmail addresses?&lt;/p&gt;
+
+&lt;p&gt;There are plenty of multi-million dollar businesses out there running through Gmail addresses. Unless you only sell to Fortune 500, you will miss out on good business if you don’t do anything about them.&lt;/p&gt;
+
+&lt;p&gt;This, however, is a problem that can be solved using automation.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;You can swap out forms for webmail contacts and profile them as you would have if you weren’t using a data service. &lt;/li&gt;
+&lt;li&gt;Or you can send an automated email inviting them to schedule a demo with sales. They may not qualify by your standard metrics, but you’re giving them an extra chance to identify themselves.&lt;/li&gt;
+&lt;li&gt;Or you can modify your lead scoring to ensure that these people don’t slip through.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are lots of ways to solve this problem while still getting the benefits of asking for less information from the majority of your contacts.&lt;/p&gt;
+
+&lt;h2&gt;Quick Hit Tactics&lt;/h2&gt;
+
+&lt;p&gt;We’ve walked through a big picture look at balancing the needs of sales with the wishes of prospects and come with a technological solution. But there are still some important tactical details left to consider before the complete data plan comes together.&lt;/p&gt;
+
+&lt;h3&gt;Don’t Be Afraid to Ask Directly&lt;/h3&gt;
+
+&lt;p&gt;I’ve just got through a whole long section telling you not to ask for the information that you want and now I’m telling you to do the opposite.&lt;/p&gt;
+
+&lt;p&gt;However, we’re not concerned here with information about the company that can be easily found elsewhere, but rather information about how the contact’s needs intersect with the company. We want to know if they are ready to buy and we want to be direct about it.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Are you buying?&lt;/li&gt;
+&lt;li&gt;How long before you buy?&lt;/li&gt;
+&lt;li&gt;Do you want to talk to sales?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I suspect that having complicated lead scoring available biases people towards complicated solutions while over-looking the obvious.&lt;/p&gt;
+
+&lt;p&gt;Most people have seen enough lead forms that they know what’s going on when you start asking for all sorts of company information so don’t make it seem like they are being tricked.&lt;/p&gt;
+
+&lt;p&gt;Asking direct questions like these helps keep everyone’s motivations in the open and paves the way for a long partnership.&lt;/p&gt;
+
+&lt;p&gt;Also, people who aren’t interested in talking to sales will be more likely to convert when they have a clear way of signalling that they don’t want a conversation. It’s not an immediate win. But it could be the start of a long-term relationship that may result in business.&lt;/p&gt;
+
+&lt;h3&gt;Ask Questions Focused on Helping the Contact&lt;/h3&gt;
+
+&lt;p&gt;Imagine these two questions are paired with identical select boxes asking contacts to choose from a list of roles.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What is your role in the company?&lt;/li&gt;
+&lt;li&gt;Would you like product information tailored to your role?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Which question would you prefer answering?&lt;/p&gt;
+
+&lt;p&gt;The first question is clearly focused on the company’s needs.&lt;/p&gt;
+
+&lt;p&gt;The second is more focused on the contact’s needs. Both sides get something out of this interaction. Transaction—tailored product information is an admittedly self-serving way of giving, but it’s still way ahead of the first question.&lt;/p&gt;
+
+&lt;p&gt;The second question might not be as good for segmenting contacts precisely how your sales and marketing team would like because &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;some people will not ask for extra information and &lt;/li&gt;
+&lt;li&gt;others will want to select several roles.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;However, the difference between these two questions is the difference between saying you are customer focused and actually being customer focused.&lt;/p&gt;
+
+&lt;p&gt;Not wanting extra information about your product or service is a useful signal.&lt;/p&gt;
+
+&lt;p&gt;Wanting information for several roles is a signal that you could have a champion at the company. Again, very worthwhile.&lt;/p&gt;
+
+&lt;p&gt;Asking questions that focus on the contact’s needs is simply about aligning the offer with the information that you require to access it.&lt;/p&gt;
+
+&lt;p&gt;Another common example worth copying is &lt;em&gt;what is your biggest challenge related to x&lt;/em&gt;-style questions. The x here is the topic of your downloadable resource or closely related to the topic. This style of question will help the sales person focus on the needs of the contact and reassure the contact that you are focused on their needs.&lt;/p&gt;
+
+&lt;p&gt;Everybody wins.&lt;/p&gt;
+
+&lt;h2&gt;Assembling these Tactics into a Plan&lt;/h2&gt;
+
+&lt;p&gt;And now we’re ready to assemble all of these pieces into a coherent plan for collecting and using contact data that we can use to guide our sales and marketing automation efforts and inform our technology needs.&lt;/p&gt;
+
+&lt;p&gt;Each business has their own particular needs that will require some adjustment and tool restrictions sometimes require additional allowances. Caret Juice customers should expect to recognize the following plan as the starting point for our marketing automation work.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Company information will be filled in through third party tools.&lt;/li&gt;
+&lt;li&gt;Except for email addresses, we will only ask for information that is focused on helping us understand and address a contact’s challenges thereby aligning our needs with theirs. This includes giving contacts a way to signal that they need help buying. &lt;/li&gt;
+&lt;li&gt;We will only break the second rule if we can’t get the information we need following the first rule.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;All of our form field, progressive profiling, data tool and integration requirements follow from these three rules.&lt;/p&gt;
+
+&lt;p&gt;Be sure to sign up for updates from Caret Juice to catch the next post on how to use lists to structure enterprise HubSpot installations where you will learn how HubSpot lists and forms fit together to support the execution of this data strategy (and make managing a complex HubSpot installation easy).&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Constellation Approach to Business Technology</title>
+    <link rel="alternate" href="http://www.caretjuice.com/blog/constellation-approach-business-technology.html"/>
+    <id>http://www.caretjuice.com/blog/constellation-approach-business-technology.html</id>
+    <published>2016-03-14T17:00:00-07:00</published>
+    <updated>2017-10-30T14:51:43-07:00</updated>
+    <author>
+      <name>Damon Gudaitis</name>
+    </author>
+    <summary type="html">&lt;p&gt;Self-driving cars promise to re-imagine the relationship between cities, people and transportation while Uber takes fat chunks out of the taxi industry. &lt;/p&gt;
+
+&lt;p&gt;Newspapers struggle with relevance—the value of ad space having plummeted as the expense of publishing...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Self-driving cars promise to re-imagine the relationship between cities, people and transportation while Uber takes fat chunks out of the taxi industry. &lt;/p&gt;
+
+&lt;p&gt;Newspapers struggle with relevance—the value of ad space having plummeted as the expense of publishing dropped to near zero.&lt;/p&gt;
+
+&lt;p&gt;Investors stand strong behind a company like Amazon while years of losses stretch into decades out of hope that it will one day turn its status as the default place where people go to buy online into an avalanche of profits that bury past losses.&lt;/p&gt;
+
+&lt;p&gt;Technology is changing the business landscape quickly. But it isn’t just threatening old business models.&lt;/p&gt;
+
+&lt;p&gt;New technology also brings new automation opportunities letting you and your colleagues get more done in less time.&lt;/p&gt;
+
+&lt;p&gt;The Constellation Approach to Business Technology helps you understand business applications, how they relate to each other, and choose the best combination of technologies to balance growth, flexibility, and costs.&lt;/p&gt;
+
+&lt;h2&gt;How Business Applications Have Changed in the Last 15+ Years&lt;/h2&gt;
+
+&lt;p&gt;Until around the start of the new millennium, data stayed primarily within the business application. You’ve been able to integrate enterprise and legacy apps, but integration was time-consuming and expensive.&lt;/p&gt;
+
+&lt;p&gt;As cloud computing grew in popularity and developing business software became cheaper, stand-alone applications focusing on solving increasingly niche problems flourished. Application programming interfaces (APIs) that let developers integrate apps became more common and then expected. APIs also started to become more consistent and easier to use alongside this explosion of options.&lt;/p&gt;
+
+&lt;p&gt;The leading cloud applications in each category started using their APIs to build native integrations with each other. These integrations are at the point now where native integrations between the leading products in different software categories compete with and even exceed fully integrated suites.&lt;/p&gt;
+
+&lt;p&gt;Upstart and niche cloud products emerged to solve increasingly specific problems.&lt;/p&gt;
+
+&lt;p&gt;Typically these smaller products would be less expensive than the leading cloud options, and needed to integrate with the leaders in other applications categories in order to compete.&lt;/p&gt;
+
+&lt;p&gt;Soon a variety of middleware applications would spring up giving you more integration options than native and custom integrations created by the respective product teams and their customers.&lt;/p&gt;
+
+&lt;p&gt;Some of these middleware applications provided deep, powerful integrations between few products, like exporting Salesforce data to Excel and back.&lt;/p&gt;
+
+&lt;p&gt;Others gave lots of shallow integrations between lots of different applications letting you trigger actions in one app from another or copying one field from one system to another.&lt;/p&gt;
+
+&lt;table class="text-center table-text-top"&gt;
+    &lt;tr&gt;
+        &lt;th style="background-color:#ff8f4d; width:33%;"&gt;
+            &lt;strong&gt;Enterprise Suite&lt;/strong&gt;
+        &lt;/th&gt;
+        &lt;th style="background-color:#86e400; width:33%;"&gt;
+            &lt;strong&gt;Cloud Niche/Upstart&lt;/strong&gt;
+        &lt;/th&gt;
+        &lt;th style="background-color:#ff8f4d; width:33%;"&gt;
+            &lt;strong&gt;Cloud Leader&lt;/strong&gt;
+        &lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td style="background-color:#ff8f4d; width:33%;"&gt;service partners build custom integrations&lt;/td&gt;
+        &lt;td style="background-color:#86e400; width:33%;"&gt;develop own integrations&lt;/td&gt;
+        &lt;td style="background-color:#ff8f4d; width:33%;"&gt;attract powerful integrations&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td style="background-color:#ff8f4d; width:33%;"&gt;costly to integrate&lt;/td&gt;
+        &lt;td style="background-color:#86e400; width:33%;"&gt;moderately costly to integrate&lt;/td&gt;
+        &lt;td style="background-color:#ff8f4d; width:33%;"&gt;low cost to integrate&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td style="background-color:#ff8f4d; width:33%;"&gt;costly to license&lt;/td&gt;
+        &lt;td style="background-color:#86e400; width:33%;"&gt;inexpensive to license&lt;/td&gt;
+        &lt;td style="background-color:#ff8f4d; width:33%;"&gt;moderately costly to license&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="3" style="border: 1px solid #B6B6B6;"&gt;&lt;strong&gt;Shallow Integration Middleware&lt;/strong&gt;&lt;br/&gt;
+shallow integration between many applications&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="3" style="border: 1px solid #B6B6B6;"&gt;&lt;strong&gt;Deep Integration Middleware&lt;/strong&gt;&lt;br/&gt;
+deep integration between a small number of applications&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;This explosion of stand-alone, SaaS business applications, with multiple layers of integration options, gives you more varied options towards solving a wider variety of challenges and unprecedented flexibility to manage the flow of information through your business.&lt;/p&gt;
+
+&lt;p&gt;Where before you had to get an expensive piece of software that would require extensive configuration and customization before you could start using it effectively, now you can probably find a solution that will work for you almost immediately and at a lower cost.&lt;/p&gt;
+
+&lt;h2&gt;The Hidden Cost of Cheap&lt;/h2&gt;
+
+&lt;p&gt;Individual products and integrations are straightforward. The full web of products and integrations is incredibly complex.&lt;/p&gt;
+
+&lt;p&gt;The overall cost of one or two low-cost, poorly integrated applications is negligible. Particularly if the applications solve an important business problem. Licensing and maintenance costs are practically non-existent in this situation.&lt;/p&gt;
+
+&lt;p&gt;The costs of poorly integrated applications grow exponentially as their number increase. Licensing is still inexpensive, but niche products attract fewer integrations. And having substandard integration options imposes a substantial tax on productivity across the company. That tax increases with each application you add.&lt;/p&gt;
+
+&lt;p&gt;The productivity tax is paid in the following ways:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;time spent on duplicate data entry&lt;/li&gt;
+&lt;li&gt;poor decisions caused by poor data due to
+
+&lt;ul&gt;
+&lt;li&gt;data entry errors, and&lt;/li&gt;
+&lt;li&gt;missing data&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;lost opportunity because highly specialized tools only integrate with the strongest platforms&lt;/li&gt;
+&lt;li&gt;increased effort to perform what are basic tasks on stronger platforms.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;While the cost each little example of duplicate data entry or handicapped decision making is negligible, they add up and quickly dwarf the licensing costs.&lt;/p&gt;
+
+&lt;p&gt;Low-cost, niche products have their place in small businesses and solving niche problems in large ones. But their hidden costs are crippling the larger the business and more complex the technology stack.&lt;/p&gt;
+
+&lt;h2&gt;Platforms and Solutions&lt;/h2&gt;
+
+&lt;p&gt;If you’re not buying technology to solve a problem, then you are doing it wrong.&lt;/p&gt;
+
+&lt;p&gt;When looking at an application, more features does not make a product better. In most cases, when you see a CRM that also does marketing automation, or a marketing automation suite that also has a content management system, or whatever other app that does something and something else, then the something else is almost always a very light version of an equivalent stand-alone app.&lt;/p&gt;
+
+&lt;p&gt;It pays to be clear on what you are trying to accomplish with the software. Features are meaningless next to a great solution.&lt;/p&gt;
+
+&lt;p&gt;When looking at business applications be aware of whether you need them to be a platform (and solution) or just a solution.&lt;/p&gt;
+
+&lt;p&gt;Platforms are the core applications that you build off. They need to accommodate a variety of solutions as the company grows and they need to integrate readily with your other platforms.&lt;/p&gt;
+
+&lt;p&gt;Niche products are often great solutions but lousy platforms because of the limited number of native integration options of a niche product. Your solutions need to integrate with one of your platforms, but any data that needs to go from solution to a non-integrated platform can usually get passed through via the one integrated platform.&lt;/p&gt;
+
+&lt;p&gt;You don’t need extensive integration on a solution. Just one solid integration with a platform.&lt;/p&gt;
+
+&lt;p&gt;Solutions are also great candidates for taking risky bets on new technologies because they sit at the edge of your network of applications and cause minimal disruption to your business. The cost of switching from one experimental solution to another is low if you have a good platform. &lt;/p&gt;
+
+&lt;p&gt;This lets you outsource the risks of staying ahead of technology trends in your industry to venture capital firms while still reaping the benefits of cutting edge software technology investments.&lt;/p&gt;
+
+&lt;p&gt;Once you start building on a platform, however, it is very difficult to switch. Each solution that you integrate with a platform is another requirement that will complicate purchasing, migrating and training if you ever grow out of the platform.&lt;/p&gt;
+
+&lt;h2&gt;Expose Your Data&lt;/h2&gt;
+
+&lt;p&gt;The most agile platforms for your business data, whether they be CRM, support, accounting software or even ERP, are the ones that best expose your data.&lt;/p&gt;
+
+&lt;p&gt;New technologies like big data and machine learning are creating new opportunities every day. Marketing and finance are getting most of the love from new technologies right now with applications that do things like identify the best prospects or the biggest financial risks.&lt;/p&gt;
+
+&lt;p&gt;Soon retailers will be able to do things like plug their point of sale and inventory data into a cloud app that will pull in weather data and forecast umbrella demand while adjusting the retail price to maximize revenue in real time.&lt;/p&gt;
+
+&lt;p&gt;Niche Big Data solutions like weather-based inventory forecasts are multiplying quickly. Businesses don’t need a data scientist to benefit from the Big Data revolution—they just need to keep their data in platforms that attract lots of integrations.&lt;/p&gt;
+
+&lt;h2&gt;The Constellation Approach to Business Technology&lt;/h2&gt;
+
+&lt;p&gt;The Constellation Approach to Business Technology is meant as a way of understanding how your business applications relate to each other and what you need them to do so that you maximize flexibility, and minimize expenses without restricting growth.&lt;/p&gt;
+
+&lt;p&gt;In order to apply this approach to your business, you need to do the following.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Identify platform categories (CRM, marketing automation, accounting) based on how you want to grow.&lt;/li&gt;
+&lt;li&gt;Identify niche solutions that will contribute to your growth.&lt;/li&gt;
+&lt;li&gt;Research integration options.&lt;/li&gt;
+&lt;li&gt;Choose the combination of platforms, solutions and integrations that best balance cost, simplicity, flexibility, and future growth.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Everything in the Constellation Approach flows from understand which applications need to be platforms and then grows from there. The right platform both grows with you and gives you the best chance to take advantage of yet unimagined technologies just beyond the horizon.&lt;/p&gt;
+
+&lt;p&gt;Innovation presents the greatest risks and rewards. A good platform will let you take advantage of innovative solutions while reducing the costs of switching or abandoning a solution.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Twitter List Automation</title>
+    <link rel="alternate" href="http://www.caretjuice.com/blog/twitter-list-automation.html"/>
+    <id>http://www.caretjuice.com/blog/twitter-list-automation.html</id>
+    <published>2016-02-14T16:00:00-08:00</published>
+    <updated>2017-10-30T14:21:08-07:00</updated>
+    <author>
+      <name>Damon Gudaitis</name>
+    </author>
+    <summary type="html">&lt;p&gt;Twitter lists are a feature that nearly every digital marketer has experimented with but few use for anything other than keeping track of a select group of influencers.&lt;/p&gt;
+
+&lt;p&gt;Lists seem like they would be quite useful to sales reps and account managers...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Twitter lists are a feature that nearly every digital marketer has experimented with but few use for anything other than keeping track of a select group of influencers.&lt;/p&gt;
+
+&lt;p&gt;Lists seem like they would be quite useful to sales reps and account managers trying to build relationships with prospects and accounts. In practice, this isn’t true.&lt;/p&gt;
+
+&lt;p&gt;The percentage of people actively using Twitter is quite low. I would guess that perhaps 90 percent of prospects or accounts for most businesses won’t be using Twitter actively which makes for a lot of wasted time maintaining targeted lists.&lt;/p&gt;
+
+&lt;p&gt;However with a little automation, Twitter lists can be a practical, everyday tool for sales reps and account managers. The automation handles the basic maintenance letting your people focus on building relationships.&lt;/p&gt;
+
+&lt;h2&gt;Create the Twitter Lists&lt;/h2&gt;
+
+&lt;p&gt;The first thing you’re going to need to do is create empty Twitter lists to hold customer and prospect info. &lt;/p&gt;
+
+&lt;p&gt;If you want to create separate lists for each sales person or account manager, then you will have to create a separate list for each (ie. Damon’s Prospects as opposed to just Prospects).&lt;/p&gt;
+
+&lt;p&gt;To create the lists, log in to Twitter and open the Profile and Settings menu hidden under your Twitter icon at the top right of the web interface and select Lists.&lt;/p&gt;
+
+&lt;p&gt;Then create as many lists as necessary.&lt;/p&gt;
+
+&lt;h2&gt;Prepare Your CRM&lt;/h2&gt;
+
+&lt;p&gt;In order to simplify later configuration and reduce the amount of redundant work that Zapier will do, we’re going to want to store the Twitter handle in CRM.&lt;/p&gt;
+
+&lt;p&gt;If you don’t already have one, create a Twitter Handle field in your CRM.&lt;/p&gt;
+
+&lt;h2&gt;Set Up the Zapier Integration&lt;/h2&gt;
+
+&lt;p&gt;We’re going to use Zapier to pull prospect and customer info from CRM, enhance that information with social media account information from FullContact which we will return to CRM before adding any Twitter accounts found by FullContact to the appropriate list.&lt;/p&gt;
+
+&lt;p&gt;Create a new Zap that triggers whenever you add a &lt;strong&gt;New Contact&lt;/strong&gt; to your CRM.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="New Contact CRM Trigger in Zapier" src="assets/images/2016/crm-new-contact-trigger-4817f933.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Next, create a Filter that checks that the CRM email field exists.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Email Exists Filter in Zapier" src="assets/images/2016/email-exists-filter-f5a7df50.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Select FullContact for your action, connecting your FullContact account to Zapier if necessary, and choose &lt;strong&gt;Find a Person&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="FullContact Find a Person Zapier Search" src="assets/images/2016/fullcontact-find-person-9c62a76a.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Click &lt;strong&gt;Save + Continue&lt;/strong&gt;, test the step and then connect your CRM email and phone number, if you like, to FullContact.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="FullContact Find a Person Zapier Search Settings" src="assets/images/2016/fullcontact-find-person-settings-c3fa07c7.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Test the step again.&lt;/p&gt;
+
+&lt;p&gt;Note that the test will tell you whether the step was a success or not. If you get a success message but check the data returned it will be for the wrong record. That is okay. It is just a quirk of the FullContact-Zapier integration.&lt;/p&gt;
+
+&lt;p&gt;This is all that we need for this Zap. However, there are a lot of potentially useful additions to this Zap that are detailed in the optional selection at the end of this post.&lt;/p&gt;
+
+&lt;h2&gt;Automate Twitter List Creation&lt;/h2&gt;
+
+&lt;p&gt;A lot of CRM systems are limited to triggering Zapier when a contact is created and not when it is updated.&lt;/p&gt;
+
+&lt;p&gt;This means that, for many CRM systems, we can’t just check if FullContact found a Twitter handle, send the handle to CRM and trigger a new series of Zaps to add contacts with Twitter handles to the appropriate list.&lt;/p&gt;
+
+&lt;p&gt;I cover this topic in more depth in my post titled &lt;em&gt;Creative On Update Zapier Triggers&lt;/em&gt;, but basically what you will need to do is set your CRM up to create a new tag or a new note when the &lt;em&gt;Twitter Handle&lt;/em&gt; field we created in the CRM gets filled out and then watch for that tag to trigger the list creation Zaps.&lt;/p&gt;
+
+&lt;p&gt;The specifics vary by CRM. This is what I did for Agile CRM and then set up a trigger to run this daily since I don’t have an update trigger in CRM.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Add Tag Automation in Agile CRM" src="assets/images/2016/crm-add-tag-automation-bc35d018.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Moving back to Zapier, we’re going to watch for this tag, or note or whatever you needed to create to trigger the Zap, and then filter contacts by Owner to get prospects in the right list.&lt;/p&gt;
+
+&lt;p&gt;The specifics of the trigger will depend on whether you can trigger on update or have to use a workaround and, if you used a workaround, on what workaround you used.&lt;/p&gt;
+
+&lt;p&gt;For me, I triggered the Zap from Agile CRM using the &lt;strong&gt;New Tag to Contact&lt;/strong&gt; trigger with a &lt;strong&gt;Tag Name&lt;/strong&gt; of &lt;em&gt;Twitter&lt;/em&gt; matching the tag I’m automatically creating in CRM.&lt;/p&gt;
+
+&lt;p&gt;Once you have your trigger set up, add a &lt;em&gt;(Text) Exactly matches&lt;/em&gt; Filter on the owner email field from CRM using the email address of the sales or account rep.&lt;/p&gt;
+
+&lt;p&gt;You may also want to filter by the status or funnel stage, however, if everyone is using CRM properly and is setting the owner of the contact, then you probably won’t need a status or funnel stage filter as we’ll be matching against the owner’s email.&lt;/p&gt;
+
+&lt;p&gt;Finally, create a Twitter &lt;em&gt;Add User to List&lt;/em&gt; action.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Add User to Twitter List in Zapier" src="assets/images/2016/add-user-twitter-list-f0f91431.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Save and connect your Twitter account.&lt;/p&gt;
+
+&lt;p&gt;Select the Twitter list that you created and map the Twitter handle from your CRM to Zapier.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Add User to Twitter List in Zapier Settings" src="assets/images/2016/add-user-twitter-list-settings-9c2187ee.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you need to repeat this last series of steps for each sales or account rep for whom you’re creating Twitter lists.&lt;/p&gt;
+
+&lt;h2&gt;Drawbacks&lt;/h2&gt;
+
+&lt;p&gt;The one possible drawback of this automation is that there isn’t an easy way to remove people from lists. Zapier simply doesn’t have a Remove from List option even though Twitter’s API supports it.&lt;/p&gt;
+
+&lt;p&gt;Some salespeople are happy to maintain a relationship after the sale and are fine with their list of prospects including former prospects that they’ve already either won or lost. But others would like that sort of thing cleaned up.&lt;/p&gt;
+
+&lt;p&gt;This is less of an issue for account managers because accounts don’t normally churn as fast as sales prospects qualify or disqualify, but it is still a problem with no easy automated solution.&lt;/p&gt;
+</content>
+  </entry>
+</feed>

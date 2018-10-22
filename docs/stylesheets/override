@@ -1,0 +1,15 @@
+/* 
+	My custom settings. These variables are copied from _settings.css
+	This file will only contain uncommented settings that are actually used in the theme.
+*/
+/* line 123, override.scss */
+h3, h4, h5, h6 {
+  font-weight: 400 !important; }
+
+/* line 126, override.scss */
+.full-width-bar {
+  background: #ff8f4d; }
+
+/* line 213, override.scss */
+.top-bar-container {
+  border-bottom: 1px solid #B6B6B6; }

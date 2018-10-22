@@ -1,0 +1,39 @@
+<% wrap_layout :base do %>
+<div class="contain-to-grid section">
+	<nav class="top-bar show-for-large-up" data-topbar role="navigation">
+		<ul class="title-area inline-list">
+	    <li class="name">
+				<% link_to '/index.html' do %>
+				  <%= image_tag 'caretjuice-logo-2.png', :alt => 'Caret Juice Marketing Logo' %>
+				<% end %>
+		    </li>
+			<li id="tag-line">Audience Experience Optimization</li>
+	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->	    
+	  </ul>
+	  <section class="top-bar-section">
+	     <ul class="right">
+			<li><%= link_to 'Home', '/index.html' %></li>
+			<li><%= link_to 'Blog', '/blog.html' %></li>
+	    <li><%= link_to 'Contact', '/contact.html' %></li>
+	    </ul>
+	  </section>
+	</nav>
+</div>
+<nav class="tab-bar hide-for-large-up">
+	<section class="tab-bar-section">
+		<h1 class="title"><%= link_to 'Caret Juice Marketing', '/index.html' %></h1>
+	</section>
+
+      <section class="right tab-bar-section">
+        <a class="right-off-canvas-toggle" href="#mobile-menu">MENU</a>
+      </section>
+</nav>
+<nav id="mobile-menu" class="right-off-canvas-menu">
+	<ul class="off-canvas-list">
+		<li><%= link_to 'Home', '/index.html' %></li>
+		<li><%= link_to 'Blog', '/blog.html' %></li>
+		<li><%= link_to 'Contact', '/contact.html' %></li>
+	</ul>
+</nav>
+    <%= yield %>
+<% end %>

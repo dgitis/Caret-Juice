@@ -1,0 +1,53 @@
+---
+pageable: true
+per_page: 12
+type: website
+---
+
+<% require 'uri' %>
+<% uri = "http://www.caretjuice.com" + current_page.url %>
+<% author_slug = URI(uri).path.split('/').last %>
+<% author = find_author(author_slug) %>
+<% content_for(:title, "Articles by " + author.name) %>
+<% content_for(:description, "Articles by " + author.name + " for the Caret Juice Marketing blog.") %>
+<% wrap_layout :layout do %>
+<div class="article-info" itemscope itemtype="https://schema.org/author">
+	<div class="row">
+		<div class="small-4 medium-2 medium-offset-2 columns">
+			<img src="<%= author.photo %>" alt="<%= author.name %>" class="round right" style="height:100px; width: 100px;" itemprop="image"> 
+		</div>
+		<div class="small-8 columns">
+			<h1 itemprop="name"><%= author.name %></h1>
+			<p><a itemprop="sameAs" href="<%= author.linkedin %>"><i class="fa fa-linkedin"></i></a> | <a  itemprop="sameAs"href="<%= "https://twitter.com/" + author.twitter %>"><i class="fa fa-twitter"></i></a> | <a data-dropdown="drop2" data-options="align:bottom" aria-controls="drop2" aria-expanded="false">Bio</a>
+			<div id="drop2" data-dropdown-content class="f-dropdown content" aria-hidden="true" tabindex="-1" itemprop="description">
+			  <%= author.bio %>
+			</div></p>
+		</div>
+		<% if paginate && num_pages > 1 %>
+		  <p>Page <%= page_number %> of <%= num_pages %></p>
+		<% end %>
+	</div>
+</div>
+<div class="row">
+	<div class="small-12 medium-8 medium-offset-2">
+		<h2><%= author.firstname %>&apos;s Posts</h2>
+		<% page_articles.each_with_index do |article, i| %>
+			<%= partial(:article_listing, :locals => {:article => article}) %>
+		<% end %>
+		</div>
+		<% if paginate %>
+		<div class="row">
+			<div class="small-6 columns">
+			  <% if prev_page %>
+			    <p><%= link_to 'Previous page', prev_page %></p>
+			  <% end %>
+			</div>
+			<div class="small-6 columns">
+			  <% if next_page %>
+			    <p><%= link_to 'Next page', next_page %></p>
+			  <% end %>
+			</div>
+		<% end %>
+	</div>
+</div>
+<% end %>

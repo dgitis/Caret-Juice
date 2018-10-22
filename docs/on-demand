@@ -1,0 +1,44 @@
+<section class="main-section">
+<section class="value-proposition pattern">
+	<div class="row">
+		<div class="small-12 columns text-center">
+			<h1>On-Demand Training</h1>
+			<p class="emphatic">Self-paced Audience Experience Optimization training for individuals and teams.</p>
+		</div>
+	</div>
+</section>
+<section class="row section-break">
+	<div class="small-12 medium-8 columns medium-offset-2 end">
+		<h2>Work in Progress</h2>
+		<p>Our current priority is to expand the number of companies that are using <a href="/custom-training.html">custom training</a> in order to create a better on-demand training.</p>
+		<p>Sign up below in order to be among the first to know when our on-demand product is ready.</p>
+
+	</div>
+</section>
+<section class="section-break">
+	<div class="row text-center">
+		<div class="small-12 medium-8 columns medium-offset-2 end">
+		<h2>Be the First to Know</h2>
+		<p>Sign up to be notified when on-demand training is available.</p>
+		<aside id="form" class="">
+			<form>
+			  <div class="row">
+
+			    <div class="medium-8 columns">
+			      <label>Email
+			        <input name="email" type="email" placeholder="Email" />
+			      </label>
+			    </div>
+
+				<div class="medium-4 columns">
+					<input class="button" type="submit" placeholder="Sign Up" />
+				</div>
+			  </div>
+			</form>
+			
+		</aside>
+	</div>
+</section>
+
+
+</section> <!--Main Section-->

@@ -1,0 +1,239 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport"content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Articles by Damon Gudaitis</title>
+	<meta name="description" content="Articles by Damon Gudaitis for the Caret Juice Marketing blog.">
+	<link rel="canonical" href="http://www.caretjuice.com/blog/author/damon" />
+    
+    <link href="../../stylesheets/app-096e37da.css" rel="stylesheet" />
+    <script src="../../javascripts/modernizr-0145479a.js"></script>
+	<link href="/assets/images/favicon.png" rel="shortcut icon" type="image/png">
+	<link href="/assets/images/favicon-152.png" rel="apple-touch-icon-precomposed">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="/assets/images/favicon-144.png">
+	<link rel="alternate" type="application/atom+xml" title="Caret Juice Blog Atom feed" href="http://www.caretjuice.com/feed.xml" />
+	<meta property="fb:app_id" content="349018238896517"/>
+	<meta property="og:url" content="http://www.caretjuice.com/blog/author/damon" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Articles by Damon Gudaitis" />
+	<meta property="og:description" content="Articles by Damon Gudaitis for the Caret Juice Marketing blog." />
+
+	<meta property="og:image" content="http://www.caretjuice.com/assets/images/caretjuice-logo-2.png" />
+	<meta property="og:site_name" content="Caret Juice Marketing" />
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@CaretJuice">
+	<meta name="twitter:creator" content="@damongudaitis">
+	<meta name="twitter:title" content="Articles by Damon Gudaitis">
+	<meta name="twitter:description" content="Articles by Damon Gudaitis for the Caret Juice Marketing blog.">
+	<meta name="twitter:image" content="http://www.caretjuice.com/assets/images/caretjuice-logo-2.png">
+  </head>
+  
+  <body class="blog blog_author blog_author_damon">
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PRFCGK"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PRFCGK');</script>
+	<!-- End Google Tag Manager -->
+	<div class="off-canvas-wrap" data-offcanvas>
+		<div class="inner-wrap">
+    		<div class="contain-to-grid section">
+	<nav class="top-bar show-for-large-up" data-topbar role="navigation">
+		<ul class="title-area inline-list">
+	    <li class="name">
+<a href="/">				  <img alt="Caret Juice Marketing Logo" src="../../assets/images/caretjuice-logo-2-b7bf8654.png" />
+</a>		    </li>
+			<li id="tag-line">Audience Experience Optimization</li>
+	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->	    
+	  </ul>
+	  <section class="top-bar-section">
+	     <ul class="right">
+			<li><a href="/">Home</a></li>
+			<li class="has-dropdown">
+		        <a class="hover-dropdown">Services</a>
+		        <ul class="dropdown">
+		          <li><a href="/custom-training.html">Custom Training &amp; Trial</a></li>
+		          <li><a href="/on-demand.html">On-Demand Training</a></li>
+		        </ul>
+			</li>
+
+			<li><a href="/blog.html">Blog</a></li>
+	      	<li><a href="/contact.html">Contact</a></li>
+	    </ul>
+	  </section>
+	</nav>
+</div>
+<nav class="tab-bar hide-for-large-up">
+	<section class="tab-bar-section">
+		<h1 class="title"><a href="/">Caret Juice Marketing</a></h1>
+	</section>
+
+      <section class="right tab-bar-section">
+        <a class="right-off-canvas-toggle" href="#mobile-menu">MENU</a>
+      </section>
+</nav>
+<nav id="mobile-menu" class="right-off-canvas-menu">
+	<ul class="off-canvas-list">
+		<li><a href="/">Home</a></li>
+		<li><a href="/blog.html">Blog</a></li>
+		<li><a href="/contact.html">Contact</a></li>
+	</ul>
+</nav>
+    
+<div class="article-info" itemscope itemtype="https://schema.org/author">
+	<div class="row">
+		<div class="small-4 medium-2 medium-offset-2 columns">
+			<img src="/assets/images/headshot-150x150.jpg" alt="Damon Gudaitis" class="round right" style="height:100px; width: 100px;" itemprop="image"> 
+		</div>
+		<div class="small-8 columns">
+			<h1 itemprop="name">Damon Gudaitis</h1>
+			<p><a itemprop="sameAs" href="https://www.linkedin.com/profile/view?id=AAIAAACx7RMBW7NPFmr0Gontr1QE7vfxAYBK7ww&trk=nav_responsive_tab_profile"><i class="fa fa-linkedin"></i></a> | <a  itemprop="sameAs"href="https://twitter.com/damongudaitis"><i class="fa fa-twitter"></i></a> | <a data-dropdown="drop2" data-options="align:bottom" aria-controls="drop2" aria-expanded="false">Bio</a>
+			<div id="drop2" data-dropdown-content class="f-dropdown content" aria-hidden="true" tabindex="-1" itemprop="description">
+			  <p>Hi, I'm Damon.</p><p>I got started in marketing about ten years ago.  The company hired the best consultants they could find to train me to run  search engine optimization because of my I had the right mix of technical and  creative skills to succeed.</p><p>I'm a big advocate for tracking the return on investment of your marketing and a long-time member of the Digital Analytics Association.</p><p> I most recently worked for an ERP vendor where I managed marketing technology and  got a first-hand look at how a variety of companies managed the introduction of new business technologies and how consultants helped smooth the transition.</p>
+
+			</div></p>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="small-12 medium-8 medium-offset-2">
+		<h2>Damon&apos;s Posts</h2>
+			<article class="article-listing">
+	<h2 class="subheader"><a href="/blog/data-driven.html">Are you data driven? Or just numbers driven?</a> </h2>
+	<p class="published">Mar  1 2018</p>
+	<p>Data is important to modern marketing.</p>
+
+<p>When young marketing professionals ask what they should learn to get ahead, you are almost certain to hear data literacy as core skill for advancement.</p>
+
+<p>The Chief Martech <a href="http://chiefmartec.com/2017/05/marketing-techniology-landscape-supergraphic-2017/">2017 Marketing Technology Landscape</a> has...</p>
+  	<p class="text-right">Keep Reading <a href="/blog/data-driven.html">Are you data driven? Or just numbers driven?</a> </p>
+</article>
+			<article class="article-listing">
+	<h2 class="subheader"><a href="/blog/the-numbers-lie-how-quantitative-data-fails-b-to-b-marketers.html">The Numbers Lie</a> </h2>
+	<p class="published">Sep 23 2017</p>
+	<p>Business to business marketers have adopted consumer marketing practices like data-driven decision making and funnel-based conversion rate optimization. However, we haven’t properly taken into account fundamental differences between business and consumer...</p>
+  	<p class="text-right">Keep Reading <a href="/blog/the-numbers-lie-how-quantitative-data-fails-b-to-b-marketers.html">The Numbers Lie</a> </p>
+</article>
+			<article class="article-listing">
+	<h2 class="subheader"><a href="/blog/testing-role-b-to-b.html">The Role of Testing in B-to-B Marketing</a> </h2>
+	<p class="published">Apr  6 2017</p>
+	<p>Each little interaction in B-to-B marketing is a promise that the company makes to the prospective buyer. Every promise that is fulfilled builds trust with an individual and across an organization.</p>
+
+<p>The role of marketing in B-to-B is to build incremental...</p>
+  	<p class="text-right">Keep Reading <a href="/blog/testing-role-b-to-b.html">The Role of Testing in B-to-B Marketing</a> </p>
+</article>
+			<article class="article-listing">
+	<h2 class="subheader"><a href="/blog/form-field-tactics-data-strategy.html">Customer-Centric Data Collection Plan</a> </h2>
+	<p class="published">Jul 11 2016</p>
+	<p>Clearly something is not quite right with me because, unlike the vast, normal majority of the world, I get excited un-sexy details like form fields. Over the years, I’ve developed a preferred data collection plan that balances the data requirements...</p>
+  	<p class="text-right">Keep Reading <a href="/blog/form-field-tactics-data-strategy.html">Customer-Centric Data Collection Plan</a> </p>
+</article>
+			<article class="article-listing">
+	<h2 class="subheader"><a href="/blog/constellation-approach-business-technology.html">Constellation Approach to Business Technology</a> </h2>
+	<p class="published">Mar 15 2016</p>
+	<p>Self-driving cars promise to re-imagine the relationship between cities, people and transportation while Uber takes fat chunks out of the taxi industry. </p>
+
+<p>Newspapers struggle with relevance—the value of ad space having plummeted as the expense of publishing...</p>
+  	<p class="text-right">Keep Reading <a href="/blog/constellation-approach-business-technology.html">Constellation Approach to Business Technology</a> </p>
+</article>
+			<article class="article-listing">
+	<h2 class="subheader"><a href="/blog/twitter-list-automation.html">Twitter List Automation</a> </h2>
+	<p class="published">Feb 15 2016</p>
+	<p>Twitter lists are a feature that nearly every digital marketer has experimented with but few use for anything other than keeping track of a select group of influencers.</p>
+
+<p>Lists seem like they would be quite useful to sales reps and account managers...</p>
+  	<p class="text-right">Keep Reading <a href="/blog/twitter-list-automation.html">Twitter List Automation</a> </p>
+</article>
+			<article class="article-listing">
+	<h2 class="subheader"><a href="/blog/extract-email-domain-zapier.html">Extract Email Domain with Zapier</a> </h2>
+	<p class="published">Feb  1 2016</p>
+	<p>When you capture information online there is always a balance between asking for more information and making it as easy as possible for your visitors to complete their task.</p>
+
+<p>You want more information to help you decide what to do with the person but...</p>
+  	<p class="text-right">Keep Reading <a href="/blog/extract-email-domain-zapier.html">Extract Email Domain with Zapier</a> </p>
+</article>
+			<article class="article-listing">
+	<h2 class="subheader"><a href="/blog/automating-feedback-reviews.html">Automating Feedback and Reviews</a> </h2>
+	<p class="published">Jan 15 2016</p>
+	<p>Any business that develops a long relationship with their customers can and should automate feedback and review requests.</p>
+
+<p>Good candidates include virtually any service business:</p>
+
+<ul>
+<li>IT outsourcing</li>
+<li>marketing agencies :)</li>
+<li>construction contractors</li>
+<li>hotels</li>
+</ul>
+  	<p class="text-right">Keep Reading <a href="/blog/automating-feedback-reviews.html">Automating Feedback and Reviews</a> </p>
+</article>
+			<article class="article-listing">
+	<h2 class="subheader"><a href="/blog/asking-google-reviews.html">Asking for Google Reviews</a> </h2>
+	<p class="published">Dec  1 2015</p>
+	<h2>Update</h2>
+
+<p>Google has streamlined the review process since this was written.</p>
+
+<p><a href="https://support.google.com/business/answer/7035772?hl=en">They now recommend</a> that you look up your Place ID and link to https://search.google.com/local/writereview?placeid=<place_id>.</place_id></p>
+
+<h2>Original Article</h2>
+
+<p>Getting reviews in Google helps improve...</p>
+  	<p class="text-right">Keep Reading <a href="/blog/asking-google-reviews.html">Asking for Google Reviews</a> </p>
+</article>
+			<article class="article-listing">
+	<h2 class="subheader"><a href="/blog/html-plain-text-email.html">When to Use HTML and Plain Text Emails</a> </h2>
+	<p class="published">Nov 15 2015</p>
+	<p>HTML emails are prettier than plain text. They require more expertise to produce than is seen in the average email user. As a result, business owners and managers are attracted to highly-designed HTML emails.</p>
+
+<p>But this barrier to entry often means...</p>
+  	<p class="text-right">Keep Reading <a href="/blog/html-plain-text-email.html">When to Use HTML and Plain Text Emails</a> </p>
+</article>
+			<article class="article-listing">
+	<h2 class="subheader"><a href="/blog/asking-reviews-tos.html">Asking for Reviews&#58; Is it Against the TOS</a> </h2>
+	<p class="published">Nov  1 2015</p>
+	<p>Offering an incentive for reviews puts you under truth in advertising laws in most countries but asking for reviews without any incentive is usually safe. If you are unsure about your country, it is best to consult a lawyer.</p>
+
+<p>But there’s another layer...</p>
+  	<p class="text-right">Keep Reading <a href="/blog/asking-reviews-tos.html">Asking for Reviews&#58; Is it Against the TOS</a> </p>
+</article>
+			<article class="article-listing">
+	<h2 class="subheader"><a href="/blog/creative-update-triggers-zapier.html">Creative On Update Zapier Triggers</a> </h2>
+	<p class="published">Oct 15 2015</p>
+	<p>Zapier is limited by how the different CRM systems make your data available to other application. Zapier can only react to changes that are broadcast by the CRM (and then only after you give it permission).</p>
+
+<p>Hubspot CRM’s integration with Zapier, for...</p>
+  	<p class="text-right">Keep Reading <a href="/blog/creative-update-triggers-zapier.html">Creative On Update Zapier Triggers</a> </p>
+</article>
+		</div>
+	</div>
+</div>
+
+			<a class="exit-off-canvas"></a>
+		</div>
+	</div>
+    <footer class="footer">
+		<div class="row">
+			<nav class="small-12 columns">
+				<ul class="left inline-list">
+					<li class="copyright"><small>&copy; Caret Juice Marketing</small></li>
+				</ul>
+				<ul class="right inline-list">
+					<li><a href="/privacy.html">Privacy</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+	<script src="../../javascripts/all-f8e45a1c.js"></script>
+	<script>
+	$(document).foundation();
+	</script>
+  </body>
+</html>

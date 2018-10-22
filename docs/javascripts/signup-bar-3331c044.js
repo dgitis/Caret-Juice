@@ -1,0 +1,1 @@
+!function(n){n(function(){"use strict";n(".signup-bar .close").on("click",function(){n(".signup-bar").fadeOut("slow")})})}(jQuery);
