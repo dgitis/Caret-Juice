@@ -7,8 +7,7 @@
     <title>Privacy at Caret Juice Marketing</title>
 	<meta name="description" content="How we balance your privacy with our goals.">
 	<link rel="canonical" href="http://www.caretjuice.com/privacy.html" />
-    
-    <link href="stylesheets/app-bddd2055.css" rel="stylesheet" />
+    <link href="stylesheets/app-431f4ce2.css" rel="stylesheet" />
     <script src="javascripts/modernizr-a621bc60.js"></script>
 	<link href="assets/images/favicon-d706ba9e.png" rel="shortcut icon" type="image/png">
 	<link href="assets/images/favicon-152-da840e5c.png" rel="apple-touch-icon-precomposed">
@@ -81,8 +80,8 @@
 	<section class="value-proposition">
 		<div class="row text-center">
 			<header class="small-12 columns">
-				<h1>Privacy Policy</h1>
-				<h2 class="subheader" style="font-weight:normal"><em>As a technology-focused marketing firm, we try to stay at the forefront of marketing technologies. That includes tracking technologies.<br/><br/>Here&#8217;s how we balance your privacy with our goals.</em></h2>
+				<h1>Cookie &amp; Privacy Policy</h1>
+				<h2 class="subheader">Here&#8217;s how we balance your privacy with our goals.</h2>
 			</header>
 		</div>
 	</section>
@@ -94,9 +93,18 @@
 				<li>We avoid collecting sensitive information as much as possible.</li>
 			</ul>
 			<p>Caret Juice Marketing is based in Vancouver, BC Canada registered as Caret Juice Marketing in BC.</p>
-			<h2>Website Visitors</h2>
-			<p>We use cookies to anonymously track how visitors use our web site.</p>
+			<h2>Cookies and Website Visitors</h2>
+			<p>We use cookies and local storage to anonymously track how visitors use our web site.</p>
 			<p>We use this information to improve the experience of using our site.</p>
+			<p>If you wish to opt out of tracking, you can toggle tracking below.</p>
+			<fieldset class="switch round inline" tabindex="0">
+				<input id="toggleOptOut" type="checkbox" name="toggleOptOut" onclick="toggleTracking('ga_opt_out', 315360000000)"/>
+				<label for="toggleOptOut"></label>
+			</fieldset>
+			<p class="inline" style="margin-left: -1rem; font-size:0.8rem; vertical-align:50%;">Opt Out of Analytics</p>			
+			<p>Erasing cookies will cause subsequent visits to be tracked.</p>
+			<p>Alternately, Caret Juice Marketing respects the <strong>do not track settings on your browser</strong>.</p>
+			<p><strong>We do not use</strong> fingerprinting or super cookies to circumvent your privacy preferences.</p>
 			<h2>Form Submissions</h2>
 			<p>When a visitor submits their name, email and other personal details through a form, our tracking ceases to be anonymous.</p>
 			<p>We use this information to understand what interactions on our site and with ads and other off-site marketing activities result in commercial relationships. Because our sales require conversations that happen offline, there is no way to track this information while giving you anonymity.</p>
@@ -105,14 +113,22 @@
 			&nbsp;
 		</div>
 	</article>
-
-
-		
 </section>
+
 
 			<a class="exit-off-canvas"></a>
 		</div>
 	</div>
+	<div class="signup-bar" id="signup-bar">
+	<div class="row">
+		<div class="small-12 medium-8 columns">
+			<p>Caret Juice Marketing uses cookies to learn how people use the site and improve your experience. By continuing you consent to the cookie policy outlined in our <a href="/privacy.html">privacy policy</a>.</p>
+		</div>
+		<div class="small-12 medium-4 columns text-center">
+			<a class="button secondary close">Accept and Continue</a>
+		</div>
+	</div>
+</div>
     <footer class="footer">
 		<div class="row">
 			<nav class="small-12 columns">
@@ -126,9 +142,11 @@
 			</nav>
 		</div>
 	</footer>
-	<script src="javascripts/all-e812424b.js"></script>
+	<script src="javascripts/all-5ae396d4.js"></script>
 	<script>
-	$(document).foundation();
+	$(document).ready(function () {
+  	$(document).foundation();
+	});
 	</script>
   </body>
 </html>
