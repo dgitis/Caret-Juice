@@ -1,8 +1,8 @@
 //suppress optout bar for people with ga_opt_out cookie
 function optOutPrefSet(){
     var cookie = Cookies.get("ga_opt_out");
-    console.log(cookie);
-    if (typeof cookie != "undefined" ){
+    console.log("cookie var= " + cookie);
+    if (typeof cookie == "undefined" ){
         //suppress optOutBar
         var optOutBar = document.getElementById('signup-bar');
         optOutBar.style.display = 'none';
@@ -12,15 +12,14 @@ function optOutPrefSet(){
 //toggle the cookie value
 function toggleTracking() {
     var status = Cookies.get("ga_opt_out");
-   if (typeof status != "undefined" ) {
+   if (typeof status == "undefined" ) {
        cookieValue = true; //first click should turn off tracking
-       console.log("attempted to turn off cookie");
    }
    else {
        cookieValue = !cookieValue;
-       console.log("Toggled opt out;");
    }
    Cookies.set("ga_opt_out", cookieValue, { expires: 3650 });
+   console.log("attempted to set cookie");
 }
 
 //accept Tracking
