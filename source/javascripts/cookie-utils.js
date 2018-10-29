@@ -41,3 +41,13 @@ $(document).ready(function () {
          console.log("Failed to find opt out status cookie and set toggle to unchecked")
 	 }
 });
+
+
+//QA Code to be removed
+$(document).ready(function(){
+	Cookies.set('jscookie', 'TEST', { expires: 2 });
+	if (Cookies.get('jscookie')) {
+		$('body').append(Cookies.get('jscookie'));
+		Cookies.remove('jscookie');
+	}
+});
