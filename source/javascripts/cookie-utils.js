@@ -18,13 +18,13 @@ function toggleTracking() {
    else {
        cookieValue = !cookieValue;
    }
-   Cookies.set("ga_opt_out", cookieValue, { expires: 3650 });
+   Cookies.set("ga_opt_out", cookieValue, { expires: 3650 }, { domain: 'www.caretjuice.com' });
    console.log("attempted to set cookie");
 }
 
 //accept Tracking
 function acceptTracking() {
-   Cookies.set("ga_opt_out", "false", { expires: 3650 });
+   Cookies.set("ga_opt_out", "false", { expires: 3650 }, { domain: 'www.caretjuice.com' });
 }
 
 //set the checked value for the Opt Out Toggle
