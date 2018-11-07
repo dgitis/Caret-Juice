@@ -118,7 +118,8 @@ activate :syntax, :line_numbers => true
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-activate :livereload
+#activate :livereload  
+#livereload reloads all pages with the same file extension which is very slow on wsl
 
 # Autoprefixer adds vendor prefixes and removes deprecated ones
 activate :autoprefixer
