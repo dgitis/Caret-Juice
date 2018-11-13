@@ -145,6 +145,7 @@ set :images_dir, 'assets/images'
     
  
 page "contractors.html", :layout => :landingpage
+page "hubspot.html", :layout => :landingpage
 page "/sitemap.xml", :layout => false
 page "/feed.xml", :layout => false
 page "CNAME", :layout => false

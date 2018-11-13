@@ -54,15 +54,21 @@ canonical: http://www.caretjuice.com/
 	<h2>Connect your sales data to analytics</h2>
 	<p>Ready to get started? Great. <br/>Not sure and want to know more? No problem.</p>
 	<aside id="form">
-		<form>
+		<form action="/thanks.html" method="get">
 			<label>Email
 			<input type="email" name="email" placeholder="Email" />
 			</label>
+			<label>Accounting Software		
+			<input type="text" name="accounting" placeholder="Accounting Software" />
+			</label>
+			<label>CRM		
+			<input type="text" name="crm" placeholder="CRM" />
+			</label>			
 
 			<label>Comments
 			<textarea name="comments" rows="6" placeholder="Comments"></textarea>
 			</label>
-			<input type="text" style="display:none;" id="clid" name="clid" />
+			<input type="text" style="display:none;" id="cid" name="cid" />
 
 			<input class="button secondary" type="submit" value="Let&#x27;s Talk" />
 		</form>
