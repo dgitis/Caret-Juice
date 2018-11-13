@@ -5,8 +5,8 @@ tags: testing
 category: Reasons
 author: damon
 excerpt: Pitfalls and solutions in designing a B-to-B testing program.
-facebook_img: http://www.caretjuice.com/blog/testing-role-b-to-b/role-of-testing-b-to-b-facebook.png
-twitter_img: http://www.caretjuice.com/blog/testing-role-b-to-b/role-of-testing-b-to-b-twitter.png
+facebook_img: https://www.caretjuice.com/blog/testing-role-b-to-b/role-of-testing-b-to-b-facebook.png
+twitter_img: https://www.caretjuice.com/blog/testing-role-b-to-b/role-of-testing-b-to-b-twitter.png
 ---
 
 Each little interaction in B-to-B marketing is a promise that the company makes to the prospective buyer. Every promise that is fulfilled builds trust with an individual and across an organization.

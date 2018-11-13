@@ -2,19 +2,19 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Caret Juice Marketing Blog</title>
   <subtitle>Marketing technology and automation minus the hype.</subtitle>
-  <id>http://www.caretjuice.com/blog</id>
-  <link href="http://www.caretjuice.com/blog"/>
-  <link href="http://www.caretjuice.com/feed.xml" rel="self"/>
+  <id>https://www.caretjuice.com/blog</id>
+  <link href="https://www.caretjuice.com/blog"/>
+  <link href="https://www.caretjuice.com/feed.xml" rel="self"/>
   <updated>2018-02-28T16:00:00-08:00</updated>
   <author>
     <name>Damon Gudaitis</name>
   </author>
   <entry>
     <title>Are you data driven? Or just numbers driven?</title>
-    <link rel="alternate" href="http://www.caretjuice.com/blog/data-driven.html"/>
-    <id>http://www.caretjuice.com/blog/data-driven.html</id>
+    <link rel="alternate" href="https://www.caretjuice.com/blog/data-driven.html"/>
+    <id>https://www.caretjuice.com/blog/data-driven.html</id>
     <published>2018-02-28T16:00:00-08:00</published>
-    <updated>2018-09-27T15:12:05-07:00</updated>
+    <updated>2018-11-13T14:24:25-08:00</updated>
     <author>
       <name>Damon Gudaitis</name>
     </author>
@@ -195,10 +195,10 @@
   </entry>
   <entry>
     <title>The Role of Testing in B-to-B Marketing</title>
-    <link rel="alternate" href="http://www.caretjuice.com/blog/testing-role-b-to-b.html"/>
-    <id>http://www.caretjuice.com/blog/testing-role-b-to-b.html</id>
+    <link rel="alternate" href="https://www.caretjuice.com/blog/testing-role-b-to-b.html"/>
+    <id>https://www.caretjuice.com/blog/testing-role-b-to-b.html</id>
     <published>2017-04-05T17:00:00-07:00</published>
-    <updated>2018-09-27T15:12:04-07:00</updated>
+    <updated>2018-11-13T14:24:11-08:00</updated>
     <author>
       <name>Damon Gudaitis</name>
     </author>
@@ -458,10 +458,10 @@
   </entry>
   <entry>
     <title>Constellation Approach to Business Technology</title>
-    <link rel="alternate" href="http://www.caretjuice.com/blog/constellation-approach-business-technology.html"/>
-    <id>http://www.caretjuice.com/blog/constellation-approach-business-technology.html</id>
+    <link rel="alternate" href="https://www.caretjuice.com/blog/constellation-approach-business-technology.html"/>
+    <id>https://www.caretjuice.com/blog/constellation-approach-business-technology.html</id>
     <published>2016-03-14T17:00:00-07:00</published>
-    <updated>2018-09-27T15:12:05-07:00</updated>
+    <updated>2018-11-13T14:23:57-08:00</updated>
     <author>
       <name>Damon Gudaitis</name>
     </author>
@@ -617,10 +617,10 @@ deep integration between a small number of applications&lt;/td&gt;
   </entry>
   <entry>
     <title>Twitter List Automation</title>
-    <link rel="alternate" href="http://www.caretjuice.com/blog/twitter-list-automation.html"/>
-    <id>http://www.caretjuice.com/blog/twitter-list-automation.html</id>
+    <link rel="alternate" href="https://www.caretjuice.com/blog/twitter-list-automation.html"/>
+    <id>https://www.caretjuice.com/blog/twitter-list-automation.html</id>
     <published>2016-02-14T16:00:00-08:00</published>
-    <updated>2018-09-27T15:12:05-07:00</updated>
+    <updated>2018-11-13T14:23:46-08:00</updated>
     <author>
       <name>Damon Gudaitis</name>
     </author>
@@ -722,10 +722,10 @@ deep integration between a small number of applications&lt;/td&gt;
   </entry>
   <entry>
     <title>Extract Email Domain with Zapier</title>
-    <link rel="alternate" href="http://www.caretjuice.com/blog/extract-email-domain-zapier.html"/>
-    <id>http://www.caretjuice.com/blog/extract-email-domain-zapier.html</id>
+    <link rel="alternate" href="https://www.caretjuice.com/blog/extract-email-domain-zapier.html"/>
+    <id>https://www.caretjuice.com/blog/extract-email-domain-zapier.html</id>
     <published>2016-01-31T16:00:00-08:00</published>
-    <updated>2018-09-27T15:12:05-07:00</updated>
+    <updated>2018-11-13T14:23:39-08:00</updated>
     <author>
       <name>Damon Gudaitis</name>
     </author>
@@ -889,10 +889,10 @@ deep integration between a small number of applications&lt;/td&gt;
   </entry>
   <entry>
     <title>Automating Feedback and Reviews</title>
-    <link rel="alternate" href="http://www.caretjuice.com/blog/automating-feedback-reviews.html"/>
-    <id>http://www.caretjuice.com/blog/automating-feedback-reviews.html</id>
+    <link rel="alternate" href="https://www.caretjuice.com/blog/automating-feedback-reviews.html"/>
+    <id>https://www.caretjuice.com/blog/automating-feedback-reviews.html</id>
     <published>2016-01-14T16:00:00-08:00</published>
-    <updated>2018-09-27T15:12:05-07:00</updated>
+    <updated>2018-11-13T14:23:33-08:00</updated>
     <author>
       <name>Damon Gudaitis</name>
     </author>

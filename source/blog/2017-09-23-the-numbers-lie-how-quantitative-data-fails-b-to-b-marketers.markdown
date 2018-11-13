@@ -5,8 +5,8 @@ tags: testing
 category: Reasons
 author: damon
 excerpt: How Quantitative Data Fails B-to-B Marketers
-facebook_img: http://www.caretjuice.com/blog/the-numbers-lie-how-quantitative-data-fails-b-to-b-marketers/the-numbers-lie-facebook.png
-twitter_img: http://www.caretjuice.com/blog/the-numbers-lie-how-quantitative-data-fails-b-to-b-marketers/the-numbers-lie-twitter.png
+facebook_img: https://www.caretjuice.com/blog/the-numbers-lie-how-quantitative-data-fails-b-to-b-marketers/the-numbers-lie-facebook.png
+twitter_img: https://www.caretjuice.com/blog/the-numbers-lie-how-quantitative-data-fails-b-to-b-marketers/the-numbers-lie-twitter.png
 ---
 
 Business to business marketers have adopted consumer marketing practices like data-driven decision making and funnel-based conversion rate optimization. However, we haven’t properly taken into account fundamental differences between business and consumer marketing in adapting these practices.

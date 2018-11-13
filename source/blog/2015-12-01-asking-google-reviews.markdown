@@ -5,8 +5,8 @@ tags: Reviews
 category: Reasons
 author: damon
 excerpt: What you need to know when asking people to review your business on Google.
-facebook_img: http://www.caretjuice.com/blog/asking-google-reviews/asking-google-reviews-facebook.png
-twitter_img: http://www.caretjuice.com/blog/asking-google-reviews/asking-google-reviews-twitter.png
+facebook_img: https://www.caretjuice.com/blog/asking-google-reviews/asking-google-reviews-facebook.png
+twitter_img: https://www.caretjuice.com/blog/asking-google-reviews/asking-google-reviews-twitter.png
 ---
 ##Update
 

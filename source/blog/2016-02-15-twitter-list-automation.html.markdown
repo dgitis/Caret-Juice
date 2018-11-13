@@ -5,8 +5,8 @@ tags: Twitter, Zapier
 category: Recipes
 author: damon
 excerpt: Help account and sales executives connect with prospects and leads.
-facebook_img: http://www.caretjuice.com/blog/twitter-list-automation/twitter-list-automation-facebook.png
-twitter_img: http://www.caretjuice.com/blog/twitter-list-automation/twitter-list-automation-twitter.png
+facebook_img: https://www.caretjuice.com/blog/twitter-list-automation/twitter-list-automation-facebook.png
+twitter_img: https://www.caretjuice.com/blog/twitter-list-automation/twitter-list-automation-twitter.png
 ---
 Twitter lists are a feature that nearly every digital marketer has experimented with but few use for anything other than keeping track of a select group of influencers.
 

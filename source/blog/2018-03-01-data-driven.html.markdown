@@ -5,8 +5,8 @@ tags: Zapier
 category: Reasons
 author: damon
 excerpt: How numbers-driven thinking dooms marketers to failure.
-facebook_img: http://www.caretjuice.com/blog/data-driven/data-driven-facebook.png
-twitter_img: http://www.caretjuice.com/blog/data-driven/data-driven-twitter.png
+facebook_img: https://www.caretjuice.com/blog/data-driven/data-driven-facebook.png
+twitter_img: https://www.caretjuice.com/blog/data-driven/data-driven-twitter.png
 ---
 
 Data is important to modern marketing.

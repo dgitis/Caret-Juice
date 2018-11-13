@@ -5,8 +5,8 @@ tags: selecting applications
 category: Reasons
 author: damon
 excerpt: Framework for understanding business applications, how they relate, and where to invest. 
-facebook_img: http://www.caretjuice.com/blog/constellation-approach-business-technology/constellation-approach-business-technology-facebook.png
-twitter_img: http://www.caretjuice.com/blog/constellation-approach-business-technology/constellation-approach-business-technology.png
+facebook_img: https://www.caretjuice.com/blog/constellation-approach-business-technology/constellation-approach-business-technology-facebook.png
+twitter_img: https://www.caretjuice.com/blog/constellation-approach-business-technology/constellation-approach-business-technology.png
 ---
 
 Self-driving cars promise to re-imagine the relationship between cities, people and transportation while Uber takes fat chunks out of the taxi industry. 

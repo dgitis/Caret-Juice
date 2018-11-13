@@ -6,28 +6,28 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= yield_content(:title) || current_page.data.title || "Caret Juice Marketing" %></title>
 	<meta name="description" content="<%= yield_content(:description) || current_page.data.description || current_page.data.excerpt %>">
-	<link rel="canonical" href="<%= current_page.data.canonical || "http://www.caretjuice.com" + current_page.url %>" />
+	<link rel="canonical" href="<%= current_page.data.canonical || "https://www.caretjuice.com" + current_page.url %>" />
     <%= stylesheet_link_tag "app" %>
     <%= javascript_include_tag "modernizr" %>
 	<link href="/assets/images/favicon.png" rel="shortcut icon" type="image/png">
 	<link href="/assets/images/favicon-152.png" rel="apple-touch-icon-precomposed">
 	<meta name="msapplication-TileColor" content="#FFFFFF">
 	<meta name="msapplication-TileImage" content="/assets/images/favicon-144.png">
-	<link rel="alternate" type="application/atom+xml" title="Caret Juice Blog Atom feed" href="http://www.caretjuice.com/feed.xml" />
+	<link rel="alternate" type="application/atom+xml" title="Caret Juice Blog Atom feed" href="https://www.caretjuice.com/feed.xml" />
 	<meta property="fb:app_id" content="349018238896517"/>
-	<meta property="og:url" content="<%= "http://www.caretjuice.com" + current_page.url %>" />
+	<meta property="og:url" content="<%= "https://www.caretjuice.com" + current_page.url %>" />
 	<meta property="og:type" content="<%= current_page.data.type || "article" %>" />
 	<meta property="og:title" content="<%= yield_content(:title) || current_page.data.title || "Caret Juice Marketing" %>" />
 	<meta property="og:description" content="<%= yield_content(:description) || current_page.data.description || current_page.data.excerpt || "Caret Juice Marketing" %>" />
 
-	<meta property="og:image" content="<%= current_page.data.facebook_img || current_page.data.featured_image || "http://www.caretjuice.com/assets/images/caretjuice-logo-2.png" %>" />
+	<meta property="og:image" content="<%= current_page.data.facebook_img || current_page.data.featured_image || "https://www.caretjuice.com/assets/images/caretjuice-logo-2.png" %>" />
 	<meta property="og:site_name" content="Caret Juice Marketing" />
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@CaretJuice">
 	<meta name="twitter:creator" content="@damongudaitis">
 	<meta name="twitter:title" content="<%= yield_content(:title) || current_page.data.title || current_page.data.excerpt || "Caret Juice Marketing" %>">
 	<meta name="twitter:description" content="<%= yield_content(:description) || current_page.data.description || "Caret Juice Marketing" %>">
-	<meta name="twitter:image" content="<%= current_page.data.twitter_img || current_page.data.featured_image || "http://www.caretjuice.com/assets/images/caretjuice-logo-2.png" %>">
+	<meta name="twitter:image" content="<%= current_page.data.twitter_img || current_page.data.featured_image || "https://www.caretjuice.com/assets/images/caretjuice-logo-2.png" %>">
   </head>
   
   <body class="<%= page_classes %>">

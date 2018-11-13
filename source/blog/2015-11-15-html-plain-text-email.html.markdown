@@ -5,8 +5,8 @@ tags: email
 category: Reasons
 author: damon
 excerpt: Don't let fancy HTML emails fool you. They are not always the best solution.
-facebook_img: http://www.caretjuice.com/blog/html-plain-text-email/html-plain-text-email-facebook.png
-twitter_img: http://www.caretjuice.com/blog/html-plain-text-email/html-plain-text-email-twitter.png
+facebook_img: https://www.caretjuice.com/blog/html-plain-text-email/html-plain-text-email-facebook.png
+twitter_img: https://www.caretjuice.com/blog/html-plain-text-email/html-plain-text-email-twitter.png
 ---
 HTML emails are prettier than plain text. They require more expertise to produce than is seen in the average email user. As a result, business owners and managers are attracted to highly-designed HTML emails.
 

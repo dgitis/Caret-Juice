@@ -5,8 +5,8 @@ tags: Zapier
 category: Recipes
 author: damon
 excerpt: Flexible Zapier triggers for inflexible CRM systems.
-facebook_img: http://www.caretjuice.com/blog/creative-update-triggers-zapier/creative-update-triggers-zapier-facebook.png
-twitter_img: http://www.caretjuice.com/blog/creative-update-triggers-zapier/creative-update-triggers-zapier-twitter.png
+facebook_img: https://www.caretjuice.com/blog/creative-update-triggers-zapier/creative-update-triggers-zapier-facebook.png
+twitter_img: https://www.caretjuice.com/blog/creative-update-triggers-zapier/creative-update-triggers-zapier-twitter.png
 ---
 
 Zapier is limited by how the different CRM systems make your data available to other application. Zapier can only react to changes that are broadcast by the CRM (and then only after you give it permission).

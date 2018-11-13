@@ -5,8 +5,8 @@ tags: marketing automation
 category: Recipes
 author: damon
 excerpt: A customer-centric data collection plan that also gets sales the data they need. 
-facebook_img: http://www.caretjuice.com/blog/form-field-tactics-data-strategy/customer-centric-data-collection-plan-facebook.png
-twitter_img: http://www.caretjuice.com/blog/form-field-tactics-data-strategy/customer-centric-data-plan-twitter.png
+facebook_img: https://www.caretjuice.com/blog/form-field-tactics-data-strategy/customer-centric-data-collection-plan-facebook.png
+twitter_img: https://www.caretjuice.com/blog/form-field-tactics-data-strategy/customer-centric-data-plan-twitter.png
 ---
 
 Clearly something is not quite right with me because, unlike the vast, normal majority of the world, I get excited un-sexy details like form fields. Over the years, I’ve developed a preferred data collection plan that balances the data requirements of sales and marketing, optimizing conversion rates, and the communication preferences of visitors.
