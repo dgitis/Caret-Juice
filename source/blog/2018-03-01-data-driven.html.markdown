@@ -17,7 +17,7 @@ The Chief Martech [2017 Marketing Technology Landscape](http://chiefmartec.com/2
 
 Google Trends shows a steady increase in interest in "data-driven marketing" over the past decade. The spikes in interest just before the decade look like special cause problems in the data collection—the alternating months of zero interest with interest almost on par with today is what makes those numbers suspect.
 
-<img src="/blog/2018-03-01-data-driven/data-driven-marketing-trends.png" alt="google trends for data driven marketing">
+<img src="/blog/data-driven/data-driven-marketing-trends.png" alt="google trends for data driven marketing">
 
 All of this is to say that data is important to marketing today.
 

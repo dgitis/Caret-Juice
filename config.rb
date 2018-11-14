@@ -189,17 +189,15 @@ end
 configure :development do
   set :debug_assets, true
   set :sass, :sourcemap => :inline
-  activate :disqus do |d|
-    d.shortname = 'caretjuicelocal'
-  end
+  #activate :disqus do |d|
+  #  d.shortname = 'caretjuicelocal'
+  #end
 end
 
-
-
 configure :build do
-  activate :disqus do |d|
-    d.shortname = 'caretjuice' # Replace with your Disqus shortname.
-  end
+  #activate :disqus do |d|
+  #  d.shortname = 'caretjuice' # Replace with your Disqus shortname.
+  #end
   # For example, change the Compass output style for deployment
    activate :minify_css
 
