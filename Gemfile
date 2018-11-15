@@ -9,7 +9,7 @@ gem 'middleman-blog', '~> 4.0', '>= 4.0.1'
 gem 'foundation'
 gem "htmlentities"
 gem "nokogiri"
-gem "middleman-syntax"
+#gem "middleman-syntax"
 gem "middleman-compass"
 #gem 'middleman-bower'
 gem "middleman-sprockets"

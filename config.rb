@@ -112,7 +112,7 @@ set :markdown, :fenced_code_blocks => true, :smartypants => true
 
 
 #activate :directory_indexes
-activate :syntax, :line_numbers => true
+#activate :syntax, :line_numbers => true
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes

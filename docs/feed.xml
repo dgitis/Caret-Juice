@@ -841,19 +841,15 @@ deep integration between a small number of applications&lt;/td&gt;
 &lt;p&gt;&lt;img src="../assets/images/extract-email-domain-fa997eb4.png" alt="Extract Email Domain Settings and Code" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Enter the following code into the &lt;strong&gt;Code&lt;/strong&gt; section.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre class="highlight python"&gt;&lt;code&gt;&lt;table class="rouge-table"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="rouge-gutter gl"&gt;&lt;pre class="lineno"&gt;1
-2
-3
-4
-5
-6
-&lt;/pre&gt;&lt;/td&gt;&lt;td class="rouge-code"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;re&lt;/span&gt;
-&lt;span class="n"&gt;email&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;input&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'email'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="n"&gt;emailatDomain&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;re&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;search&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;".+@([&lt;/span&gt;&lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="s"&gt;w.]+)"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;email&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="s"&gt;'emailDomain'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;emailatDomain&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;group&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;emailatDomain&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="s"&gt;'Error'&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class="python"&gt;import re
+email = input[&amp;#39;email&amp;#39;]
+emailatDomain = re.search(&amp;quot;.+@([\w.]+)&amp;quot;, email)
+return {
+    &amp;#39;emailDomain&amp;#39;: emailatDomain.group(1) if emailatDomain else &amp;#39;Error&amp;#39;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;For those of you with little knowledge of Python, here’s what’s going on.&lt;/p&gt;
 
 &lt;p&gt;Line 1: Import the regular expression module that will let us match patterns.&lt;/p&gt;

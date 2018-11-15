@@ -868,19 +868,15 @@ deep integration between a small number of applications</td>
 <p><img src="assets/images/extract-email-domain-fa997eb4.png" alt="Extract Email Domain Settings and Code" /></p>
 
 <p>Enter the following code into the <strong>Code</strong> section.</p>
-<div class="highlight"><pre class="highlight python"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">re</span>
-<span class="n">email</span> <span class="o">=</span> <span class="nb">input</span><span class="p">[</span><span class="s">'email'</span><span class="p">]</span>
-<span class="n">emailatDomain</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s">".+@([</span><span class="err">\</span><span class="s">w.]+)"</span><span class="p">,</span> <span class="n">email</span><span class="p">)</span>
-<span class="k">return</span> <span class="p">{</span>
-    <span class="s">'emailDomain'</span><span class="p">:</span> <span class="n">emailatDomain</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="k">if</span> <span class="n">emailatDomain</span> <span class="k">else</span> <span class="s">'Error'</span>
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></div>
+
+<pre><code class="python">import re
+email = input[&#39;email&#39;]
+emailatDomain = re.search(&quot;.+@([\w.]+)&quot;, email)
+return {
+    &#39;emailDomain&#39;: emailatDomain.group(1) if emailatDomain else &#39;Error&#39;
+}
+</code></pre>
+
 <p>For those of you with little knowledge of Python, here’s what’s going on.</p>
 
 <p>Line 1: Import the regular expression module that will let us match patterns.</p>
