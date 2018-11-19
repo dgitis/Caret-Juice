@@ -86,22 +86,21 @@ Otherwise, you're going to need to convert your audio to flac format before rena
 
 Now, open up your Terminal application. Windows users running Linux on Windows will want to open the Linux Terminal and change directory to your speech-to-text folder.
 
---aside--
+<aside class="panel">
+<h3>Navigating the Terminal</h3>
 
+<p>Typing _ls_ in the command line shows all of the files and folders in your current directory.</p>
 
-### Navigating the Terminal
+<p>Typing _cd directory_name_ moves into a folder in your current directory.</p>
 
-Typing _ls_ in the command line shows all of the files and folders in your current directory.
+<p>Typing _cd .._ moves back up a step.</p>
 
-Typing _cd directory_name_ moves into a folder in your current directory.
-
-Typing _cd .._ moves back up a step.
-
-Keep using the cd (and ls if you need to orient yourself) command to navigate your way to your speech-to-text folder.
+<p>Keep using the cd (and ls if you need to orient yourself) command to navigate your way to your speech-to-text folder.</p>
 
 ![command prompt](/blog/speech-to-text/command-prompt.png "command prompt")
 
-You can see your progress as you cd up and down in the command prompt (shown in blue in the above screenshot) left of the dollar signs.
+<p>You can see your progress as you cd up and down in the command prompt (shown in blue in the above screenshot) left of the dollar signs.</p>
+</aside>
 
 Once you're in right folder, copy and paste the contents of console.txt (with your API key and updated URL if necessary) into the terminal.
 
