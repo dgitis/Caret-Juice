@@ -63,7 +63,7 @@ set :build_dir, 'docs'
 # Helpers
 helpers do
   def find_author(author_slug)
-    author_slug = author_slug.downcase
+    author_slug = author_slug.to_s.downcase
     result = data.authors.select {|author| author.keys.first == author_slug }
     raise ArgumentError unless result.any?
     result.first

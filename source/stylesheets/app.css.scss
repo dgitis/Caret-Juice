@@ -1,6 +1,5 @@
 @charset "UTF-8";
-@import url(https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans:200,400,400italic,600,700,700italic);
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i');
 @import "components/_settings";
 @import "normalize.css";
 @import "components/_global";
@@ -22,6 +21,7 @@
 @import "../assets/fontawesome/scss/font-awesome.scss";
 
 /*# sourceMappingURL=app.css.map */
+$font-family-sans-serif: "Open Sans", Arial, sans-serif !default;
 
 .inline{display:inline;}
 .hero {
