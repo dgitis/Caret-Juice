@@ -119,3 +119,5 @@ In your terminal, type python json-to-text.py and you should have your transcrip
 ![JSON to text command](/blog/speech-to-text/json-to-text.png "JSON to text command")
 
 Go check formatted_text.txt where you'll see your transcription in all its highly-in-need-of-editing glory.
+
+Discuss on [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:6470706540327235584) or [GitHub](https://github.com/dgitis/speech-to-text)
