@@ -1,0 +1,263 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport"content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PRFCGK');</script>
+	<!-- Use title if it's in the page YAML frontmatter -->
+    <title>Hackers' Guide to Speech to Text&#58; Quick, Dirty, and Free</title>
+	<meta name="description" content="Learn how to use IBM Watson to speed up transcription.">
+	<link rel="canonical" href="https://www.caretjuice.com/blog/speech-to-text.html" />
+    <link href="../stylesheets/app-0b9d9cfe.css" rel="stylesheet" />
+    <script src="../javascripts/modernizr-a621bc60.js"></script>
+	<link href="../assets/images/favicon-d706ba9e.png" rel="shortcut icon" type="image/png">
+	<link href="../assets/images/favicon-152-da840e5c.png" rel="apple-touch-icon-precomposed">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="../assets/images/favicon-144-ac9bfb6e.png">
+	<link rel="alternate" type="application/atom+xml" title="Caret Juice Blog Atom feed" href="https://www.caretjuice.com/feed.xml" />
+	<meta property="fb:app_id" content="349018238896517"/>
+	<meta property="og:url" content="https://www.caretjuice.com/blog/speech-to-text.html" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Hackers' Guide to Speech to Text&#58; Quick, Dirty, and Free" />
+	<meta property="og:description" content="Learn how to use IBM Watson to speed up transcription." />
+
+	<meta property="og:image" content="https://www.caretjuice.com/blog/speech-to-text/speech-to-text-facebook.png" />
+	<meta property="og:site_name" content="Caret Juice Marketing" />
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@CaretJuice">
+	<meta name="twitter:creator" content="@damongudaitis">
+	<meta name="twitter:title" content="Hackers' Guide to Speech to Text&#58; Quick, Dirty, and Free">
+	<meta name="twitter:description" content="Caret Juice Marketing">
+	<meta name="twitter:image" content="https://www.caretjuice.com/blog/speech-to-text/speech-to-text-twitter.png">
+  </head>
+  
+  <body class="blog blog_speech-to-text">
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRFCGK"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<div class="off-canvas-wrap" data-offcanvas>
+		<div class="inner-wrap">
+    		<div class="contain-to-grid section">
+	<nav class="top-bar show-for-large-up" data-topbar role="navigation">
+		<ul class="title-area inline-list">
+	    <li class="name">
+<a href="/">				  <img src="../assets/images/caretjuice-logo-2-b7bf8654.png" alt="Caret Juice Marketing Logo" />
+</a>		    </li>
+			<li id="tag-line">Audience Experience Optimization</li>
+	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->	    
+	  </ul>
+	  <section class="top-bar-section">
+	     <ul class="right">
+			<li><a href="/">Home</a></li>
+			<li><a href="/blog.html">Blog</a></li>
+	    <li><a href="/contact.html">Contact</a></li>
+	    </ul>
+	  </section>
+	</nav>
+</div>
+<nav class="tab-bar hide-for-large-up">
+	<section class="tab-bar-section">
+		<h1 class="title"><a href="/">Caret Juice Marketing</a></h1>
+	</section>
+
+      <section class="right tab-bar-section">
+        <a class="right-off-canvas-toggle" href="#mobile-menu">MENU</a>
+      </section>
+</nav>
+<nav id="mobile-menu" class="right-off-canvas-menu">
+	<ul class="off-canvas-list">
+		<li><a href="/">Home</a></li>
+		<li><a href="/blog.html">Blog</a></li>
+		<li><a href="/contact.html">Contact</a></li>
+	</ul>
+</nav>
+    <article itemid="https://www.caretjuice.com/blog/speech-to-text.html" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="article-info pattern">
+		<div class="text-center row">
+			<div class=" small-12 columns">
+				<h1 style="margin-bottom:5px; line-height:3.0rem;" itemprop="headline">Hackers' Guide to Speech to Text&#58; Quick, Dirty, and Free</h1>
+				<p>by <a href="/blog/author/damon" rel="author">Damon Gudaitis</a> | under <a href="/blog/category/reasons">Reasons</a></p>
+				<h3 class="subheader" style="margin-bottom:5px; line-height:1.6rem; font-size:1.4rem; font-style:italic;" itemprop="description">Learn how to use IBM Watson to speed up transcription.</h3>
+		
+				<a href="http://twitter.com/intent/tweet?text=Learn how to use IBM Watson to speed up transcription.&url=https://www.caretjuice.com/blog/speech-to-text.html&via=damongudaitis" target="blank">Tweet This</a>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-12 large-8 large-offset-2 columns" itemprop="articleBody">
+		    <p>So you&rsquo;ve got some audio that you want to turn into text? There are a lot of good, inexpensive options out there powered by machines, people, and a mix of the two. </p>
+
+<p>If you are working with text at scale, I recommend you pay for one of the many wonderful services or pay to have someone integrate machine-learning-powered speech-to-text with your workflows.</p>
+
+<p>However, if you&rsquo;re just looking to transcribe an interview for something like a case study, testimonial, or qualitative feedback, you don&rsquo;t have the budget to pass off this tedious work to someone else, and don&rsquo;t have the patience to do everything yourself then this hacked together workflow will speed up the boring bits significantly.</p>
+
+<p>I&rsquo;m going to show you how to use IBM Watson&rsquo;s Speech-to-Text along with Python in order to partially automate the transcription process. IBM allows 100  minutes of transcription a month which should be enough most people who need a hacky solution like this.</p>
+
+<p>Machine transcription is far from perfect, and IBM Watson is no exception. You&rsquo;ll need to read the output while listening along and check the words as well as add punctuation, but I&rsquo;d estimate that I can do five minutes of audio in about 15 minutes of work now that I have this set up whereas it could take the better part of an hour before.</p>
+
+<h2>Dev Environment</h2>
+
+<p>You&rsquo;ll need to be able to run Python in order to follow the instructions here. If you&rsquo;re on Mac or Linux, you&rsquo;ve already got Python installed and should be good to go.</p>
+
+<p>If you&rsquo;re on a Windows machine, then you have some work to do <a href="https://docs.python.org/3.3/using/windows.html">installing Python on Windows</a>, <a href="https://www.cygwin.com/">Cygwin</a>, or setting up the <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Windows Subsystem for Linux (WSL)</a>.</p>
+
+<p>In my case, I&rsquo;ve got WSL running Ubuntu Linux in Visual Studio Code. I installed Bash, integrated it with VS Code and then followed the Linux instructions to get Python running.</p>
+
+<p>Setting this up is way beyond the scope of this article. It took me a lot of Googling but I&rsquo;m sure you&rsquo;ll get there if you have enough time.</p>
+
+<p>Alternately, ask a Mac-using friend to borrow their computer.</p>
+
+<h2>Sign Up for Watson</h2>
+
+<p>First, <a href="https://console.bluemix.net/registration/">create an IBM Cloud account</a> and confirm your email, agree to give up your next child in the TOS, and finish all of the usual other setup steps.</p>
+
+<p>Next, go to your IBM <a href="https://console.bluemix.net/registration/">Bluemix Console</a> (log in if you need) and then search for and select &ldquo;speech to text&rdquo;. The defaults should be fine for a hacked together tool like this.</p>
+
+<p>You should be on a page listing your speech-to-text settings. We&rsquo;re interested in two things. Your API Key (keep this secret) and the Url where IBM is listening for your requests.</p>
+
+<p><img src="speech-to-text/watson-speech-to-text.png" title="Watson speech-to-text configuration information" alt="Watson speech-to-text configuration information" /></p>
+
+<p>We will need both of these things when setting up your scripts.</p>
+
+<h2>Set Up Your Scripts</h2>
+
+<p>With Python, hopefully, up and running and your IBM account you&rsquo;re ready to set things up.</p>
+
+<p>First, create a folder to host your scripts.  We&rsquo;re going to save the input audio here and have a text file to receive the output text along with the command line commands and Python scripts that do all of the work.</p>
+
+<p>If you&rsquo;ve already got a dev environment set up, then you know where you want to put this. </p>
+
+<p>Otherwise, I recommend creating a dev folder under your user and under that add utils and speech-to-text subfolders.</p>
+
+<p>Now it&rsquo;s time to get the files set up. You can download them or <a href="https://github.com/dgitis/speech-to-text">clone them from GitHub here</a> or follow along and add them as we go.</p>
+
+<p><strong>First, open or create a file called console.txt</strong>. This holds the command line script that you&rsquo;re going to run.</p>
+
+<script src="https://gist.github.com/dgitis/2af0e563abb90f554c7738c9eed8eb3b.js"></script>
+
+<p>What these lines do, when entered in your terminal, is tell your computer to send an audio file named <em>input.flac</em> to IBM&rsquo;s server authenticated with your API key, return the audio as text and put it in a file called <em>watson.json</em>.</p>
+
+<p>Remember the API key and URL from your IBM Bluemix console that I asked you to remember? You&rsquo;re going to put them in here.</p>
+
+<p>The API key goes in the place helpfully marked &ldquo;your<em>api</em>key&rdquo; in the first line.</p>
+
+<p>If you kept the default region (Dallas) in setup, then you don&rsquo;t need to change the URL. Otherwise, you&rsquo;ll want to replace everything from _https _to _api _in the URL on the fourth line with the URL from the console.</p>
+
+<p>Otherwise we&rsquo;re good here.</p>
+
+<p><strong>Next, open or create a file called <em>json-to-text.py</em></strong>. This file is going to parse the JSON from IBM in the <em>watson.json</em> file and write it to a file containing raw text named <em>formatted</em>text.txt_.</p>
+
+<script src="https://gist.github.com/dgitis/12a99cd1e38764825db1ffa323768fbc.js"></script>
+
+<p>We don&rsquo;t actually need to do anything with this other than to save it.</p>
+
+<h2>Running the Script</h2>
+
+<p>The eagle-eyed among you will have noticed that the audio file that we&rsquo;re working with is called <em>input.flac</em>.</p>
+
+<p>If you can capture your audio in flac format, then do so because you&rsquo;ll get much better results. In this case, name the file input.flac and place it in the speech-to-text folder where you installed the other files.</p>
+
+<p>Otherwise, you&rsquo;re going to need to convert your audio to flac format before renaming and and putting it in the correct folder. At the time of writing, <a href="https://audio.online-convert.com/convert-to-flac">this service is free</a> but there are plenty of other ways that you can do this.</p>
+
+<p>Now, open up your Terminal application. Windows users running Linux on Windows will want to open the Linux Terminal and change directory to your speech-to-text folder.</p>
+
+<aside class="panel">
+<h3>Navigating the Terminal</h3>
+
+<p>Typing _ls_ in the command line shows all of the files and folders in your current directory.</p>
+
+<p>Typing _cd directory_name_ moves into a folder in your current directory.</p>
+
+<p>Typing _cd .._ moves back up a step.</p>
+
+<p>Keep using the cd (and ls if you need to orient yourself) command to navigate your way to your speech-to-text folder.</p>
+
+![command prompt](/blog/speech-to-text/command-prompt.png &ldquo;command prompt&rdquo;)
+
+<p>You can see your progress as you cd up and down in the command prompt (shown in blue in the above screenshot) left of the dollar signs.</p>
+</aside>
+
+<p>Once you&rsquo;re in right folder, copy and paste the contents of console.txt (with your API key and updated URL if necessary) into the terminal.</p>
+
+<p><img src="speech-to-text/watson-speech-to-text-at-work.png" title="Watson speech-to-text at work" alt="Watson speech-to-text at work" /></p>
+
+<p>This will take some time depending on how much audio you&rsquo;re transcribing. The file I used took about one minute to transcribe one minute of audio so maybe it goes through it without fast forwarding or separating the file into chunks for parallel processing.</p>
+
+<p>I usually like to take advantage of moments like this by being conspicuously idle encouraging coworkers and bosses to comment so I can respond &ldquo;I&rsquo;m transcribing audio as we speak. What are you doing?&rdquo; It&rsquo;s great for morale (well, yours at least).</p>
+
+<p>When it&rsquo;s done you should have a long JSON file that doesn&rsquo;t look anything like the words you&rsquo;re transcribing.</p>
+
+<p>That little <em>json-to-text.py</em> file that we created earlier will fix this.</p>
+
+<p>In your terminal, type python json-to-text.py and you should have your transcription in the formatted_text.txt file almost immediately. The terminal doesn&rsquo;t even bother to tell you its done.</p>
+
+<p><img src="speech-to-text/json-to-text.png" title="JSON to text command" alt="JSON to text command" /></p>
+
+<p>Go check formatted_text.txt where you&rsquo;ll see your transcription in all its highly-in-need-of-editing glory.</p>
+	
+		</div>
+	</div>	
+</article>
+<div class="row">
+	<div class="small-12 large-8 large-offset-2 columns">
+		<div class="social-share ">
+			<ul class="inline-list inline-list-center">
+			<li><h4>Share:</h4></li>
+			<li style="background-color: #0077B5"><a class="icon" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.caretjuice.com%2Fblog%2Fspeech-to-text.html&title=&summary=&source=Caret+Juice+Marketing" rel="nofollow" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+			<li style="background-color: #55acee"><a class="icon" href="https://twitter.com/intent/tweet?text=Hackers' Guide to Speech to Text&#58; Quick, Dirty, and Free&url=https://www.caretjuice.com/blog/speech-to-text.html&via=damongudaitis" rel="nofollow" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+			<li style="background-color: #3b5998"><a class="icon" href="https://www.facebook.com/dialog/share?app_id=349018238896517&display=popup&href=https%3A%2F%2Fwww.caretjuice.com%2Fblog%2Fspeech-to-text.html" rel="nofollow" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>			
+			</ul>
+		</div>
+		<div class="row panel secondary-cta">
+	<div class="text-center">
+		<h3>Practical Business Automation</h3>
+		<h4><em>Guide to business&nbsp;automation in the golden age of software&nbsp;as&nbsp;a&nbsp;service.</em></h4>
+	</div>
+	<div class="small-12 medium-7 columns">
+		<p>Learn about the Constellation Approach to Business Technology&mdash;the conceptual framework that underpins Caret Juice services. Follow our recipes and set up your own automation.</p>
+	</div>
+	<div class="text-center small-12 medium-5 columns">
+		<a href="/practical-automation" class="button secondary">Read the Guide<br/><small>FREE - NO EMAIL REQUIRED</small></a>
+	</div>
+</div>
+	</div>
+</div>
+
+
+			<a class="exit-off-canvas"></a>
+		</div>
+	</div>
+	<div class="signup-bar" id="signup-bar">
+	<div class="row">
+		<div class="small-12 medium-8 columns">
+			<p>Caret Juice Marketing uses cookies to learn how people use the site and improve your experience. By continuing you consent to the cookie policy outlined in our <a href="/privacy.html">privacy policy</a>.</p>
+		</div>
+		<div class="small-12 medium-4 columns text-center">
+			<a class="button secondary close" onclick="acceptTracking();">Accept and Continue</a>
+		</div>
+	</div>
+</div>
+    <footer class="footer">
+		<div class="row">
+			<nav class="small-12 columns">
+				<ul class="left inline-list">
+					<li class="copyright"><small>&copy; Caret Juice Marketing</small></li>
+				</ul>
+				<ul class="right inline-list">
+					<li><a href="/privacy.html">Privacy</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+	<script src="../javascripts/all-ba3bee05.js"></script>
+	<script>
+	$(document).ready(function () {
+  	$(document).foundation();
+	});
+	</script>
+  </body>
+</html>
