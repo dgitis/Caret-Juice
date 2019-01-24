@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport"content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
 		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -12,7 +12,7 @@
     <title>Contact Caret Juice Marketing</title>
 	<meta name="description" content="Call, email or connect with Caret Juice Marketing.">
 	<link rel="canonical" href="https://www.caretjuice.com/contact.html" />
-    <link href="stylesheets/app-9c50f981.css" rel="stylesheet" />
+    <link href="stylesheets/app-8d837d4a.css" rel="stylesheet" />
     <script src="javascripts/modernizr-a621bc60.js"></script>
 	<link href="assets/images/favicon-d706ba9e.png" rel="shortcut icon" type="image/png">
 	<link href="assets/images/favicon-152-da840e5c.png" rel="apple-touch-icon-precomposed">
@@ -52,6 +52,12 @@
 	  <section class="top-bar-section">
 	     <ul class="right">
 			<li><a href="/">Home</a></li>
+			<li><a data-dropdown="services" data-options="is_hover:true; hover_timeout:500" aria-controls="services" aria-expanded="false">Services</a></li>
+				<ul id="services" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+					<li><a href="/data-collection.html">Data Collection</a></li>
+					<li><a href="/data-analysis.html">Data Analysis</a></li>
+					<li><a href="/experience-optimization.html">Experience Optimization</a></li>
+				</ul>
 			<li><a href="/blog.html">Blog</a></li>
 	    <li><a href="/contact.html">Contact</a></li>
 	    </ul>
@@ -60,7 +66,7 @@
 </div>
 <nav class="tab-bar hide-for-large-up">
 	<section class="tab-bar-section">
-		<h1 class="title"><a href="/">Caret Juice Marketing</a></h1>
+		<h3 class="title"><a href="/">Caret Juice Marketing</a></h3>
 	</section>
 
       <section class="right tab-bar-section">
@@ -70,6 +76,13 @@
 <nav id="mobile-menu" class="right-off-canvas-menu">
 	<ul class="off-canvas-list">
 		<li><a href="/">Home</a></li>
+		<li style="padding-top:10px"><label>Services</label>
+      <ul class="off-canvas-nested-list">
+        <li><a href="/data-collection.html">Data Collection</a></li>
+        <li><a href="/data-analysis.html">Data Analysis</a></li>
+				<li><a href="/experience-optimization.html">Experience Optimization</a></li>
+      </ul>
+		</li>
 		<li><a href="/blog.html">Blog</a></li>
 		<li><a href="/contact.html">Contact</a></li>
 	</ul>
@@ -162,9 +175,8 @@
 	</footer>
 	<script src="javascripts/all-ba3bee05.js"></script>
 	<script>
-	$(document).ready(function () {
-  	$(document).foundation();
-	});
-	</script>
+  $(document).foundation();
+</script>
+
   </body>
 </html>

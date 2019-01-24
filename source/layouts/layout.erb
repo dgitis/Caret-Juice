@@ -13,6 +13,12 @@
 	  <section class="top-bar-section">
 	     <ul class="right">
 			<li><%= link_to 'Home', '/index.html' %></li>
+			<li><a data-dropdown="services" data-options="is_hover:true; hover_timeout:500" aria-controls="services" aria-expanded="false">Services</a></li>
+				<ul id="services" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+					<li><%= link_to 'Data Collection', '/data-collection.html' %></li>
+					<li><%= link_to 'Data Analysis', '/data-analysis.html' %></li>
+					<li><%= link_to 'Experience Optimization', '/experience-optimization.html' %></li>
+				</ul>
 			<li><%= link_to 'Blog', '/blog.html' %></li>
 	    <li><%= link_to 'Contact', '/contact.html' %></li>
 	    </ul>
@@ -21,7 +27,7 @@
 </div>
 <nav class="tab-bar hide-for-large-up">
 	<section class="tab-bar-section">
-		<h1 class="title"><%= link_to 'Caret Juice Marketing', '/index.html' %></h1>
+		<h3 class="title"><%= link_to 'Caret Juice Marketing', '/index.html' %></h3>
 	</section>
 
       <section class="right tab-bar-section">
@@ -31,6 +37,13 @@
 <nav id="mobile-menu" class="right-off-canvas-menu">
 	<ul class="off-canvas-list">
 		<li><%= link_to 'Home', '/index.html' %></li>
+		<li style="padding-top:10px"><label>Services</label>
+      <ul class="off-canvas-nested-list">
+        <li><%= link_to 'Data Collection', '/data-collection.html' %></li>
+        <li><%= link_to 'Data Analysis', '/data-analysis.html' %></li>
+				<li><%= link_to 'Experience Optimization', '/experience-optimization.html' %></li>
+      </ul>
+		</li>
 		<li><%= link_to 'Blog', '/blog.html' %></li>
 		<li><%= link_to 'Contact', '/contact.html' %></li>
 	</ul>

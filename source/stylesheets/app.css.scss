@@ -450,3 +450,13 @@ a:hover.hover-dropdown{
 .button.info{
 	color:$white;
 }
+
+#services li{
+	display: block;
+	width: auto;
+	float: none;
+}
+
+.off-canvas-nested-list{
+	list-style-type: none;
+}
