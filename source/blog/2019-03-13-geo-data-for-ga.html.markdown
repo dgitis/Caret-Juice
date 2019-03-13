@@ -810,3 +810,5 @@ You can just [grab the finished CSV](2019-03-13-geo-data-for-ga/us_city_pop_ga.c
 5. Upload the CSV manually (Admin > Property > Data Import) select the Data Set you created previously and Manage Uploads.
 
 And there, you're done.
+
+Discuss on [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:6511659733227749377/).
