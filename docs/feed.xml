@@ -5,10 +5,766 @@
   <id>https://www.caretjuice.com/blog</id>
   <link href="https://www.caretjuice.com/blog"/>
   <link href="https://www.caretjuice.com/feed.xml" rel="self"/>
-  <updated>2018-11-19T16:00:00-08:00</updated>
+  <updated>2019-03-12T17:00:00-07:00</updated>
   <author>
     <name>Damon Gudaitis</name>
   </author>
+  <entry>
+    <title>US Population Data for Google Analytics</title>
+    <link rel="alternate" href="https://www.caretjuice.com/blog/geo-data-for-ga.html"/>
+    <id>https://www.caretjuice.com/blog/geo-data-for-ga.html</id>
+    <published>2019-03-12T17:00:00-07:00</published>
+    <updated>2019-03-12T15:07:41-07:00</updated>
+    <author>
+      <name>Damon Gudaitis</name>
+    </author>
+    <summary type="html">&lt;p&gt;Geography data import in Google Analytics is a lesser-used feature. In their docs, Google emphasizes the ability to create custom sales districts. While this is quite useful for the right type of business, you can also use geo-data import to augment...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Geography data import in Google Analytics is a lesser-used feature. In their docs, Google emphasizes the ability to create custom sales districts. While this is quite useful for the right type of business, you can also use geo-data import to augment your data.&lt;/p&gt;
+
+&lt;p&gt;Please note, this covers how to format the data for Google. If you just want to import the data that I&amp;rsquo;ve formatted, skip to the end of this post, grab the CSV and follow the instructions in the last section.&lt;/p&gt;
+
+&lt;p&gt;Google lets you match your imported data to City ID, Country ISO code, Region ID, and Sub-Continent Code so to start you’ll want some data that you can match at that level.&lt;/p&gt;
+
+&lt;p&gt;Additionally, you can only import custom dimensions this way. This isn’t really a problem but it means that you’ll probably need to do some pre-processing of your data to, for example, turn numerical data in to buckets that are suitable as dimensions.&lt;/p&gt;
+
+&lt;p&gt;I looked at importing raw numerical data and then bucketing the data via custom segments, but GA doesn’t let you create segments using less than or greater than operators and doing this via regular expressions seems like a quick way to give myself nightmares.&lt;/p&gt;
+
+&lt;p&gt;First, let&amp;rsquo;s look at &lt;a href="'https://developers.google.com/analytics/devguides/collection/protocol/v1/geoid'"&gt;Google&amp;rsquo;s geo data&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="python"&gt;
+import pandas as pd
+import numpy as np
+
+ga = pd.read_csv(&amp;#39;geotargets-2019-02-11.csv&amp;#39;)
+ga.head()
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class="dataframe-wrapper"&gt;
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;Criteria ID&lt;/th&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Canonical Name&lt;/th&gt;
+      &lt;th&gt;Parent ID&lt;/th&gt;
+      &lt;th&gt;Country Code&lt;/th&gt;
+      &lt;th&gt;Target Type&lt;/th&gt;
+      &lt;th&gt;Status&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;0&lt;/th&gt;
+      &lt;td&gt;1000002&lt;/td&gt;
+      &lt;td&gt;Kabul&lt;/td&gt;
+      &lt;td&gt;Kabul,Kabul,Afghanistan&lt;/td&gt;
+      &lt;td&gt;9075393.0&lt;/td&gt;
+      &lt;td&gt;AF&lt;/td&gt;
+      &lt;td&gt;City&lt;/td&gt;
+      &lt;td&gt;Active&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;td&gt;1000003&lt;/td&gt;
+      &lt;td&gt;Luanda&lt;/td&gt;
+      &lt;td&gt;Luanda,Luanda Province,Angola&lt;/td&gt;
+      &lt;td&gt;9070431.0&lt;/td&gt;
+      &lt;td&gt;AO&lt;/td&gt;
+      &lt;td&gt;City&lt;/td&gt;
+      &lt;td&gt;Active&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;td&gt;1000004&lt;/td&gt;
+      &lt;td&gt;The Valley&lt;/td&gt;
+      &lt;td&gt;The Valley,Anguilla&lt;/td&gt;
+      &lt;td&gt;2660.0&lt;/td&gt;
+      &lt;td&gt;AI&lt;/td&gt;
+      &lt;td&gt;City&lt;/td&gt;
+      &lt;td&gt;Active&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;td&gt;1000010&lt;/td&gt;
+      &lt;td&gt;Abu Dhabi&lt;/td&gt;
+      &lt;td&gt;Abu Dhabi,Abu Dhabi,United Arab Emirates&lt;/td&gt;
+      &lt;td&gt;9041082.0&lt;/td&gt;
+      &lt;td&gt;AE&lt;/td&gt;
+      &lt;td&gt;City&lt;/td&gt;
+      &lt;td&gt;Active&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;td&gt;1000011&lt;/td&gt;
+      &lt;td&gt;Ajman&lt;/td&gt;
+      &lt;td&gt;Ajman,Ajman,United Arab Emirates&lt;/td&gt;
+      &lt;td&gt;9047096.0&lt;/td&gt;
+      &lt;td&gt;AE&lt;/td&gt;
+      &lt;td&gt;City&lt;/td&gt;
+      &lt;td&gt;Active&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Google Analytics Geo Data&lt;/h2&gt;
+
+&lt;p&gt;GA uses the Criteria ID to match city data so we need to find a way to match our external data with this ID.&lt;/p&gt;
+
+&lt;p&gt;For that, we can replicate the Canonical Name in our external data without too much manual intervention and then merge the two data sets on Canonical Name before uploading the merged data to GA.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s not evident in the above sample, but there are many more &lt;em&gt;Target Types&lt;/em&gt; than just the four entities that we can match to GA data. The techniques I describe here would be fantastic when combined with Zip/Postal Code census data to analyze conversion rates by average household income.&lt;/p&gt;
+
+&lt;p&gt;However, Google&amp;rsquo;s geo data is used for more products than just GA, Ads being a prime example. It doesn&amp;rsquo;t seem like you can back door postal code and other data types into GA using the data import feature.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="python"&gt;ga[&amp;#39;Target Type&amp;#39;].value_counts()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;Postal Code               48390
+City                      38101
+Neighborhood               4666
+County                     3417
+Municipality               2117
+Province                   1131
+District                    948
+Region                      909
+Congressional District      441
+Airport                     395
+Department                  240
+State                       235
+University                  219
+Country                     213
+City Region                 183
+Governorate                 121
+National Park                96
+Borough                      88
+Prefecture                   49
+Okrug                        28
+Canton                       26
+Autonomous Community         22
+TV Region                    14
+Union Territory               7
+Territory                     4
+Name: Target Type, dtype: int64
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The basic pattern for city canonicals seems to be &lt;em&gt;City,State,Country&lt;/em&gt;. However, a deeper look into the data reveals that this pattern doesn&amp;rsquo;t hold one-hundred percent of the time as there are sometimes multiple non-city entities that would have naming collisions if without modifying the canonical. As a result, some cities canonicalize to &lt;em&gt;City,City,State,Country&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Luckily, these collisions don&amp;rsquo;t seem to be a problem if you remove the non-city entities from this data. So we&amp;rsquo;re going to remove anything that isn&amp;rsquo;t a city.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ll be matching US city population data in this example, so let&amp;rsquo;s also remove the non-US data.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="python"&gt;
+ga = ga[ga[&amp;#39;Country Code&amp;#39;] == &amp;#39;US&amp;#39;]
+ga = ga[ga[&amp;#39;Target Type&amp;#39;] == &amp;#39;City&amp;#39;]
+ga.head()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class="dataframe-wrapper"&gt;
+
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;Criteria ID&lt;/th&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Canonical Name&lt;/th&gt;
+      &lt;th&gt;Parent ID&lt;/th&gt;
+      &lt;th&gt;Country Code&lt;/th&gt;
+      &lt;th&gt;Target Type&lt;/th&gt;
+      &lt;th&gt;Status&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;10642&lt;/th&gt;
+      &lt;td&gt;1012873&lt;/td&gt;
+      &lt;td&gt;Anchorage&lt;/td&gt;
+      &lt;td&gt;Anchorage,Anchorage,Alaska,United States&lt;/td&gt;
+      &lt;td&gt;21132.0&lt;/td&gt;
+      &lt;td&gt;US&lt;/td&gt;
+      &lt;td&gt;City&lt;/td&gt;
+      &lt;td&gt;Active&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;10643&lt;/th&gt;
+      &lt;td&gt;1012874&lt;/td&gt;
+      &lt;td&gt;Anderson&lt;/td&gt;
+      &lt;td&gt;Anderson,Alaska,United States&lt;/td&gt;
+      &lt;td&gt;21132.0&lt;/td&gt;
+      &lt;td&gt;US&lt;/td&gt;
+      &lt;td&gt;City&lt;/td&gt;
+      &lt;td&gt;Active&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;10644&lt;/th&gt;
+      &lt;td&gt;1012875&lt;/td&gt;
+      &lt;td&gt;Angoon&lt;/td&gt;
+      &lt;td&gt;Angoon,Alaska,United States&lt;/td&gt;
+      &lt;td&gt;21132.0&lt;/td&gt;
+      &lt;td&gt;US&lt;/td&gt;
+      &lt;td&gt;City&lt;/td&gt;
+      &lt;td&gt;Active&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;10645&lt;/th&gt;
+      &lt;td&gt;1012876&lt;/td&gt;
+      &lt;td&gt;Atqasuk&lt;/td&gt;
+      &lt;td&gt;Atqasuk,Alaska,United States&lt;/td&gt;
+      &lt;td&gt;21132.0&lt;/td&gt;
+      &lt;td&gt;US&lt;/td&gt;
+      &lt;td&gt;City&lt;/td&gt;
+      &lt;td&gt;Active&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;10646&lt;/th&gt;
+      &lt;td&gt;1012877&lt;/td&gt;
+      &lt;td&gt;Utqiagvik&lt;/td&gt;
+      &lt;td&gt;Utqiagvik,Alaska,United States&lt;/td&gt;
+      &lt;td&gt;21132.0&lt;/td&gt;
+      &lt;td&gt;US&lt;/td&gt;
+      &lt;td&gt;City&lt;/td&gt;
+      &lt;td&gt;Active&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You can see Anchorage as an example of a canonical that uses the &lt;em&gt;City,City,State,Country&lt;/em&gt; pattern.&lt;/p&gt;
+
+&lt;p&gt;Another pattern that is used to avoid collisions is &lt;em&gt;City,County,State,Country&lt;/em&gt;. Luckily Google seems to add &amp;ldquo;County&amp;rdquo; to the end of every county name so this will be fairly easy to detect and fix.&lt;/p&gt;
+
+&lt;p&gt;In addition, a little birdie told me that we&amp;rsquo;re going to have problems with matching &amp;ldquo;Saint&amp;rdquo; and &amp;ldquo;St.&amp;rdquo; as well as consitently matching names with &amp;ldquo;Town&amp;rdquo; and &amp;ldquo;Township&amp;rdquo; in city names.&lt;/p&gt;
+
+&lt;p&gt;So let&amp;rsquo;s make canonicals that are more useful to us by using just the &lt;em&gt;City,State,Country&lt;/em&gt; pattern, standardizing all names to use &amp;ldquo;St.&amp;rdquo; rather than &amp;ldquo;Saint&amp;rdquo; and drop &amp;ldquo;Town&amp;rdquo; and &amp;ldquo;Township&amp;rdquo; from names.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ll drop some columns that we&amp;rsquo;re done with while we&amp;rsquo;re at it. Please note I spent days comparing source and formatted columns for potential collisions and errors before dropping any data. If you&amp;rsquo;re following along with another data set, don&amp;rsquo;t drop anything just yet.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="python"&gt;
+import re
+no_match = []
+def ga_format_temp_canonical(string):
+  if &amp;quot;Saint&amp;quot; in string:
+    string = string.replace(&amp;#39;Saint&amp;#39;, &amp;#39;St.&amp;#39;)
+  if &amp;quot;Township&amp;quot; in string:
+    string = string.replace(&amp;#39; Township&amp;#39;, &amp;#39;&amp;#39;)
+  if &amp;quot; Town&amp;quot; in string:
+    string = string.replace(&amp;#39; Town&amp;#39;, &amp;#39;&amp;#39;)
+  #find and remove County
+  match = re.search(r&amp;quot;^([\w \-\.\/]+),([\w ]+) County,(.*)&amp;quot;, string)
+  if match:
+    string = match.group(1) + &amp;#39;,&amp;#39; + match.group(3)
+  #find and remove duplicate City patterns
+  match = re.search(r&amp;quot;^([\w \-\.\/]+),([\w ]+),(.*)&amp;quot;, string)
+  if match:
+    if match.group(1) == match.group(2):
+      string = match.group(2) + &amp;#39;,&amp;#39; + match.group(3)
+      return string
+    else:
+      return string
+  else:
+    no_match.append(string) #for finding holes in our regex
+    return string
+  return &amp;quot;Function failed&amp;quot;
+
+
+
+ga[&amp;#39;Temp Canonical&amp;#39;] = ga[&amp;#39;Canonical Name&amp;#39;].apply(ga_format_temp_canonical)
+
+
+ga = ga.drop([&amp;#39;Name&amp;#39;,&amp;#39;Canonical Name&amp;#39;, &amp;#39;Parent ID&amp;#39;, &amp;#39;Country Code&amp;#39;, &amp;#39;Target Type&amp;#39;, &amp;#39;Status&amp;#39;], axis=1)
+ga.head()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class="dataframe-wrapper"&gt;
+
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;Criteria ID&lt;/th&gt;
+      &lt;th&gt;Temp Canonical&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;10642&lt;/th&gt;
+      &lt;td&gt;1012873&lt;/td&gt;
+      &lt;td&gt;Anchorage,Alaska,United States&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;10643&lt;/th&gt;
+      &lt;td&gt;1012874&lt;/td&gt;
+      &lt;td&gt;Anderson,Alaska,United States&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;10644&lt;/th&gt;
+      &lt;td&gt;1012875&lt;/td&gt;
+      &lt;td&gt;Angoon,Alaska,United States&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;10645&lt;/th&gt;
+      &lt;td&gt;1012876&lt;/td&gt;
+      &lt;td&gt;Atqasuk,Alaska,United States&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;10646&lt;/th&gt;
+      &lt;td&gt;1012877&lt;/td&gt;
+      &lt;td&gt;Utqiagvik,Alaska,United States&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;US Census Data&lt;/h2&gt;
+
+&lt;p&gt;So for this exercise, I&amp;rsquo;m going to grab &lt;a href="https://www.census.gov/data/tables/2017/demo/popest/total-cities-and-towns.html"&gt;city and town population data from the US census&lt;/a&gt;. This dataset is particularly convenient because it is offered in CSV format without any need for scraping or other processing. It is also very thorough as it includes geographical estimates for the entire US population.&lt;/p&gt;
+
+&lt;p&gt;By comparison, Canadian data seems to be limited to actual cities (as defined by their respective provinces) or broken out into census geo codes that need to be remapped separately.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s grab the US data and look at it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="python"&gt;
+us = pd.read_csv(&amp;#39;sub-est2017_all.csv&amp;#39;, encoding = &amp;quot;ISO-8859-1&amp;quot;)
+us.head()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class="dataframe-wrapper"&gt;
+
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;SUMLEV&lt;/th&gt;
+      &lt;th&gt;STATE&lt;/th&gt;
+      &lt;th&gt;COUNTY&lt;/th&gt;
+      &lt;th&gt;PLACE&lt;/th&gt;
+      &lt;th&gt;COUSUB&lt;/th&gt;
+      &lt;th&gt;CONCIT&lt;/th&gt;
+      &lt;th&gt;PRIMGEO_FLAG&lt;/th&gt;
+      &lt;th&gt;FUNCSTAT&lt;/th&gt;
+      &lt;th&gt;NAME&lt;/th&gt;
+      &lt;th&gt;STNAME&lt;/th&gt;
+      &lt;th&gt;CENSUS2010POP&lt;/th&gt;
+      &lt;th&gt;ESTIMATESBASE2010&lt;/th&gt;
+      &lt;th&gt;POPESTIMATE2010&lt;/th&gt;
+      &lt;th&gt;POPESTIMATE2011&lt;/th&gt;
+      &lt;th&gt;POPESTIMATE2012&lt;/th&gt;
+      &lt;th&gt;POPESTIMATE2013&lt;/th&gt;
+      &lt;th&gt;POPESTIMATE2014&lt;/th&gt;
+      &lt;th&gt;POPESTIMATE2015&lt;/th&gt;
+      &lt;th&gt;POPESTIMATE2016&lt;/th&gt;
+      &lt;th&gt;POPESTIMATE2017&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;0&lt;/th&gt;
+      &lt;td&gt;40&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;A&lt;/td&gt;
+      &lt;td&gt;Alabama&lt;/td&gt;
+      &lt;td&gt;Alabama&lt;/td&gt;
+      &lt;td&gt;4779736&lt;/td&gt;
+      &lt;td&gt;4780135&lt;/td&gt;
+      &lt;td&gt;4785579&lt;/td&gt;
+      &lt;td&gt;4798649&lt;/td&gt;
+      &lt;td&gt;4813946&lt;/td&gt;
+      &lt;td&gt;4827660&lt;/td&gt;
+      &lt;td&gt;4840037&lt;/td&gt;
+      &lt;td&gt;4850858&lt;/td&gt;
+      &lt;td&gt;4860545&lt;/td&gt;
+      &lt;td&gt;4874747&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;td&gt;162&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;124&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;A&lt;/td&gt;
+      &lt;td&gt;Abbeville city&lt;/td&gt;
+      &lt;td&gt;Alabama&lt;/td&gt;
+      &lt;td&gt;2688&lt;/td&gt;
+      &lt;td&gt;2688&lt;/td&gt;
+      &lt;td&gt;2684&lt;/td&gt;
+      &lt;td&gt;2677&lt;/td&gt;
+      &lt;td&gt;2629&lt;/td&gt;
+      &lt;td&gt;2612&lt;/td&gt;
+      &lt;td&gt;2595&lt;/td&gt;
+      &lt;td&gt;2587&lt;/td&gt;
+      &lt;td&gt;2575&lt;/td&gt;
+      &lt;td&gt;2567&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;td&gt;162&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;460&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;A&lt;/td&gt;
+      &lt;td&gt;Adamsville city&lt;/td&gt;
+      &lt;td&gt;Alabama&lt;/td&gt;
+      &lt;td&gt;4522&lt;/td&gt;
+      &lt;td&gt;4522&lt;/td&gt;
+      &lt;td&gt;4516&lt;/td&gt;
+      &lt;td&gt;4502&lt;/td&gt;
+      &lt;td&gt;4479&lt;/td&gt;
+      &lt;td&gt;4457&lt;/td&gt;
+      &lt;td&gt;4437&lt;/td&gt;
+      &lt;td&gt;4409&lt;/td&gt;
+      &lt;td&gt;4376&lt;/td&gt;
+      &lt;td&gt;4347&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;td&gt;162&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;484&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;A&lt;/td&gt;
+      &lt;td&gt;Addison town&lt;/td&gt;
+      &lt;td&gt;Alabama&lt;/td&gt;
+      &lt;td&gt;758&lt;/td&gt;
+      &lt;td&gt;754&lt;/td&gt;
+      &lt;td&gt;751&lt;/td&gt;
+      &lt;td&gt;751&lt;/td&gt;
+      &lt;td&gt;744&lt;/td&gt;
+      &lt;td&gt;743&lt;/td&gt;
+      &lt;td&gt;740&lt;/td&gt;
+      &lt;td&gt;734&lt;/td&gt;
+      &lt;td&gt;734&lt;/td&gt;
+      &lt;td&gt;728&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;td&gt;162&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;676&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;A&lt;/td&gt;
+      &lt;td&gt;Akron town&lt;/td&gt;
+      &lt;td&gt;Alabama&lt;/td&gt;
+      &lt;td&gt;356&lt;/td&gt;
+      &lt;td&gt;356&lt;/td&gt;
+      &lt;td&gt;355&lt;/td&gt;
+      &lt;td&gt;345&lt;/td&gt;
+      &lt;td&gt;345&lt;/td&gt;
+      &lt;td&gt;341&lt;/td&gt;
+      &lt;td&gt;337&lt;/td&gt;
+      &lt;td&gt;335&lt;/td&gt;
+      &lt;td&gt;332&lt;/td&gt;
+      &lt;td&gt;332&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Well that&amp;rsquo;s an easy way to get a headache.&lt;/p&gt;
+
+&lt;p&gt;Once again presenting a veneer of confidence that masks the trial and error that went in to producing this, let&amp;rsquo;s fix this data and drop everything we don&amp;rsquo;t need.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;re going to take the name and state name fields and fuse them together with some commas and a country name to match against the &lt;em&gt;Temp Canonical&lt;/em&gt; that we created in the GA set.&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t know what the &lt;em&gt;PRIMGEO_FLAG&lt;/em&gt;, or primitive geography flag, is for. But what it does is duplicate all of the data. Let&amp;rsquo;s drop every row where it equals 0. This will also have the side-benefit of removing state populations from our data.&lt;/p&gt;
+
+&lt;p&gt;If you look through the source data, you will see all sorts of post-fixes in the &lt;em&gt;NAME&lt;/em&gt; field like &lt;em&gt;city&lt;/em&gt; and &lt;em&gt;charter township&lt;/em&gt;. We&amp;rsquo;ll need to drop them and while we&amp;rsquo;re at it we&amp;rsquo;re going to make sure &amp;ldquo;Saint,&amp;rdquo; &amp;ldquo;Township,&amp;rdquo; and &amp;ldquo;Town&amp;rdquo; are standardized the same way as our Google data.&lt;/p&gt;
+
+&lt;p&gt;This will create quite a few duplicate canonicals. The (pt.) post-fix stands for part and to match the Google data we want to amalgamate everything and look at the whole. So we&amp;rsquo;ll do that, sum the 2017 population estimate and drop all of the other fields in the process.&lt;/p&gt;
+
+&lt;p&gt;Finally, we&amp;rsquo;ll drop rural and county data that isn&amp;rsquo;t located in a town or city that we can match to the Google data.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="python"&gt;
+us = us[us[&amp;#39;PRIMGEO_FLAG&amp;#39;] != 0]
+
+def format_canonical_name(city, state):
+  #US data uses St. for Saint consistently, Google is mixed so standardize on US
+  if &amp;quot;Saint&amp;quot; in city:
+    city = city.replace(&amp;#39;Saint&amp;#39;, &amp;#39;St.&amp;#39;)
+  if &amp;quot;Township&amp;quot; in city:
+    city = city.replace(&amp;#39; Township&amp;#39;, &amp;#39;&amp;#39;)
+  if &amp;quot; Town&amp;quot; in city:
+    city = city.replace(&amp;#39; Town&amp;#39;, &amp;#39;&amp;#39;)
+  #Careful with the order here
+  if city.endswith(&amp;#39; city and borough&amp;#39;):
+    city = city[:-17]
+  elif city.endswith(&amp;#39; charter township&amp;#39;):
+    city = city[:-17]
+  elif city.endswith(&amp;#39; municipality&amp;#39;):
+    city = city[:-13]
+  elif city.endswith(&amp;#39; city&amp;#39;):
+    city = city[:-5]
+  elif city.endswith(&amp;#39; town&amp;#39;):
+    city = city[:-5]
+  elif city.endswith(&amp;#39; borough&amp;#39;):
+    city = city[:-8]
+  elif city.endswith(&amp;#39; city (pt.)&amp;#39;):
+    city  = city[:-11]
+  elif city.endswith(&amp;#39; township&amp;#39;):
+    city = city[:-9]
+  elif city.endswith(&amp;#39; village&amp;#39;):
+    city = city[:-8]
+  elif city.endswith(&amp;#39; charter&amp;#39;):
+    city = city[:-8]
+  elif city.endswith(&amp;#39; town (pt.)&amp;#39;):
+    city = city[:-11]
+  elif city.endswith(&amp;#39; borough (pt.)&amp;#39;):
+    city = city[:-14]
+  elif city.endswith(&amp;#39; village (pt.)&amp;#39;):
+    city = city[:-14]
+  elif city.endswith(&amp;#39; city (balance) (pt.)&amp;#39;):
+    city = city[:-21]
+  elif city.endswith(&amp;#39; city (balance)&amp;#39;):
+    city = city[:-15]
+  return city + &amp;#39;,&amp;#39; + state +&amp;#39;,United States&amp;#39;
+
+us[[&amp;#39;Temp Canonical&amp;#39;]] = us.apply( lambda row: pd.Series(format_canonical_name(row[8], row[9])), axis=1 )
+
+us = us.groupby([&amp;#39;Temp Canonical&amp;#39;], as_index=False)[&amp;#39;POPESTIMATE2017&amp;#39;].sum()
+
+#sometimes we can&amp;#39;t automatically generate working canonicals
+manual_interventions = {
+    &amp;#39;Nashville-Davidson metropolitan government (balance),Tennessee,United States&amp;#39;: &amp;#39;Nashville,Tennessee,United States&amp;#39;,
+    &amp;#39;Louisville/Jefferson County metro government (balance),Kentucky,United States&amp;#39;: &amp;#39;Louisville,Kentucky,United States&amp;#39;,
+    &amp;#39;Urban Honolulu CDP,Hawaii,United States&amp;#39;: &amp;#39;Honolulu,Hawaii,United States&amp;#39;,
+    &amp;#39;Lexington-Fayette urban county,Kentucky,United States&amp;#39;: &amp;#39;Lexington,Kentucky,United States&amp;#39;,
+    &amp;#39;Boise City,Idaho,United States&amp;#39;: &amp;#39;Boise,Idaho,United States&amp;#39;,
+    &amp;#39;San Buenaventura (Ventura),California,United States&amp;#39;: &amp;#39;Ventura,California,United States&amp;#39;,
+    &amp;#39;New York,New York,United States&amp;#39;: &amp;#39;New York,United States&amp;#39;,
+    &amp;#39;Union City,Ohio,United States&amp;#39;: &amp;#39;Union,Ohio,United States&amp;#39;,
+    &amp;#39;Penn Run,Pennsylvania,United States&amp;#39;: &amp;#39;Penn,Pennsylvania,United States&amp;#39;,
+    &amp;#39;Lakewood,Pierce,Washington,United States&amp;#39;: &amp;#39;Lakewood,Washington,United States&amp;#39;,        
+}
+for key, value in manual_interventions.items():
+  us.loc[us[&amp;#39;Temp Canonical&amp;#39;] == key, &amp;#39;Temp Canonical&amp;#39; ] = value
+
+#We&amp;#39;re only interested in urban population
+us = us[~us[&amp;#39;Temp Canonical&amp;#39;].str.startswith(&amp;#39;Balance of&amp;#39;)  ]
+
+#Let&amp;#39;s also get rid of county data
+us = us[~us[&amp;#39;Temp Canonical&amp;#39;].str.contains(&amp;#39;County&amp;#39;)]
+
+
+us.head()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class="dataframe-wrapper"&gt;
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;Temp Canonical&lt;/th&gt;
+      &lt;th&gt;POPESTIMATE2017&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;0&lt;/th&gt;
+      &lt;td&gt;Aastad,Minnesota,United States&lt;/td&gt;
+      &lt;td&gt;213&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;td&gt;Abbeville,Alabama,United States&lt;/td&gt;
+      &lt;td&gt;2567&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;td&gt;Abbeville,Georgia,United States&lt;/td&gt;
+      &lt;td&gt;2789&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;td&gt;Abbeville,Louisiana,United States&lt;/td&gt;
+      &lt;td&gt;12272&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;td&gt;Abbeville,Mississippi,United States&lt;/td&gt;
+      &lt;td&gt;436&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Blending US and GA Datasets&lt;/h2&gt;
+
+&lt;p&gt;Now we merge the datasets. We&amp;rsquo;ll rename some columns while we&amp;rsquo;re at it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="python"&gt;
+us_ga = pd.merge(ga, us, on=&amp;quot;Temp Canonical&amp;quot;, suffixes=(&amp;#39;_ga&amp;#39;,&amp;#39;_us&amp;#39;), how=&amp;quot;inner&amp;quot; )
+us_ga.rename(columns={&amp;#39;Criteria ID&amp;#39;: &amp;#39;ga:cityId&amp;#39;, &amp;#39;POPESTIMATE2017&amp;#39;: &amp;#39;2017&amp;#39;}, inplace=True)
+us_ga.set_index(&amp;#39;ga:cityId&amp;#39;)
+us_ga.head()
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class="dataframe-wrapper"&gt;
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;ga:cityId&lt;/th&gt;
+      &lt;th&gt;Temp Canonical&lt;/th&gt;
+      &lt;th&gt;2017&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;0&lt;/th&gt;
+      &lt;td&gt;1012873&lt;/td&gt;
+      &lt;td&gt;Anchorage,Alaska,United States&lt;/td&gt;
+      &lt;td&gt;294356&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;td&gt;1012874&lt;/td&gt;
+      &lt;td&gt;Anderson,Alaska,United States&lt;/td&gt;
+      &lt;td&gt;337&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;td&gt;1012875&lt;/td&gt;
+      &lt;td&gt;Angoon,Alaska,United States&lt;/td&gt;
+      &lt;td&gt;452&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;td&gt;1012876&lt;/td&gt;
+      &lt;td&gt;Atqasuk,Alaska,United States&lt;/td&gt;
+      &lt;td&gt;244&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;td&gt;1012878&lt;/td&gt;
+      &lt;td&gt;Bethel,Alaska,United States&lt;/td&gt;
+      &lt;td&gt;6456&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Sort the cities into buckets by population.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="python"&gt;
+a = us_ga[&amp;#39;2017&amp;#39;].tolist()
+a.sort()
+p = sum(a) / 5
+curr_percentile = p
+q = []
+q.append(min(a) -1 )
+r = 0
+for each in a:    
+    if r &amp;lt; curr_percentile:
+        r = r + each
+    else:
+        q.append(each + 1)
+        r = r + each
+        curr_percentile = curr_percentile + p
+q.append(max(a) +1)
+
+labels = [&amp;#39;small town&amp;#39;, &amp;#39;town&amp;#39;, &amp;#39;large town&amp;#39;,&amp;#39;city&amp;#39;,&amp;#39;major city&amp;#39;]
+
+us_ga[&amp;#39;quintile&amp;#39;] = pd.cut(us_ga[&amp;#39;2017&amp;#39;], q, include_lowest=True, labels=labels)
+
+#check that our buckets are roughly equal
+us_ga.groupby(&amp;#39;quintile&amp;#39;)[&amp;#39;2017&amp;#39;].sum()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;quintile
+small town    43610647
+town          43637694
+large town    43716638
+city          44237984
+major city    42709542
+Name: 2017, dtype: int64
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class="python"&gt;
+#GA throws an error if there are columns in your csv that you don&amp;#39;t use
+us_ga = us_ga.drop(columns=[&amp;#39;Temp Canonical&amp;#39;, &amp;#39;2017&amp;#39;], axis=1)
+#export to CSV
+us_ga.to_csv(&amp;#39;us-geo-ga.csv&amp;#39;, index=False)
+#we dropped the index column from the CSV
+us_ga.head()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class="dataframe-wrapper"&gt;
+
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;ga:cityId&lt;/th&gt;
+      &lt;th&gt;quintile&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;0&lt;/th&gt;
+      &lt;td&gt;1012873&lt;/td&gt;
+      &lt;td&gt;city&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;td&gt;1012874&lt;/td&gt;
+      &lt;td&gt;small town&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;td&gt;1012875&lt;/td&gt;
+      &lt;td&gt;small town&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;td&gt;1012876&lt;/td&gt;
+      &lt;td&gt;small town&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;td&gt;1012878&lt;/td&gt;
+      &lt;td&gt;small town&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Google Analytics Data Import&lt;/h2&gt;
+
+&lt;p&gt;From here on we are following &lt;a href="https://support.google.com/analytics/answer/6160509?ref_topic=6015090"&gt;Google&amp;rsquo;s documentation&lt;/a&gt; starting at Step 3. If you need more detailed instructions, I encourage you to go to there.&lt;/p&gt;
+
+&lt;p&gt;You can just &lt;a href="/blog/geo-data-for-ga/us_city_pop_ga.csv"&gt;grab the finished CSV&lt;/a&gt; and following along from here.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Create a Custom Dimension with session scope.&lt;/li&gt;
+&lt;li&gt;Create a Data Set (under Admin &amp;gt; Property &amp;gt; Data Import) where you assign the newly created Custom Dimension to the import.&lt;/li&gt;
+&lt;li&gt;At the end of the Data Set creation dialogue, copy the dimension ID (it will look like ga:dimension10).&lt;/li&gt;
+&lt;li&gt;Open the CSV, replace &amp;ldquo;quintile&amp;rdquo; with the dimension ID and save it again as a CSV.&lt;/li&gt;
+&lt;li&gt;Upload the CSV manually (Admin &amp;gt; Property &amp;gt; Data Import) select the Data Set you created previously and Manage Uploads.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;And there, you&amp;rsquo;re done.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Hackers' Guide to Speech to Text&amp;#58; Quick, Dirty, and Free</title>
     <link rel="alternate" href="https://www.caretjuice.com/blog/speech-to-text.html"/>
@@ -843,169 +1599,6 @@ deep integration between a small number of applications&lt;/td&gt;
 &lt;p&gt;Some salespeople are happy to maintain a relationship after the sale and are fine with their list of prospects including former prospects that they’ve already either won or lost. But others would like that sort of thing cleaned up.&lt;/p&gt;
 
 &lt;p&gt;This is less of an issue for account managers because accounts don’t normally churn as fast as sales prospects qualify or disqualify, but it is still a problem with no easy automated solution.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Extract Email Domain with Zapier</title>
-    <link rel="alternate" href="https://www.caretjuice.com/blog/extract-email-domain-zapier.html"/>
-    <id>https://www.caretjuice.com/blog/extract-email-domain-zapier.html</id>
-    <published>2016-01-31T16:00:00-08:00</published>
-    <updated>2018-11-13T14:23:39-08:00</updated>
-    <author>
-      <name>Damon Gudaitis</name>
-    </author>
-    <summary type="html">&lt;p&gt;When you capture information online there is always a balance between asking for more information and making it as easy as possible for your visitors to complete their task.&lt;/p&gt;
-
-&lt;p&gt;You want more information to help you decide what to do with the person but...&lt;/p&gt;</summary>
-    <content type="html">&lt;p&gt;When you capture information online there is always a balance between asking for more information and making it as easy as possible for your visitors to complete their task.&lt;/p&gt;
-
-&lt;p&gt;You want more information to help you decide what to do with the person but you also want to maximize the number of people who give you their contact information.&lt;/p&gt;
-
-&lt;p&gt;In a B2B context, email addresses are king. Every form has an email field. But everything else is up for debate particularly when you need more information to qualify whether it is worth having a sales rep contact the lead.&lt;/p&gt;
-
-&lt;p&gt;There is a lot that you can do with just the email address particularly if you get the email domain from the address.&lt;/p&gt;
-
-&lt;h2&gt;Internal Notifications&lt;/h2&gt;
-
-&lt;p&gt;Extracting the email domain from your contacts lets you trigger a number of useful internal notifications when working complex sales with long sales cycles.&lt;/p&gt;
-
-&lt;p&gt;If you’re selling high-priced (and hopefully high-value) items to other businesses, then often there will be several people included in the decision to buy. These sales usually take a long time. I’ve seen sales reps working an account for years before finally closing a sale.&lt;/p&gt;
-
-&lt;p&gt;Notifying sales reps when a new contact from one of their accounts starts interacting with your marketing materials can be of great value. &lt;/p&gt;
-
-&lt;p&gt;It can mean that a good prospect that wasn’t ready several years ago is now in the market.&lt;/p&gt;
-
-&lt;p&gt;Or, if they are already in a sales cycle, it can tell the sales rep who are some of the other decision makers who will be involved in the purchase. They can then do more research seeing what sorts of content they read on the site and learn more about the individual online.&lt;/p&gt;
-
-&lt;p&gt;We can trigger these notifications by matching email domains.&lt;/p&gt;
-
-&lt;h2&gt;Lead Scoring&lt;/h2&gt;
-
-&lt;p&gt;Another way that you can use email domain is in scoring leads that your sales team hasn’t spoken to before.&lt;/p&gt;
-
-&lt;p&gt;Again, presuming you’re working a complex sale with long sales cycles, seeing multiple contacts from the same email domain is a good signal that the company associated with that domain is in the market.&lt;/p&gt;
-
-&lt;p&gt;Matching multiple email domains over the space of a few months should give leads a big boost to their lead score and trigger a follow up from the sales team.&lt;/p&gt;
-
-&lt;h2&gt;Collecting Pre-Sales Data&lt;/h2&gt;
-
-&lt;p&gt;The email domain is also useful for collecting pre-sales data from other databases like Salesforce’s data.com, Dun and Bradstreet or LinkedIn.&lt;/p&gt;
-
-&lt;p&gt;Using the company name is unreliable when you’re tying to match different data sources.&lt;/p&gt;
-
-&lt;p&gt;You can have separate legal names, trade names and DBAs (doing business as).&lt;/p&gt;
-
-&lt;p&gt;Sometimes people include the designations like Ltd. and  LLC at the end of the name, but other people often leave them out.&lt;/p&gt;
-
-&lt;p&gt;You even have problems with adding or leaving off the period in Ltd. or using abbreviations versus spelling out &lt;em&gt;Limited&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;You can have the same company name used by different companies in different parts of the world.&lt;/p&gt;
-
-&lt;p&gt;Sometimes people even make typos.&lt;/p&gt;
-
-&lt;p&gt;And finally, you can have conglomerates of multiple companies each with their own name.&lt;/p&gt;
-
-&lt;p&gt;If you’ve got a verified email address, then you have a unique identifier for the individual and for the company that owns that domain.&lt;/p&gt;
-
-&lt;p&gt;You can use the domain to more reliably get data about the company than you can a company name typed in to an online form.&lt;/p&gt;
-
-&lt;p&gt;One problem with using the domain is that you can have multiple domains for a company. Or different domains for different departments or regions.&lt;/p&gt;
-
-&lt;p&gt;The LinkedIn API helps with this challenge. It associates multiple domains with each company. You can use the API to look up company data by domain and find other domains associated with the company and then match against all of the domains.&lt;/p&gt;
-
-&lt;p&gt;Salesforce only lets you look up by website and email domains are often different from website domains and you won’t capture the full range of email domains associated with a particular company.&lt;/p&gt;
-
-&lt;p&gt;Once you connect with a data source, you can pull all sorts of information like the name, number of employees, revenue (if they are public) and all sorts of location data.&lt;/p&gt;
-
-&lt;p&gt;Regardless of data source, using the email domain to look up additional information from third party databases is an advanced use and should only be done by an experienced developer.&lt;/p&gt;
-
-&lt;h2&gt;Marketing Automation&lt;/h2&gt;
-
-&lt;p&gt;All of these uses for email domain assume that you have a complex sale and that you are using marketing automation and CRM. Some of the set up is best done in your marketing automation system.&lt;/p&gt;
-
-&lt;p&gt;Filtering out Gmail, Yahoo and Live/Hotmail addresses is best done in your marketing automation system. Keeping a running list of email domains that you want to filter in the marketing automation system is easier than modifying the custom script that we’re going to use.&lt;/p&gt;
-
-&lt;p&gt;Similarly, triggering notifications and lead scoring is best done in the marketing automation system.&lt;/p&gt;
-
-&lt;p&gt;Because the specifics of each system vary a great deal, we won’t cover how exactly to set up the filtering, notifying, matching and scoring. These are the types of things that marketing automation systems do well so they shouldn’t be too difficult to set up.&lt;/p&gt;
-
-&lt;h2&gt;Zapier&lt;/h2&gt;
-
-&lt;p&gt;Extracting the email domain from an email address is usually a customization in marketing automation systems that is not so easy to set up.&lt;/p&gt;
-
-&lt;p&gt;Microsoft Dynamics CRM would require some scripting in Visual Basic that would only be useful for Dynamics users. Hubspot would require that you do an API integration and host your own code.&lt;/p&gt;
-
-&lt;p&gt;We’re going cover how to use Zapier to extract the email domain. This way, Zapier hosts your code and you can use these instructions with any Zapier-compatible system.&lt;/p&gt;
-
-&lt;p&gt;Zapier recently launched multi-step Zaps that make this workflow possible.&lt;/p&gt;
-
-&lt;p&gt;Create a new multi-step Zap that triggers when a New Contact is added to your marketing automation system (or CRM).&lt;/p&gt;
-
-&lt;p&gt;The first thing you need to do is create a field to keep the email domain in your system.&lt;/p&gt;
-
-&lt;p&gt;Specifics of how to do this depend on your system, but it shouldn’t be difficult. Name the field &lt;em&gt;Email Domain&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;In Zapier, create a new Zap and select &lt;strong&gt;New Contact&lt;/strong&gt; as the trigger from your marketing automation/CRM system.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="../assets/images/new-contact-trigger-7d0fb622.png" alt="New Contact Zapier Trigger" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Test the step and check the contact information.&lt;/p&gt;
-
-&lt;p&gt;Next add a &lt;strong&gt;Filter&lt;/strong&gt; that checks whether the new contact has an email address.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="../assets/images/contact-exists-filter-08bfffb0.png" alt="Contact Exists Zapier Filter" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Now comes a little bit of code, but I promise that it will be quite painless.&lt;/p&gt;
-
-&lt;p&gt;Add a &lt;strong&gt;Code by Zapier&lt;/strong&gt; action and select &lt;strong&gt;Run Python&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;In the &lt;strong&gt;Input&lt;/strong&gt; section of the &lt;strong&gt;Edit Template&lt;/strong&gt; step, select the marketing automaion/CRM email field and name it &lt;em&gt;email&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Be sure to keep the name lower case or else it will break the code in the next step.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="../assets/images/extract-email-domain-fa997eb4.png" alt="Extract Email Domain Settings and Code" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Enter the following code into the &lt;strong&gt;Code&lt;/strong&gt; section.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="python"&gt;import re
-email = input[&amp;#39;email&amp;#39;]
-emailatDomain = re.search(&amp;quot;.+@([\w.]+)&amp;quot;, email)
-return {
-    &amp;#39;emailDomain&amp;#39;: emailatDomain.group(1) if emailatDomain else &amp;#39;Error&amp;#39;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;For those of you with little knowledge of Python, here’s what’s going on.&lt;/p&gt;
-
-&lt;p&gt;Line 1: Import the regular expression module that will let us match patterns.&lt;/p&gt;
-
-&lt;p&gt;Line 2: Grab the input that we named email (and assigned to the email field from the marketing automation system) and make it a variable called &lt;em&gt;email&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Line 3: Search for any combination of characters or symbols until you find an @ sign, then look for one or more upper or lower case letters, numbers and periods and create a group from whatever matches this last part of the pattern. Call the whole collection emailatDomain.&lt;/p&gt;
-
-&lt;p&gt;Line 4: Return the following for Zapier to use.&lt;/p&gt;
-
-&lt;p&gt;Line 5: Create emailDomain from the group of letters, numbers and periods after the @ sign if emailatDomain is set. Otherwise return the word &lt;em&gt;Error&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Test the code against a recent contact.&lt;/p&gt;
-
-&lt;p&gt;Finally, we need to send the email domain back to your marketing automation or CRM system.&lt;/p&gt;
-
-&lt;p&gt;Create a new Update Contact type of Action for your marketing automation or CRM system.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="../assets/images/update-contact-490f7d3a.png" alt="Update Contact Zapier Action" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Match the email address of the contact against the email field from your system.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="../assets/images/match-contact-email-113dece6.png" alt="Match Contact Email" /&gt;&lt;/p&gt;
-
-&lt;p&gt;And then finally, scroll down to the &lt;strong&gt;Email Domain&lt;/strong&gt; field that you created in your system and match the &lt;strong&gt;EmailDomain&lt;/strong&gt; variable that you returned in your &lt;strong&gt;Code by Zapier&lt;/strong&gt; script.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="../assets/images/send-zapier-code-to-system-09fe5c56.png" alt="Send Zapier Code to System" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Now you should start getting email domains separated out from the email addresses for any new contacts that enter the system from now on.&lt;/p&gt;
-
-&lt;p&gt;You can start using the field in your chosen system to trigger notifications, score leads, or fetch additional information about the company.&lt;/p&gt;
 </content>
   </entry>
 </feed>

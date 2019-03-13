@@ -92,6 +92,756 @@
 	</div>
 	<div data-equalizer data-equalizer-mq="medium-up">
 			<article class="small-12 medium-6 large-4 columns article-listing" data-equalizer-watch>
+				  <h2><a href="/blog/geo-data-for-ga.html">US Population Data for Google Analytics</a> <span>Mar 13</span></h2>
+				  <!-- use article.summary(250) if you have Nokogiri available to show just
+				       the first 250 characters -->
+				  <p>Geography data import in Google Analytics is a lesser-used feature. In their docs, Google emphasizes the ability to create custom sales districts. While this is quite useful for the right type of business, you can also use geo-data import to augment your data.</p>
+
+<p>Please note, this covers how to format the data for Google. If you just want to import the data that I&rsquo;ve formatted, skip to the end of this post, grab the CSV and follow the instructions in the last section.</p>
+
+<p>Google lets you match your imported data to City ID, Country ISO code, Region ID, and Sub-Continent Code so to start you’ll want some data that you can match at that level.</p>
+
+<p>Additionally, you can only import custom dimensions this way. This isn’t really a problem but it means that you’ll probably need to do some pre-processing of your data to, for example, turn numerical data in to buckets that are suitable as dimensions.</p>
+
+<p>I looked at importing raw numerical data and then bucketing the data via custom segments, but GA doesn’t let you create segments using less than or greater than operators and doing this via regular expressions seems like a quick way to give myself nightmares.</p>
+
+<p>First, let&rsquo;s look at <a href="'https://developers.google.com/analytics/devguides/collection/protocol/v1/geoid'">Google&rsquo;s geo data</a>.</p>
+
+<pre><code class="python">
+import pandas as pd
+import numpy as np
+
+ga = pd.read_csv(&#39;geotargets-2019-02-11.csv&#39;)
+ga.head()
+
+</code></pre>
+
+<div class="dataframe-wrapper">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Criteria ID</th>
+      <th>Name</th>
+      <th>Canonical Name</th>
+      <th>Parent ID</th>
+      <th>Country Code</th>
+      <th>Target Type</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1000002</td>
+      <td>Kabul</td>
+      <td>Kabul,Kabul,Afghanistan</td>
+      <td>9075393.0</td>
+      <td>AF</td>
+      <td>City</td>
+      <td>Active</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1000003</td>
+      <td>Luanda</td>
+      <td>Luanda,Luanda Province,Angola</td>
+      <td>9070431.0</td>
+      <td>AO</td>
+      <td>City</td>
+      <td>Active</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1000004</td>
+      <td>The Valley</td>
+      <td>The Valley,Anguilla</td>
+      <td>2660.0</td>
+      <td>AI</td>
+      <td>City</td>
+      <td>Active</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1000010</td>
+      <td>Abu Dhabi</td>
+      <td>Abu Dhabi,Abu Dhabi,United Arab Emirates</td>
+      <td>9041082.0</td>
+      <td>AE</td>
+      <td>City</td>
+      <td>Active</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1000011</td>
+      <td>Ajman</td>
+      <td>Ajman,Ajman,United Arab Emirates</td>
+      <td>9047096.0</td>
+      <td>AE</td>
+      <td>City</td>
+      <td>Active</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Google Analytics Geo Data</h2>
+
+<p>GA uses the Criteria ID to match city data so we need to find a way to match our external data with this ID.</p>
+
+<p>For that, we can replicate the Canonical Name in our external data without too much manual intervention and then merge the two data sets on Canonical Name before uploading the merged data to GA.</p>
+
+<p>It&rsquo;s not evident in the above sample, but there are many more <em>Target Types</em> than just the four entities that we can match to GA data. The techniques I describe here would be fantastic when combined with Zip/Postal Code census data to analyze conversion rates by average household income.</p>
+
+<p>However, Google&rsquo;s geo data is used for more products than just GA, Ads being a prime example. It doesn&rsquo;t seem like you can back door postal code and other data types into GA using the data import feature.</p>
+
+<pre><code class="python">ga[&#39;Target Type&#39;].value_counts()
+</code></pre>
+
+<pre><code>Postal Code               48390
+City                      38101
+Neighborhood               4666
+County                     3417
+Municipality               2117
+Province                   1131
+District                    948
+Region                      909
+Congressional District      441
+Airport                     395
+Department                  240
+State                       235
+University                  219
+Country                     213
+City Region                 183
+Governorate                 121
+National Park                96
+Borough                      88
+Prefecture                   49
+Okrug                        28
+Canton                       26
+Autonomous Community         22
+TV Region                    14
+Union Territory               7
+Territory                     4
+Name: Target Type, dtype: int64
+</code></pre>
+
+<p>The basic pattern for city canonicals seems to be <em>City,State,Country</em>. However, a deeper look into the data reveals that this pattern doesn&rsquo;t hold one-hundred percent of the time as there are sometimes multiple non-city entities that would have naming collisions if without modifying the canonical. As a result, some cities canonicalize to <em>City,City,State,Country</em>.</p>
+
+<p>Luckily, these collisions don&rsquo;t seem to be a problem if you remove the non-city entities from this data. So we&rsquo;re going to remove anything that isn&rsquo;t a city.</p>
+
+<p>We&rsquo;ll be matching US city population data in this example, so let&rsquo;s also remove the non-US data.</p>
+
+<pre><code class="python">
+ga = ga[ga[&#39;Country Code&#39;] == &#39;US&#39;]
+ga = ga[ga[&#39;Target Type&#39;] == &#39;City&#39;]
+ga.head()
+</code></pre>
+
+<div class="dataframe-wrapper">
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Criteria ID</th>
+      <th>Name</th>
+      <th>Canonical Name</th>
+      <th>Parent ID</th>
+      <th>Country Code</th>
+      <th>Target Type</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>10642</th>
+      <td>1012873</td>
+      <td>Anchorage</td>
+      <td>Anchorage,Anchorage,Alaska,United States</td>
+      <td>21132.0</td>
+      <td>US</td>
+      <td>City</td>
+      <td>Active</td>
+    </tr>
+    <tr>
+      <th>10643</th>
+      <td>1012874</td>
+      <td>Anderson</td>
+      <td>Anderson,Alaska,United States</td>
+      <td>21132.0</td>
+      <td>US</td>
+      <td>City</td>
+      <td>Active</td>
+    </tr>
+    <tr>
+      <th>10644</th>
+      <td>1012875</td>
+      <td>Angoon</td>
+      <td>Angoon,Alaska,United States</td>
+      <td>21132.0</td>
+      <td>US</td>
+      <td>City</td>
+      <td>Active</td>
+    </tr>
+    <tr>
+      <th>10645</th>
+      <td>1012876</td>
+      <td>Atqasuk</td>
+      <td>Atqasuk,Alaska,United States</td>
+      <td>21132.0</td>
+      <td>US</td>
+      <td>City</td>
+      <td>Active</td>
+    </tr>
+    <tr>
+      <th>10646</th>
+      <td>1012877</td>
+      <td>Utqiagvik</td>
+      <td>Utqiagvik,Alaska,United States</td>
+      <td>21132.0</td>
+      <td>US</td>
+      <td>City</td>
+      <td>Active</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>You can see Anchorage as an example of a canonical that uses the <em>City,City,State,Country</em> pattern.</p>
+
+<p>Another pattern that is used to avoid collisions is <em>City,County,State,Country</em>. Luckily Google seems to add &ldquo;County&rdquo; to the end of every county name so this will be fairly easy to detect and fix.</p>
+
+<p>In addition, a little birdie told me that we&rsquo;re going to have problems with matching &ldquo;Saint&rdquo; and &ldquo;St.&rdquo; as well as consitently matching names with &ldquo;Town&rdquo; and &ldquo;Township&rdquo; in city names.</p>
+
+<p>So let&rsquo;s make canonicals that are more useful to us by using just the <em>City,State,Country</em> pattern, standardizing all names to use &ldquo;St.&rdquo; rather than &ldquo;Saint&rdquo; and drop &ldquo;Town&rdquo; and &ldquo;Township&rdquo; from names.</p>
+
+<p>We&rsquo;ll drop some columns that we&rsquo;re done with while we&rsquo;re at it. Please note I spent days comparing source and formatted columns for potential collisions and errors before dropping any data. If you&rsquo;re following along with another data set, don&rsquo;t drop anything just yet.</p>
+
+<pre><code class="python">
+import re
+no_match = []
+def ga_format_temp_canonical(string):
+  if &quot;Saint&quot; in string:
+    string = string.replace(&#39;Saint&#39;, &#39;St.&#39;)
+  if &quot;Township&quot; in string:
+    string = string.replace(&#39; Township&#39;, &#39;&#39;)
+  if &quot; Town&quot; in string:
+    string = string.replace(&#39; Town&#39;, &#39;&#39;)
+  #find and remove County
+  match = re.search(r&quot;^([\w \-\.\/]+),([\w ]+) County,(.*)&quot;, string)
+  if match:
+    string = match.group(1) + &#39;,&#39; + match.group(3)
+  #find and remove duplicate City patterns
+  match = re.search(r&quot;^([\w \-\.\/]+),([\w ]+),(.*)&quot;, string)
+  if match:
+    if match.group(1) == match.group(2):
+      string = match.group(2) + &#39;,&#39; + match.group(3)
+      return string
+    else:
+      return string
+  else:
+    no_match.append(string) #for finding holes in our regex
+    return string
+  return &quot;Function failed&quot;
+
+
+
+ga[&#39;Temp Canonical&#39;] = ga[&#39;Canonical Name&#39;].apply(ga_format_temp_canonical)
+
+
+ga = ga.drop([&#39;Name&#39;,&#39;Canonical Name&#39;, &#39;Parent ID&#39;, &#39;Country Code&#39;, &#39;Target Type&#39;, &#39;Status&#39;], axis=1)
+ga.head()
+</code></pre>
+
+<div class="dataframe-wrapper">
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Criteria ID</th>
+      <th>Temp Canonical</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>10642</th>
+      <td>1012873</td>
+      <td>Anchorage,Alaska,United States</td>
+    </tr>
+    <tr>
+      <th>10643</th>
+      <td>1012874</td>
+      <td>Anderson,Alaska,United States</td>
+    </tr>
+    <tr>
+      <th>10644</th>
+      <td>1012875</td>
+      <td>Angoon,Alaska,United States</td>
+    </tr>
+    <tr>
+      <th>10645</th>
+      <td>1012876</td>
+      <td>Atqasuk,Alaska,United States</td>
+    </tr>
+    <tr>
+      <th>10646</th>
+      <td>1012877</td>
+      <td>Utqiagvik,Alaska,United States</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2>US Census Data</h2>
+
+<p>So for this exercise, I&rsquo;m going to grab <a href="https://www.census.gov/data/tables/2017/demo/popest/total-cities-and-towns.html">city and town population data from the US census</a>. This dataset is particularly convenient because it is offered in CSV format without any need for scraping or other processing. It is also very thorough as it includes geographical estimates for the entire US population.</p>
+
+<p>By comparison, Canadian data seems to be limited to actual cities (as defined by their respective provinces) or broken out into census geo codes that need to be remapped separately.</p>
+
+<p>Let&rsquo;s grab the US data and look at it.</p>
+
+<pre><code class="python">
+us = pd.read_csv(&#39;sub-est2017_all.csv&#39;, encoding = &quot;ISO-8859-1&quot;)
+us.head()
+</code></pre>
+
+<div class="dataframe-wrapper">
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>SUMLEV</th>
+      <th>STATE</th>
+      <th>COUNTY</th>
+      <th>PLACE</th>
+      <th>COUSUB</th>
+      <th>CONCIT</th>
+      <th>PRIMGEO_FLAG</th>
+      <th>FUNCSTAT</th>
+      <th>NAME</th>
+      <th>STNAME</th>
+      <th>CENSUS2010POP</th>
+      <th>ESTIMATESBASE2010</th>
+      <th>POPESTIMATE2010</th>
+      <th>POPESTIMATE2011</th>
+      <th>POPESTIMATE2012</th>
+      <th>POPESTIMATE2013</th>
+      <th>POPESTIMATE2014</th>
+      <th>POPESTIMATE2015</th>
+      <th>POPESTIMATE2016</th>
+      <th>POPESTIMATE2017</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>40</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>A</td>
+      <td>Alabama</td>
+      <td>Alabama</td>
+      <td>4779736</td>
+      <td>4780135</td>
+      <td>4785579</td>
+      <td>4798649</td>
+      <td>4813946</td>
+      <td>4827660</td>
+      <td>4840037</td>
+      <td>4850858</td>
+      <td>4860545</td>
+      <td>4874747</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>162</td>
+      <td>1</td>
+      <td>0</td>
+      <td>124</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>A</td>
+      <td>Abbeville city</td>
+      <td>Alabama</td>
+      <td>2688</td>
+      <td>2688</td>
+      <td>2684</td>
+      <td>2677</td>
+      <td>2629</td>
+      <td>2612</td>
+      <td>2595</td>
+      <td>2587</td>
+      <td>2575</td>
+      <td>2567</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>162</td>
+      <td>1</td>
+      <td>0</td>
+      <td>460</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>A</td>
+      <td>Adamsville city</td>
+      <td>Alabama</td>
+      <td>4522</td>
+      <td>4522</td>
+      <td>4516</td>
+      <td>4502</td>
+      <td>4479</td>
+      <td>4457</td>
+      <td>4437</td>
+      <td>4409</td>
+      <td>4376</td>
+      <td>4347</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>162</td>
+      <td>1</td>
+      <td>0</td>
+      <td>484</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>A</td>
+      <td>Addison town</td>
+      <td>Alabama</td>
+      <td>758</td>
+      <td>754</td>
+      <td>751</td>
+      <td>751</td>
+      <td>744</td>
+      <td>743</td>
+      <td>740</td>
+      <td>734</td>
+      <td>734</td>
+      <td>728</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>162</td>
+      <td>1</td>
+      <td>0</td>
+      <td>676</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>A</td>
+      <td>Akron town</td>
+      <td>Alabama</td>
+      <td>356</td>
+      <td>356</td>
+      <td>355</td>
+      <td>345</td>
+      <td>345</td>
+      <td>341</td>
+      <td>337</td>
+      <td>335</td>
+      <td>332</td>
+      <td>332</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Well that&rsquo;s an easy way to get a headache.</p>
+
+<p>Once again presenting a veneer of confidence that masks the trial and error that went in to producing this, let&rsquo;s fix this data and drop everything we don&rsquo;t need.</p>
+
+<p>We&rsquo;re going to take the name and state name fields and fuse them together with some commas and a country name to match against the <em>Temp Canonical</em> that we created in the GA set.</p>
+
+<p>I don&rsquo;t know what the <em>PRIMGEO_FLAG</em>, or primitive geography flag, is for. But what it does is duplicate all of the data. Let&rsquo;s drop every row where it equals 0. This will also have the side-benefit of removing state populations from our data.</p>
+
+<p>If you look through the source data, you will see all sorts of post-fixes in the <em>NAME</em> field like <em>city</em> and <em>charter township</em>. We&rsquo;ll need to drop them and while we&rsquo;re at it we&rsquo;re going to make sure &ldquo;Saint,&rdquo; &ldquo;Township,&rdquo; and &ldquo;Town&rdquo; are standardized the same way as our Google data.</p>
+
+<p>This will create quite a few duplicate canonicals. The (pt.) post-fix stands for part and to match the Google data we want to amalgamate everything and look at the whole. So we&rsquo;ll do that, sum the 2017 population estimate and drop all of the other fields in the process.</p>
+
+<p>Finally, we&rsquo;ll drop rural and county data that isn&rsquo;t located in a town or city that we can match to the Google data.</p>
+
+<pre><code class="python">
+us = us[us[&#39;PRIMGEO_FLAG&#39;] != 0]
+
+def format_canonical_name(city, state):
+  #US data uses St. for Saint consistently, Google is mixed so standardize on US
+  if &quot;Saint&quot; in city:
+    city = city.replace(&#39;Saint&#39;, &#39;St.&#39;)
+  if &quot;Township&quot; in city:
+    city = city.replace(&#39; Township&#39;, &#39;&#39;)
+  if &quot; Town&quot; in city:
+    city = city.replace(&#39; Town&#39;, &#39;&#39;)
+  #Careful with the order here
+  if city.endswith(&#39; city and borough&#39;):
+    city = city[:-17]
+  elif city.endswith(&#39; charter township&#39;):
+    city = city[:-17]
+  elif city.endswith(&#39; municipality&#39;):
+    city = city[:-13]
+  elif city.endswith(&#39; city&#39;):
+    city = city[:-5]
+  elif city.endswith(&#39; town&#39;):
+    city = city[:-5]
+  elif city.endswith(&#39; borough&#39;):
+    city = city[:-8]
+  elif city.endswith(&#39; city (pt.)&#39;):
+    city  = city[:-11]
+  elif city.endswith(&#39; township&#39;):
+    city = city[:-9]
+  elif city.endswith(&#39; village&#39;):
+    city = city[:-8]
+  elif city.endswith(&#39; charter&#39;):
+    city = city[:-8]
+  elif city.endswith(&#39; town (pt.)&#39;):
+    city = city[:-11]
+  elif city.endswith(&#39; borough (pt.)&#39;):
+    city = city[:-14]
+  elif city.endswith(&#39; village (pt.)&#39;):
+    city = city[:-14]
+  elif city.endswith(&#39; city (balance) (pt.)&#39;):
+    city = city[:-21]
+  elif city.endswith(&#39; city (balance)&#39;):
+    city = city[:-15]
+  return city + &#39;,&#39; + state +&#39;,United States&#39;
+
+us[[&#39;Temp Canonical&#39;]] = us.apply( lambda row: pd.Series(format_canonical_name(row[8], row[9])), axis=1 )
+
+us = us.groupby([&#39;Temp Canonical&#39;], as_index=False)[&#39;POPESTIMATE2017&#39;].sum()
+
+#sometimes we can&#39;t automatically generate working canonicals
+manual_interventions = {
+    &#39;Nashville-Davidson metropolitan government (balance),Tennessee,United States&#39;: &#39;Nashville,Tennessee,United States&#39;,
+    &#39;Louisville/Jefferson County metro government (balance),Kentucky,United States&#39;: &#39;Louisville,Kentucky,United States&#39;,
+    &#39;Urban Honolulu CDP,Hawaii,United States&#39;: &#39;Honolulu,Hawaii,United States&#39;,
+    &#39;Lexington-Fayette urban county,Kentucky,United States&#39;: &#39;Lexington,Kentucky,United States&#39;,
+    &#39;Boise City,Idaho,United States&#39;: &#39;Boise,Idaho,United States&#39;,
+    &#39;San Buenaventura (Ventura),California,United States&#39;: &#39;Ventura,California,United States&#39;,
+    &#39;New York,New York,United States&#39;: &#39;New York,United States&#39;,
+    &#39;Union City,Ohio,United States&#39;: &#39;Union,Ohio,United States&#39;,
+    &#39;Penn Run,Pennsylvania,United States&#39;: &#39;Penn,Pennsylvania,United States&#39;,
+    &#39;Lakewood,Pierce,Washington,United States&#39;: &#39;Lakewood,Washington,United States&#39;,        
+}
+for key, value in manual_interventions.items():
+  us.loc[us[&#39;Temp Canonical&#39;] == key, &#39;Temp Canonical&#39; ] = value
+
+#We&#39;re only interested in urban population
+us = us[~us[&#39;Temp Canonical&#39;].str.startswith(&#39;Balance of&#39;)  ]
+
+#Let&#39;s also get rid of county data
+us = us[~us[&#39;Temp Canonical&#39;].str.contains(&#39;County&#39;)]
+
+
+us.head()
+</code></pre>
+
+<div class="dataframe-wrapper">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Temp Canonical</th>
+      <th>POPESTIMATE2017</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Aastad,Minnesota,United States</td>
+      <td>213</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Abbeville,Alabama,United States</td>
+      <td>2567</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Abbeville,Georgia,United States</td>
+      <td>2789</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Abbeville,Louisiana,United States</td>
+      <td>12272</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Abbeville,Mississippi,United States</td>
+      <td>436</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Blending US and GA Datasets</h2>
+
+<p>Now we merge the datasets. We&rsquo;ll rename some columns while we&rsquo;re at it.</p>
+
+<pre><code class="python">
+us_ga = pd.merge(ga, us, on=&quot;Temp Canonical&quot;, suffixes=(&#39;_ga&#39;,&#39;_us&#39;), how=&quot;inner&quot; )
+us_ga.rename(columns={&#39;Criteria ID&#39;: &#39;ga:cityId&#39;, &#39;POPESTIMATE2017&#39;: &#39;2017&#39;}, inplace=True)
+us_ga.set_index(&#39;ga:cityId&#39;)
+us_ga.head()
+
+</code></pre>
+
+<div class="dataframe-wrapper">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ga:cityId</th>
+      <th>Temp Canonical</th>
+      <th>2017</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1012873</td>
+      <td>Anchorage,Alaska,United States</td>
+      <td>294356</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1012874</td>
+      <td>Anderson,Alaska,United States</td>
+      <td>337</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1012875</td>
+      <td>Angoon,Alaska,United States</td>
+      <td>452</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1012876</td>
+      <td>Atqasuk,Alaska,United States</td>
+      <td>244</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1012878</td>
+      <td>Bethel,Alaska,United States</td>
+      <td>6456</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Sort the cities into buckets by population.</p>
+
+<pre><code class="python">
+a = us_ga[&#39;2017&#39;].tolist()
+a.sort()
+p = sum(a) / 5
+curr_percentile = p
+q = []
+q.append(min(a) -1 )
+r = 0
+for each in a:    
+    if r &lt; curr_percentile:
+        r = r + each
+    else:
+        q.append(each + 1)
+        r = r + each
+        curr_percentile = curr_percentile + p
+q.append(max(a) +1)
+
+labels = [&#39;small town&#39;, &#39;town&#39;, &#39;large town&#39;,&#39;city&#39;,&#39;major city&#39;]
+
+us_ga[&#39;quintile&#39;] = pd.cut(us_ga[&#39;2017&#39;], q, include_lowest=True, labels=labels)
+
+#check that our buckets are roughly equal
+us_ga.groupby(&#39;quintile&#39;)[&#39;2017&#39;].sum()
+</code></pre>
+
+<pre><code>quintile
+small town    43610647
+town          43637694
+large town    43716638
+city          44237984
+major city    42709542
+Name: 2017, dtype: int64
+</code></pre>
+
+<pre><code class="python">
+#GA throws an error if there are columns in your csv that you don&#39;t use
+us_ga = us_ga.drop(columns=[&#39;Temp Canonical&#39;, &#39;2017&#39;], axis=1)
+#export to CSV
+us_ga.to_csv(&#39;us-geo-ga.csv&#39;, index=False)
+#we dropped the index column from the CSV
+us_ga.head()
+</code></pre>
+
+<div class="dataframe-wrapper">
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ga:cityId</th>
+      <th>quintile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1012873</td>
+      <td>city</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1012874</td>
+      <td>small town</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1012875</td>
+      <td>small town</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1012876</td>
+      <td>small town</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1012878</td>
+      <td>small town</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Google Analytics Data Import</h2>
+
+<p>From here on we are following <a href="https://support.google.com/analytics/answer/6160509?ref_topic=6015090">Google&rsquo;s documentation</a> starting at Step 3. If you need more detailed instructions, I encourage you to go to there.</p>
+
+<p>You can just <a href="/blog/geo-data-for-ga/us_city_pop_ga.csv">grab the finished CSV</a> and following along from here.</p>
+
+<ol>
+<li>Create a Custom Dimension with session scope.</li>
+<li>Create a Data Set (under Admin &gt; Property &gt; Data Import) where you assign the newly created Custom Dimension to the import.</li>
+<li>At the end of the Data Set creation dialogue, copy the dimension ID (it will look like ga:dimension10).</li>
+<li>Open the CSV, replace &ldquo;quintile&rdquo; with the dimension ID and save it again as a CSV.</li>
+<li>Upload the CSV manually (Admin &gt; Property &gt; Data Import) select the Data Set you created previously and Manage Uploads.</li>
+</ol>
+
+<p>And there, you&rsquo;re done.</p>
+
+			</article>
+			<article class="small-12 medium-6 large-4 columns article-listing" data-equalizer-watch>
 				  <h2><a href="/blog/speech-to-text.html">Hackers' Guide to Speech to Text&#58; Quick, Dirty, and Free</a> <span>Nov 20</span></h2>
 				  <!-- use article.summary(250) if you have Nokogiri available to show just
 				       the first 250 characters -->
