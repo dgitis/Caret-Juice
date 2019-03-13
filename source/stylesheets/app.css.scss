@@ -17,7 +17,6 @@
 @import "components/_offcanvas";
 @import "components/_visibility";
 
-
 @import "../assets/fontawesome/scss/font-awesome.scss";
 
 /*# sourceMappingURL=app.css.map */
@@ -459,4 +458,44 @@ a:hover.hover-dropdown{
 
 .off-canvas-nested-list{
 	list-style-type: none;
+}
+
+
+/* Formatting Jupyter Notebooks */
+
+code {
+	background-color: inherit;
+	border-color: #dfdfdf;
+	border-style: solid;
+	border-width: 0px;
+	color: #333333;
+	font-family: Consolas, "Liberation Mono", Courier, monospace;
+	font-size: 0.9rem;
+	font-weight: normal;
+	padding: 0.125rem 0.3125rem 0.0625rem 0.3125rem; }
+pre{
+	padding-left: 2rem;
+}
+
+
+.dataframe-wrapper{
+	width: 100%;
+	overflow: auto;
+	margin: 2rem 0rem 2rem 0rem;
+}
+
+.dataframe{
+	font-size: 0.8rem;
+	table-layout: fixed;
+}
+.dataframe th{
+	border-bottom: none;
+    background-color: #ffffff;
+	color: #212121;
+	text-align:center !important;
+}
+.dataframe td{
+}
+table.dataframe{
+	border: none;
 }

@@ -1,8 +1,8 @@
 ---
 title: Hackers' Guide to Speech to Text&#58; Quick, Dirty, and Free
 date: 2018-11-20
-tags: Zapier
-category: Reasons
+tags: Watson
+category: Recipes
 author: damon
 excerpt: Learn how to use IBM Watson to speed up transcription.
 facebook_img: https://www.caretjuice.com/blog/speech-to-text/speech-to-text-facebook.png
