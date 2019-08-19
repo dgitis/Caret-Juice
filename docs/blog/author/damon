@@ -2,6 +2,26 @@
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
+	
+<script>
+origDescriptor = Object.getOwnPropertyDescriptor(HTMLDocument.prototype, 'cookie'); // add cookie property to HTMLDocument constructor
+
+Object.defineProperty(document, 'cookie', {
+    get() {
+        return origDescriptor.get.call(this);
+    },
+
+    set(value) {
+        console.log("%c Cookie is :" + value, "background: #ffffff; color: #000000");
+        console.trace();
+        // debugger;
+        return origDescriptor.set.call(this, value);
+    },
+
+    enumerable: true,
+    configurable: true
+});
+</script>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
 		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -105,6 +125,12 @@
 <div class="row">
 	<div class="small-12 medium-8 medium-offset-2">
 		<h2>Damon&apos;s Posts</h2>
+			<article class="article-listing">
+	<h2 class="subheader"><a href="/blog/improve-data-quality-human-centered-design.html">Improve Your Data Quality With Human-Centered Process Design</a> </h2>
+	<p class="published">Aug 19 2019</p>
+	<p>The more I work with data the more I appreciate how valuable quality data is and how hard it can be for an organization to maintain quality. Data multiplies as we add new business technologies. Much of the data produced by technologies is of good quality...</p>
+  	<p class="text-right">Keep Reading <a href="/blog/improve-data-quality-human-centered-design.html">Improve Your Data Quality With Human-Centered Process Design</a> </p>
+</article>
 			<article class="article-listing">
 	<h2 class="subheader"><a href="/blog/geo-data-for-ga.html">US Population Data for Google Analytics</a> </h2>
 	<p class="published">Mar 13 2019</p>

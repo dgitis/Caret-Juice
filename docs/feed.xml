@@ -5,10 +5,119 @@
   <id>https://www.caretjuice.com/blog</id>
   <link href="https://www.caretjuice.com/blog"/>
   <link href="https://www.caretjuice.com/feed.xml" rel="self"/>
-  <updated>2019-03-12T17:00:00-07:00</updated>
+  <updated>2019-08-18T17:00:00-07:00</updated>
   <author>
     <name>Damon Gudaitis</name>
   </author>
+  <entry>
+    <title>Improve Your Data Quality With Human-Centered Process Design</title>
+    <link rel="alternate" href="https://www.caretjuice.com/blog/improve-data-quality-human-centered-design.html"/>
+    <id>https://www.caretjuice.com/blog/improve-data-quality-human-centered-design.html</id>
+    <published>2019-08-18T17:00:00-07:00</published>
+    <updated>2019-08-19T13:05:08-07:00</updated>
+    <author>
+      <name>Damon Gudaitis</name>
+    </author>
+    <summary type="html">&lt;p&gt;The more I work with data the more I appreciate how valuable quality data is and how hard it can be for an organization to maintain quality. Data multiplies as we add new business technologies. Much of the data produced by technologies is of good quality...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;The more I work with data the more I appreciate how valuable quality data is and how hard it can be for an organization to maintain quality. Data multiplies as we add new business technologies. Much of the data produced by technologies is of good quality if limited usefulness.&lt;/p&gt;
+
+&lt;p&gt;More useful data comes from people. But asking people to produce data that is secondary to their reasons for interacting with a business technology is going to result in bad data.&lt;/p&gt;
+
+&lt;p&gt;It doesn’t matter whether you are asking employees to go through these processes or your customers. Carrots and sticks deployed to entice and cajole help but are inadequate.&lt;/p&gt;
+
+&lt;p&gt;Quality data has long been important to businesses but that is even more true now as machine learning pushes its way into all aspects of business.&lt;/p&gt;
+
+&lt;p&gt;Computers are able to surface all sorts of obscure correlations within hundred- and thousand-dimensional data sets. However, the quality of machine predictions is dependant on the quality of the data on which the prediction is based.&lt;/p&gt;
+
+&lt;p&gt;This is why Figure Eight, known as CrowdFlower at the time, found in 2016 that data scientists spend &lt;a href="https://visit.figure-eight.com/rs/416-ZBE-142/images/CrowdFlower_DataScienceReport_2016.pdf"&gt;almost 80 percent of their time collecting and cleaning data&lt;/a&gt; (pdf).&lt;/p&gt;
+
+&lt;p&gt;A data scientist confronted with incomplete data can either delete the data or impute it. Neither of these choices is a good one. And poor-quality data is best dropped no matter how hard it was to collect.&lt;/p&gt;
+
+&lt;p&gt;Analysts working with poor data are similarly stymied.&lt;/p&gt;
+
+&lt;p&gt;Quality data is a competitive advantage. It helps people make better decisions that impact every aspect of the business.&lt;/p&gt;
+
+&lt;p&gt;Dun and Bradstreet in their latest &lt;a href="https://www.dnb.com/content/dam/english/dnb-data-insight/sixth-annual-b2b-marketing-data-report-dnb.pdf"&gt;B2B Marketing Data Report&lt;/a&gt; (pdf) found that 89 percent of B-to-B marketers believe that “data quality is increasingly important to the sales and marketing organization” with 69 percent responding that it is extremely important.&lt;/p&gt;
+
+&lt;h2&gt;Where data comes from human sources, quality data is difficult.&lt;/h2&gt;
+
+&lt;p&gt;It doesn’t matter how many carrots or sticks that you deploy in service of getting people to create data that is secondary to the purpose of the process, data collection will slip and the quality of data will suffer.&lt;/p&gt;
+
+&lt;p&gt;I’ve been a minor party to a couple of medium-sized CRM implementations. In both cases, getting managers together to think about what CRM systems can do for the organization led to someone deciding that adding a bunch of fields to lead record and getting front-line sales staff to complete the data was a good idea. &lt;/p&gt;
+
+&lt;p&gt;The actual benefit never really materialized.&lt;/p&gt;
+
+&lt;p&gt;Harvard Business Review has a piece on &lt;a href="https://hbr.org/2013/12/datas-credibility-problem"&gt;Data’s Credibility Problem&lt;/a&gt; from 2013 that identifies the gap between the people that produce data and people that consume it. The article proposes that communication is the solution to bridging this gap.&lt;/p&gt;
+
+&lt;p&gt;Communication no doubt improves things. In one of the CRM implementations the front-line sales staff did buy in to collecting this data and it worked, for a time.&lt;/p&gt;
+
+&lt;p&gt;Employees come and go and the importance of collecting this data slipped as the organization evolved.&lt;/p&gt;
+
+&lt;p&gt;If you want to rely on front-line staff collecting data for you, you’re going to have to evangelize to your new staff the way you initially evangelized to the people who first collected the data.&lt;/p&gt;
+
+&lt;p&gt;Even people who understand the value of this data can get distracted or lazy. But pretending for a minute that everyone has fantastic attention to detail, asking humans to collect data that’s going to be used by machines introduces mistakes that aren’t mistakes in a human context but are totally wrong in a machine one.&lt;/p&gt;
+
+&lt;p&gt;Company names are a great example. If you have any kind of mix of people entering or importing company names to your CRM, go grab a CSV of lead or company records and start looking for duplicates (or often triplicates and x-plicates where x can get surprisingly high).&lt;/p&gt;
+
+&lt;p&gt;You’ll see versions with “Inc” at the end and without. You’ll see “Inc” with and without the period. And you’ll see more of the same with LLP (or is it L.L.P.?) and GMBH.&lt;/p&gt;
+
+&lt;p&gt;These are just corporate designations. Go look for companies with “and” in their names and see whether “and” is spelled out or in ampersand form.&lt;/p&gt;
+
+&lt;p&gt;We intuitively recognize these duplicates as the same but to a machine they are different.&lt;/p&gt;
+
+&lt;p&gt;Machine-data problems can have an effect on the human analysis. An analyst working with data processed by a machine, for example, might not get the opportunity to see that the same company appears multiple times when they query a database for the number of unique companies to use in a calculation.&lt;/p&gt;
+
+&lt;p&gt;This problem is not exclusive to CRM-based processes. Your marketing automation system presents another, different example of how making data the object of your processes suffers versus making it a byproduct of process.&lt;/p&gt;
+
+&lt;p&gt;I expect that most of you have seen an overloaded sign-up form asking everything about your business so that you can access a whitepaper or webinar or some such resource.&lt;/p&gt;
+
+&lt;p&gt;I have been in charge of a number of forms like this, not by choice, and can verify that the data that you get from these forms is of generally low quality.&lt;/p&gt;
+
+&lt;p&gt;Some people get annoyed by the forms and just enter in random information to get to whatever it is they are trying to access. Others don’t know some of the information, like annual revenue, and just make things up.&lt;/p&gt;
+
+&lt;p&gt;That’s just the data you see. People abandon cumbersome forms leaving you with no data on a company that may have been in the market.&lt;/p&gt;
+
+&lt;p&gt;It may seem a little counterintuitive to compare data collected through internal processes in CRM and similar systems with public facing data collection in marketing automation systems. However, the principle for fixing these processes is the same.&lt;/p&gt;
+
+&lt;h2&gt;Quality data is a byproduct of processes designed to support the success of the people who undertake them&lt;/h2&gt;
+
+&lt;p&gt;Data quality is a business problem rather than an IT problem. The previous Harvard Business Review article recognizes this and rightly identifies communication as a possible solution. However, communication is a constant challenge that requires regular attention. There are many other important things that need to be communicated and only so much capacity for communicating or receiving communications.&lt;/p&gt;
+
+&lt;p&gt;Human-centered design provides techniques for uncovering the needs and motivations of the people at the center of an interaction so that you can then engineer problems out of existence.&lt;/p&gt;
+
+&lt;p&gt;When you are designing processes, data needs to be a secondary concern. No matter how much buy-in that you get from the people who will be undertaking the processes, the quality of data will slip over time. People will move on. New employees will come in. People will be busy or having a bad day. Or they’ll just make mistakes.&lt;/p&gt;
+
+&lt;p&gt;In both of the previous CRM and marketing automation examples, data is the object of the process. That’s missing the point. Success should be the object of any process.&lt;/p&gt;
+
+&lt;p&gt;The more your processes are oriented around the success of the people at the center of them, the better your adoption of the processes will be. The better the adoption, the better the quality of the data.&lt;/p&gt;
+
+&lt;p&gt;You can still tweak your processes to suit your data needs. Just make sure that success is the goal.&lt;/p&gt;
+
+&lt;p&gt;One way to do this is to enrich your first-party system data with third-party data. If knowing the industry of the people in your database is of value, then third-party data sources, imperfect thought they may be, will be of better quality than if you ask people to collect this data. You’ll also solve all of those company name problems in your CRM this way and make it easier for people to complete your process.&lt;/p&gt;
+
+&lt;p&gt;Automated date enrichment streamilines both internal and public-facing processes which should increase efficiency and encourage the successful completion of the processes.&lt;/p&gt;
+
+&lt;p&gt;Using third-party data to enrich your first-party data and replace manually collected data is an intuitive way to improve data quality while keeping your processes focused on the success of the people who have to do them.&lt;/p&gt;
+
+&lt;p&gt;Another, more fundamental way of improving data quality is to re-imagine processes to put the data at the core of what constitutes success.&lt;/p&gt;
+
+&lt;p&gt;For example if industry is important to you, instead of asking for a prospect to fill out an industry field when they want to download something create industry specific resources, like case studies, people the opportunity to select the industry-related resource that best helps them do whatever it is they are trying to do.&lt;/p&gt;
+
+&lt;p&gt;Most sales and marketing processes are designed using empathy and intuition for the users.&lt;/p&gt;
+
+&lt;p&gt;Human-centered design is effective because of the research that goes in to uncovering the motivations at the core of an interaction including observation and interviews. Empathy and intuition are fantastic things to have, but you can’t scale it across your team.&lt;/p&gt;
+
+&lt;p&gt;Processes that put researching the users before designing for them may take more time, but they also scale and you don’t need to rely on the empathic genius of a few individuals in your team.&lt;/p&gt;
+
+&lt;p&gt;This sort of qualitative, user research doesn’t need to be statistically significant in order to have value. Get ideas for what sort of motivations are at the core of a particular interaction and then use your A/B testing tools to figure out whether a particular research conclusion is statistically significant.&lt;/p&gt;
+
+&lt;p&gt;Put in the effort to research your users’ goals and motivations and be sure that you are supporting the individual’s short-term goals. The data you collect will support your long-term sales and marketing efforts much more effectively this way.&lt;/p&gt;
+
+&lt;p&gt;When you start questioning whether the object of the data you collect supports the success of people who are undertaking your processes you will find plenty of opportunities for flipping data collection around to support their short-term success while aligning with your long-term needs.&lt;/p&gt;
+
+&lt;p&gt;And because they actually benefit from giving you data, you’ll get more accurate results. Which will make your data more useful.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>US Population Data for Google Analytics</title>
     <link rel="alternate" href="https://www.caretjuice.com/blog/geo-data-for-ga.html"/>
@@ -1496,111 +1605,6 @@ deep integration between a small number of applications&lt;/td&gt;
 &lt;p&gt;Everything in the Constellation Approach flows from understand which applications need to be platforms and then grows from there. The right platform both grows with you and gives you the best chance to take advantage of yet unimagined technologies just beyond the horizon.&lt;/p&gt;
 
 &lt;p&gt;Innovation presents the greatest risks and rewards. A good platform will let you take advantage of innovative solutions while reducing the costs of switching or abandoning a solution.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Twitter List Automation</title>
-    <link rel="alternate" href="https://www.caretjuice.com/blog/twitter-list-automation.html"/>
-    <id>https://www.caretjuice.com/blog/twitter-list-automation.html</id>
-    <published>2016-02-14T16:00:00-08:00</published>
-    <updated>2018-11-13T14:23:46-08:00</updated>
-    <author>
-      <name>Damon Gudaitis</name>
-    </author>
-    <summary type="html">&lt;p&gt;Twitter lists are a feature that nearly every digital marketer has experimented with but few use for anything other than keeping track of a select group of influencers.&lt;/p&gt;
-
-&lt;p&gt;Lists seem like they would be quite useful to sales reps and account managers...&lt;/p&gt;</summary>
-    <content type="html">&lt;p&gt;Twitter lists are a feature that nearly every digital marketer has experimented with but few use for anything other than keeping track of a select group of influencers.&lt;/p&gt;
-
-&lt;p&gt;Lists seem like they would be quite useful to sales reps and account managers trying to build relationships with prospects and accounts. In practice, this isn’t true.&lt;/p&gt;
-
-&lt;p&gt;The percentage of people actively using Twitter is quite low. I would guess that perhaps 90 percent of prospects or accounts for most businesses won’t be using Twitter actively which makes for a lot of wasted time maintaining targeted lists.&lt;/p&gt;
-
-&lt;p&gt;However with a little automation, Twitter lists can be a practical, everyday tool for sales reps and account managers. The automation handles the basic maintenance letting your people focus on building relationships.&lt;/p&gt;
-
-&lt;h2&gt;Create the Twitter Lists&lt;/h2&gt;
-
-&lt;p&gt;The first thing you’re going to need to do is create empty Twitter lists to hold customer and prospect info. &lt;/p&gt;
-
-&lt;p&gt;If you want to create separate lists for each sales person or account manager, then you will have to create a separate list for each (ie. Damon’s Prospects as opposed to just Prospects).&lt;/p&gt;
-
-&lt;p&gt;To create the lists, log in to Twitter and open the Profile and Settings menu hidden under your Twitter icon at the top right of the web interface and select Lists.&lt;/p&gt;
-
-&lt;p&gt;Then create as many lists as necessary.&lt;/p&gt;
-
-&lt;h2&gt;Prepare Your CRM&lt;/h2&gt;
-
-&lt;p&gt;In order to simplify later configuration and reduce the amount of redundant work that Zapier will do, we’re going to want to store the Twitter handle in CRM.&lt;/p&gt;
-
-&lt;p&gt;If you don’t already have one, create a Twitter Handle field in your CRM.&lt;/p&gt;
-
-&lt;h2&gt;Set Up the Zapier Integration&lt;/h2&gt;
-
-&lt;p&gt;We’re going to use Zapier to pull prospect and customer info from CRM, enhance that information with social media account information from FullContact which we will return to CRM before adding any Twitter accounts found by FullContact to the appropriate list.&lt;/p&gt;
-
-&lt;p&gt;Create a new Zap that triggers whenever you add a &lt;strong&gt;New Contact&lt;/strong&gt; to your CRM.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="../assets/images/2016/crm-new-contact-trigger-4817f933.png" alt="New Contact CRM Trigger in Zapier" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Next, create a Filter that checks that the CRM email field exists.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="../assets/images/2016/email-exists-filter-f5a7df50.png" alt="Email Exists Filter in Zapier" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Select FullContact for your action, connecting your FullContact account to Zapier if necessary, and choose &lt;strong&gt;Find a Person&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="../assets/images/2016/fullcontact-find-person-9c62a76a.png" alt="FullContact Find a Person Zapier Search" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Click &lt;strong&gt;Save + Continue&lt;/strong&gt;, test the step and then connect your CRM email and phone number, if you like, to FullContact.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="../assets/images/2016/fullcontact-find-person-settings-c3fa07c7.png" alt="FullContact Find a Person Zapier Search Settings" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Test the step again.&lt;/p&gt;
-
-&lt;p&gt;Note that the test will tell you whether the step was a success or not. If you get a success message but check the data returned it will be for the wrong record. That is okay. It is just a quirk of the FullContact-Zapier integration.&lt;/p&gt;
-
-&lt;p&gt;This is all that we need for this Zap. However, there are a lot of potentially useful additions to this Zap that are detailed in the optional selection at the end of this post.&lt;/p&gt;
-
-&lt;h2&gt;Automate Twitter List Creation&lt;/h2&gt;
-
-&lt;p&gt;A lot of CRM systems are limited to triggering Zapier when a contact is created and not when it is updated.&lt;/p&gt;
-
-&lt;p&gt;This means that, for many CRM systems, we can’t just check if FullContact found a Twitter handle, send the handle to CRM and trigger a new series of Zaps to add contacts with Twitter handles to the appropriate list.&lt;/p&gt;
-
-&lt;p&gt;I cover this topic in more depth in my post titled &lt;em&gt;Creative On Update Zapier Triggers&lt;/em&gt;, but basically what you will need to do is set your CRM up to create a new tag or a new note when the &lt;em&gt;Twitter Handle&lt;/em&gt; field we created in the CRM gets filled out and then watch for that tag to trigger the list creation Zaps.&lt;/p&gt;
-
-&lt;p&gt;The specifics vary by CRM. This is what I did for Agile CRM and then set up a trigger to run this daily since I don’t have an update trigger in CRM.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="../assets/images/2016/crm-add-tag-automation-bc35d018.png" alt="Add Tag Automation in Agile CRM" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Moving back to Zapier, we’re going to watch for this tag, or note or whatever you needed to create to trigger the Zap, and then filter contacts by Owner to get prospects in the right list.&lt;/p&gt;
-
-&lt;p&gt;The specifics of the trigger will depend on whether you can trigger on update or have to use a workaround and, if you used a workaround, on what workaround you used.&lt;/p&gt;
-
-&lt;p&gt;For me, I triggered the Zap from Agile CRM using the &lt;strong&gt;New Tag to Contact&lt;/strong&gt; trigger with a &lt;strong&gt;Tag Name&lt;/strong&gt; of &lt;em&gt;Twitter&lt;/em&gt; matching the tag I’m automatically creating in CRM.&lt;/p&gt;
-
-&lt;p&gt;Once you have your trigger set up, add a &lt;em&gt;(Text) Exactly matches&lt;/em&gt; Filter on the owner email field from CRM using the email address of the sales or account rep.&lt;/p&gt;
-
-&lt;p&gt;You may also want to filter by the status or funnel stage, however, if everyone is using CRM properly and is setting the owner of the contact, then you probably won’t need a status or funnel stage filter as we’ll be matching against the owner’s email.&lt;/p&gt;
-
-&lt;p&gt;Finally, create a Twitter &lt;em&gt;Add User to List&lt;/em&gt; action.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="../assets/images/2016/add-user-twitter-list-f0f91431.png" alt="Add User to Twitter List in Zapier" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Save and connect your Twitter account.&lt;/p&gt;
-
-&lt;p&gt;Select the Twitter list that you created and map the Twitter handle from your CRM to Zapier.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="../assets/images/2016/add-user-twitter-list-settings-9c2187ee.png" alt="Add User to Twitter List in Zapier Settings" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Now you need to repeat this last series of steps for each sales or account rep for whom you’re creating Twitter lists.&lt;/p&gt;
-
-&lt;h2&gt;Drawbacks&lt;/h2&gt;
-
-&lt;p&gt;The one possible drawback of this automation is that there isn’t an easy way to remove people from lists. Zapier simply doesn’t have a Remove from List option even though Twitter’s API supports it.&lt;/p&gt;
-
-&lt;p&gt;Some salespeople are happy to maintain a relationship after the sale and are fine with their list of prospects including former prospects that they’ve already either won or lost. But others would like that sort of thing cleaned up.&lt;/p&gt;
-
-&lt;p&gt;This is less of an issue for account managers because accounts don’t normally churn as fast as sales prospects qualify or disqualify, but it is still a problem with no easy automated solution.&lt;/p&gt;
 </content>
   </entry>
 </feed>

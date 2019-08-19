@@ -1,0 +1,46 @@
+JQMIGRATE: Migrate is installed, version 1.4.1 jquery-migrate.min.js:2:552
+ Cookie is :__unam=7639673-16b91183a70-eb816c5-3; expires=Wed, 25 Mar 2020 07:00:00 GMT; domain=.invinciblecat.com;path=/ debugger eval code:9:13
+console.trace() debugger eval code:10:13
+    set debugger eval code:10
+    setFpcCookie http://w.sharethis.com/button/st_insights.js?publisher=4d48b7c5-0ae3-43d4-bfbe-3ff8c17a8ae6&product=simpleshare:1
+    createFpc http://w.sharethis.com/button/st_insights.js?publisher=4d48b7c5-0ae3-43d4-bfbe-3ff8c17a8ae6&product=simpleshare:1
+    init http://w.sharethis.com/button/st_insights.js?publisher=4d48b7c5-0ae3-43d4-bfbe-3ff8c17a8ae6&product=simpleshare:1
+    <anonymous> http://w.sharethis.com/button/st_insights.js?publisher=4d48b7c5-0ae3-43d4-bfbe-3ff8c17a8ae6&product=simpleshare:1
+ Cookie is :cookielawinfo-checkbox-advertisement=no; expires=Thu, 25 Jun 2020 00:07:07 GMT; path=/ debugger eval code:9:13
+console.trace() debugger eval code:10:13
+    set debugger eval code:10
+    set http://invinciblecat.com/wp-content/plugins/webtoffee-gdpr-cookie-consent/public/js/cookie-law-info-public.js?ver=2.2:14
+    toggleUserPreferenceCheckBox http://invinciblecat.com/wp-content/plugins/webtoffee-gdpr-cookie-consent/public/js/cookie-law-info-public.js?ver=2.2:203
+    jQuery 2
+    toggleUserPreferenceCheckBox http://invinciblecat.com/wp-content/plugins/webtoffee-gdpr-cookie-consent/public/js/cookie-law-info-public.js?ver=2.2:197
+    settingsPopUp http://invinciblecat.com/wp-content/plugins/webtoffee-gdpr-cookie-consent/public/js/cookie-law-info-public.js?ver=2.2:162
+    set http://invinciblecat.com/wp-content/plugins/webtoffee-gdpr-cookie-consent/public/js/cookie-law-info-public.js?ver=2.2:96
+    <anonymous> http://invinciblecat.com/wp-content/plugins/webtoffee-gdpr-cookie-consent/public/js/cookie-law-info-public.js?ver=2.2:908
+    jQuery 4
+ Cookie is :cookielawinfo-checkbox-analytics=no; expires=Thu, 25 Jun 2020 00:07:07 GMT; path=/ debugger eval code:9:13
+console.trace() debugger eval code:10:13
+    set debugger eval code:10
+    set http://invinciblecat.com/wp-content/plugins/webtoffee-gdpr-cookie-consent/public/js/cookie-law-info-public.js?ver=2.2:14
+    toggleUserPreferenceCheckBox http://invinciblecat.com/wp-content/plugins/webtoffee-gdpr-cookie-consent/public/js/cookie-law-info-public.js?ver=2.2:203
+    jQuery 2
+    toggleUserPreferenceCheckBox http://invinciblecat.com/wp-content/plugins/webtoffee-gdpr-cookie-consent/public/js/cookie-law-info-public.js?ver=2.2:197
+    settingsPopUp http://invinciblecat.com/wp-content/plugins/webtoffee-gdpr-cookie-consent/public/js/cookie-law-info-public.js?ver=2.2:162
+    set http://invinciblecat.com/wp-content/plugins/webtoffee-gdpr-cookie-consent/public/js/cookie-law-info-public.js?ver=2.2:96
+    <anonymous> http://invinciblecat.com/wp-content/plugins/webtoffee-gdpr-cookie-consent/public/js/cookie-law-info-public.js?ver=2.2:908
+    jQuery 4
+ Cookie is :cookielawinfo-checkbox-functional=no; expires=Thu, 25 Jun 2020 00:07:07 GMT; path=/ debugger eval code:9:13
+console.trace() debugger eval code:10:13
+    set debugger eval code:10
+    set http://invinciblecat.com/wp-content/plugins/webtoffee-gdpr-cookie-consent/public/js/cookie-law-info-public.js?ver=2.2:14
+    toggleUserPreferenceCheckBox http://invinciblecat.com/wp-content/plugins/webtoffee-gdpr-cookie-consent/public/js/cookie-law-info-public.js?ver=2.2:203
+    jQuery 2
+    toggleUserPreferenceCheckBox http://invinciblecat.com/wp-content/plugins/webtoffee-gdpr-cookie-consent/public/js/cookie-law-info-public.js?ver=2.2:197
+    settingsPopUp http://invinciblecat.com/wp-content/plugins/webtoffee-gdpr-cookie-consent/public/js/cookie-law-info-public.js?ver=2.2:162
+    set http://invinciblecat.com/wp-content/plugins/webtoffee-gdpr-cookie-consent/public/js/cookie-law-info-public.js?ver=2.2:96
+    <anonymous> http://invinciblecat.com/wp-content/plugins/webtoffee-gdpr-cookie-consent/public/js/cookie-law-info-public.js?ver=2.2:908
+    jQuery 4
+onmozfullscreenchange is deprecated. jquery.js:2:1539
+onmozfullscreenerror is deprecated. jquery.js:2:1539
+The script from “https://mc.us15.list-manage.com/subscribe/form-settings?u=0eae33b1811054fa77b23dad0&id=846d99af66&u=0eae33b1811054fa77b23dad0&id=846d99af66&c=dojo_request_script_callbacks.dojo_request_script0” was loaded even though its MIME type (“application/json”) is not a valid JavaScript MIME type.
+invinciblecat.com
+YT API init check ytprefs.min.js:2:2884
