@@ -32,7 +32,7 @@ Object.defineProperty(document, 'cookie', {
     <title>Think About Marketing &amp; Technology ^ Caret Juice Blog</title>
 	<meta name="description" content="Sometimes controversial and always thought-provoking articles about marketing and technology.">
 	<link rel="canonical" href="https://www.caretjuice.com/blog/category/reasons" />
-    <link href="/stylesheets/app-15738e2d.css" rel="stylesheet" />
+    <link href="/stylesheets/app-8df13e10.css" rel="stylesheet" />
     <script src="/javascripts/modernizr-a621bc60.js"></script>
 	<link href="/assets/images/favicon.png" rel="shortcut icon" type="image/png">
 	<link href="/assets/images/favicon-152.png" rel="apple-touch-icon-precomposed">

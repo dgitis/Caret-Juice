@@ -3,9 +3,11 @@
 source 'http://rubygems.org'
 ruby "2.3.1"
 gem "bourbon", :require => false
-gem 'middleman', '~> 4.2', '>= 4.2.1'
+#gem 'middleman', '~> 4.2', '>= 4.2.1'
+gem 'middleman'
 gem "builder"
-gem 'middleman-blog', '~> 4.0', '>= 4.0.1'
+#gem 'middleman-blog', '~> 4.0', '>= 4.0.1'
+gem 'middleman-blog'
 gem 'foundation'
 gem "htmlentities"
 gem "nokogiri"
@@ -16,7 +18,7 @@ gem "middleman-sprockets"
 #gem 'middleman-rouge'
 gem "redcarpet"
 gem "jquery-middleman"
-gem 'middleman-autoprefixer'
+gem 'middleman-autoprefixer', github: 'porada/middleman-autoprefixer'
 
 # Live-reloading plugin
 gem "middleman-livereload"
