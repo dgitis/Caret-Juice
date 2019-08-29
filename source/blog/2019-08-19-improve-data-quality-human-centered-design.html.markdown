@@ -108,3 +108,5 @@ Put in the effort to research your users’ goals and motivations and be sure th
 When you start questioning whether the object of the data you collect supports the success of people who are undertaking your processes you will find plenty of opportunities for flipping data collection around to support their short-term success while aligning with your long-term needs.
 
 And because they actually benefit from giving you data, you’ll get more accurate results. Which will make your data more useful.
+
+Discuss on [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:6569316198499045377/).
