@@ -5,8 +5,8 @@ tags: Google Trends, Python
 category: Recipes
 author: damon
 excerpt: How to remix Google Trends data to match your branding
-facebook_img: https://www.caretjuice.com/blog/2019-08-29-google-trends/google-trends-facebook.png
-twitter_img: https://www.caretjuice.com/blog/2019-08-29-google-trends/google-trends-twitter.png
+facebook_img: https://www.caretjuice.com/blog/google-trends/google-trends-facebook.png
+twitter_img: https://www.caretjuice.com/blog/google-trends/google-trends-twitter.png
 ---
 We're going to take an export of Google Trends data and then make a custom chart of that data in Python. Why would we want to do that?
 
