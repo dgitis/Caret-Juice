@@ -1,0 +1,588 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+	
+<script>
+origDescriptor = Object.getOwnPropertyDescriptor(HTMLDocument.prototype, 'cookie'); // add cookie property to HTMLDocument constructor
+
+Object.defineProperty(document, 'cookie', {
+    get() {
+        return origDescriptor.get.call(this);
+    },
+
+    set(value) {
+        console.log("%c Cookie is :" + value, "background: #ffffff; color: #000000");
+        console.trace();
+        // debugger;
+        return origDescriptor.set.call(this, value);
+    },
+
+    enumerable: true,
+    configurable: true
+});
+</script>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PRFCGK');</script>
+	<!-- Use title if it's in the page YAML frontmatter -->
+    <title>Custom Branded Google Trends Charts With Python</title>
+	<meta name="description" content="How to remix Google Trends data to match your branding">
+	<link rel="canonical" href="https://www.caretjuice.com/blog/google-trends.html" />
+    <link href="../stylesheets/app-8df13e10.css" rel="stylesheet" />
+    <script src="../javascripts/modernizr-a621bc60.js"></script>
+	<link href="../assets/images/favicon-d706ba9e.png" rel="shortcut icon" type="image/png">
+	<link href="../assets/images/favicon-152-da840e5c.png" rel="apple-touch-icon-precomposed">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="../assets/images/favicon-144-ac9bfb6e.png">
+	<link rel="alternate" type="application/atom+xml" title="Caret Juice Blog Atom feed" href="https://www.caretjuice.com/feed.xml" />
+	<meta property="fb:app_id" content="349018238896517"/>
+	<meta property="og:url" content="https://www.caretjuice.com/blog/google-trends.html" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Custom Branded Google Trends Charts With Python" />
+	<meta property="og:description" content="How to remix Google Trends data to match your branding" />
+
+	<meta property="og:image" content="https://www.caretjuice.com/blog/2019-08-29-google-trends/google-trends-facebook.png" />
+	<meta property="og:site_name" content="Caret Juice Marketing" />
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@CaretJuice">
+	<meta name="twitter:creator" content="@damongudaitis">
+	<meta name="twitter:title" content="Custom Branded Google Trends Charts With Python">
+	<meta name="twitter:description" content="Caret Juice Marketing">
+	<meta name="twitter:image" content="https://www.caretjuice.com/blog/2019-08-29-google-trends/google-trends-twitter.png">
+  </head>
+  
+  <body class="blog blog_google-trends">
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRFCGK"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<div class="off-canvas-wrap" data-offcanvas>
+		<div class="inner-wrap">
+    		<div class="contain-to-grid section">
+	<nav class="top-bar show-for-large-up" data-topbar role="navigation">
+		<ul class="title-area inline-list">
+	    <li class="name">
+<a href="/">				  <img src="../assets/images/caretjuice-logo-2-b7bf8654.png" alt="Caret Juice Marketing Logo" />
+</a>		    </li>
+			<li id="tag-line">Audience Experience Optimization</li>
+	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->	    
+	  </ul>
+	  <section class="top-bar-section">
+	     <ul class="right">
+			<li><a href="/">Home</a></li>
+			<li><a data-dropdown="services" data-options="is_hover:true; hover_timeout:500" aria-controls="services" aria-expanded="false">Services</a></li>
+				<ul id="services" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+					<li><a href="/data-collection.html">Data Collection</a></li>
+					<li><a href="/data-analysis.html">Data Analysis</a></li>
+					<li><a href="/experience-optimization.html">Experience Optimization</a></li>
+				</ul>
+			<li><a href="/blog.html">Blog</a></li>
+	    <li><a href="/contact.html">Contact</a></li>
+	    </ul>
+	  </section>
+	</nav>
+</div>
+<nav class="tab-bar hide-for-large-up">
+	<section class="tab-bar-section">
+		<h3 class="title"><a href="/">Caret Juice Marketing</a></h3>
+	</section>
+
+      <section class="right tab-bar-section">
+        <a class="right-off-canvas-toggle" href="#mobile-menu">MENU</a>
+      </section>
+</nav>
+<nav id="mobile-menu" class="right-off-canvas-menu">
+	<ul class="off-canvas-list">
+		<li><a href="/">Home</a></li>
+		<li style="padding-top:10px"><label>Services</label>
+      <ul class="off-canvas-nested-list">
+        <li><a href="/data-collection.html">Data Collection</a></li>
+        <li><a href="/data-analysis.html">Data Analysis</a></li>
+				<li><a href="/experience-optimization.html">Experience Optimization</a></li>
+      </ul>
+		</li>
+		<li><a href="/blog.html">Blog</a></li>
+		<li><a href="/contact.html">Contact</a></li>
+	</ul>
+</nav>
+    <article itemid="https://www.caretjuice.com/blog/google-trends.html" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="article-info pattern">
+		<div class="text-center row">
+			<div class=" small-12 columns">
+				<h1 style="margin-bottom:5px; line-height:3.0rem;" itemprop="headline">Custom Branded Google Trends Charts With Python</h1>
+				<p>by <a href="/blog/author/damon" rel="author">Damon Gudaitis</a> | under <a href="/blog/category/recipes">Recipes</a></p>
+				<h3 class="subheader" style="margin-bottom:5px; line-height:1.6rem; font-size:1.4rem; font-style:italic;" itemprop="description">How to remix Google Trends data to match your branding</h3>
+		
+				<a href="http://twitter.com/intent/tweet?text=How to remix Google Trends data to match your branding&url=https://www.caretjuice.com/blog/google-trends.html&via=damongudaitis" target="blank">Tweet This</a>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-12 large-8 large-offset-2 columns" itemprop="articleBody">
+		    <p>We&rsquo;re going to take an export of Google Trends data and then make a custom chart of that data in Python. Why would we want to do that?</p>
+
+<p>So that we can have complete control over the the presentation of the data.</p>
+
+<p>Instead of screenshotting or embedding Google-branded Trends data, we&rsquo;ll make it match the branding of my blog. Hopefully, things will be clear enough for you to customize the colors and fonts for your brand.</p>
+
+<p>Start with basic imports and upload our CSV file.</p>
+
+<pre><code class="python">import pandas as pd
+import matplotlib.pyplot as plt
+import io
+%matplotlib inline
+
+</code></pre>
+
+<p>Now we&rsquo;re going to convert our CSV to a dataframe. I&rsquo;ve saved the CSV file in the same folder where I&rsquo;m running this script.</p>
+
+<pre><code class="python">trends = pd.read_csv(&#39;multiTimeline.csv&#39;)
+trends.head()
+</code></pre>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th>Category: All categories</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Week</th>
+      <th>account based marketing: (United States)</th>
+      <td>marketing automation: (United States)</td>
+    </tr>
+    <tr>
+      <th>2014-08-31</th>
+      <th>0</th>
+      <td>40</td>
+    </tr>
+    <tr>
+      <th>2014-09-07</th>
+      <th>0</th>
+      <td>46</td>
+    </tr>
+    <tr>
+      <th>2014-09-14</th>
+      <th>4</th>
+      <td>47</td>
+    </tr>
+    <tr>
+      <th>2014-09-21</th>
+      <th>3</th>
+      <td>41</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Oops. We only have one column called <em>Category: All categories</em> with all of our data in one row. Let&rsquo;s fix that.</p>
+
+<pre><code class="python">trends = pd.read_csv(&#39;multiTimeline.csv&#39;, header=1)
+trends.head()
+</code></pre>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Week</th>
+      <th>account based marketing: (United States)</th>
+      <th>marketing automation: (United States)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2014-08-31</td>
+      <td>0</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2014-09-07</td>
+      <td>0</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2014-09-14</td>
+      <td>4</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2014-09-21</td>
+      <td>3</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2014-09-28</td>
+      <td>3</td>
+      <td>38</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<pre><code class="python">trends.dtypes
+</code></pre>
+
+<pre><code>Week                                        object
+account based marketing: (United States)     int64
+marketing automation: (United States)        int64
+dtype: object
+</code></pre>
+
+<p>Convert the Week column to datetime.</p>
+
+<pre><code class="python">trends[&#39;Week&#39;] = pd.to_datetime(trends[&#39;Week&#39;], format=&quot;%Y-%m-%d&quot;)
+trends.dtypes
+</code></pre>
+
+<pre><code>Week                                        datetime64[ns]
+account based marketing: (United States)             int64
+marketing automation: (United States)                int64
+dtype: object
+</code></pre>
+
+<p>Let&rsquo;s change our column headings.</p>
+
+<pre><code class="python">trends.columns = [&#39;Week&#39;, &#39;Account-Based Marketing&#39;, &#39;Marketing Automation&#39;]
+trends.head()
+</code></pre>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Week</th>
+      <th>Account-Based Marketing</th>
+      <th>Marketing Automation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2014-08-31</td>
+      <td>0</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2014-09-07</td>
+      <td>0</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2014-09-14</td>
+      <td>4</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2014-09-21</td>
+      <td>3</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2014-09-28</td>
+      <td>3</td>
+      <td>38</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Now let&rsquo;s graph our data.</p>
+
+<pre><code class="python">plt.plot(trends[&#39;Week&#39;], trends[&#39;Account-Based Marketing&#39;])
+plt.plot(trends[&#39;Week&#39;], trends[&#39;Marketing Automation&#39;])
+plt.show()
+</code></pre>
+
+<p><img src="google-trends/output_12_1.png" title="Google Trends default graph" alt="Google Trends default graph" /></p>
+
+<p>Not bad for default settings, but we can make this look nicer.</p>
+
+<pre><code class="python">import matplotlib as mpl
+#If you&#39;re using Jupyter on your system, the below works.
+#In Google Colab, it&#39;s a pain to add fonts.
+#mpl.rcParams[&#39;font.family&#39;] = &#39;Open Sans&#39;
+
+#change border color
+mpl.rcParams[&#39;axes.edgecolor&#39;] = &quot;#a3a3a3&quot;
+
+#change background color
+#mpl.rcParams[&#39;axes.facecolor&#39;] = &quot;#a3a3a3&quot;
+
+#reset your changes
+#mpl.rcParams.update(mpl.rcParamsDefault)
+
+
+#figsize is in inches
+plt.figure(figsize=[10, 6.66])
+ax = plt.subplot()
+ax.plot(trends[&#39;Week&#39;], trends[&#39;Marketing Automation&#39;], color=&quot;#ff8f4d&quot;)
+ax.plot(trends[&#39;Week&#39;], trends[&#39;Account-Based Marketing&#39;], color=&quot;#86e400&quot;)
+leg = plt.legend(frameon=False)
+
+for text in leg.get_texts():
+    plt.setp(text, color = &#39;#212121&#39;)
+ax.tick_params(bottom=False, top=False, left=False, right=False)
+
+#change the color of the tick labels
+[i.set_color(&quot;#212121&quot;) for i in plt.gca().get_xticklabels()]
+[i.set_color(&quot;#212121&quot;) for i in plt.gca().get_yticklabels()]
+
+plt.show()
+</code></pre>
+
+<p><img src="google-trends/output_14_0.png" title="Google Trends improved styling" alt="Google Trends improved styling" /></p>
+
+<p>Lets smooth out those lines and remove the borders.</p>
+
+<pre><code class="python">#If you&#39;re using Jupyter on your system, the below works.
+#In Google Colab, it&#39;s a pain to add fonts.
+#mpl.rcParams[&#39;font.family&#39;] = &#39;Open Sans&#39;
+
+#change border color
+mpl.rcParams[&#39;axes.edgecolor&#39;] = &quot;#a3a3a3&quot;
+
+#change background color
+#mpl.rcParams[&#39;axes.facecolor&#39;] = &quot;#a3a3a3&quot;
+
+#reset your changes
+#mpl.rcParams.update(mpl.rcParamsDefault)
+
+from scipy.ndimage.filters import gaussian_filter1d
+
+plt.figure(figsize=[10, 6.66])
+ax = plt.subplot()
+ax.plot(trends[&#39;Week&#39;], gaussian_filter1d(trends[&#39;Marketing Automation&#39;], sigma=2), color=&quot;#ff8f4d&quot;)
+ax.plot(trends[&#39;Week&#39;], gaussian_filter1d(trends[&#39;Account-Based Marketing&#39;], sigma=2), color=&quot;#86e400&quot;)
+leg = plt.legend(frameon=False)
+
+for text in leg.get_texts():
+    plt.setp(text, color = &#39;#212121&#39;)
+ax.tick_params(bottom=False, top=False, left=False, right=False)
+ax.spines[&#39;top&#39;].set_visible(False)
+ax.spines[&#39;bottom&#39;].set_visible(False)
+ax.spines[&#39;left&#39;].set_visible(False)
+ax.spines[&#39;right&#39;].set_visible(False)
+#change the color of the tick labels
+[i.set_color(&quot;#212121&quot;) for i in plt.gca().get_xticklabels()]
+[i.set_color(&quot;#212121&quot;) for i in plt.gca().get_yticklabels()]
+
+plt.show()
+</code></pre>
+
+<pre><code>No handles with labels found to put in legend.
+</code></pre>
+
+<p><img src="google-trends/output_16_1.png" title="Google Trends smoothed graph" alt="Google Trends smoothed graph" /></p>
+
+<p>We&rsquo;ll manually re-add the labels to the legend and de-emphasize the text.</p>
+
+<pre><code class="python">from scipy.ndimage.filters import gaussian_filter1d
+
+#If you&#39;re using Jupyter on your system, the below works.
+#In Google Colab, it&#39;s a pain to add fonts.
+#mpl.rcParams[&#39;font.family&#39;] = &#39;Open Sans&#39;
+
+#change border color
+mpl.rcParams[&#39;axes.edgecolor&#39;] = &quot;#a3a3a3&quot;
+
+#change background color
+#mpl.rcParams[&#39;axes.facecolor&#39;] = &quot;#a3a3a3&quot;
+
+#reset your changes
+#mpl.rcParams.update(mpl.rcParamsDefault)
+
+
+#figsize is in inches
+plt.figure(figsize=[10, 6.66])
+ax = plt.subplot()
+ax.plot(trends[&#39;Week&#39;], gaussian_filter1d(trends[&#39;Marketing Automation&#39;], sigma=2), color=&quot;#ff8f4d&quot;, label=&quot;Marketing Automation&quot;)
+ax.plot(trends[&#39;Week&#39;], gaussian_filter1d(trends[&#39;Account-Based Marketing&#39;], sigma=2), color=&quot;#86e400&quot;, label=&quot;Account-Based Marketing&quot;)
+leg = plt.legend(frameon=False)
+
+for text in leg.get_texts():
+    plt.setp(text, color = &#39;#a3a3a3&#39;)
+ax.tick_params(bottom=False, top=False, left=False, right=False)
+ax.spines[&#39;top&#39;].set_visible(False)
+ax.spines[&#39;bottom&#39;].set_visible(False)
+ax.spines[&#39;left&#39;].set_visible(False)
+ax.spines[&#39;right&#39;].set_visible(False)
+
+#change the color of the tick labels
+[i.set_color(&quot;#a3a3a3&quot;) for i in plt.gca().get_xticklabels()]
+[i.set_color(&quot;#a3a3a3&quot;) for i in plt.gca().get_yticklabels()]
+
+plt.show()
+</code></pre>
+
+<p><img src="google-trends/output_18_0.png" title="Google Trends final" alt="Google Trends final" /></p>
+
+<p>Finally, here&rsquo;s the whole script so you can paste it into your Jupyter Notebook or other Python environment and customize to your needs or you can just <a href="/assets/google_trends.ipynb">download the complete Jupyter Notebook</a>.</p>
+
+<pre><code class="python">import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib as mpl
+import io
+%matplotlib inline
+from scipy.ndimage.filters import gaussian_filter1d
+
+trends = pd.read_csv(&#39;multiTimeline.csv&#39;, header=1)
+trends[&#39;Week&#39;] = pd.to_datetime(trends[&#39;Week&#39;], format=&quot;%Y-%m-%d&quot;)
+trends.columns = [&#39;Week&#39;, &#39;Account-Based Marketing&#39;, &#39;Marketing Automation&#39;]
+
+#If you&#39;re using Jupyter on your system, the below works.
+#In Google Colab, it&#39;s a pain to add fonts.
+mpl.rcParams[&#39;font.family&#39;] = &#39;Open Sans&#39;
+
+#change border color
+mpl.rcParams[&#39;axes.edgecolor&#39;] = &quot;#a3a3a3&quot;
+
+#change background color
+#mpl.rcParams[&#39;axes.facecolor&#39;] = &quot;#a3a3a3&quot;
+
+#reset your changes
+#mpl.rcParams.update(mpl.rcParamsDefault)
+
+
+#figsize is in inches
+plt.figure(figsize=[10, 6.66])
+ax = plt.subplot()
+ax.plot(trends[&#39;Week&#39;], gaussian_filter1d(trends[&#39;Marketing Automation&#39;], sigma=2), color=&quot;#ff8f4d&quot;, label=&quot;Marketing Automation&quot;)
+ax.plot(trends[&#39;Week&#39;], gaussian_filter1d(trends[&#39;Account-Based Marketing&#39;], sigma=2), color=&quot;#86e400&quot;, label=&quot;Account-Based Marketing&quot;)
+leg = plt.legend(frameon=False)
+
+for text in leg.get_texts():
+    plt.setp(text, color = &#39;#a3a3a3&#39;)
+ax.tick_params(bottom=False, top=False, left=False, right=False)
+ax.spines[&#39;top&#39;].set_visible(False)
+ax.spines[&#39;bottom&#39;].set_visible(False)
+ax.spines[&#39;left&#39;].set_visible(False)
+ax.spines[&#39;right&#39;].set_visible(False)
+
+#change the color of the tick labels
+[i.set_color(&quot;#a3a3a3&quot;) for i in plt.gca().get_xticklabels()]
+[i.set_color(&quot;#a3a3a3&quot;) for i in plt.gca().get_yticklabels()]
+
+plt.show()
+</code></pre>
+
+<p>Discuss this on LinkedIn.</p>
+	
+		</div>
+	</div>	
+</article>
+<div class="row">
+	<div class="small-12 large-8 large-offset-2 columns">
+		<div class="social-share ">
+			<ul class="inline-list inline-list-center">
+			<li><h4>Share:</h4></li>
+			<li style="background-color: #0077B5"><a class="icon" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.caretjuice.com%2Fblog%2Fgoogle-trends.html&title=&summary=&source=Caret+Juice+Marketing" rel="nofollow" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+			<li style="background-color: #55acee"><a class="icon" href="https://twitter.com/intent/tweet?text=Custom Branded Google Trends Charts With Python&url=https://www.caretjuice.com/blog/google-trends.html&via=damongudaitis" rel="nofollow" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+			<li style="background-color: #3b5998"><a class="icon" href="https://www.facebook.com/dialog/share?app_id=349018238896517&display=popup&href=https%3A%2F%2Fwww.caretjuice.com%2Fblog%2Fgoogle-trends.html" rel="nofollow" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>			
+			</ul>
+		</div>
+		<div class="row panel secondary-cta">
+	<div class="text-center">
+		<h3>Practical Business Automation</h3>
+		<h4><em>Guide to business&nbsp;automation in the golden age of software&nbsp;as&nbsp;a&nbsp;service.</em></h4>
+	</div>
+	<div class="small-12 medium-7 columns">
+		<p>Learn about the Constellation Approach to Business Technology&mdash;the conceptual framework that underpins Caret Juice services. Follow our recipes and set up your own automation.</p>
+	</div>
+	<div class="text-center small-12 medium-5 columns">
+		<a href="/practical-automation" class="button secondary">Read the Guide<br/><small>FREE - NO EMAIL REQUIRED</small></a>
+	</div>
+</div>
+	</div>
+</div>
+
+
+			<a class="exit-off-canvas"></a>
+		</div>
+	</div>
+	<div class="signup-bar" id="signup-bar">
+	<div class="row">
+		<div class="small-12 medium-8 columns">
+			<p>Caret Juice Marketing uses cookies to learn how people use the site and improve your experience. By continuing you consent to the cookie policy outlined in our <a href="/privacy.html">privacy policy</a>.</p>
+		</div>
+		<div class="small-12 medium-4 columns text-center">
+			<a class="button secondary close" onclick="acceptTracking();">Accept and Continue</a>
+		</div>
+	</div>
+</div>
+    <footer class="footer">
+		<div class="row">
+			<nav class="small-12 columns">
+				<ul class="left inline-list">
+					<li class="copyright"><small>&copy; Caret Juice Marketing</small></li>
+				</ul>
+				<ul class="right inline-list">
+					<li><a href="/privacy.html">Privacy</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+	<script src="../javascripts/all-ba3bee05.js"></script>
+	<script>
+  $(document).foundation();
+</script>
+
+  </body>
+</html>

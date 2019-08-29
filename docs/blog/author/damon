@@ -126,6 +126,16 @@ Object.defineProperty(document, 'cookie', {
 	<div class="small-12 medium-8 medium-offset-2">
 		<h2>Damon&apos;s Posts</h2>
 			<article class="article-listing">
+	<h2 class="subheader"><a href="/blog/google-trends.html">Custom Branded Google Trends Charts With Python</a> </h2>
+	<p class="published">Aug 29 2019</p>
+	<p>We’re going to take an export of Google Trends data and then make a custom chart of that data in Python. Why would we want to do that?</p>
+
+<p>So that we can have complete control over the the presentation of the data.</p>
+
+<p>Instead of screenshotting or embedding...</p>
+  	<p class="text-right">Keep Reading <a href="/blog/google-trends.html">Custom Branded Google Trends Charts With Python</a> </p>
+</article>
+			<article class="article-listing">
 	<h2 class="subheader"><a href="/blog/improve-data-quality-human-centered-design.html">Improve Your Data Quality With Human-Centered Process Design</a> </h2>
 	<p class="published">Aug 19 2019</p>
 	<p>The more I work with data the more I appreciate how valuable quality data is and how hard it can be for an organization to maintain quality. Data multiplies as we add new business technologies. Much of the data produced by technologies is of good quality...</p>
@@ -217,14 +227,6 @@ Object.defineProperty(document, 'cookie', {
 
 <p>But there’s another layer...</p>
   	<p class="text-right">Keep Reading <a href="/blog/asking-reviews-tos.html">Asking for Reviews&#58; Is it Against the TOS</a> </p>
-</article>
-			<article class="article-listing">
-	<h2 class="subheader"><a href="/blog/creative-update-triggers-zapier.html">Creative On Update Zapier Triggers</a> </h2>
-	<p class="published">Oct 15 2015</p>
-	<p>Zapier is limited by how the different CRM systems make your data available to other application. Zapier can only react to changes that are broadcast by the CRM (and then only after you give it permission).</p>
-
-<p>Hubspot CRM’s integration with Zapier, for...</p>
-  	<p class="text-right">Keep Reading <a href="/blog/creative-update-triggers-zapier.html">Creative On Update Zapier Triggers</a> </p>
 </article>
 		</div>
 	</div>

@@ -5,10 +5,428 @@
   <id>https://www.caretjuice.com/blog</id>
   <link href="https://www.caretjuice.com/blog"/>
   <link href="https://www.caretjuice.com/feed.xml" rel="self"/>
-  <updated>2019-08-18T17:00:00-07:00</updated>
+  <updated>2019-08-28T17:00:00-07:00</updated>
   <author>
     <name>Damon Gudaitis</name>
   </author>
+  <entry>
+    <title>Custom Branded Google Trends Charts With Python</title>
+    <link rel="alternate" href="https://www.caretjuice.com/blog/google-trends.html"/>
+    <id>https://www.caretjuice.com/blog/google-trends.html</id>
+    <published>2019-08-28T17:00:00-07:00</published>
+    <updated>2019-08-28T14:01:57-07:00</updated>
+    <author>
+      <name>Damon Gudaitis</name>
+    </author>
+    <summary type="html">&lt;p&gt;We’re going to take an export of Google Trends data and then make a custom chart of that data in Python. Why would we want to do that?&lt;/p&gt;
+
+&lt;p&gt;So that we can have complete control over the the presentation of the data.&lt;/p&gt;
+
+&lt;p&gt;Instead of screenshotting or embedding...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;We&amp;rsquo;re going to take an export of Google Trends data and then make a custom chart of that data in Python. Why would we want to do that?&lt;/p&gt;
+
+&lt;p&gt;So that we can have complete control over the the presentation of the data.&lt;/p&gt;
+
+&lt;p&gt;Instead of screenshotting or embedding Google-branded Trends data, we&amp;rsquo;ll make it match the branding of my blog. Hopefully, things will be clear enough for you to customize the colors and fonts for your brand.&lt;/p&gt;
+
+&lt;p&gt;Start with basic imports and upload our CSV file.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="python"&gt;import pandas as pd
+import matplotlib.pyplot as plt
+import io
+%matplotlib inline
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now we&amp;rsquo;re going to convert our CSV to a dataframe. I&amp;rsquo;ve saved the CSV file in the same folder where I&amp;rsquo;m running this script.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="python"&gt;trends = pd.read_csv(&amp;#39;multiTimeline.csv&amp;#39;)
+trends.head()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt;
+&lt;style scoped&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;Category: All categories&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Week&lt;/th&gt;
+      &lt;th&gt;account based marketing: (United States)&lt;/th&gt;
+      &lt;td&gt;marketing automation: (United States)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2014-08-31&lt;/th&gt;
+      &lt;th&gt;0&lt;/th&gt;
+      &lt;td&gt;40&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2014-09-07&lt;/th&gt;
+      &lt;th&gt;0&lt;/th&gt;
+      &lt;td&gt;46&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2014-09-14&lt;/th&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;td&gt;47&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2014-09-21&lt;/th&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;td&gt;41&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Oops. We only have one column called &lt;em&gt;Category: All categories&lt;/em&gt; with all of our data in one row. Let&amp;rsquo;s fix that.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="python"&gt;trends = pd.read_csv(&amp;#39;multiTimeline.csv&amp;#39;, header=1)
+trends.head()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt;
+&lt;style scoped&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;Week&lt;/th&gt;
+      &lt;th&gt;account based marketing: (United States)&lt;/th&gt;
+      &lt;th&gt;marketing automation: (United States)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;0&lt;/th&gt;
+      &lt;td&gt;2014-08-31&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;40&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;td&gt;2014-09-07&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;46&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;td&gt;2014-09-14&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;47&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;td&gt;2014-09-21&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;41&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;td&gt;2014-09-28&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;38&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class="python"&gt;trends.dtypes
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;Week                                        object
+account based marketing: (United States)     int64
+marketing automation: (United States)        int64
+dtype: object
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Convert the Week column to datetime.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="python"&gt;trends[&amp;#39;Week&amp;#39;] = pd.to_datetime(trends[&amp;#39;Week&amp;#39;], format=&amp;quot;%Y-%m-%d&amp;quot;)
+trends.dtypes
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;Week                                        datetime64[ns]
+account based marketing: (United States)             int64
+marketing automation: (United States)                int64
+dtype: object
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Let&amp;rsquo;s change our column headings.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="python"&gt;trends.columns = [&amp;#39;Week&amp;#39;, &amp;#39;Account-Based Marketing&amp;#39;, &amp;#39;Marketing Automation&amp;#39;]
+trends.head()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt;
+&lt;style scoped&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;Week&lt;/th&gt;
+      &lt;th&gt;Account-Based Marketing&lt;/th&gt;
+      &lt;th&gt;Marketing Automation&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;0&lt;/th&gt;
+      &lt;td&gt;2014-08-31&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;40&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;td&gt;2014-09-07&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;46&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;td&gt;2014-09-14&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;47&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;td&gt;2014-09-21&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;41&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;td&gt;2014-09-28&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;38&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now let&amp;rsquo;s graph our data.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="python"&gt;plt.plot(trends[&amp;#39;Week&amp;#39;], trends[&amp;#39;Account-Based Marketing&amp;#39;])
+plt.plot(trends[&amp;#39;Week&amp;#39;], trends[&amp;#39;Marketing Automation&amp;#39;])
+plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src="google-trends/output_12_1.png" title="Google Trends default graph" alt="Google Trends default graph" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Not bad for default settings, but we can make this look nicer.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="python"&gt;import matplotlib as mpl
+#If you&amp;#39;re using Jupyter on your system, the below works.
+#In Google Colab, it&amp;#39;s a pain to add fonts.
+#mpl.rcParams[&amp;#39;font.family&amp;#39;] = &amp;#39;Open Sans&amp;#39;
+
+#change border color
+mpl.rcParams[&amp;#39;axes.edgecolor&amp;#39;] = &amp;quot;#a3a3a3&amp;quot;
+
+#change background color
+#mpl.rcParams[&amp;#39;axes.facecolor&amp;#39;] = &amp;quot;#a3a3a3&amp;quot;
+
+#reset your changes
+#mpl.rcParams.update(mpl.rcParamsDefault)
+
+
+#figsize is in inches
+plt.figure(figsize=[10, 6.66])
+ax = plt.subplot()
+ax.plot(trends[&amp;#39;Week&amp;#39;], trends[&amp;#39;Marketing Automation&amp;#39;], color=&amp;quot;#ff8f4d&amp;quot;)
+ax.plot(trends[&amp;#39;Week&amp;#39;], trends[&amp;#39;Account-Based Marketing&amp;#39;], color=&amp;quot;#86e400&amp;quot;)
+leg = plt.legend(frameon=False)
+
+for text in leg.get_texts():
+    plt.setp(text, color = &amp;#39;#212121&amp;#39;)
+ax.tick_params(bottom=False, top=False, left=False, right=False)
+
+#change the color of the tick labels
+[i.set_color(&amp;quot;#212121&amp;quot;) for i in plt.gca().get_xticklabels()]
+[i.set_color(&amp;quot;#212121&amp;quot;) for i in plt.gca().get_yticklabels()]
+
+plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src="google-trends/output_14_0.png" title="Google Trends improved styling" alt="Google Trends improved styling" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Lets smooth out those lines and remove the borders.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="python"&gt;#If you&amp;#39;re using Jupyter on your system, the below works.
+#In Google Colab, it&amp;#39;s a pain to add fonts.
+#mpl.rcParams[&amp;#39;font.family&amp;#39;] = &amp;#39;Open Sans&amp;#39;
+
+#change border color
+mpl.rcParams[&amp;#39;axes.edgecolor&amp;#39;] = &amp;quot;#a3a3a3&amp;quot;
+
+#change background color
+#mpl.rcParams[&amp;#39;axes.facecolor&amp;#39;] = &amp;quot;#a3a3a3&amp;quot;
+
+#reset your changes
+#mpl.rcParams.update(mpl.rcParamsDefault)
+
+from scipy.ndimage.filters import gaussian_filter1d
+
+plt.figure(figsize=[10, 6.66])
+ax = plt.subplot()
+ax.plot(trends[&amp;#39;Week&amp;#39;], gaussian_filter1d(trends[&amp;#39;Marketing Automation&amp;#39;], sigma=2), color=&amp;quot;#ff8f4d&amp;quot;)
+ax.plot(trends[&amp;#39;Week&amp;#39;], gaussian_filter1d(trends[&amp;#39;Account-Based Marketing&amp;#39;], sigma=2), color=&amp;quot;#86e400&amp;quot;)
+leg = plt.legend(frameon=False)
+
+for text in leg.get_texts():
+    plt.setp(text, color = &amp;#39;#212121&amp;#39;)
+ax.tick_params(bottom=False, top=False, left=False, right=False)
+ax.spines[&amp;#39;top&amp;#39;].set_visible(False)
+ax.spines[&amp;#39;bottom&amp;#39;].set_visible(False)
+ax.spines[&amp;#39;left&amp;#39;].set_visible(False)
+ax.spines[&amp;#39;right&amp;#39;].set_visible(False)
+#change the color of the tick labels
+[i.set_color(&amp;quot;#212121&amp;quot;) for i in plt.gca().get_xticklabels()]
+[i.set_color(&amp;quot;#212121&amp;quot;) for i in plt.gca().get_yticklabels()]
+
+plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;No handles with labels found to put in legend.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src="google-trends/output_16_1.png" title="Google Trends smoothed graph" alt="Google Trends smoothed graph" /&gt;&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ll manually re-add the labels to the legend and de-emphasize the text.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="python"&gt;from scipy.ndimage.filters import gaussian_filter1d
+
+#If you&amp;#39;re using Jupyter on your system, the below works.
+#In Google Colab, it&amp;#39;s a pain to add fonts.
+#mpl.rcParams[&amp;#39;font.family&amp;#39;] = &amp;#39;Open Sans&amp;#39;
+
+#change border color
+mpl.rcParams[&amp;#39;axes.edgecolor&amp;#39;] = &amp;quot;#a3a3a3&amp;quot;
+
+#change background color
+#mpl.rcParams[&amp;#39;axes.facecolor&amp;#39;] = &amp;quot;#a3a3a3&amp;quot;
+
+#reset your changes
+#mpl.rcParams.update(mpl.rcParamsDefault)
+
+
+#figsize is in inches
+plt.figure(figsize=[10, 6.66])
+ax = plt.subplot()
+ax.plot(trends[&amp;#39;Week&amp;#39;], gaussian_filter1d(trends[&amp;#39;Marketing Automation&amp;#39;], sigma=2), color=&amp;quot;#ff8f4d&amp;quot;, label=&amp;quot;Marketing Automation&amp;quot;)
+ax.plot(trends[&amp;#39;Week&amp;#39;], gaussian_filter1d(trends[&amp;#39;Account-Based Marketing&amp;#39;], sigma=2), color=&amp;quot;#86e400&amp;quot;, label=&amp;quot;Account-Based Marketing&amp;quot;)
+leg = plt.legend(frameon=False)
+
+for text in leg.get_texts():
+    plt.setp(text, color = &amp;#39;#a3a3a3&amp;#39;)
+ax.tick_params(bottom=False, top=False, left=False, right=False)
+ax.spines[&amp;#39;top&amp;#39;].set_visible(False)
+ax.spines[&amp;#39;bottom&amp;#39;].set_visible(False)
+ax.spines[&amp;#39;left&amp;#39;].set_visible(False)
+ax.spines[&amp;#39;right&amp;#39;].set_visible(False)
+
+#change the color of the tick labels
+[i.set_color(&amp;quot;#a3a3a3&amp;quot;) for i in plt.gca().get_xticklabels()]
+[i.set_color(&amp;quot;#a3a3a3&amp;quot;) for i in plt.gca().get_yticklabels()]
+
+plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src="google-trends/output_18_0.png" title="Google Trends final" alt="Google Trends final" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, here&amp;rsquo;s the whole script so you can paste it into your Jupyter Notebook or other Python environment and customize to your needs or you can just &lt;a href="/assets/google_trends.ipynb"&gt;download the complete Jupyter Notebook&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="python"&gt;import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib as mpl
+import io
+%matplotlib inline
+from scipy.ndimage.filters import gaussian_filter1d
+
+trends = pd.read_csv(&amp;#39;multiTimeline.csv&amp;#39;, header=1)
+trends[&amp;#39;Week&amp;#39;] = pd.to_datetime(trends[&amp;#39;Week&amp;#39;], format=&amp;quot;%Y-%m-%d&amp;quot;)
+trends.columns = [&amp;#39;Week&amp;#39;, &amp;#39;Account-Based Marketing&amp;#39;, &amp;#39;Marketing Automation&amp;#39;]
+
+#If you&amp;#39;re using Jupyter on your system, the below works.
+#In Google Colab, it&amp;#39;s a pain to add fonts.
+mpl.rcParams[&amp;#39;font.family&amp;#39;] = &amp;#39;Open Sans&amp;#39;
+
+#change border color
+mpl.rcParams[&amp;#39;axes.edgecolor&amp;#39;] = &amp;quot;#a3a3a3&amp;quot;
+
+#change background color
+#mpl.rcParams[&amp;#39;axes.facecolor&amp;#39;] = &amp;quot;#a3a3a3&amp;quot;
+
+#reset your changes
+#mpl.rcParams.update(mpl.rcParamsDefault)
+
+
+#figsize is in inches
+plt.figure(figsize=[10, 6.66])
+ax = plt.subplot()
+ax.plot(trends[&amp;#39;Week&amp;#39;], gaussian_filter1d(trends[&amp;#39;Marketing Automation&amp;#39;], sigma=2), color=&amp;quot;#ff8f4d&amp;quot;, label=&amp;quot;Marketing Automation&amp;quot;)
+ax.plot(trends[&amp;#39;Week&amp;#39;], gaussian_filter1d(trends[&amp;#39;Account-Based Marketing&amp;#39;], sigma=2), color=&amp;quot;#86e400&amp;quot;, label=&amp;quot;Account-Based Marketing&amp;quot;)
+leg = plt.legend(frameon=False)
+
+for text in leg.get_texts():
+    plt.setp(text, color = &amp;#39;#a3a3a3&amp;#39;)
+ax.tick_params(bottom=False, top=False, left=False, right=False)
+ax.spines[&amp;#39;top&amp;#39;].set_visible(False)
+ax.spines[&amp;#39;bottom&amp;#39;].set_visible(False)
+ax.spines[&amp;#39;left&amp;#39;].set_visible(False)
+ax.spines[&amp;#39;right&amp;#39;].set_visible(False)
+
+#change the color of the tick labels
+[i.set_color(&amp;quot;#a3a3a3&amp;quot;) for i in plt.gca().get_xticklabels()]
+[i.set_color(&amp;quot;#a3a3a3&amp;quot;) for i in plt.gca().get_yticklabels()]
+
+plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Discuss this on LinkedIn.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Improve Your Data Quality With Human-Centered Process Design</title>
     <link rel="alternate" href="https://www.caretjuice.com/blog/improve-data-quality-human-centered-design.html"/>
@@ -1448,165 +1866,6 @@ us_ga.head()
 &lt;p&gt;Low traffic levels and long sales cycles limit the power of testing but that doesn’t mean it can’t be a powerful tool.&lt;/p&gt;
 
 &lt;p&gt;Structuring your test program around understanding your buyers will not only help you overcome those limits but also improve the overall effectiveness of marketing beyond just the testing role.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Constellation Approach to Business Technology</title>
-    <link rel="alternate" href="https://www.caretjuice.com/blog/constellation-approach-business-technology.html"/>
-    <id>https://www.caretjuice.com/blog/constellation-approach-business-technology.html</id>
-    <published>2016-03-14T17:00:00-07:00</published>
-    <updated>2018-11-13T14:23:57-08:00</updated>
-    <author>
-      <name>Damon Gudaitis</name>
-    </author>
-    <summary type="html">&lt;p&gt;Self-driving cars promise to re-imagine the relationship between cities, people and transportation while Uber takes fat chunks out of the taxi industry. &lt;/p&gt;
-
-&lt;p&gt;Newspapers struggle with relevance—the value of ad space having plummeted as the expense of publishing...&lt;/p&gt;</summary>
-    <content type="html">&lt;p&gt;Self-driving cars promise to re-imagine the relationship between cities, people and transportation while Uber takes fat chunks out of the taxi industry. &lt;/p&gt;
-
-&lt;p&gt;Newspapers struggle with relevance—the value of ad space having plummeted as the expense of publishing dropped to near zero.&lt;/p&gt;
-
-&lt;p&gt;Investors stand strong behind a company like Amazon while years of losses stretch into decades out of hope that it will one day turn its status as the default place where people go to buy online into an avalanche of profits that bury past losses.&lt;/p&gt;
-
-&lt;p&gt;Technology is changing the business landscape quickly. But it isn’t just threatening old business models.&lt;/p&gt;
-
-&lt;p&gt;New technology also brings new automation opportunities letting you and your colleagues get more done in less time.&lt;/p&gt;
-
-&lt;p&gt;The Constellation Approach to Business Technology helps you understand business applications, how they relate to each other, and choose the best combination of technologies to balance growth, flexibility, and costs.&lt;/p&gt;
-
-&lt;h2&gt;How Business Applications Have Changed in the Last 15+ Years&lt;/h2&gt;
-
-&lt;p&gt;Until around the start of the new millennium, data stayed primarily within the business application. You’ve been able to integrate enterprise and legacy apps, but integration was time-consuming and expensive.&lt;/p&gt;
-
-&lt;p&gt;As cloud computing grew in popularity and developing business software became cheaper, stand-alone applications focusing on solving increasingly niche problems flourished. Application programming interfaces (APIs) that let developers integrate apps became more common and then expected. APIs also started to become more consistent and easier to use alongside this explosion of options.&lt;/p&gt;
-
-&lt;p&gt;The leading cloud applications in each category started using their APIs to build native integrations with each other. These integrations are at the point now where native integrations between the leading products in different software categories compete with and even exceed fully integrated suites.&lt;/p&gt;
-
-&lt;p&gt;Upstart and niche cloud products emerged to solve increasingly specific problems.&lt;/p&gt;
-
-&lt;p&gt;Typically these smaller products would be less expensive than the leading cloud options, and needed to integrate with the leaders in other applications categories in order to compete.&lt;/p&gt;
-
-&lt;p&gt;Soon a variety of middleware applications would spring up giving you more integration options than native and custom integrations created by the respective product teams and their customers.&lt;/p&gt;
-
-&lt;p&gt;Some of these middleware applications provided deep, powerful integrations between few products, like exporting Salesforce data to Excel and back.&lt;/p&gt;
-
-&lt;p&gt;Others gave lots of shallow integrations between lots of different applications letting you trigger actions in one app from another or copying one field from one system to another.&lt;/p&gt;
-
-&lt;table class="text-center table-text-top"&gt;
-    &lt;tr&gt;
-        &lt;th style="background-color:#ff8f4d; width:33%;"&gt;
-            &lt;strong&gt;Enterprise Suite&lt;/strong&gt;
-        &lt;/th&gt;
-        &lt;th style="background-color:#86e400; width:33%;"&gt;
-            &lt;strong&gt;Cloud Niche/Upstart&lt;/strong&gt;
-        &lt;/th&gt;
-        &lt;th style="background-color:#ff8f4d; width:33%;"&gt;
-            &lt;strong&gt;Cloud Leader&lt;/strong&gt;
-        &lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td style="background-color:#ff8f4d; width:33%;"&gt;service partners build custom integrations&lt;/td&gt;
-        &lt;td style="background-color:#86e400; width:33%;"&gt;develop own integrations&lt;/td&gt;
-        &lt;td style="background-color:#ff8f4d; width:33%;"&gt;attract powerful integrations&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td style="background-color:#ff8f4d; width:33%;"&gt;costly to integrate&lt;/td&gt;
-        &lt;td style="background-color:#86e400; width:33%;"&gt;moderately costly to integrate&lt;/td&gt;
-        &lt;td style="background-color:#ff8f4d; width:33%;"&gt;low cost to integrate&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td style="background-color:#ff8f4d; width:33%;"&gt;costly to license&lt;/td&gt;
-        &lt;td style="background-color:#86e400; width:33%;"&gt;inexpensive to license&lt;/td&gt;
-        &lt;td style="background-color:#ff8f4d; width:33%;"&gt;moderately costly to license&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td colspan="3" style="border: 1px solid #B6B6B6;"&gt;&lt;strong&gt;Shallow Integration Middleware&lt;/strong&gt;&lt;br/&gt;
-shallow integration between many applications&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td colspan="3" style="border: 1px solid #B6B6B6;"&gt;&lt;strong&gt;Deep Integration Middleware&lt;/strong&gt;&lt;br/&gt;
-deep integration between a small number of applications&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;This explosion of stand-alone, SaaS business applications, with multiple layers of integration options, gives you more varied options towards solving a wider variety of challenges and unprecedented flexibility to manage the flow of information through your business.&lt;/p&gt;
-
-&lt;p&gt;Where before you had to get an expensive piece of software that would require extensive configuration and customization before you could start using it effectively, now you can probably find a solution that will work for you almost immediately and at a lower cost.&lt;/p&gt;
-
-&lt;h2&gt;The Hidden Cost of Cheap&lt;/h2&gt;
-
-&lt;p&gt;Individual products and integrations are straightforward. The full web of products and integrations is incredibly complex.&lt;/p&gt;
-
-&lt;p&gt;The overall cost of one or two low-cost, poorly integrated applications is negligible. Particularly if the applications solve an important business problem. Licensing and maintenance costs are practically non-existent in this situation.&lt;/p&gt;
-
-&lt;p&gt;The costs of poorly integrated applications grow exponentially as their number increase. Licensing is still inexpensive, but niche products attract fewer integrations. And having substandard integration options imposes a substantial tax on productivity across the company. That tax increases with each application you add.&lt;/p&gt;
-
-&lt;p&gt;The productivity tax is paid in the following ways:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;time spent on duplicate data entry&lt;/li&gt;
-&lt;li&gt;poor decisions caused by poor data due to
-
-&lt;ul&gt;
-&lt;li&gt;data entry errors, and&lt;/li&gt;
-&lt;li&gt;missing data&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;lost opportunity because highly specialized tools only integrate with the strongest platforms&lt;/li&gt;
-&lt;li&gt;increased effort to perform what are basic tasks on stronger platforms.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;While the cost each little example of duplicate data entry or handicapped decision making is negligible, they add up and quickly dwarf the licensing costs.&lt;/p&gt;
-
-&lt;p&gt;Low-cost, niche products have their place in small businesses and solving niche problems in large ones. But their hidden costs are crippling the larger the business and more complex the technology stack.&lt;/p&gt;
-
-&lt;h2&gt;Platforms and Solutions&lt;/h2&gt;
-
-&lt;p&gt;If you’re not buying technology to solve a problem, then you are doing it wrong.&lt;/p&gt;
-
-&lt;p&gt;When looking at an application, more features does not make a product better. In most cases, when you see a CRM that also does marketing automation, or a marketing automation suite that also has a content management system, or whatever other app that does something and something else, then the something else is almost always a very light version of an equivalent stand-alone app.&lt;/p&gt;
-
-&lt;p&gt;It pays to be clear on what you are trying to accomplish with the software. Features are meaningless next to a great solution.&lt;/p&gt;
-
-&lt;p&gt;When looking at business applications be aware of whether you need them to be a platform (and solution) or just a solution.&lt;/p&gt;
-
-&lt;p&gt;Platforms are the core applications that you build off. They need to accommodate a variety of solutions as the company grows and they need to integrate readily with your other platforms.&lt;/p&gt;
-
-&lt;p&gt;Niche products are often great solutions but lousy platforms because of the limited number of native integration options of a niche product. Your solutions need to integrate with one of your platforms, but any data that needs to go from solution to a non-integrated platform can usually get passed through via the one integrated platform.&lt;/p&gt;
-
-&lt;p&gt;You don’t need extensive integration on a solution. Just one solid integration with a platform.&lt;/p&gt;
-
-&lt;p&gt;Solutions are also great candidates for taking risky bets on new technologies because they sit at the edge of your network of applications and cause minimal disruption to your business. The cost of switching from one experimental solution to another is low if you have a good platform. &lt;/p&gt;
-
-&lt;p&gt;This lets you outsource the risks of staying ahead of technology trends in your industry to venture capital firms while still reaping the benefits of cutting edge software technology investments.&lt;/p&gt;
-
-&lt;p&gt;Once you start building on a platform, however, it is very difficult to switch. Each solution that you integrate with a platform is another requirement that will complicate purchasing, migrating and training if you ever grow out of the platform.&lt;/p&gt;
-
-&lt;h2&gt;Expose Your Data&lt;/h2&gt;
-
-&lt;p&gt;The most agile platforms for your business data, whether they be CRM, support, accounting software or even ERP, are the ones that best expose your data.&lt;/p&gt;
-
-&lt;p&gt;New technologies like big data and machine learning are creating new opportunities every day. Marketing and finance are getting most of the love from new technologies right now with applications that do things like identify the best prospects or the biggest financial risks.&lt;/p&gt;
-
-&lt;p&gt;Soon retailers will be able to do things like plug their point of sale and inventory data into a cloud app that will pull in weather data and forecast umbrella demand while adjusting the retail price to maximize revenue in real time.&lt;/p&gt;
-
-&lt;p&gt;Niche Big Data solutions like weather-based inventory forecasts are multiplying quickly. Businesses don’t need a data scientist to benefit from the Big Data revolution—they just need to keep their data in platforms that attract lots of integrations.&lt;/p&gt;
-
-&lt;h2&gt;The Constellation Approach to Business Technology&lt;/h2&gt;
-
-&lt;p&gt;The Constellation Approach to Business Technology is meant as a way of understanding how your business applications relate to each other and what you need them to do so that you maximize flexibility, and minimize expenses without restricting growth.&lt;/p&gt;
-
-&lt;p&gt;In order to apply this approach to your business, you need to do the following.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Identify platform categories (CRM, marketing automation, accounting) based on how you want to grow.&lt;/li&gt;
-&lt;li&gt;Identify niche solutions that will contribute to your growth.&lt;/li&gt;
-&lt;li&gt;Research integration options.&lt;/li&gt;
-&lt;li&gt;Choose the combination of platforms, solutions and integrations that best balance cost, simplicity, flexibility, and future growth.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Everything in the Constellation Approach flows from understand which applications need to be platforms and then grows from there. The right platform both grows with you and gives you the best chance to take advantage of yet unimagined technologies just beyond the horizon.&lt;/p&gt;
-
-&lt;p&gt;Innovation presents the greatest risks and rewards. A good platform will let you take advantage of innovative solutions while reducing the costs of switching or abandoning a solution.&lt;/p&gt;
 </content>
   </entry>
 </feed>

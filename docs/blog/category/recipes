@@ -118,6 +118,16 @@ Object.defineProperty(document, 'cookie', {
 <div class="row">
 	<div class="small-12 large-8 large-offset-2">
 			<article class="article-listing">
+	<h2 class="subheader"><a href="/blog/google-trends.html">Custom Branded Google Trends Charts With Python</a> </h2>
+	<p class="published">Aug 29 2019</p>
+	<p>We’re going to take an export of Google Trends data and then make a custom chart of that data in Python. Why would we want to do that?</p>
+
+<p>So that we can have complete control over the the presentation of the data.</p>
+
+<p>Instead of screenshotting or embedding...</p>
+  	<p class="text-right">Keep Reading <a href="/blog/google-trends.html">Custom Branded Google Trends Charts With Python</a> </p>
+</article>
+			<article class="article-listing">
 	<h2 class="subheader"><a href="/blog/geo-data-for-ga.html">US Population Data for Google Analytics</a> </h2>
 	<p class="published">Mar 13 2019</p>
 	<p>Geography data import in Google Analytics is a lesser-used feature. In their docs, Google emphasizes the ability to create custom sales districts. While this is quite useful for the right type of business, you can also use geo-data import to augment...</p>
