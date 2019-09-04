@@ -437,4 +437,4 @@ ax.spines['right'].set_visible(False)
 plt.show()
 ```
 
-Discuss this on LinkedIn.
+<a href="https://www.linkedin.com/posts/damongudaitis_custom-branded-google-trends-charts-with-activity-6572944884225855488-_L2n">Discuss this on LinkedIn.</a>

@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://www.caretjuice.com/blog/google-trends.html"/>
     <id>https://www.caretjuice.com/blog/google-trends.html</id>
     <published>2019-08-28T17:00:00-07:00</published>
-    <updated>2019-08-29T10:10:37-07:00</updated>
+    <updated>2019-09-04T10:40:35-07:00</updated>
     <author>
       <name>Damon Gudaitis</name>
     </author>
@@ -424,7 +424,7 @@ ax.spines[&amp;#39;right&amp;#39;].set_visible(False)
 plt.show()
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Discuss this on LinkedIn.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.linkedin.com/posts/damongudaitis_custom-branded-google-trends-charts-with-activity-6572944884225855488-_L2n"&gt;Discuss this on LinkedIn.&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
   <entry>

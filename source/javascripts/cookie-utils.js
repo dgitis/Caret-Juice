@@ -12,7 +12,7 @@ function optOutPrefSet(){
 
 //toggle the cookie value at privacy.html
 function toggleTracking() {
-    var status = Cookies.get("ga_opt_out");
+    var status = Cookies.getJSON("ga_opt_out");
    if (typeof status == "undefined" ) {
        cookieValue = true; //first click should turn off tracking
    }

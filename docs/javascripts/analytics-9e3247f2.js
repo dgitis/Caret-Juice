@@ -1,0 +1,1 @@
+$(document).ready(function(){ga(function(n){var o=n.get("clientId");document.prop("#clid").value=o,console.log(o)})});

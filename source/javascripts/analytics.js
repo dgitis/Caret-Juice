@@ -19,15 +19,3 @@ $(document).ready(function(){ // Shouldn't need this with GA Ready Callback
         console.log(clientId);
   });
 });
-/*
-$(document).ready(function(){
-    ga(function() {
-        var t = ga.getAll(), clientId;
-        if(t && t.length) {
-            clientId = t[0].get('clientId');
-            document.getElementById('clid').value = clientId;
-            console.log(clientId);
-        }
-    });
-});
-*/
