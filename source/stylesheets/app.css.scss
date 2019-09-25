@@ -494,8 +494,21 @@ pre{
 	color: #212121;
 	text-align:center !important;
 }
-.dataframe td{
-}
+
 table.dataframe{
 	border: none;
+}
+
+/* Cover Background */
+.cover{
+	background: linear-gradient(0deg,rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url(/images/English_Bay_Vancouver.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 2rem 0rem 2rem 0rem;
+} 
+
+.cover, h1, h2{
+	color: $primary-text;
 }
