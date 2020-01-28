@@ -1,7 +1,7 @@
 # If you have OpenSSL installed, we recommend updating
 # the following line to use "https"
 source 'http://rubygems.org'
-ruby "2.3.1"
+ruby "2.5.1"
 gem "bourbon", :require => false
 #gem 'middleman', '~> 4.2', '>= 4.2.1'
 gem 'middleman'
